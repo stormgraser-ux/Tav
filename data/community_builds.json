@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "wild-magic-barbarian",
+    "name": "Wild Magic Barbarian",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-wild-magic-barbarian-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Blooded Greataxe, Haste Helm, Hamarhraft"
+      ],
+      "2": [
+        "Adamantine Splint Armour, Helm of Grit"
+      ],
+      "3": [
+        "Bonespike Helmet, Bonespike Garb, Bonespike Gloves, Bonespike Boots, Gauntlets of Hill Giant Strength"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 17,
+        "DEX": 14,
+        "CON": 14,
+        "INT": 8,
+        "WIS": 10,
+        "CHA": 8
+      },
+      "races": [
+        {
+          "name": "Half-Orc",
+          "reason": "Savage Attacks amplifies crits dramatically \u2014 Wild Magic Barbarian generates crits often enough that this race synergy pays off every fight."
+        },
+        {
+          "name": "Zariel Tiefling",
+          "reason": "Smite spells and fire resistance round out the damage toolkit."
+        },
+        {
+          "name": "Githyanki",
+          "reason": "Medium armor proficiency and Astral Knowledge for skill checks."
+        }
+      ],
+      "background": "Soldier",
+      "background_skills": [
+        "Athletics",
+        "Intimidation"
+      ],
+      "skills": [
+        "Athletics",
+        "Intimidation"
+      ],
+      "cantrips": [],
+      "spells": []
+    },
+    "blurb": "Full Barbarian, Wild Magic subclass. Chaos-fueled melee striker \u2014 Wild Magic Surges trigger randomly with many party-benefiting effects. Half-Orc's Savage Attacks amplifies the crits Wild Magic generates. Bonespike set in Act 3 is a clean, unambiguous power spike.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Barbarian",
+        "choices": [
+          "Skills: Athletics + Perception or Survival",
+          "Starting gear: Great Sword or Hand Axes for throwing variant"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Barbarian",
+        "choices": [
+          "Reckless Attack, Danger Sense \u2014 no choices needed"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Barbarian",
+        "choices": [
+          "Subclass: Wild Magic",
+          "Rage: Wild Magic, Magic Awareness"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Barbarian",
+        "choices": [
+          "Feat: ASI +2 STR (\u219218) \u2014 prioritize this before GWM"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Barbarian",
+        "choices": [
+          "Extra Attack \u2014 do NOT multiclass before this level"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Barbarian",
+        "choices": [
+          "Bolstering Magic: grant yourself or ally a bonus 1d4 to attack rolls, or recover a spell slot"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Barbarian",
+        "choices": [
+          "Feral Instinct: Advantage on Initiative rolls"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Barbarian",
+        "choices": [
+          "Feat: ASI +2 STR (\u219220)"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Barbarian",
+        "choices": [
+          "Brutal Critical, Bolstering Magic: Level 3 Spell Slot"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Barbarian",
+        "choices": [
+          "Unstable Backlash: re-trigger Wild Magic surge on taking damage while raging"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Barbarian",
+        "choices": [
+          "Relentless Rage: survive a killing blow while raging (save DC 10, escalates)"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Barbarian",
+        "choices": [
+          "Feat: Savage Attacker \u2014 reroll all damage dice once per turn, keep the higher roll"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "trickery-domain-cleric",
+    "name": "Trickery Domain Cleric",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-trickery-domain-cleric-build-guide/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Amulet of Misty Step, Cloak of Protection, Spellcrux Amulet"
+      ],
+      "2": [
+        "Spellcrux Amulet, Amulet of the Devout"
+      ],
+      "3": [
+        "Hood of the Weave, Cloak of the Weave, Amulet of Greater Health"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 14,
+        "CON": 14,
+        "INT": 8,
+        "WIS": 16,
+        "CHA": 10
+      },
+      "races": [
+        {
+          "name": "Drow",
+          "reason": "Faerie Fire is a powerful concentration spell that gives your party advantage on attacks \u2014 free on a short rest is excellent."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Extra movement speed helps a roaming support cleric reposition."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP on every level-up makes for a sturdier healer."
+        }
+      ],
+      "background": "Acolyte",
+      "background_skills": [
+        "Insight",
+        "Religion"
+      ],
+      "skills": [
+        "Insight",
+        "Religion",
+        "Perception"
+      ],
+      "cantrips": [],
+      "spells": []
+    },
+    "blurb": "Full Cleric, Trickery Domain. Stealth-oriented support \u2014 Invoke Duplicity creates a decoy that draws enemy attention and enables Sneak Attacks for rogue allies. Faerie Fire (Drow) pairs well. Doesn't hit as hard as Light or Tempest, but unlocks unique team combos and shines in roleplay-heavy runs.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Cleric",
+        "choices": [
+          "Subclass: Trickery Domain (auto: Charm Person, Disguise Self)",
+          "Cantrips: Guidance, Sacred Flame, Resistance",
+          "Spells: Healing Word, Bane, Bless, Inflict Wounds"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Cleric",
+        "choices": [
+          "Channel Divinity: Invoke Duplicity (illusion double \u2014 enemies attack it, you gain Advantage)",
+          "Spells: Silence or Misty Step"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Cleric",
+        "choices": [
+          "Domain: Bestow Curse, Fear (auto)",
+          "Spells: Spirit Guardians, Animate Dead"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Cleric",
+        "choices": [
+          "Feat: ASI +2 WIS (\u219218)",
+          "Cantrip: Light or Mending",
+          "Spells: Banishment or Speak with Dead"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Cleric",
+        "choices": [
+          "Domain: Dimension Door, Polymorph (auto)",
+          "Spells: Mass Healing Word, Contagion or Insect Plague"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Cleric",
+        "choices": [
+          "Channel Divinity: Cloak of Shadows \u2014 turn Invisible when in a shadowed/obscured area"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Cleric",
+        "choices": [
+          "Domain: Conjure Woodland Beings, Greater Invisibility (auto)",
+          "Spells: Guardian of Faith, Death Ward"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Cleric",
+        "choices": [
+          "Feat: War Caster (Advantage on Concentration saves \u2014 essential for Spirit Guardians) OR ASI +2 WIS (\u219220)",
+          "Divine Strike: Poison (add 1d8 Poison damage per turn with weapon attacks)"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Cleric",
+        "choices": [
+          "Domain: Hold Monster, Mislead (auto)",
+          "Spells: Mass Cure Wounds or Flame Strike"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Cleric",
+        "choices": [
+          "Cantrip: any",
+          "Spells: Heal or Heroes' Feast"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Cleric",
+        "choices": [
+          "Spells: Planar Ally or Resurrection"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Cleric",
+        "choices": [
+          "Feat: Resilient CON (proficiency in CON saves \u2014 keeps Concentration) OR Lucky"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-old-one-warlock",
+    "name": "Great Old One Warlock",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/baldurs-gate-3-warlock-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Pearl of Power Amulet"
+      ],
+      "2": [
+        "Spellcrux Amulet, Potent Robe"
+      ],
+      "3": [
+        "Birthright, Mask of Soul Perception"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 8,
+        "WIS": 10,
+        "CHA": 16
+      },
+      "races": [
+        {
+          "name": "Wood Half-Elf",
+          "reason": "Versatile stat bonuses and Fey Ancestry for charm resistance \u2014 GOO Warlocks often wade into conversations that could go sideways."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Extra movement and Mask of the Wild for stealth setups."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP bolsters a class that relies on Hellish Rebuke and repositioning."
+        },
+        {
+          "name": "Drow",
+          "reason": "Faerie Fire synergizes with GOO's crowd control gameplan."
+        }
+      ],
+      "background": "Charlatan",
+      "background_skills": [
+        "Deception",
+        "Sleight of Hand"
+      ],
+      "skills": [
+        "Deception",
+        "Intimidation",
+        "Persuasion"
+      ],
+      "cantrips": [],
+      "spells": []
+    },
+    "blurb": "Full Warlock, Great Old One patron. Controller \u2014 leans into crowd control, force spells, and saves. Telepathic Contact gives bonus dialogue with undead and aberrations. Plays similarly to Eldritch Blast Warlock in combat but with stronger RP options and investigative flavor.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Warlock",
+        "choices": [
+          "Patron: The Great Old One",
+          "Cantrips: Eldritch Blast, Minor Illusion",
+          "Spells: Dissonant Whispers, Hex OR Tasha's Hideous Laughter"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Warlock",
+        "choices": [
+          "Invocations: Agonizing Blast (+CHA mod to EB damage), Repelling Blast (push 4.5m on hit)",
+          "Spells: Hold Person or Crown of Madness"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Warlock",
+        "choices": [
+          "Pact Boon: Pact of the Chain (familiar) OR Pact of the Tome (more cantrips)",
+          "Spells: Hypnotic Pattern or Hunger of Hadar"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: ASI +2 CHA (\u219218)",
+          "Invocation: Beguiling Influence (Deception + Persuasion proficiency)",
+          "Spells: Banishment or Dimension Door"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Warlock",
+        "choices": [
+          "Eldritch Blast now fires 2 beams \u2014 damage ramps significantly",
+          "Spells: Contact Other Plane or Contagion"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Warlock",
+        "choices": [
+          "Awakened Mind: Beguile (free Charmed condition between Long Rests)",
+          "Invocation: Sign of Ill Omen (Bestow Curse once/day) OR Master of Myriad Forms",
+          "Spells: Eyebite or Circle of Death"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Warlock",
+        "choices": [
+          "Spells: Finger of Death or Hold Monster"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: ASI +2 CHA (\u219220) OR Resilient CON (Concentration safety)",
+          "Invocation: Shroud of Shadow (Invisibility at will) OR Eldritch Mind (Concentration Advantage)",
+          "Spells: Glibness or Power Word: Stun"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Warlock",
+        "choices": [
+          "Invocation: Minions of Chaos (cast Conjure Elemental once/day)",
+          "Spells: Power Word: Kill or any 5th-level"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Warlock",
+        "choices": [
+          "Eldritch Blast now fires 3 beams",
+          "Invocation: any \u2014 Eldritch Mind or Lifedrinker if melee hybrid"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Warlock",
+        "choices": [
+          "Mystic Arcanum: Eyebite (powerful 6th-level curse \u2014 targets multiple saves) OR Flesh to Stone"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: Spell Sniper (doubles crit range on spell attacks) OR Alert (+5 Initiative)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "archfey-warlock",
+    "name": "Archfey Warlock",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-archfey-warlock-build-guide/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Haste Helm"
+      ],
+      "2": [
+        "Icebite Robe, Potent Robe, Spellcrux Amulet"
+      ],
+      "3": [
+        "Birthright, Mask of Soul Perception"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 8,
+        "WIS": 10,
+        "CHA": 16
+      },
+      "races": [
+        {
+          "name": "Drow",
+          "reason": "Rapier proficiency lets you melee effectively early on, and Faerie Fire pairs beautifully with Archfey charm effects."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Speed and Mask of the Wild for setting up advantageous encounters."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP helps a lightly-armored controller survive in melee range."
+        }
+      ],
+      "background": "Charlatan",
+      "background_skills": [
+        "Deception",
+        "Sleight of Hand"
+      ],
+      "skills": [
+        "Deception",
+        "Persuasion",
+        "Intimidation",
+        "Performance"
+      ],
+      "cantrips": [],
+      "spells": []
+    },
+    "blurb": "Full Warlock, The Archfey patron. Charm and fear-based control \u2014 Fey Presence and Bewitching Whispers fit the manipulative Fey theme. Drow's Faerie Fire chains naturally off advantage-heavy play. Potent Robe mid-game; Birthright + Mask of Soul Perception for Act 3.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Warlock",
+        "choices": [
+          "Patron: The Archfey",
+          "Cantrips: Eldritch Blast, Friends or Minor Illusion",
+          "Spells: Faerie Fire, Sleep OR Tasha's Hideous Laughter"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Warlock",
+        "choices": [
+          "Invocations: Agonizing Blast (+CHA to EB damage), Repelling Blast (push on hit)",
+          "Spells: Hold Person or Crown of Madness"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Warlock",
+        "choices": [
+          "Pact Boon: Pact of the Chain (sprite familiar \u2014 can cast Invisibility on you) OR Pact of the Tome",
+          "Spells: Hypnotic Pattern \u2014 bread-and-butter CC for this build"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: ASI +2 CHA (\u219218)",
+          "Invocation: Beguiling Influence (Deception + Persuasion) OR Mask of Many Faces (free Disguise Self)",
+          "Spells: Banishment or Dominate Person"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Warlock",
+        "choices": [
+          "Eldritch Blast fires 2 beams",
+          "Spells: Dominate Person or Hold Monster"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Warlock",
+        "choices": [
+          "Misty Escape: when you take damage, use Reaction to turn Invisible and Misty Step (once/Short Rest)",
+          "Invocation: Shroud of Shadow OR One with Shadows",
+          "Spells: Otto's Irresistible Dance or Eyebite"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Warlock",
+        "choices": [
+          "Spells: Forcecage or Hold Monster \u2014 replace any weak early spell"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: ASI +2 CHA (\u219220) OR Resilient CON",
+          "Invocation: Eldritch Mind (Advantage on Concentration saves) OR Devouring Blade",
+          "Spells: any \u2014 Dominate Monster or Power Word: Stun"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Warlock",
+        "choices": [
+          "Invocation: Minions of Chaos (Conjure Elemental once/day)",
+          "Spells: Power Word: Kill or Weird"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Warlock",
+        "choices": [
+          "Eldritch Blast fires 3 beams",
+          "Beguiling Defenses: immune to being Charmed",
+          "Invocation: any"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Warlock",
+        "choices": [
+          "Mystic Arcanum: Forcecage (trap enemies in a cube, no save) OR Etherealness"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Warlock",
+        "choices": [
+          "Feat: Spell Sniper (doubled crit range on spell attacks) OR Alert (+5 Initiative)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "conjuration-wizard",
+    "name": "Conjuration Wizard",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-conjuration-wizard-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Circlet of Blasting, The Protecty Sparkswall, Gloves of Cinder and Sizzle, Disintegrating Night Walkers, Amulet of Misty Step, Ring of Absolute Force, Fetish of Callarduran Smoothhands"
+      ],
+      "2": [
+        "Spellcrux Amulet"
+      ],
+      "3": [
+        "Hood of the Weave, Cloak of the Weave, Robe of the Weave, Quickspell Gloves, Helldusk Boots"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 16,
+        "WIS": 10,
+        "CHA": 8
+      },
+      "races": [
+        {
+          "name": "High Half-Elf",
+          "reason": "Extra cantrip slot is valuable \u2014 grab Minor Illusion or Mage Hand for utility or an extra damage cantrip."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP on every level makes a squishier class meaningfully tankier."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Movement speed helps reposition out of melee."
+        },
+        {
+          "name": "Human",
+          "reason": "Extra skill proficiency and Shield proficiency from background adds survivability."
+        }
+      ],
+      "background": "Sage",
+      "background_skills": [
+        "Arcana",
+        "History"
+      ],
+      "skills": [
+        "Arcana",
+        "History",
+        "Investigation",
+        "Religion"
+      ],
+      "cantrips": [
+        "Fire Bolt",
+        "Minor Illusion",
+        "Mage Hand"
+      ],
+      "spells": [
+        "Magic Missile",
+        "Shield"
+      ]
+    },
+    "blurb": "Full Wizard, School of Conjuration. Conjured creatures persist after concentration ends \u2014 a meaningful advantage for summon-adjacent playstyles. Gear path is identical to other Wizard schools; differentiator is the summon durability. Standard control spell selection otherwise.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Wizard",
+        "choices": [
+          "Cantrips: Fire Bolt, Minor Illusion, Mage Hand",
+          "Spells: Magic Missile, Shield, Mage Armor, Grease, Find Familiar, Thunderwave",
+          "Buy scrolls to expand spell list \u2014 Wizard bonus"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Wizard",
+        "choices": [
+          "Subclass: School of Conjuration",
+          "Conjuration Savant: 50% gold/time discount learning Conjuration spells from scrolls",
+          "Spells: Misty Step, Fog Cloud \u2014 learn via scroll at half cost"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Glyph of Warding, Slow OR Web"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219218)",
+          "Cantrip: any",
+          "Spells: Dimension Door \u2014 useful summoner mobility"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Conjure Elemental (powerful summon), Cloudkill or Telekinesis"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Wizard",
+        "choices": [
+          "Benign Transposition: teleport up to 18m to unoccupied space or swap with willing ally (recharges on casting Conjuration)",
+          "Spells: Disintegrate or Flesh to Stone"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Project Image or upcast Conjure Elemental"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219220)",
+          "Spells: Maze or Telepathy"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Weird or Cloudkill at high slot"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Wizard",
+        "choices": [
+          "Focused Conjuration: concentration can no longer be broken by taking damage while a Conjuration spell is active",
+          "Spells: any \u2014 learn from scrolls"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: any high-level option"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: War Caster (Advantage on Concentration saves \u2014 pairs with Focused Conjuration) OR Alert"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "divination-wizard",
+    "name": "Divination Wizard",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-divination-wizard-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Circlet of Blasting, The Protecty Sparkswall, Gloves of Cinder and Sizzle, Disintegrating Night Walkers, Amulet of Misty Step, Ring of Absolute Force, Fetish of Callarduran Smoothhands"
+      ],
+      "2": [
+        "Spellcrux Amulet"
+      ],
+      "3": [
+        "Hood of the Weave, Cloak of the Weave, Robe of the Weave, Quickspell Gloves, Helldusk Boots"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 16,
+        "WIS": 10,
+        "CHA": 8
+      },
+      "races": [
+        {
+          "name": "High Half-Elf",
+          "reason": "Extra cantrip \u2014 Guidance or Minor Illusion compounds the Divination Wizard's already strong utility focus."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP counteracts the glass cannon tendencies of a full Wizard."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Movement speed for tactical repositioning."
+        },
+        {
+          "name": "Githyanki",
+          "reason": "Astral Knowledge for free skill proficiencies complements the support-oriented Divination school."
+        }
+      ],
+      "background": "Sage",
+      "background_skills": [
+        "Arcana",
+        "History"
+      ],
+      "skills": [
+        "Arcana",
+        "History",
+        "Investigation",
+        "Religion"
+      ],
+      "cantrips": [
+        "Fire Bolt",
+        "Minor Illusion",
+        "Mage Hand"
+      ],
+      "spells": [
+        "Magic Missile",
+        "Shield"
+      ]
+    },
+    "blurb": "Full Wizard, School of Divination. Portent dice (set at long rest) let you replace any attack or save roll with a predetermined result \u2014 auto-success for allies, auto-fail for enemies on demand. The most reliable way to guarantee critical moments in Honor Mode.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Wizard",
+        "choices": [
+          "Cantrips: Fire Bolt, Guidance, Minor Illusion",
+          "Spells: Magic Missile, Shield, Mage Armor, Grease, Thunderwave, Find Familiar"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Wizard",
+        "choices": [
+          "Subclass: School of Divination",
+          "Portent: 2 dice after each Long Rest \u2014 use them to replace ANY d20 roll in the game (attack, save, ability check)"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Fireball or Slow, Counterspell"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219218)",
+          "Cantrip: any",
+          "Spells: Greater Invisibility or Dimension Door"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Hold Monster, Telekinesis or Cloudkill"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Wizard",
+        "choices": [
+          "Expert Divination: regain a lower-level spell slot when you cast a Divination spell of 2nd level or higher",
+          "Spells: Flesh to Stone or Disintegrate"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Wizard",
+        "choices": [
+          "Portent is the most powerful single resource at high play \u2014 two guaranteed d20 outcomes per rest",
+          "Spells: Project Image or Forcecage"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219220)",
+          "Spells: Maze or Telepathy"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Weird or Power Word: Kill"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: any"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: any"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: War Caster (Concentration Advantage) OR Alert (+5 Initiative) OR Resilient CON"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enchantment-wizard",
+    "name": "Enchantment Wizard",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-enchantment-wizard-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Circlet of Blasting, The Protecty Sparkswall, Gloves of Cinder and Sizzle, Disintegrating Night Walkers, Amulet of Misty Step, Ring of Absolute Force, Fetish of Callarduran Smoothhands"
+      ],
+      "2": [
+        "Spellcrux Amulet"
+      ],
+      "3": [
+        "Hood of the Weave, Cloak of the Weave, Robe of the Weave, Quickspell Gloves, Helldusk Boots"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 16,
+        "WIS": 10,
+        "CHA": 8
+      },
+      "races": [
+        {
+          "name": "High Half-Elf",
+          "reason": "Extra cantrip \u2014 Mind Sliver is a natural pick for Enchantment to help land Save-based spells."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP for survivability when enemies resist being charmed and close the gap."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Speed to stay out of reach while your charms take hold."
+        },
+        {
+          "name": "Human",
+          "reason": "Extra skill proficiency fits the social intelligence theme of Enchantment."
+        }
+      ],
+      "background": "Sage",
+      "background_skills": [
+        "Arcana",
+        "History"
+      ],
+      "skills": [
+        "Arcana",
+        "History",
+        "Investigation",
+        "Religion"
+      ],
+      "cantrips": [
+        "Mind Sliver",
+        "Minor Illusion",
+        "Mage Hand"
+      ],
+      "spells": [
+        "Magic Missile",
+        "Shield"
+      ]
+    },
+    "blurb": "Full Wizard, School of Enchantment. Hypnotic Gaze and charm-based control. Instinctive Charm redirects enemy attacks to another target as a reaction. Mind Sliver cantrip reduces enemy saving throws, helping your charm spells land. Unique defensive reaction options no other school gets.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Wizard",
+        "choices": [
+          "Cantrips: Fire Bolt, Friends, Minor Illusion",
+          "Spells: Tasha's Hideous Laughter, Sleep, Magic Missile, Shield, Mage Armor, Charm Person"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Wizard",
+        "choices": [
+          "Subclass: School of Enchantment",
+          "Hypnotic Gaze: Charm and Incapacitate an adjacent creature (action, no spell slot)"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Slow or Haste, Counterspell"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219218)",
+          "Cantrip: any",
+          "Spells: Greater Invisibility or Dimension Door"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Hold Monster, Dominate Person \u2014 core Enchantment CC spells"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Wizard",
+        "choices": [
+          "Instinctive Charm: reaction to make an attacker redirect their attack to another creature nearby",
+          "Spells: Otto's Irresistible Dance or Eyebite"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Dominate Monster or Feeblemind"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219220)",
+          "Spells: Power Word: Stun"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Power Word: Kill or Weird"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Wizard",
+        "choices": [
+          "Split Enchantment: single-target Enchantment spells now hit TWO creatures \u2014 Charm Person, Slow, etc. affect two enemies",
+          "Spells: any"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: any"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: War Caster (Advantage on Concentration saves) OR Alert"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "transmutation-wizard",
+    "name": "Transmutation Wizard",
+    "tier": "Community",
+    "source_url": "https://alcasthq.com/bg3-transmutation-wizard-build/",
+    "classes": [],
+    "gear_by_act": {
+      "1": [
+        "Circlet of Blasting, The Protecty Sparkswall, Gloves of Cinder and Sizzle, Disintegrating Night Walkers, Amulet of Misty Step, Ring of Absolute Force, Fetish of Callarduran Smoothhands"
+      ],
+      "2": [
+        "Spellcrux Amulet"
+      ],
+      "3": [
+        "Hood of the Weave, Cloak of the Weave, Robe of the Weave, Quickspell Gloves, Helldusk Boots"
+      ]
+    },
+    "char_create": {
+      "ability_scores": {
+        "STR": 8,
+        "DEX": 16,
+        "CON": 14,
+        "INT": 16,
+        "WIS": 10,
+        "CHA": 8
+      },
+      "races": [
+        {
+          "name": "High Half-Elf",
+          "reason": "Extra cantrip fills out a toolkit that already emphasizes versatility over specialization."
+        },
+        {
+          "name": "Gold Dwarf",
+          "reason": "Bonus HP is always welcome on a class with no armor proficiency."
+        },
+        {
+          "name": "Wood Elf",
+          "reason": "Speed helps a support-oriented subclass get to where they're needed."
+        },
+        {
+          "name": "Human",
+          "reason": "Shield proficiency is a meaningful survivability option without a feat investment."
+        }
+      ],
+      "background": "Sage",
+      "background_skills": [
+        "Arcana",
+        "History"
+      ],
+      "skills": [
+        "Arcana",
+        "History",
+        "Investigation",
+        "Religion"
+      ],
+      "cantrips": [
+        "Fire Bolt",
+        "Minor Illusion",
+        "Mage Hand"
+      ],
+      "spells": [
+        "Magic Missile",
+        "Shield"
+      ]
+    },
+    "blurb": "Full Wizard, School of Transmutation. Experimental Alchemy converts potions into more potions. Polymorph, Fly, and Enlarge/Reduce give strong battlefield utility. Less damage-focused than Evocation; rewards players who enjoy buffing allies and reshaping encounters.",
+    "level_plan": [
+      {
+        "level": 1,
+        "cls": "Wizard",
+        "choices": [
+          "Cantrips: Fire Bolt, Acid Splash, Minor Illusion",
+          "Spells: Magic Missile, Shield, Mage Armor, Grease, Enhance Leap, Find Familiar"
+        ]
+      },
+      {
+        "level": 2,
+        "cls": "Wizard",
+        "choices": [
+          "Subclass: School of Transmutation",
+          "Transmutation Savant: 50% discount learning Transmutation spells from scrolls",
+          "Minor Alchemy: transform common metals temporarily into gold or other materials"
+        ]
+      },
+      {
+        "level": 3,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Haste (Concentration \u2014 major buff for allies), Slow or Counterspell"
+        ]
+      },
+      {
+        "level": 4,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219218)",
+          "Cantrip: any",
+          "Transmuter's Stone: create a magic stone to grant one benefit \u2014 Darkvision, Proficiency in CON saves, extra speed, or damage resistance",
+          "Spells: Polymorph or Greater Invisibility"
+        ]
+      },
+      {
+        "level": 5,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Hold Monster, Telekinesis or Cloudkill"
+        ]
+      },
+      {
+        "level": 6,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Disintegrate or Flesh to Stone (Transmutation synergy)",
+          "Transmuter's Stone holder gains resistance to the chosen damage type"
+        ]
+      },
+      {
+        "level": 7,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: Project Image or Reverse Gravity"
+        ]
+      },
+      {
+        "level": 8,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: ASI +2 INT (\u219220)",
+          "Spells: Power Word: Stun or Maze"
+        ]
+      },
+      {
+        "level": 9,
+        "cls": "Wizard",
+        "choices": [
+          "Shapechanger: Polymorph into a beast as a Bonus Action (once/Short Rest)",
+          "Spells: Weird or Power Word: Kill"
+        ]
+      },
+      {
+        "level": 10,
+        "cls": "Wizard",
+        "choices": [
+          "Master Transmuter: consume the Transmuter's Stone for one powerful effect \u2014 revive an ally, remove disease/curse/poison, or transform matter",
+          "Spells: any"
+        ]
+      },
+      {
+        "level": 11,
+        "cls": "Wizard",
+        "choices": [
+          "Spells: any high-level option"
+        ]
+      },
+      {
+        "level": 12,
+        "cls": "Wizard",
+        "choices": [
+          "Feat: War Caster (Advantage on Concentration saves \u2014 critical for Haste and Polymorph) OR Alert OR Lucky"
+        ]
+      }
+    ]
+  }
+]

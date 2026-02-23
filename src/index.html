@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tav — BG3 Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+
+    <header class="site-header">
+      <div class="header-rule"></div>
+      <h1 class="site-title">TAV</h1>
+      <p class="site-subtitle">Your BG3 Companion</p>
+      <div class="header-rule"></div>
+    </header>
+
+    <nav class="tab-nav" role="tablist" aria-label="Companion tools">
+      <button class="tab-btn active" data-tab="gear" role="tab" aria-selected="true" aria-controls="tab-gear">
+        Gear Finder
+      </button>
+      <button class="tab-btn" data-tab="party" role="tab" aria-selected="false" aria-controls="tab-party">
+        Party Advisor
+      </button>
+      <button class="tab-btn" data-tab="build" role="tab" aria-selected="false" aria-controls="tab-build">
+        Build Planner
+      </button>
+    </nav>
+
+    <main class="tab-panels">
+
+      <!-- ─── TAB 1: Gear Finder ─── -->
+      <section id="tab-gear" class="tab-panel active" role="tabpanel">
+
+        <div class="filters-bar">
+          <div class="filter-group">
+            <span class="filter-label">Act</span>
+            <div class="act-buttons">
+              <button class="act-btn active" data-group="gear" data-act="1">I</button>
+              <button class="act-btn"        data-group="gear" data-act="2">II</button>
+              <button class="act-btn"        data-group="gear" data-act="3">III</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="slot-filter">Slot</label>
+            <select id="slot-filter" class="filter-select">
+              <option value="">All Slots</option>
+              <option value="helmet">Helmet</option>
+              <option value="armour">Armour</option>
+              <option value="gloves">Gloves</option>
+              <option value="boots">Boots</option>
+              <option value="amulet">Amulet</option>
+              <option value="ring">Ring</option>
+              <option value="weapon">Weapon</option>
+              <option value="shield">Shield</option>
+              <option value="cloak">Cloak</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label" for="class-filter">Class</label>
+            <select id="class-filter" class="filter-select">
+              <option value="">All Builds</option>
+              <option>Barbarian</option>
+              <option>Bard</option>
+              <option>Cleric</option>
+              <option>Druid</option>
+              <option>Fighter</option>
+              <option>Monk</option>
+              <option>Paladin</option>
+              <option>Ranger</option>
+              <option>Rogue</option>
+              <option>Sorcerer</option>
+              <option>Warlock</option>
+              <option>Wizard</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-group--grow">
+            <label class="filter-label" for="gear-search">Search</label>
+            <input type="search" id="gear-search" class="filter-input"
+                   placeholder="name or effect keyword…" autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div id="gear-results" class="gear-results">
+          <div class="empty-state">
+            <div class="empty-state__rune">⚔</div>
+            <p class="empty-state__text">Awaiting the vaults of Act I…</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ─── TAB 2: Party Advisor ─── -->
+      <section id="tab-party" class="tab-panel" role="tabpanel">
+        <div class="advisor-wrap">
+          <div class="advisor-form">
+            <h2 class="form-heading">Your Party</h2>
+
+            <div class="party-rows">
+              <div class="party-row">
+                <span class="party-label party-label--you">You</span>
+                <div class="party-selects">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+              </div>
+              <div class="party-row">
+                <span class="party-label">Ally 1</span>
+                <div class="party-selects">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+              </div>
+              <div class="party-row">
+                <span class="party-label">Ally 2</span>
+                <div class="party-selects">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+              </div>
+              <div class="party-row">
+                <span class="party-label">Ally 3</span>
+                <div class="party-selects">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <span class="filter-label">Current Act</span>
+              <div class="act-buttons">
+                <button class="act-btn active" data-group="party" data-act="1">I</button>
+                <button class="act-btn"        data-group="party" data-act="2">II</button>
+                <button class="act-btn"        data-group="party" data-act="3">III</button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="party-notes">
+                Context <span class="form-hint">(optional)</span>
+              </label>
+              <textarea id="party-notes" class="form-textarea"
+                        placeholder="e.g. I want frontline melee, we need more AoE, I hate managing Concentration…"
+                        rows="3"></textarea>
+            </div>
+
+            <div class="cta-block">
+              <div class="cta-buttons">
+                <button id="party-analyze-btn" class="cta-btn">Analyze Party</button>
+                <button id="party-copy-btn" class="cta-btn cta-btn--secondary">Copy Prompt</button>
+              </div>
+              <p class="cta-hint">Analyze finds role gaps. Copy Prompt sends to Claude for deeper advice.</p>
+            </div>
+            <div id="party-analysis" class="party-analysis" hidden></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── TAB 3: Build Planner ─── -->
+      <section id="tab-build" class="tab-panel" role="tabpanel">
+        <div class="advisor-wrap advisor-wrap--split">
+
+          <div class="advisor-form">
+            <h2 class="form-heading">Plan Your Build</h2>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-class">Class</label>
+              <select id="build-class" class="filter-select">
+                <option value="">Choose a class…</option>
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Warlock</option>
+                <option>Wizard</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-subclass">
+                Subclass <span class="form-hint">(select a class first)</span>
+              </label>
+              <select id="build-subclass" class="filter-select" disabled>
+                <option value="">Select a class first…</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-multiclass">
+                Multiclass dip <span class="form-hint">(optional)</span>
+              </label>
+              <input type="text" id="build-multiclass" class="form-input"
+                     placeholder="e.g. 2 levels Warlock, 5 Fighter for Extra Attack…" autocomplete="off">
+            </div>
+
+            <div class="form-row">
+              <span class="filter-label">Current Act</span>
+              <div class="act-buttons">
+                <button class="act-btn active" data-group="build" data-act="1">I</button>
+                <button class="act-btn"        data-group="build" data-act="2">II</button>
+                <button class="act-btn"        data-group="build" data-act="3">III</button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-gear">
+                Notable gear you have <span class="form-hint">(optional)</span>
+              </label>
+              <textarea id="build-gear" class="form-textarea"
+                        placeholder="e.g. Spellsparkler, Boots of Speed, Markoheshkir…"
+                        rows="2"></textarea>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-notes">
+                Goals or constraints <span class="form-hint">(optional)</span>
+              </label>
+              <textarea id="build-notes" class="form-textarea"
+                        placeholder="e.g. I want burst damage, I hate Concentration, I like summons…"
+                        rows="2"></textarea>
+            </div>
+
+            <div class="cta-block">
+              <button id="build-copy-btn" class="cta-btn">Copy Prompt for Tav</button>
+              <p class="cta-hint">Paste into Claude Code — I'll give you a full level 1–12 path built around your situation.</p>
+            </div>
+
+            <div id="act1-route" class="act1-route" hidden>
+              <h3 class="act1-route__heading">Act I — Route Priorities</h3>
+              <p class="act1-route__hint">Items to grab as you go, in story order.</p>
+              <div id="act1-route-list" class="act1-route__list"></div>
+            </div>
+          </div>
+
+          <aside id="build-templates" class="build-sidebar">
+            <h3 class="sidebar-title">Matching Builds</h3>
+            <p class="sidebar-hint">Select a class above to see curated templates.</p>
+          </aside>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

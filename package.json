@@ -1,0 +1,14 @@
+{
+  "name": "tav",
+  "version": "0.1.0",
+  "description": "BG3 companion tool — builds, gear, level-up advice backed by wiki data",
+  "private": true,
+  "scripts": {
+    "scrape": "node scraper/wiki-scraper.js",
+    "dev": "npx serve . -p 3456",
+    "sync": "node scraper/sync-server.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

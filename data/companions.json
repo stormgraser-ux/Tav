@@ -1,0 +1,12 @@
+[
+  { "id": "shadowheart", "name": "Shadowheart", "class": "Cleric",    "roles": ["healer","support"],      "acts": [1,2,3], "keywords": ["shadowheart"] },
+  { "id": "astarion",    "name": "Astarion",    "class": "Rogue",     "roles": ["striker"],                "acts": [1,2,3], "keywords": ["astarion"] },
+  { "id": "gale",        "name": "Gale",         "class": "Wizard",    "roles": ["blaster","controller"],   "acts": [1,2,3], "keywords": ["gale"] },
+  { "id": "laezel",      "name": "Lae'zel",      "class": "Fighter",   "roles": ["tank","striker"],         "acts": [1,2,3], "keywords": ["laezel","la'ezel","lae'zel"] },
+  { "id": "wyll",        "name": "Wyll",          "class": "Warlock",   "roles": ["blaster","striker"],      "acts": [1,2,3], "keywords": ["wyll"] },
+  { "id": "karlach",     "name": "Karlach",       "class": "Barbarian", "roles": ["tank","striker"],         "acts": [1,2,3], "keywords": ["karlach"] },
+  { "id": "halsin",      "name": "Halsin",        "class": "Druid",     "roles": ["healer","controller"],    "acts": [2,3],   "keywords": ["halsin"] },
+  { "id": "jaheira",     "name": "Jaheira",       "class": "Druid",     "roles": ["controller","support"],   "acts": [2,3],   "keywords": ["jaheira"] },
+  { "id": "minthara",    "name": "Minthara",      "class": "Paladin",   "roles": ["tank","support"],         "acts": [2,3],   "keywords": ["minthara"] },
+  { "id": "minsc",       "name": "Minsc",         "class": "Ranger",    "roles": ["striker"],                "acts": [3],     "keywords": ["minsc"] }
+]

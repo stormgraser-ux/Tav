@@ -1,0 +1,2142 @@
+[
+  {
+    "id": "circlet-of-fire",
+    "name": "Circlet of Fire",
+    "slot": "helmet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Fiery Return: When you deal ⁠Fire damage with a levelled spell, you  Burn yourself and gain an additional  Bonus Action this round."
+    ],
+    "stats": {},
+    "location": {
+      "description": "This item is not present in the launch version of the game. Its effects have largely been replicated by the Pyroquickness Hat found in Act Three.",
+      "area": "Pyroquickness Hat",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Circlet_of_Fire"
+  },
+  {
+    "id": "enforcer-helmet",
+    "name": "Enforcer Helmet",
+    "slot": "helmet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Constitution  Saving Throws +1",
+      "Rejuvenating Takedown: Whenever the wearer knocks a creature unconscious, the wearer regains 1d6⁠⁠hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "* Not accessible through normal gameplay, but can still be accessed via third party tools.",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Enforcer_Helmet"
+  },
+  {
+    "id": "hat-of-uproarious-laughter",
+    "name": "Hat Of Uproarious Laughter",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Slippery Slapsticky: When knocked  Prone, hostile creature with an Intelligence of 5 or more within 9 m (30 ft) of you must succeed a Wisdom  Saving Throw or become stricken with  Laughter."
+    ],
+    "stats": {},
+    "location": {
+      "description": "* Not accessible through normal gameplay, but can still be accessed via third party tools.",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hat_Of_Uproarious_Laughter"
+  },
+  {
+    "id": "headband-of-intellect",
+    "name": "Headband of Intellect",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Set the wearer's  Intelligence score to 19. The enchantment has no effect if their Intelligence score is higher without it."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Headband_of_Intellect"
+  },
+  {
+    "id": "helm-of-arcane-gate",
+    "name": "Helm of Arcane Gate",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Gate ( + ): Cast as a level 6 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Not accessible through normal gameplay, but can still be accessed via third party tools.",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Helm_of_Arcane_Gate"
+  },
+  {
+    "id": "mask-of-the-shapeshifter",
+    "name": "Mask of the Shapeshifter",
+    "slot": "helmet",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Disguise Self (): Cast as a level 1 spell at will."
+    ],
+    "stats": {},
+    "location": {
+      "description": "In the Traveller's Chest at the Campsite",
+      "area": "Traveller's Chest",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Mask_of_the_Shapeshifter"
+  },
+  {
+    "id": "tightening-orbit-helm",
+    "name": "Tightening Orbit Helm",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Constitution  Saving Throws +1",
+      "Tightening Orbit (): Cast as a level 3 spell ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Tightening_Orbit_Helm"
+  },
+  {
+    "id": "leather-armour-1",
+    "name": "Leather Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Stealthy: Gain a +1 bonus to Stealth Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 4 and 6",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Leather_Armour_%2B1"
+  },
+  {
+    "id": "leather-armour-2",
+    "name": "Leather Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Stealthy: Gain a +1 bonus to Stealth Checks.",
+      "Balance: Gain a +1 bonus to Dexterity  Saving throws and  Ability checks"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 7 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Leather_Armour_%2B2"
+  },
+  {
+    "id": "padded-armour-1",
+    "name": "Padded Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Padding: You take 1 less ⁠Bludgeoning damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 2 and 4",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Padded_Armour_%2B1"
+  },
+  {
+    "id": "padded-armour-2",
+    "name": "Padded Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Padding: You take 2 less ⁠Bludgeoning damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 5 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Padded_Armour_%2B2"
+  },
+  {
+    "id": "studded-leather-armour-1",
+    "name": "Studded Leather Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Padding: You take 1 less ⁠Bludgeoning damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 6 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Studded_Leather_Armour_%2B1"
+  },
+  {
+    "id": "studded-leather-armour-2",
+    "name": "Studded Leather Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Padding: You take 1 less ⁠Bludgeoning damage.",
+      "Ambusher: Gain a +1 bonus to  Initiative Rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 9 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Studded_Leather_Armour_%2B2"
+  },
+  {
+    "id": "torment-drinker-armour",
+    "name": "Torment Drinker Armour",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Bolstering Critical: When scoring a Critical Hit or killing a hostile creature, wearer gains  15 temporary hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Torment_Drinker_Armour"
+  },
+  {
+    "id": "breastplate-2",
+    "name": "Breastplate +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Balance: Gain a +1 bonus to Dexterity  Saving throws and  Ability checks"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 9 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Breastplate_%2B2"
+  },
+  {
+    "id": "chain-shirt-1",
+    "name": "Chain Shirt +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player character is between levels 2 and 4",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Chain_Shirt_%2B1"
+  },
+  {
+    "id": "chain-shirt-2",
+    "name": "Chain Shirt +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Balance: Gain a +1 bonus to Dexterity  Saving throws and  Ability checks"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 5 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Chain_Shirt_%2B2"
+  },
+  {
+    "id": "half-plate-armour-1",
+    "name": "Half Plate Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 6 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Half_Plate_Armour_%2B1"
+  },
+  {
+    "id": "half-plate-armour-2",
+    "name": "Half Plate Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 2 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 9 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Half_Plate_Armour_%2B2"
+  },
+  {
+    "id": "hide-armour-1",
+    "name": "Hide Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Balance: Gain a +1 bonus to Dexterity  Saving throws and  Ability checks"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 2 and 4",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hide_Armour_%2B1"
+  },
+  {
+    "id": "hide-armour-2",
+    "name": "Hide Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Balance: Gain a +1 bonus to Dexterity  Saving throws and  Ability checks",
+      "Ambusher: Gain a +1 bonus to  Initiative Rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player character is level 5 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hide_Armour_%2B2"
+  },
+  {
+    "id": "ironwood-breastplate",
+    "name": "Ironwood Breastplate",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ironwood_Breastplate"
+  },
+  {
+    "id": "nightsingers-half-plate",
+    "name": "Nightsinger's Half-Plate",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 2 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Nightsinger%27s_Half-Plate"
+  },
+  {
+    "id": "robust-chain-shirt",
+    "name": "Robust Chain Shirt",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Piercing Counter: When the wearer has 50% hit points or less and is damaged by a melee attack, they deal 1d4⁠⁠Piercing to the attacker."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Robust_Chain_Shirt"
+  },
+  {
+    "id": "scale-mail-1",
+    "name": "Scale Mail +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 4 and 6",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Scale_Mail_%2B1"
+  },
+  {
+    "id": "scale-mail-2",
+    "name": "Scale Mail +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Ambusher: Gain a +1 bonus to  Initiative Rolls.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player character is level 7 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Scale_Mail_%2B2"
+  },
+  {
+    "id": "scale-mail-armour-1",
+    "name": "Scale Mail Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Scale_Mail_Armour_%2B1"
+  },
+  {
+    "id": "chain-mail-1",
+    "name": "Chain Mail +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 4 and 6",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Chain_Mail_%2B1"
+  },
+  {
+    "id": "chain-mail-2",
+    "name": "Chain Mail +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 2 less ⁠Slashing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 7 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Chain_Mail_%2B2"
+  },
+  {
+    "id": "nightsongs-armour",
+    "name": "Nightsong's Armour",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Worn by Aylin",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Nightsong%27s_Armour"
+  },
+  {
+    "id": "oathbreaker-knight-armour",
+    "name": "Oathbreaker Knight Armour",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Worn by Oathbreaker Knight",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Oathbreaker_Knight_Armour"
+  },
+  {
+    "id": "plate-armour-1",
+    "name": "Plate Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player character is between levels 8 and 10",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Plate_Armour_%2B1"
+  },
+  {
+    "id": "plate-armour-2",
+    "name": "Plate Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Exceptional Plate: You take 2 less damage from ⁠Slashing, ⁠Piercing and ⁠Bludgeoning sources.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 11 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Plate_Armour_%2B2"
+  },
+  {
+    "id": "ring-mail-armour-1",
+    "name": "Ring Mail Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Body Aid: Gain a +1 bonus to Strength  Saving throws and  Ability checks.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 2 and 4",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_Mail_Armour_%2B1"
+  },
+  {
+    "id": "ring-mail-armour-2",
+    "name": "Ring Mail Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Material: You take 1 less ⁠Slashing damage.",
+      "Body Aid: Gain a +1 bonus to Strength  Saving throws and  Ability checks.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 5 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_Mail_Armour_%2B2"
+  },
+  {
+    "id": "sarevoks-wretched-armour",
+    "name": "Sarevok's Wretched Armour",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Magical Plate: All incoming damage is reduced by 2.",
+      "Withering Barrier: When you deal ⁠Necrotic damage, you gain  1d6 temporary hit points. If a melee attack hits you while you still have temporary hit points, you deal 1d6⁠⁠Piercing to all creatures within 3 m / 10 ft."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sarevok%27s_Wretched_Armour"
+  },
+  {
+    "id": "splint-armour-1",
+    "name": "Splint Armour +1",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is between levels 6 and 8",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Splint_Armour_%2B1"
+  },
+  {
+    "id": "splint-armour-2",
+    "name": "Splint Armour +2",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Superior Plate: You take 1 less ⁠Piercing damage.",
+      "Body Aid: Gain a +1 bonus to Strength  Saving throws and  Ability checks.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by traders using the levelled magic armour table if the player is level 9 or above",
+      "area": "levelled magic armour table",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Splint_Armour_%2B2"
+  },
+  {
+    "id": "deadly-channeller-gloves",
+    "name": "Deadly Channeller Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Critical ( + ): Cast as a level 1 spell at will."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Not accessible through normal gameplay, but can still be accessed via third party tools.",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Deadly_Channeller_Gloves"
+  },
+  {
+    "id": "gloves-of-succour",
+    "name": "Gloves of Succour",
+    "slot": "gloves",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Strength  Saving Throws +1",
+      "Warding Hands: When you use your Channel Oath Charge spells, you gain  Heroism."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Gloves_of_Succour"
+  },
+  {
+    "id": "netherstone-studded-gauntlet",
+    "name": "Netherstone-Studded Gauntlet",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Command ( + ): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4⁠⁠Force damage.",
+      "High Spellcasting: You gain a +1 bonus to Spell Save DC."
+    ],
+    "stats": {},
+    "location": {
+      "description": "This item is only available to Enver Gortash. When looted from him it breaks into Gauntlet of the Tyrant and Gortash's Netherstone",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Netherstone-Studded_Gauntlet"
+  },
+  {
+    "id": "pale-widow-gloves",
+    "name": "Pale Widow Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Ensnaring Strands (): Cast as a level 1 spell ( Recharge: Short rest.)",
+      "Pulling Web (): Cast as a cantrip ( Recharge: Long rest.)",
+      "Web ( + ): Cast as a level 1 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Pale_Widow_Gloves"
+  },
+  {
+    "id": "the-fork-lightning-fingers",
+    "name": "The Fork-Lightning Fingers",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Lightning Bolt ( + ): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Lightning Strikes: Your unarmed attacks deal an additional 1d4⁠⁠Lightning."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Fork-Lightning_Fingers"
+  },
+  {
+    "id": "vampiric-gloves",
+    "name": "Vampiric Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Vampiric Touch ( + ): Cast as a level 3 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Vampiric_Gloves"
+  },
+  {
+    "id": "briskwind-boots",
+    "name": "Briskwind Boots",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Critical Swiftness: After scoring a Critical Hit or killing a hostile creature, movement speed is restored to maximum."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Briskwind_Boots"
+  },
+  {
+    "id": "featherlight-boots",
+    "name": "Featherlight Boots",
+    "slot": "boots",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Burst of Speed: When the wearer has 50% Hit Points or less, their Movement Speed is increased by 3 m (10 ft)."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Featherlight_Boots"
+  },
+  {
+    "id": "gargoyle-boots",
+    "name": "Gargoyle Boots",
+    "slot": "boots",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dexterity  Saving Throws +2",
+      "Gargoyle's Countenance (): Cast as a level 4 spell ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Gargoyle_Boots"
+  },
+  {
+    "id": "shadowstep-boots",
+    "name": "Shadowstep Boots",
+    "slot": "boots",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Shadow Teleportation (): Teleport to an unoccupied, obscured spot. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shadowstep_Boots"
+  },
+  {
+    "id": "tenacious-boots",
+    "name": "Tenacious Boots",
+    "slot": "boots",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Stand Like Stone: Spend 1 turn of  Force Conduit to become a strong bulwark that cannot be moved unwillingly ( Recharge: Short rest.",
+      "Athletics +1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Tenacious_Boots"
+  },
+  {
+    "id": "wavemothers-boots",
+    "name": "Wavemother's Boots",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Watery Rejuvenation: If the wearer is standing in a  Water surface at the start of their turn, they heal 1d4⁠⁠hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Wavemother%27s_Boots"
+  },
+  {
+    "id": "dauntless-amulet",
+    "name": "Dauntless Amulet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Intelligence  Saving Throws +1",
+      "Dauntless: You can't be  Frightened or afflicted with other emotion-altering conditions."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Dauntless_Amulet"
+  },
+  {
+    "id": "ilmaters-aid",
+    "name": "Ilmater's Aid",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Strength in Suffering: Non-Cantrip spells deal an additional 1d4⁠⁠Force damage when the wearer drops to half their hit points or lower."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ilmater%27s_Aid"
+  },
+  {
+    "id": "kruznabirs-asylum-amulet",
+    "name": "Kruznabir's Asylum Amulet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Crown of Madness ( + ): Cast as a level 2 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Kruznabir%27s_Asylum_Amulet"
+  },
+  {
+    "id": "lofty-sorcerers-amulet",
+    "name": "Lofty Sorcerer's Amulet",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Lofty Sorcery: Grants an additional sorcery point to the wearer, which is restored on long rest along with your normal sorcery points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Lofty_Sorcerer%27s_Amulet"
+  },
+  {
+    "id": "scarab-of-protection",
+    "name": "Scarab of Protection",
+    "slot": "amulet",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Spell Protection: You have  Advantage on  Saving throws against spells.",
+      "Necromantic Evasion: When you fail a  Saving throw against necromancy spells or spells cast by undead foes, you can use your reaction to succeed instead."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Scarab_of_Protection"
+  },
+  {
+    "id": "synaptic-needle-amulet",
+    "name": "Synaptic Needle Amulet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Mind Tax (): Cleave into a  Charmed or  Frightened foe's brain tissue and invigorate your body. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Synaptic_Needle_Amulet"
+  },
+  {
+    "id": "treacleflow-amulet",
+    "name": "Treacleflow Amulet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Rampart Aura: Costs  Force Conduit to remain active. All entities with or in this aura have their movement speed halved."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Treacleflow_Amulet"
+  },
+  {
+    "id": "wakeful-amulet",
+    "name": "Wakeful Amulet",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Wakefulness: You can't be unwillingly put to  Sleep."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Wakeful_Amulet"
+  },
+  {
+    "id": "a-sparking-promise",
+    "name": "A Sparking Promise",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Ensnaring Shock (): Cast as a cantrip ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/A_Sparking_Promise"
+  },
+  {
+    "id": "absolutes-smite",
+    "name": "Absolute's Smite",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Searing Smite ( +  + ): Cast as a level 1 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Absolute%27s_Smite"
+  },
+  {
+    "id": "hags-ring",
+    "name": "Hag's Ring",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Vicious Mockery (): Cast as a cantrip at will."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hag%27s_Ring"
+  },
+  {
+    "id": "ring-of-beguiling",
+    "name": "Ring of Beguiling",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Charm Person ( + ): Cast as a level 1 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Beguiling"
+  },
+  {
+    "id": "ring-of-crabsight",
+    "name": "Ring of Crabsight",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Perception +2"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Crabsight"
+  },
+  {
+    "id": "ring-of-fire",
+    "name": "Ring of Fire",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Burning Fury: When dealing ⁠Fire damage, the wearer deals an additional 1⁠⁠Fire."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Fire"
+  },
+  {
+    "id": "ring-of-restorative-gravity",
+    "name": "Ring of Restorative Gravity",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Saviour's Allure: You restore an additional 2⁠⁠hit points every time you heal another creature."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Restorative_Gravity"
+  },
+  {
+    "id": "sandthiefs-ring",
+    "name": "Sandthief's Ring",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Invisibility ( + ): Cast as a level 1 spell ( Recharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sandthief%27s_Ring"
+  },
+  {
+    "id": "arcane-absorption-dagger",
+    "name": "Arcane Absorption Dagger",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Absorption: When you kill an enemy with a melee attack, regain one of your spent 1st Level spell slots.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Arcane_Absorption_Dagger"
+  },
+  {
+    "id": "blood-bound-blade",
+    "name": "Blood-Bound Blade",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "This blade's magical powers only function if it is bound to an Eldritch Knight or is a Warlock's Pact Weapon.",
+      "Favoured Weapon: This weapon has a +1 bonus to damage and  Attack rolls.",
+      "Synchronicity: This weapon deals additional damage equal to your Proficiency Bonus.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blood-Bound_Blade"
+  },
+  {
+    "id": "combination-axe",
+    "name": "Combination Axe",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Critical Virtuoso: When you score a Critical Hit you can spend a  Bonus Action to make an additional attack.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Maiming Strike (): Possibly  Maims your target. They can't move. ( Recharge: Short rest.)",
+      "Press the Advantage (): After scoring a critical hit, use your  Bonus Action to make an additional attack."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Combination_Axe"
+  },
+  {
+    "id": "dagger-of-shar",
+    "name": "Dagger of Shar",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Grip of Shadows: Deals an additional 1d6⁠⁠Necrotic damage if the target is not standing in sunlight.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Edge of Darkness (): Create a cloud of Darkness while you attack. [See Notes] ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Dagger_of_Shar"
+  },
+  {
+    "id": "devotees-mace",
+    "name": "Devotee's Mace",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Healing Incense Aura (): Emanating a soothing aura, You and nearby allies regain 1d4⁠⁠Hit Points at the start of your turn ( Recharge: Long rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Obtained from casting the Arm Thy Servant variant of Divine Intervention. Once the party is level 10+, they can hire a cleric, have them cast Arm Thy Servant, then trade this weapon to another party member.",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Devotee%27s_Mace"
+  },
+  {
+    "id": "doom-axe",
+    "name": "Doom Axe",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Edge of Terror: Each strike fills the target with a chilling dread that prevents it from regaining hit points. Undead creatures also get  Disadvantage on  Attack rolls.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Prepare (): Spend 6 m / 20 ft of your movement to deal an additional Strength modifier⁠⁠PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Doom_Axe"
+  },
+  {
+    "id": "enforcer-club",
+    "name": "Enforcer Club",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Non-Lethality: This weapon deals only Non-Lethal Damage.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Enforcer_Club"
+  },
+  {
+    "id": "executioner-sword",
+    "name": "Executioner Sword",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Liberated Spellcasting: When you kill a creature, you can cast a Level 1 spell without expending a spell slot.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Executioner_Sword"
+  },
+  {
+    "id": "exterminators-axe",
+    "name": "Exterminator's Axe",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Scourge of Pests: Deals an additional 1d6⁠⁠Fire damage to Plants, Myconids[See: Bugs], and Small creatures.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Prepare (): Spend 6 m / 20 ft of your movement to deal an additional Strength modifier⁠⁠PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Decrepit Village X: 14 Y: -196: Carried by Gekh Coal",
+      "area": "Decrepit Village",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Exterminator%27s_Axe"
+  },
+  {
+    "id": "githyanki-longsword-psionic",
+    "name": "Githyanki Longsword (Psionic)",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Githborn Psionic Weapon: When wielded by a githyanki this weapon deals an additional 1d4⁠⁠Psychic damage.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Githyanki_Longsword_(Psionic)"
+  },
+  {
+    "id": "goblinbane-dagger",
+    "name": "Goblinbane Dagger",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Goblin's Undoing: Goblins have  Disadvantage on  Attack rolls against the wielder.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Goblinbane_Dagger"
+  },
+  {
+    "id": "infernal-longsword",
+    "name": "Infernal Longsword",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Infernal Weapon: On a hit, this weapon deals an additional 3⁠⁠Poison damage and can possibly  Poison its target.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Longsword"
+  },
+  {
+    "id": "infernal-mace-uncommon",
+    "name": "Infernal Mace (Uncommon)",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Infernal Weapon: On a hit, this weapon deals an additional 3⁠⁠Poison damage and can possibly  Poison its target.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Felogyr's Fireworks: Carried by Black Gauntlets of Bane Uva as well as Fists of Bane Hyrriet, and Volgu Drak",
+      "area": "Felogyr's Fireworks",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Mace_(Uncommon)"
+  },
+  {
+    "id": "infernal-warhammer",
+    "name": "Infernal Warhammer",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Infernal Weapon: On a hit, this weapon deals an additional 3⁠⁠Poison damage and can possibly  Poison its target.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Warhammer"
+  },
+  {
+    "id": "magical-hand-crossbow",
+    "name": "Magical Hand Crossbow",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Cunning Combo: When you shoot a target at close range, you can make an additional melee attack against it as a  Reaction.",
+      "Piercing Shot (): Deal regular damage and possibly inflict  Gaping Wounds which cause extra damage on attacks. ( Recharge: Short rest.)",
+      "Mobile Shot (): After using  Dash or  Disengage this turn, you can make a ranged attack as a bonus action. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Magical_Hand_Crossbow"
+  },
+  {
+    "id": "moonblade",
+    "name": "Moonblade",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Melee Attack +1",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Moonblade"
+  },
+  {
+    "id": "murderous-cut",
+    "name": "Murderous Cut",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Prey Upon the Weak: This weapon deals an additional 1d4⁠⁠Piercing damage against targets with 50% of their hit points or fewer.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Carried by several Bhaal cultists throughout Act Three",
+      "area": "Act Three",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Murderous_Cut"
+  },
+  {
+    "id": "pale-oak",
+    "name": "Pale Oak",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Faithwarden's Vines (): Cast as a level 1 spell ( Recharge: Long rest.)",
+      "Faithwarden's Stride: Druidic vines cannot  Entangled you and do not count as difficult terrain.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Inner Sanctum X: -461 Y: -22: Obtained from Rath or Kagha",
+      "area": "Inner Sanctum",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Pale_Oak"
+  },
+  {
+    "id": "pelorsun-blade",
+    "name": "Pelorsun Blade",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Undead Bane: Attack rolls with this weapon have  Advantage against Undead.[See: Bugs]",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cazador's Dungeon X: -1928 Y: 852: Under a dirt mound, inside a trapped rosewood casket (the casket is only revealed after DC 15 Perception Check)",
+      "area": "Cazador's Dungeon",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Pelorsun_Blade"
+  },
+  {
+    "id": "planeslayer-flail",
+    "name": "Planeslayer Flail",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Outer-Entity Slayer: When wielded against fey, fiends, or undead foes, this weapon has a +1d4 bonus to Damage and  Attack rolls.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal ⁠Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Planeslayer_Flail"
+  },
+  {
+    "id": "promise",
+    "name": "Promise",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Shadow Blade: You have  Advantage on  Attack Rolls against Lightly or Heavily Obscured targets when using this blade.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Promise"
+  },
+  {
+    "id": "rebound-battleaxe",
+    "name": "Rebound Battleaxe",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "This blade's magical powers only function if it's Bound to an Eldritch Knight or is a Warlocks's Pact Weapon.",
+      "Favoured Weapon: This weapon has a +1 bonus to damage and  Attack rolls.",
+      "It's All In The Wrists: This weapon has the Thrown property and deals an additional 1d4⁠⁠Thunder damage when thrown.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Maiming Strike (): Possibly  Maims your target. They can't move. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Rebound_Battleaxe"
+  },
+  {
+    "id": "rhapsody",
+    "name": "Rhapsody",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Scarlet Feast (): If you have a +3 bonus from  Scarlet Remittance, consume it to empower yourself in combat. ( Recharge: Long rest.)",
+      "Scarlet Remittance: Gain a +1 bonus to  Attack rolls, damage, and Spell Save DC for every foe you slay, up to a maximum of +3.",
+      "Sweet Bloodletting: Possibly inflict  Bleeding when hitting a creature with this weapon while  Hiding or  Invisible.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cazador's Dungeon X: -1925 Y: 944: Carried by Cazador Szarr",
+      "area": "Cazador's Dungeon",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Rhapsody"
+  },
+  {
+    "id": "sanguine-blade",
+    "name": "Sanguine Blade",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Scarlet Regeneration: If you have a +3 bonus from  Scarlet Remittance, consume it to recover 3d10⁠⁠Hit Points ( Recharge: Long rest).",
+      "Scarlet Remittance: Gain a +1 bonus to  Attack rolls, damage, and Spell Save DC for every foe you slay, up to a maximum of +3.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sanguine_Blade"
+  },
+  {
+    "id": "sel-nes-spear-of-night",
+    "name": "Selûne's Spear of Night",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Moonbeam (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Moonmote (): Cast as a cantrip ( Recharge: Long rest.)",
+      "Selûne's Blessing: You gain  Advantage on Wisdom  Saving throws and Perception Checks.",
+      "Darkvision: Can see in the dark up to 12 m (40 ft).",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)",
+      "Maiming Strike (): Possibly  Maims your target. They can't move. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Given to Shadowheart by Aylin at the campsite",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sel%C3%BBne%27s_Spear_of_Night"
+  },
+  {
+    "id": "shadow-battleaxe",
+    "name": "Shadow Battleaxe",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Bound Weapon",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Maiming Strike (): Possibly  Maims your target. They can't move. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shadow_Battleaxe"
+  },
+  {
+    "id": "shadow-blade-weapon",
+    "name": "Shadow Blade (weapon)",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Shadow Blade: You have  Advantage on  Attack Rolls against Lightly or Heavily Obscured targets when using this blade.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Created via Shadow Blade spell",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shadow_Blade_(weapon)"
+  },
+  {
+    "id": "singing-sword",
+    "name": "Singing Sword",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Phalar Aluve: Sing",
+      "Phalar Aluve: Shriek",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Singing_Sword"
+  },
+  {
+    "id": "sorrow",
+    "name": "Sorrow",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sorrowful Lash (): Cast as a cantrip ( Recharge: Per turn.)",
+      "Brace (Melee) (): Spend 6 m / 20 ft of your movement. For the rest of your turn, roll melee damage twice and use the highest result. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Hidden Vault X: 183 Y: -82: On a stone slab at the Wolf altar in the Hidden Vault",
+      "area": "Hidden Vault",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sorrow"
+  },
+  {
+    "id": "spiderstep-staff",
+    "name": "Spiderstep Staff",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Spider Step: Immune to being  Enwebbed. Your Movement Speed is not affected by  Web surfaces.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Spiderstep_Staff"
+  },
+  {
+    "id": "staff-of-accretion",
+    "name": "Staff of Accretion",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Accretion: The wearer gains  Arcane Charge when they deal damage with close-quarter-range spells or close-quarter-range cantrips.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_Accretion"
+  },
+  {
+    "id": "the-clover",
+    "name": "The Clover",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1 (Off-Hand Only)",
+      "True Strike (): Cast as a cantrip ( Recharge: Short rest.)",
+      "Organ Rearranger: Reduce the number you need to roll a Critical Hit while attacking by 1. This effect can stack. When you roll 2 damage or less, reroll the dice, taking the highest result.",
+      "Exploit Weakness: Creatures hit with this weapon receive Vulnerability to ⁠Piercing damage.",
+      "True Strike Riposte: When a creature misses you with a melee attack, you may retaliate and gain  True Strike.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Clover"
+  },
+  {
+    "id": "the-impaler",
+    "name": "The Impaler",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Break the Unbroken: Deals an additional 1d10⁠⁠Piercing to targets that still have all their hit points.",
+      "Death Drinker: Gain 2d10 temporary hit points when landing a killing blow on an enemy with this weapon.",
+      "Brace (Melee) (): Spend 6 m / 20 ft of your movement. For the rest of your turn, roll melee damage twice and use the highest result. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)",
+      "Bloodrender (): Deal additional damage equal to your proficiency bonus. On a successful hit, you gain   Bloodrender which lets you deal more damage at the cost of some hitpoints. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Impaler"
+  },
+  {
+    "id": "the-undead-bane",
+    "name": "The Undead Bane",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Slay the Wicked: This weapon deals an additional 1d6⁠⁠Slashing damage against Fiends and Undead.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Prepare (): Spend 6 m / 20 ft of your movement to deal an additional Strength modifier⁠⁠PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. ( Recharge: Short rest.)",
+      "Profane Scourge (): Strike with subjugating fury, adding your proficiency bonus to the damage roll. If you hit a fiend or undead creature, deal an additional 2d6⁠⁠SlashingDRS damage and possibly  Bane it. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Gur Camp X: 100 Y: -17: Carried by Ulma",
+      "area": "Gur Camp",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Undead_Bane"
+  },
+  {
+    "id": "undead-slayer-crossbow",
+    "name": "Undead Slayer Crossbow",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Revenant Scourge: When used against undead creatures this weapon has +1d4 bonus to Attack and Damage rolls.",
+      "Piercing Shot (): Deal regular damage and possibly inflict  Gaping Wounds which cause extra damage on attacks. ( Recharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Undead_Slayer_Crossbow"
+  },
+  {
+    "id": "vicious-shortsword",
+    "name": "Vicious Shortsword",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Vicious_Shortsword"
+  },
+  {
+    "id": "woe",
+    "name": "Woe",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Blight (): Cast as a level 4 spell ( Recharge: Long rest.)",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Arcane Vampirism: When the creatures affected by your spells fail any associated  Saving Throws, you regain 1d4⁠⁠Hit Points.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cazador's Dungeon X: -1925 Y: 944: Reward for defeating Cazador Szarr during the quest The Pale Elf",
+      "area": "Cazador's Dungeon",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Woe"
+  },
+  {
+    "id": "enforcer-shield",
+    "name": "Enforcer Shield",
+    "slot": "shield",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Staunch Blessing: When a creature misses the wielder with an attack, they gain a +1d4 bonus to their next  Attack roll that deals non-lethal damage.\n\nThis bonus is relinquished when the wielder deals lethal damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Enforcer_Shield"
+  },
+  {
+    "id": "shield-hope",
+    "name": "Shield (Hope)",
+    "slot": "shield",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "No special properties, beyond the  Armour Class enchantment."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_(Hope)"
+  },
+  {
+    "id": "shield-2",
+    "name": "Shield +2",
+    "slot": "shield",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "No special properties, beyond the  Armour Class enchantment."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_%2B2"
+  },
+  {
+    "id": "shield-of-returning",
+    "name": "Shield of Returning",
+    "slot": "shield",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Bound Weapon"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_of_Returning"
+  },
+  {
+    "id": "braindrain-cape",
+    "name": "Braindrain Cape",
+    "slot": "cloak",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Mental Debilitation: When the wearer succeeds a  Saving throw against any foe's spells or actions, that foe gains  Mental Fatigue."
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Braindrain_Cape"
+  },
+  {
+    "id": "cloth-armour",
+    "name": "Cloth Armour",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Grievous Retribution: When an enemy damages the wearer, the wearer gains  Wrath for 2 turns."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Heapside Prison X: -1266 Y: 744: On a table in the south-eastern room",
+      "area": "Heapside Prison",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cloth_Armour"
+  },
+  {
+    "id": "robe-of-spell-resistance",
+    "name": "Robe of Spell Resistance",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Saving Throws +2"
+    ],
+    "stats": {},
+    "location": {
+      "description": "",
+      "area": "",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Robe_of_Spell_Resistance"
+  },
+  {
+    "id": "robe-of-summer",
+    "name": "Robe of Summer",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Resistance to ⁠Cold damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Hidden Vault X: 183 Y: -82: Inside a crate in the Hidden Vault within the Druid Grove",
+      "area": "Hidden Vault",
+      "act": 0
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Robe_of_Summer"
+  }
+]

@@ -1,0 +1,4542 @@
+[
+  {
+    "id": "assassin-of-bhaal-cowl",
+    "name": "Assassin of Bhaal Cowl",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "See Invisibility (): Cast as a level 2 spell (\u202fRecharge: Short rest.)",
+      "Murderous Sight: You can see in the dark up to 3\u202fm / 10\u202fft. In addition, you gain a +2 bonus to \u202fInitiative."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Assassin_of_Bhaal_Cowl"
+  },
+  {
+    "id": "birthright",
+    "name": "Birthright",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Charisma +2 (up to 22)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Sundries X: -14 Y: -72: Sold by Lorroakan's Projection or Rolan on the ground floor",
+      "area": "Sorcerous Sundries",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lore-bard",
+      "sorlock",
+      "bladelock",
+      "bardlock",
+      "hexblade",
+      "eldritch-blast-build",
+      "great-old-one-warlock",
+      "archfey-warlock"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Birthright"
+  },
+  {
+    "id": "bonespike-helmet",
+    "name": "Bonespike Helmet",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Intimidation +2",
+      "Menacing Attack (Melee) (): Possibly \u00a0Frighten your target. They'll have  Disadvantage on ability checks and Attack rolls and be unable to move. (\u202fRecharge: Per turn.)",
+      "Fury In The Marrow: When you \u202fRage, hostile creatures in a 3\u202fm / 10\u202fft radius must succeed a Weapon action DC\u00a0\u202fWisdom saving throw or take 2d4\u2060\u2060Psychic damage. The targets receive half damage on a save."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -157 Y: 939: Sold by Voiceless Penitent Bareki",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [
+      "wild-magic-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Bonespike_Helmet"
+  },
+  {
+    "id": "circlet-of-mental-anguish",
+    "name": "Circlet of Mental Anguish",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Psychic Leech: When an enemy fails a \u202fCharisma, \u202fIntelligence, or \u202fWisdom \u202fSaving throw against one of your spells or cantrips, you regain 1d4\u2060\u2060hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Mind Flayer Colony X: 748 Y: -141: On a skeleton in the Necrotic Laboratory",
+      "area": "Mind Flayer Colony",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Circlet_of_Mental_Anguish"
+  },
+  {
+    "id": "gibus-of-the-worshipful-servant",
+    "name": "Gibus of the Worshipful Servant",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Lickspittle's Alertness: At the start of combat, the wearer gains \u202fMomentum equal to their \u202fCharisma Modifier.",
+      "Multitasking: You gain \u202fAdvantage on \u202fConcentration \u202fSaving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Bhaal Temple X: 56 Y: 1006: On Sceleritas Fel if the Dark Urge refuses \u2060Bhaal's gift after defeating Orin",
+      "area": "Bhaal Temple",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Gibus_of_the_Worshipful_Servant"
+  },
+  {
+    "id": "hat-of-the-sharp-caster",
+    "name": "Hat of the Sharp Caster",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sharp Caster: When you roll a 1 or 2 on a damage die(s) for a Spell Attack, that die(s) is rerolled once."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -29 Y: 6: Sold by Tara on the roof of the Devil's Fee",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [
+      "sorlock",
+      "magic-missile-build"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hat_of_the_Sharp_Caster"
+  },
+  {
+    "id": "helldusk-helmet",
+    "name": "Helldusk Helmet",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Attackers can't land Critical Hits on the wearer.",
+      "Immolating Gaze (): Sear and \u202fFrighten a target with nothing but your glower. (\u202fRecharge: Short rest.)",
+      "Infernal Sight: You can see in magical[See: Bugs] and ordinary darkness up to a range of 12\u202fm / 40\u202fft. You cannot be \u202fBlinded.",
+      "Magical Durability: The wielder has a +2 bonus to \u202fSaving throws against spells."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6482 Y: 2939: In Raphael's Vault across from the entrance to the Boudoir",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "bladelock",
+      "loredin",
+      "oath-of-the-crown-paladin",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "moon-druid",
+      "life-domain-cleric",
+      "beast-master",
+      "land-druid",
+      "thundersnow-herald",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helldusk_Helmet"
+  },
+  {
+    "id": "helm-of-balduran",
+    "name": "Helm of Balduran",
+    "slot": "helmet",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Attackers can't land Critical Hits on the wearer.",
+      "Balduran's Vitality: The helmet heals you 2\u2060\u2060hit points at the beginning of every turn.",
+      "Balduran's Favour: You have a +1 bonus to \u202fArmour Class and \u202fSaving throws.",
+      "Stun Immunity: You can't be \u202fStunned."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Dragon's Sanctum X: 636 Y: -964: On top of a stone altar next to Ansur",
+      "area": "The Dragon's Sanctum",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "abjuration-arcane-defender",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "oath-of-the-crown-paladin",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "oath-of-vengeance-paladin",
+      "life-domain-cleric",
+      "beast-master",
+      "swarmkeeper-melee",
+      "thief"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helm_of_Balduran"
+  },
+  {
+    "id": "helmet-of-grit",
+    "name": "Helmet of Grit",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dexterity \u202fSaving Throws +1",
+      "Grit: When the wearer has 50% Hit Points or less, they have an additional \u202fBonus Action."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Szarr Palace X: -1298 Y: 965: In a locked opulent chest in the room with the cursed corpse of Victoria",
+      "area": "Szarr Palace",
+      "act": 3
+    },
+    "build_tags": [
+      "eldritch-hexknight",
+      "berserker-thrower",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladesinger",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "eldritch-blast-build",
+      "oath-of-vengeance-paladin",
+      "ninja",
+      "radiating-armored-monk",
+      "jack-sparrow",
+      "arcane-trickster",
+      "stars-druid",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helmet_of_Grit"
+  },
+  {
+    "id": "hood-of-the-weave",
+    "name": "Hood of the Weave",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Enchantment: You gain a +2 bonus to Spell Save DC and Spell Attack rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Philgrave's Mansion X: 14 Y: -160: Sold by Mystic Carrion",
+      "area": "Philgrave's Mansion",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "nature-cleric",
+      "moon-druid",
+      "magic-missile-build",
+      "land-druid",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "way-of-the-four-elements-monk",
+      "spore-druid",
+      "trickery-domain-cleric",
+      "conjuration-wizard",
+      "divination-wizard",
+      "enchantment-wizard",
+      "transmutation-wizard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hood_of_the_Weave"
+  },
+  {
+    "id": "horns-of-the-berserker",
+    "name": "Horns of the Berserker",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Seeking Blood: You gain a +2 bonus to \u202fAttack rolls when attacking creatures that have already taken damage.",
+      "Blood Thirst: Unarmed and melee attacks will deal an extra 2\u2060\u2060Necrotic damage as long as you don't have your full health. If you don't deal any damage this turn, you will take 1d4\u2060\u2060Necrotic damage at the end of your turn."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [
+      "eldritch-hexknight",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "two-hander-eldritch-knight",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "death-cleric",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "ninja",
+      "radiating-armored-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Horns_of_the_Berserker"
+  },
+  {
+    "id": "jannaths-hat",
+    "name": "Jannath's Hat",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on \u202fPersuasion Checks.",
+      "Advantage on \u202fDeception Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -714 Y: 863: In the High Security Vault n\u00ba2",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Jannath%27s_Hat"
+  },
+  {
+    "id": "mask-of-soul-perception",
+    "name": "Mask of Soul Perception",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Detect Thoughts (): Cast as a level 2 spell (\u202fRecharge: Short rest.)",
+      "Soul Perception: Gain a +2 bonus to \u202fAttack rolls, \u202fInitiative Rolls, and Perception Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -33 Y: 20: In a locked Gilded Chest ( DC 20 Sleight of Hand Check) in Helsik's room upstairs",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "battle-master-fighter",
+      "champion-fighter",
+      "great-old-one-warlock",
+      "archfey-warlock"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Mask_of_Soul_Perception"
+  },
+  {
+    "id": "pyroquickness-hat",
+    "name": "Pyroquickness Hat",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Fiery Return: When you deal \u2060Fire damage with a levelled spell, you \u202fBurn yourself and gain an additional \u202fBonus Action this round."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Vault X: 411 Y: 997: In an invisible chest in the vault of Elminster",
+      "area": "Sorcerous Vault",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Pyroquickness_Hat"
+  },
+  {
+    "id": "sarevoks-horned-helmet",
+    "name": "Sarevok's Horned Helmet",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Deathbringer's Sight: You gain \u202fDarkvision up to a range of 3\u202fm / 10\u202fft, or 15\u202fm / 50\u202fft if you already have it. The number you need to roll a Critical Hit while attacking is reduced by one. This effect can stack.",
+      "Dauntless: You can't be \u202fFrightened or afflicted with other emotion-altering conditions."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1248 Y: 503: Carried by Sarevok Anchev",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [
+      "lockadin",
+      "berserker-thrower",
+      "eldritch-knight-thrower",
+      "bladelock",
+      "champion-fighter",
+      "eldritch-blast-build",
+      "beast-master"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Sarevok%27s_Horned_Helmet"
+  },
+  {
+    "id": "scabby-pugilist-circlet",
+    "name": "Scabby Pugilist Circlet",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Martial Bravery: Your weapon and unarmed attacks deal an additional 2 damage while surrounded by 2 or more foes."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 56 Y: -120: Sold by Mattis near the Requisitioned Barn if he survives to Act Three",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Scabby_Pugilist_Circlet"
+  },
+  {
+    "id": "shapeshifter-hat",
+    "name": "Shapeshifter Hat",
+    "slot": "helmet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Nature +1",
+      "Nature's Embrace: Increase your \u202fWild Shape Charge by 1. This additional charge is restored upon taking a Long Rest."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -38 Y: 17: Sold by Helsik once her special stock is unlocked",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [
+      "moon-druid",
+      "land-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Shapeshifter_Hat"
+  },
+  {
+    "id": "steelwatcher-helmet",
+    "name": "Steelwatcher Helmet",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on Constitution saving throws",
+      "Artificial Sight: The wearer can see in the dark up to 12\u202fm (40\u202fft) and cannot be \u202fBlinded."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Steel Watch Foundry X: -275 Y: -134: On a table on the ground floor near the east entrance",
+      "area": "Steel Watch Foundry",
+      "act": 3
+    },
+    "build_tags": [
+      "beast-master"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Steelwatcher_Helmet"
+  },
+  {
+    "id": "the-pointy-hat",
+    "name": "The Pointy Hat",
+    "slot": "helmet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Glorious Pointy Hat: You gain a bonus to your \u202fPersuasion checks equal to your \u202fIntelligence Modifier."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -85 Y: -24: In a chest behind Lucretious",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Pointy_Hat"
+  },
+  {
+    "id": "wapiras-crown",
+    "name": "Wapira's Crown",
+    "slot": "helmet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Crowning Glory: When healing another, the wearer regains 1d6\u2060\u2060hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Secluded Chamber X: -53 Y: 67: Rewarded by Zevlor for helping the tiefling refugees during \u2060Save the Refugees, provided the monetary reward is accepted",
+      "area": "Secluded Chamber",
+      "act": 3
+    },
+    "build_tags": [
+      "oath-of-the-crown-paladin",
+      "life-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Wapira%27s_Crown"
+  },
+  {
+    "id": "armour-of-landfall",
+    "name": "Armour of Landfall",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on Constitution \u202fSaving Throws.",
+      "Plant Growth (): Cast as a level 3 spell (\u202fRecharge: Short rest.)",
+      "High Spellcasting: You gain a +1 bonus to Spell Save DC.",
+      "Green Bed Regeneration: When starting your turn on \u202fPlant Growth or \u202fVines regain 1d4\u2060\u2060hit points hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Sundries X: -14 Y: -72: Sold by Lorroakan's Projection or Rolan on the ground floor",
+      "area": "Sorcerous Sundries",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "bardlock",
+      "bladesinger",
+      "moon-druid",
+      "magic-missile-build",
+      "land-druid",
+      "thundersnow-herald",
+      "arcane-trickster",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Armour_of_Landfall"
+  },
+  {
+    "id": "armour-of-moonbasking",
+    "name": "Armour of Moonbasking",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Lunar Bestial Vitality: You gain \u202f22 temporary hit points after casting \u202fWild Shape. While those temporary hit points are active reduce all incoming damage by 1.",
+      "Lunar Bestial Fortitude: You have a +2 bonus to \u202fArmour Class. You also have \u202fAdvantage on \u202fSaving throws against spells. This effect persists while using your druidic \u202fWild Shape ability."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -157 Y: 939: Sold by Voiceless Penitent Bareki",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [
+      "moon-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Armour_of_Moonbasking"
+  },
+  {
+    "id": "armour-of-the-sporekeeper",
+    "name": "Armour of the Sporekeeper",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Malefic Funghi: The wearer gains a +1 bonus to Spell Save DC and when dealing \u2060Necrotic damage, they deal an additional 1\u2060\u2060Necrotic Damage.",
+      "Spore Sacks: While imbued with \u202fSymbiotic Entity, you can spread \u202fBibberbang Spores, \u202fTimmask Spores, and \u202fHaste Spores."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Philgrave's Mansion X: 14 Y: -160: Sold by Mystic Carrion",
+      "area": "Philgrave's Mansion",
+      "act": 3
+    },
+    "build_tags": [
+      "death-cleric",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Armour_of_the_Sporekeeper"
+  },
+  {
+    "id": "bhaalist-armour",
+    "name": "Bhaalist Armour",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Aura of Murder: Enemies within 3\u202fm (10\u202fft) become Vulnerable to \u2060Piercing damage, unless they are Immune to it.",
+      "Ambusher: Gain a +2 bonus to \u202fInitiative Rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "loredin",
+      "arcane-archer",
+      "hexblade",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "beast-master",
+      "ninja",
+      "jack-sparrow",
+      "arcane-trickster",
+      "stars-druid",
+      "swarmkeeper-melee",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Bhaalist_Armour"
+  },
+  {
+    "id": "elegant-studded-leather",
+    "name": "Elegant Studded Leather",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on Stealth checks.",
+      "Shield (): Cast as a level 1 spell (\u202fRecharge: Short rest.)",
+      "Ambusher: Gain a +2 bonus to \u202fInitiative Rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -686 Y: 874: in the High Security Vault n\u00ba9",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [
+      "swords-bard-archer",
+      "ninja",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Elegant_Studded_Leather"
+  },
+  {
+    "id": "scarlet-leather-armour",
+    "name": "Scarlet Leather Armour",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Stealthy: Gain a +1 bonus to Stealth Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Highberry's Home X: 20 Y: -34: Worn by Dolor the assassin",
+      "area": "Highberry's Home",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Scarlet_Leather_Armour"
+  },
+  {
+    "id": "armour-of-agility",
+    "name": "Armour of Agility",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Saving Throws +2.",
+      "Exotic Material: Add your full Dexterity Modifier to your \u202fArmour Class. Additionally, this armour does not impose \u202fDisadvantage on Stealth Ability Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Armoury X: -41 Y: -71: Sold by Gloomy Fentonson, near the Lower City Central Wall waypoint",
+      "area": "Stormshore Armoury",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "lockadin",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "shadow-blade-bardadin",
+      "hunter-ranger-archer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "bladelock",
+      "arcane-archer",
+      "hexblade",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "champion-fighter",
+      "beast-master",
+      "ninja",
+      "jack-sparrow",
+      "swarmkeeper-melee",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Armour_of_Agility"
+  },
+  {
+    "id": "elven-chain",
+    "name": "Elven Chain",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Elven Chain: You are considered Proficient with this armour while wearing it.",
+      "Elven Agility: The wearer has a +2 bonus to Initiative Rolls and \u202fAdvantage on Dexterity \u202fSaving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington General X: 7 Y: -35: Sold by Exxvikyap in Rivington during Act Three",
+      "area": "Rivington General",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Elven_Chain"
+  },
+  {
+    "id": "flame-enamelled-armour",
+    "name": "Flame Enamelled Armour",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Fire Shield: Warm (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
+      "Seldom Caught Unawares: You gain a +2 bonus to \u202fInitiative rolls.",
+      "Endurance by Fire: You have Resistance to \u2060Fire damage and a +2 bonus to \u202fSaving throws.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -28 Y: 184: In a heavy chest in the corner of the armoury south-west of the Wyrm's Rock waypoint (Behind the iron gate)",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Flame_Enamelled_Armour"
+  },
+  {
+    "id": "slippery-chain-shirt",
+    "name": "Slippery Chain Shirt",
+    "slot": "armour",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Cautious Healer: When the wearer heals a creature, it automatically \u202fDisengages and won't trigger \u202fOpportunity Attacks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Festering Cove X: -400 Y: 329: In a chest hidden on a cliff above and behind the altar",
+      "area": "The Festering Cove",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Slippery_Chain_Shirt"
+  },
+  {
+    "id": "unwanted-masterwork-scalemail",
+    "name": "Unwanted Masterwork Scalemail",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Resistance to \u2060Fire damage",
+      "Exotic Material: Add your full Dexterity Modifier to your \u202fArmour Class. Additionally, this armour does not impose \u202fDisadvantage on Stealth Ability Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 392 Y: 766: Sold by Dammon",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [
+      "berserker-thrower"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Unwanted_Masterwork_Scalemail"
+  },
+  {
+    "id": "armour-of-persistence",
+    "name": "Armour of Persistence",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Magical Plate: All incoming damage is reduced by 2.",
+      "Legendary Persistence: You gain \u202fResistance and \u202fBlade Ward.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 392 Y: 766: Sold by Dammon in Act Three",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "eldritch-hexknight",
+      "lockadin",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "two-hander-eldritch-knight",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "life-domain-cleric",
+      "beast-master",
+      "swarmkeeper-melee"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Armour_of_Persistence"
+  },
+  {
+    "id": "blackguards-plate",
+    "name": "Blackguard's Plate",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on Wisdom \u202fSaving Throws.",
+      "Magical Plate: All incoming damage is reduced by 1",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1293 Y: 503: Worn by the death knight That Which Guards",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blackguard%27s_Plate"
+  },
+  {
+    "id": "cerebral-citadel-armour",
+    "name": "Cerebral Citadel Armour",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Frightened Immunity: You can't be \u202fFrightened",
+      "Illithid Protection: If the wearer is infested by a mind flayer tadpole, they gain +1 to Intelligence, Wisdom, and Charisma \u202fSaving throws.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Knights of the Shield Hideout X: -727 Y: 589: In a wardrobe during the quest Visit the Emperor's Old Hideout",
+      "area": "Knights of the Shield Hideout",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cerebral_Citadel_Armour"
+  },
+  {
+    "id": "emblazoned-plate-of-the-marshal",
+    "name": "Emblazoned Plate of the Marshal",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Fire Shield (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
+      "Magical Plate: All incoming damage is reduced by 2.",
+      "Endurance by Fire: You have Resistance to \u2060Fire damage and a +2 bonus to \u202fSaving throws.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress: Can be looted from the body of Duke Ulder Ravengard if killed in the audience hall",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Emblazoned_Plate_of_the_Marshal"
+  },
+  {
+    "id": "helldusk-armour",
+    "name": "Helldusk Armour",
+    "slot": "armour",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Fly (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Helldusk Armour: You are considered Proficient with this armour while wearing it.",
+      "Infernal Retribution: When you succeed a \u202fSaving Throw, the caster receives \u202fBurning for 3 turns.",
+      "Prime Aegis of Fire: You have Resistance to \u2060Fire damage and cannot be \u202fBurned. You take 3 less damage from all sources."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6477 Y: 2884: Carried by Raphael",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "lockadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "hunter-ranger-archer",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "arcane-archer",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "life-domain-cleric",
+      "jack-sparrow",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helldusk_Armour"
+  },
+  {
+    "id": "reapers-embrace",
+    "name": "Reaper's Embrace",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Howl of the Dead (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "Magical Plate: All incoming damage is reduced by 2.",
+      "Reaper's Rigidity: When activated, you can't be moved against your will by any spell or action, but have \u202fDisadvantage on Dexterity \u202fSaving throws.",
+      "Disadvantage on Stealth checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Mind Flayer Colony X: 861 Y: -23: Worn by Ketheric Thorm",
+      "area": "Mind Flayer Colony",
+      "act": 3
+    },
+    "build_tags": [
+      "eldritch-hexknight",
+      "sorcadin",
+      "life-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Reaper%27s_Embrace"
+  },
+  {
+    "id": "bhaalist-gloves",
+    "name": "Bhaalist Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Garrotte (): Wraps a shadow rope around a Humanoid creature's throat to start \u00a0Garrotting it. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Bhaalist_Gloves"
+  },
+  {
+    "id": "blackguards-gauntlets",
+    "name": "Blackguard's Gauntlets",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Attack rolls +1",
+      "Inflict Wounds (): Cast as a level 4 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1292 Y: 501: Carried by the death knight That Which Watches",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blackguard%27s_Gauntlets"
+  },
+  {
+    "id": "bonespike-gloves",
+    "name": "Bonespike Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Exoskeletal Reinforcement: Your attacks ignore Resistance to \u2060Slashing, \u2060Piercing, and \u2060Bludgeoning damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -136 Y: 980: Worn by Strangler Luke during the quest \u2060Get Orin's Netherstone",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [
+      "wild-magic-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Bonespike_Gloves"
+  },
+  {
+    "id": "braindrain-gloves",
+    "name": "Braindrain Gloves",
+    "slot": "gloves",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Mental Interference: When you deal \u2060Psychic damage, you also inflict \u202fMental Fatigue for 2 turns."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Mind Flayer Colony X: 748 Y: -141: On a skeleton in the Necrotic Laboratory, next to the Blade of Oppressed Souls",
+      "area": "Mind Flayer Colony",
+      "act": 3
+    },
+    "build_tags": [
+      "hexblade",
+      "bladesinger"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Braindrain_Gloves"
+  },
+  {
+    "id": "cerebral-citadel-gloves",
+    "name": "Cerebral Citadel Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Illithid Euphoria: Charm or \u202fFrighten a creature to gain a   1d4 bonus to \u202fAttack rolls and \u202fSaving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Knights of the Shield Hideout X: -727 Y: 589: In a wardrobe during the quest Visit the Emperor's Old Hideout",
+      "area": "Knights of the Shield Hideout",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cerebral_Citadel_Gloves"
+  },
+  {
+    "id": "craterflesh-gloves",
+    "name": "Craterflesh Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Craterous Wounds: Whenever you score a Critical Hit, deal an additional 1d6\u2060\u2060ForceDRS damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "sorcadin",
+      "hunter-ranger-archer",
+      "sorlock",
+      "arcane-archer",
+      "hexblade",
+      "bladesinger",
+      "eldritch-blast-build",
+      "jack-sparrow",
+      "arcane-trickster",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Craterflesh_Gloves"
+  },
+  {
+    "id": "dark-displacement-gloves",
+    "name": "Dark Displacement Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sleight of Hand +1",
+      "Subtle Swap: You gain a +1 bonus to \u202fAttack rolls when throwing, and may swap positions with the target if they fail a \u202fDexterity saving throw."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -90 Y: -56: Sold by Popper",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Dark_Displacement_Gloves"
+  },
+  {
+    "id": "gauntlet-of-the-tyrant",
+    "name": "Gauntlet of the Tyrant",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Command (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4\u2060\u2060Force damage.",
+      "High Spellcasting: You gain a +1 bonus to Spell Save DC."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -26 Y: 211: Worn by Enver Gortash",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lorecerer",
+      "lore-bard",
+      "cold-sorcerer",
+      "bardlock",
+      "magic-missile-build",
+      "thundersnow-herald",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gauntlet_of_the_Tyrant"
+  },
+  {
+    "id": "gauntlets-of-hill-giant-strength",
+    "name": "Gauntlets of Hill Giant Strength",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Set the wearer's \u202fStrength to 23. The enchantment has no effect if their Strength score is higher without it."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6549 Y: 2940: On a pedestal in the Archive",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "wild-magic-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gauntlets_of_Hill_Giant_Strength"
+  },
+  {
+    "id": "gauntlets-of-the-warmaster",
+    "name": "Gauntlets of the Warmaster",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Attack rolls +1",
+      "Heightened Manoeuvre: Targets have \u202fDisadvantage on \u202fSaving throws against your Manoeuvre and Weapon Actions."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [
+      "battle-master-fighter"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gauntlets_of_the_Warmaster"
+  },
+  {
+    "id": "gemini-gloves",
+    "name": "Gemini Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Adroit Caster: Cantrips targeting foes and allies can target an additional creature. The same target can be chosen twice. Usable once per short rest."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -38 Y: 17: Sold by Helsik once her special stock is unlocked",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [
+      "cold-sorcerer",
+      "death-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gemini_Gloves"
+  },
+  {
+    "id": "gloves-of-soul-catching",
+    "name": "Gloves of Soul Catching",
+    "slot": "gloves",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Constitution +2, up to 20.",
+      "Soul Fist: Your unarmed attacks deal an additional 1d10\u2060\u2060Force damage.",
+      "Soul Catching: Once per turn, on an unarmed hit, you regain 10\u2060\u2060hit points. Alternatively, you may forego healing to gain a +5 bonus on an \u202fAttack roll or \u202fSaving throw until the end of your next turn.[See: Bugs]"
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6477 Y: 2884: Given by Hope for completing her quest \u2060Save Hope",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "ninja",
+      "radiating-armored-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gloves_of_Soul_Catching"
+  },
+  {
+    "id": "helldusk-gloves",
+    "name": "Helldusk Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Strength Saving Throws +1",
+      "Rays of Fire (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "Infernal Acuity: You gain +1 bonus to Spell Attack Rolls and Spell Save DC.",
+      "Infernal Touch: Your weapon attacks deal an additional 1d6\u2060\u2060Fire damage. Your unarmed attacks deal an additional 1d6\u2060\u2060Necrotic damage, and can possibly inflict \u202fBleeding."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6478 Y: 2993: Worn by Haarlep in the Boudoir",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "gloomstalker-assassin",
+      "abjuration-arcane-defender",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "lorecerer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "sorlock",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "cold-sorcerer",
+      "bladelock",
+      "bardlock",
+      "loredin",
+      "arcane-archer",
+      "hexblade",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "death-cleric",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "moon-druid",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "beast-master",
+      "land-druid",
+      "ninja",
+      "thundersnow-herald",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "jack-sparrow",
+      "arcane-trickster",
+      "swarmkeeper-melee",
+      "way-of-the-four-elements-monk",
+      "spore-druid",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helldusk_Gloves"
+  },
+  {
+    "id": "hellriders-pride",
+    "name": "Hellrider's Pride",
+    "slot": "gloves",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Helm's Protection: When you heal another creature, it gains Resistance to \u2060Bludgeoning, \u2060Piercing, and \u2060Slashing damage dealt by weapon attacks [See: Bugs] for 2 turns."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Secluded Chamber X: -53 Y: 67: Carried by Zevlor and can be either looted from him, bought, stolen, or earned as a reward for \u2060Kill Kagha or \u2060Investigate Kagha",
+      "area": "Secluded Chamber",
+      "act": 3
+    },
+    "build_tags": [
+      "stars-cleric",
+      "lore-bard",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "light-domain-cleric",
+      "nature-cleric",
+      "oath-of-the-crown-paladin",
+      "death-cleric",
+      "reverob-blender",
+      "life-domain-cleric",
+      "knowledge-cleric",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "stars-druid",
+      "valour-bard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hellrider%27s_Pride"
+  },
+  {
+    "id": "knock-knuckle-gloves",
+    "name": "Knock Knuckle Gloves",
+    "slot": "gloves",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Sleight of Hand +1",
+      "Knock ( + ): Cast as a level 2 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -719 Y: 871: In the High Security Vault n\u00ba7",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Knock_Knuckle_Gloves"
+  },
+  {
+    "id": "legacy-of-the-masters",
+    "name": "Legacy of the Masters",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Arming Enhancement: Gain a +2 Bonus to \u202fAttack roll and damage rolls with weapons."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 392 Y: 766: Sold by Dammon in Act Three",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "loredin",
+      "arcane-archer",
+      "hexblade",
+      "oath-of-the-crown-paladin",
+      "2hcb-gloom-thief",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "beast-master",
+      "jack-sparrow",
+      "swarmkeeper-melee",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Legacy_of_the_Masters"
+  },
+  {
+    "id": "martial-exertion-gloves",
+    "name": "Martial Exertion Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Martial Exertion: Push past your physical limits, taking 6d6Piercing damage to gain an additional attack per turn and to double your movement speed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Angleiron's Cellar X: -241 Y: -1065: Sold by Bumpnagel",
+      "area": "Angleiron's Cellar",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "eldritch-hexknight",
+      "eldritch-knight-thrower",
+      "2hcb-gloom-thief",
+      "arcane-trickster",
+      "thief"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Martial_Exertion_Gloves"
+  },
+  {
+    "id": "nimblefinger-gloves",
+    "name": "Nimblefinger Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sleight of Hand +1",
+      "Nimblefinger: Gnomes are granted +2 to Dexterity. Halflings and Dwarves gain +1 Dexterity."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Angleiron's Cellar X: -241 Y: -1065: Sold by Bumpnagel",
+      "area": "Angleiron's Cellar",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Nimblefinger_Gloves"
+  },
+  {
+    "id": "quickspell-gloves",
+    "name": "Quickspell Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Quickspell Flinger: Cantrips that cost an \u202fAction cost a \u202fBonus Action instead. This effect can be used once per Short Rest."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Sundries X: -14 Y: -72: Sold by Lorroakan's Projection or Rolan on the ground floor",
+      "area": "Sorcerous Sundries",
+      "act": 3
+    },
+    "build_tags": [
+      "moon-druid",
+      "land-druid",
+      "thundersnow-herald",
+      "spore-druid",
+      "conjuration-wizard",
+      "divination-wizard",
+      "enchantment-wizard",
+      "transmutation-wizard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Quickspell_Gloves"
+  },
+  {
+    "id": "seraphic-pugilist-gloves",
+    "name": "Seraphic Pugilist Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Guiding Bolt (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
+      "Angelclocker Knuckles: Your unarmed attacks deal an additional 1d4\u2060\u2060Radiant damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Open Hand Temple X: -90 Y: -7: In a locked chest at the foot of the beds at the west end of the Open Hand Temple",
+      "area": "Open Hand Temple",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Seraphic_Pugilist_Gloves"
+  },
+  {
+    "id": "servitor-of-the-black-hand-gloves",
+    "name": "Servitor of the Black Hand Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Fear (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4\u2060\u2060Force damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -32 Y: 198: In an opulent chest on the top floor",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Servitor_of_the_Black_Hand_Gloves"
+  },
+  {
+    "id": "snow-dusted-monastery-gloves",
+    "name": "Snow-Dusted Monastery Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Ice Knife (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Chilling Strike: Your unarmed attacks deal an additional 1d4\u2060\u2060Cold damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Snow-Dusted_Monastery_Gloves"
+  },
+  {
+    "id": "spellmight-gloves",
+    "name": "Spellmight Gloves",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Spellmight: When casting a spell that requires an \u202fAttack roll, you can take a -5 penalty to the roll to deal an additional   1d8 damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -82 Y: -33: Rewarded by Lucretious at the end of the Find Dribbles the Clown quest",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "sorlock",
+      "cold-sorcerer",
+      "bladelock",
+      "bardlock",
+      "eldritch-blast-build"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Spellmight_Gloves"
+  },
+  {
+    "id": "spellseeking-gloves",
+    "name": "Spellseeking Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Seeking Spell: When you make a Spell Attack Roll, you can spend a \u202fSorcery Point to gain \u202fAdvantage. This costs 1 Sorcery Point per spell slot Level. Cantrips cost 1 Sorcery Point."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -38 Y: 17: Sold by Helsik once her special stock is unlocked",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Spellseeking_Gloves"
+  },
+  {
+    "id": "stalker-gloves",
+    "name": "Stalker Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Seldom Caught Unawares: You gain a +1 bonus to \u202fInitiative rolls.",
+      "Skullduggery Attack: Your \u202fSneak Attack deals an additional 1d4\u2060\u2060ForceDRS damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington General X: 7 Y: -35: Sold by Exxvikyap in Rivington during Act Three",
+      "area": "Rivington General",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Stalker_Gloves"
+  },
+  {
+    "id": "the-reviving-hands",
+    "name": "The Reviving Hands",
+    "slot": "gloves",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Strength \u202fSaving Throws +1",
+      "Revivify (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Aegis Palms: When you heal a creature, it gains the effect of \u202fBlade Ward. When you \u202fRevive a creature, it gains the effect of \u202fDeath Ward."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 107 Y: -22: Sold by Vicar Humbletoes",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "stars-cleric",
+      "lore-bard",
+      "oath-of-the-crown-paladin",
+      "death-cleric",
+      "life-domain-cleric",
+      "war-domain-cleric",
+      "valour-bard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/The_Reviving_Hands"
+  },
+  {
+    "id": "thunderpalm-strikers",
+    "name": "Thunderpalm Strikers",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Thunderwave (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Booming Blows: Your unarmed attacks deal an additional 1d4\u2060\u2060Thunder damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Angleiron's Cellar X: -241 Y: -1065: Sold by Bumpnagel",
+      "area": "Angleiron's Cellar",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Thunderpalm_Strikers"
+  },
+  {
+    "id": "unlucky-thiefs-gloves",
+    "name": "Unlucky Thief's Gloves",
+    "slot": "gloves",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Sleight of Hand +2",
+      "Adds a piece of \u202fCharcoal to the wearer's inventory for each item they steal.\nAfter stealing 20 times, the next steal will add a \u202fCoal Bucket instead, which inflicts the \u202fBurning condition to the player for  Duration: 1 turn.",
+      "After stealing 20 times, the next steal will add a \u202fCoal Bucket instead, which inflicts the \u202fBurning condition to the player for  Duration: 1 turn."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -68 Y: -73: Given as a consolation prize by Akabi after failing to win the jackpot at the Wheel of Fortune",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Unlucky_Thief%27s_Gloves"
+  },
+  {
+    "id": "unwanted-masterwork-gauntlets",
+    "name": "Unwanted Masterwork Gauntlets",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Attack rolls +1",
+      "Strength \u202fSaving Throws +1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 393 Y: 763: In a gilded chest in the basement",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Unwanted_Masterwork_Gauntlets"
+  },
+  {
+    "id": "winkling-gloves",
+    "name": "Winkling Gloves",
+    "slot": "gloves",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sleight of Hand +1",
+      "Attack rolls +1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Steel Watch Foundry X: -331 Y: -147: Carried by Zanner Toobin in the western-most room on the ground floor or later accompanying the party in the basement during the quest Save the Gondians",
+      "area": "Steel Watch Foundry",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Winkling_Gloves"
+  },
+  {
+    "id": "blackguards-greaves",
+    "name": "Blackguard's Greaves",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Athletics +1",
+      "Strider Movement: You gain \u202fLongstrider."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1292 Y: 505: Worn by the death knight That Which Lurks",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blackguard%27s_Greaves"
+  },
+  {
+    "id": "bonespike-boots",
+    "name": "Bonespike Boots",
+    "slot": "boots",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Brutal Leap ( + ): Leap at a target and possibly knock it \u202fProne. (\u202fRecharge: Per turn.)",
+      "Evasive Instinct: You have a +1 bonus to \u202fArmour Class and \u202fSaving throws as long as you are not wearing armour or holding a shield.",
+      "Refined Vaulting: Jump distance is increased by 1.5\u202fm (5\u202fft)."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Western Beach X: -233 Y: 84: In wooden chest X: -1340 Y: -857 in a secluded passageway at the far end of the western trail leading away from the South Span Checkpoint in Rivington",
+      "area": "Western Beach",
+      "act": 3
+    },
+    "build_tags": [
+      "sorlock",
+      "bladelock",
+      "giant-barbarian",
+      "moon-druid",
+      "eldritch-blast-build",
+      "land-druid",
+      "thundersnow-herald",
+      "spore-druid",
+      "wild-magic-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Bonespike_Boots"
+  },
+  {
+    "id": "boots-of-persistence",
+    "name": "Boots of Persistence",
+    "slot": "boots",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dexterity \u202fSaving Throws +1",
+      "Legendary Mobility: You gain \u202fFreedom of Movement and \u202fLongstrider."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 392 Y: 766: Sold by Dammon in the Lower City",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "lockadin",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "battle-master-fighter",
+      "arcane-archer",
+      "hexblade",
+      "2hcb-gloom-thief",
+      "champion-fighter",
+      "selunes-holy-archer",
+      "jack-sparrow",
+      "arcane-trickster",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Boots_of_Persistence"
+  },
+  {
+    "id": "boots-of-psionic-movement",
+    "name": "Boots of Psionic Movement",
+    "slot": "boots",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dexterity \u202fSaving Throws +1",
+      "Githborn: Flying Boots (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Flying Strike: When a githyanki casts \u202fFly, their next melee weapon attack deals an additional 1d4\u2060\u2060Psychic damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Knights of the Shield Hideout X: -731 Y: 553: Worn by Ch'r'ai Har'rak",
+      "area": "Knights of the Shield Hideout",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Boots_of_Psionic_Movement"
+  },
+  {
+    "id": "boots-of-uninhibited-kushigo",
+    "name": "Boots of Uninhibited Kushigo",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Experienced And Deadly: The wearer deals additional damage equal to their \u202fWisdom Modifier with unarmed strikes."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Astral Plane X: -163 Y: -1158: Carried by Prelate Lir'i'c, as entering Act Three",
+      "area": "Astral Plane",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "ninja",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Boots_of_Uninhibited_Kushigo"
+  },
+  {
+    "id": "boots-of-very-fast-blinking",
+    "name": "Boots of Very Fast Blinking",
+    "slot": "boots",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Disrobing Blinkstep (): Cast as a level 2 spell (\u202fRecharge: Per turn.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -68 Y: -73: Given as a consolation prize by Akabi after failing to win the jackpot at the Wheel of Fortune",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Boots_of_Very_Fast_Blinking"
+  },
+  {
+    "id": "helldusk-boots",
+    "name": "Helldusk Boots",
+    "slot": "boots",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Hellcrawler (): Teleport to an area and deal 2d8Fire damage where you land. The impact blast spreads in a 3\u202fm / 10\u202fft zone. (\u202fRecharge: Short rest.)",
+      "Steadfast: You cannot be forcibly moved by a foe's spells or actions, and you ignore the effects of \u202fDifficult Terrain.",
+      "Infernal Evasion: When you fail a \u202fSaving throw, you may use your \u202fReaction to succeed instead."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -32 Y: 219: In a locked Gilded Chest on the top floor",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "gloomstalker-assassin",
+      "abjuration-arcane-defender",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "stars-cleric",
+      "shadow-monk",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "arcane-archer",
+      "death-cleric",
+      "reverob-blender",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "moon-druid",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "life-domain-cleric",
+      "beast-master",
+      "land-druid",
+      "ninja",
+      "thundersnow-herald",
+      "selunes-holy-archer",
+      "arcane-trickster",
+      "spore-druid",
+      "thief",
+      "conjuration-wizard",
+      "divination-wizard",
+      "enchantment-wizard",
+      "transmutation-wizard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Helldusk_Boots"
+  },
+  {
+    "id": "slinging-shoes",
+    "name": "Slinging Shoes",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dexterity \u202fSaving Throws +1",
+      "Shoe Slinger: Returns to its owner when thrown. On a hit deal an additional 2d4\u2060\u2060Psychic damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Highberry's Home X: -1 Y: -39: Sold by Tara on the roof",
+      "area": "Highberry's Home",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Slinging_Shoes"
+  },
+  {
+    "id": "spaceshunt-boots",
+    "name": "Spaceshunt Boots",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dimension Door ( + ): Cast as a level 4 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Highberry's Home X: 20 Y: -34: Worn by Dolor the assassin",
+      "area": "Highberry's Home",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Spaceshunt_Boots"
+  },
+  {
+    "id": "tyrannical-jackboots",
+    "name": "Tyrannical Jackboots",
+    "slot": "boots",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Scintillating: You gain a +1 bonus to Charisma \u202fAbility checks and \u202fSaving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -26 Y: 211: Worn by Enver Gortash",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Tyrannical_Jackboots"
+  },
+  {
+    "id": "unwanted-masterwork-greaves",
+    "name": "Unwanted Masterwork Greaves",
+    "slot": "boots",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Athletics +1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Forge of the Nine X: 393 Y: 763: In a gilded chest in the basement",
+      "area": "Forge of the Nine",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Unwanted_Masterwork_Greaves"
+  },
+  {
+    "id": "absolute-confidence-amulet",
+    "name": "Absolute Confidence Amulet",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Performance +1",
+      "Intimidation -1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Carm's Garms X: 23 Y: 131: Reward by Naaber",
+      "area": "Carm's Garms",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Absolute_Confidence_Amulet"
+  },
+  {
+    "id": "amulet-of-bhaal",
+    "name": "Amulet of Bhaal",
+    "slot": "amulet",
+    "rarity": "story_item",
+    "armour_class": null,
+    "effects": [
+      "First Blood: On a hit, inflict \u202fBleeding upon targets that have maximum Hit Points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1248 Y: 503: Worn by Sarevok Anchev or rewarded by him for completing \u2060Impress the Murder Tribunal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_Bhaal"
+  },
+  {
+    "id": "amulet-of-elemental-torment",
+    "name": "Amulet of Elemental Torment",
+    "slot": "amulet",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Nature's Vengeance: When the wearer stands on certain surfaces and casts a spell that deals damage, the target also suffers the surface's effects."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6477 Y: 2884: Carried by Hope while fighting Raphael in the Foyer",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "sorlock",
+      "magic-missile-build"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_Elemental_Torment"
+  },
+  {
+    "id": "amulet-of-greater-health",
+    "name": "Amulet of Greater Health",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Sets the wearer's \u202fConstitution score to 23. The enchantment has no effect if their Constitution score is higher without it.",
+      "Advantage on Constitution \u202fSaving Throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6548 Y: 2940: On the left-most pedestal in the Archive",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "loredin",
+      "arcane-archer",
+      "hexblade",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "life-domain-cleric",
+      "beast-master",
+      "ninja",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "jack-sparrow",
+      "arcane-trickster",
+      "stars-druid",
+      "swarmkeeper-melee",
+      "way-of-the-four-elements-monk",
+      "valour-bard",
+      "thief",
+      "swashbuckler",
+      "trickery-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_Greater_Health"
+  },
+  {
+    "id": "amulet-of-the-devout",
+    "name": "Amulet of the Devout",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "High Spellcasting: You gain a +2 bonus to Spell Save DC.",
+      "Godswill: You gain an additional use of \u202fChannel Divinity Charge. Once used, it is restored upon taking a Long Rest[See: Bugs]."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 796 Y: 1159: In the main Offering Chest in the basement",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "swords-bard-archer",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "stars-cleric",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "nature-cleric",
+      "arcane-archer",
+      "bladesinger",
+      "death-cleric",
+      "moon-druid",
+      "magic-missile-build",
+      "life-domain-cleric",
+      "land-druid",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "arcane-trickster",
+      "stars-druid",
+      "swarmkeeper-melee",
+      "spore-druid",
+      "valour-bard",
+      "trickery-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_the_Devout"
+  },
+  {
+    "id": "amulet-of-the-drunkard",
+    "name": "Amulet of the Drunkard",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Booze Remedy: While wearing this amulet, regain 2d4\u2060\u2060hit points per turn while \u202fDrunk. Additionally, increase the duration of your inebriation by 5 rounds."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sharess' Caress X: 21 Y: 85: Sold by Hoots Hooligan",
+      "area": "Sharess' Caress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_the_Drunkard"
+  },
+  {
+    "id": "amulet-of-windrider",
+    "name": "Amulet of Windrider",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Ride the Winds (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Gust of Wind (): Cast as a level 2 spell (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lora's House X: -65 Y: -89: Reward by Lora Bergauz for saving her daughter during the quest \u2060Save Vanra",
+      "area": "Lora's House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Amulet_of_Windrider"
+  },
+  {
+    "id": "chancers-carcanet",
+    "name": "Chancer's Carcanet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Innate Fortitude: Once per Long Rest, you can use a \u202fReaction to make an \u202fAttack roll or \u202fSaving throw with \u202fAdvantage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -124 Y: 827: Given by Sarin",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Chancer%27s_Carcanet"
+  },
+  {
+    "id": "corvid-token",
+    "name": "Corvid Token",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Polymorph: Dire Raven (): Take the shape of a dire raven that can avoid attention and \u00a0Blind enemies. It has  13 hit points. (\u202fRecharge: Long rest.)",
+      "Boon of the Raven Queen: While wearing the amulet, the wearer's jump and flying speed increase by 1.5\u202fm / 5\u202fft, and they gain the \u202fFeather Fall condition. Feather Fall's effect will persist while the wearer is \u202fPolymorphed or Wild-Shaped."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 56 Y: -120: Sold by Mattis near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [
+      "moon-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Corvid_Token"
+  },
+  {
+    "id": "fey-semblance-amulet",
+    "name": "Fey Semblance Amulet",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Semblance of Fey: You have \u202fAdvantage on Intelligence, Wisdom, and Charisma \u202fSaving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Old Garlow's Place X: -55 Y: -147: Reward from Mayrina for completing the quest Avenge the Hag Survivors",
+      "area": "Old Garlow's Place",
+      "act": 3
+    },
+    "build_tags": [
+      "shadow-blade-bardadin",
+      "hunter-ranger-archer",
+      "stars-cleric",
+      "shadow-monk",
+      "hexblade",
+      "bladesinger",
+      "death-cleric",
+      "reverob-blender",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "life-domain-cleric",
+      "land-druid",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "stars-druid",
+      "valour-bard",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Fey_Semblance_Amulet"
+  },
+  {
+    "id": "khalids-gift",
+    "name": "Khalid's Gift",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Wisdom +1 (up to 21)",
+      "Khalid's Gift: Aid (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Odd Gift: While wearing Khalid's Gift, Jaheira cannot be \u202fCursed."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Elerrathin's Home X: -1572 Y: 976: In a display case in the basement (may not be available if Jaheira is not recruited)[verify]",
+      "area": "Elerrathin's Home",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "life-domain-cleric",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "stars-druid",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Khalid%27s_Gift"
+  },
+  {
+    "id": "sentient-amulet-very-rare",
+    "name": "Sentient Amulet (Very Rare)",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Shatter (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Ki Restoration (): Using the spiritual energy in the amulet, you restore a number of \u202fKi Points equal to your martial arts die. [See Notes] (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Open Hand Temple Cellar X: -7 Y: -1004: Obtained upon completing the Help the Cursed Monk quest",
+      "area": "Open Hand Temple Cellar",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sentient_Amulet_(Very_Rare)"
+  },
+  {
+    "id": "spell-savant-amulet",
+    "name": "Spell Savant Amulet",
+    "slot": "amulet",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Spell Amplification: You gain an additional \u202fLevel 2 Spell Slot."
+    ],
+    "stats": {},
+    "location": {
+      "description": "In High Security Vault n\u00ba1 in The Counting House",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Spell_Savant_Amulet"
+  },
+  {
+    "id": "tressym-collar",
+    "name": "Tressym Collar",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Telekinesis (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Open Hand Temple X: -87 Y: -7: Worn by Tara on the roof",
+      "area": "Open Hand Temple",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Tressym_Collar"
+  },
+  {
+    "id": "unflinching-protector-amulet",
+    "name": "Unflinching Protector Amulet",
+    "slot": "amulet",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Unflinching Protection: When a nearby ally is targeted by an attack of any kind, you can use your \u202fReaction to make that attack automatically miss. This effect can only be used once per Short Rest."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Lodge - Basement Docks X: -1283 Y: 252: Worn by Ptaris",
+      "area": "The Lodge - Basement Docks",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Unflinching_Protector_Amulet"
+  },
+  {
+    "id": "after-death-do-us-part",
+    "name": "After Death Do Us Part",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "After Death Do Us Part: When the wearer is \u202fDowned, they rise once more with half their Hit Points restored, but are gripped by \u202fShadow Possession."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lady Jannath's Estate X: -250 Y: -44: Carried by Oskar Fevras",
+      "area": "Lady Jannath's Estate",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/After_Death_Do_Us_Part"
+  },
+  {
+    "id": "burnished-ring",
+    "name": "Burnished Ring",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Paralyzing Ray (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6481 Y: 2921: Carried by Spectator in Hope's prison",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Burnished_Ring"
+  },
+  {
+    "id": "crypt-lord-ring",
+    "name": "Crypt Lord Ring",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Create Undead (): Cast as a level 6 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Philgrave's Mansion X: 14 Y: -160: Rewarded for completion of the quest \u2060Find Mystic Carrion's Servant, if Thrumbo survives",
+      "area": "Philgrave's Mansion",
+      "act": 3
+    },
+    "build_tags": [
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Crypt_Lord_Ring"
+  },
+  {
+    "id": "djinni-ring",
+    "name": "Djinni Ring",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Mage Hand (): Cast as a cantrip (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -67 Y: -73: Worn by Akabi, the Djinni",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Djinni_Ring"
+  },
+  {
+    "id": "keepsake-ring",
+    "name": "Keepsake Ring",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dominate Beast (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Elfsong Tavern X: -859 Y: 531: In the Basement, in the middle of the room with the rats.",
+      "area": "Elfsong Tavern",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Keepsake_Ring"
+  },
+  {
+    "id": "orphic-ring",
+    "name": "Orphic Ring",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Confusion (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Astral Plane X: 53 Y: 3238: Worn by Orpheus",
+      "area": "Astral Plane",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Orphic_Ring"
+  },
+  {
+    "id": "ring-of-blink",
+    "name": "Ring of Blink",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Blink (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Open Hand Temple X: -45 Y: -5: Reward from Tara, on the roof of the temple",
+      "area": "Open Hand Temple",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Blink"
+  },
+  {
+    "id": "ring-of-feywild-sparks",
+    "name": "Ring of Feywild Sparks",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "You gain a +1 bonus to Spell Save DC.[See: Bugs]",
+      "Feywild Sparks: While your sorcerous \u202fTides of Chaos feature is active, you will always trigger \u202fWild Magic when casting spells."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Blushing Mermaid X: -2329 Y: -95: Carried by Auntie Ethel",
+      "area": "The Blushing Mermaid",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "blaster-cleric",
+      "bardlock",
+      "land-druid",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "arcane-trickster",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Feywild_Sparks"
+  },
+  {
+    "id": "ring-of-regeneration",
+    "name": "Ring of Regeneration",
+    "slot": "ring",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Combat Regeneration: At the beginning of your turn, the ring activates and heals you 1d4\u2060\u2060hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Act Three: If Rolan is dead: Sold by Lorroakan's Projection in Sorcerous Sundries If Rolan and Lorroakan are both alive: Sold by Rolan in Sorcerous Sundries If Rolan is alive but Lorroakan is dead: Carried by Rolan in Ramazith's Tower shortly after Lorroakan is killed (may disappear from Rolan's inventory later) If both Rolan and Lorroakan are dead or missing: Ring is unavailable",
+      "area": "Act Three",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "lockadin",
+      "hexblade",
+      "bladesinger",
+      "life-domain-cleric",
+      "arcane-trickster",
+      "swarmkeeper-melee"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Ring_of_Regeneration"
+  },
+  {
+    "id": "seemingly-gleaming-ring",
+    "name": "Seemingly Gleaming Ring",
+    "slot": "ring",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Charisma \u202fSaving Throws +1",
+      "Wisdom \u202fSaving Throws -1"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Carm's Garms X: 23 Y: 131: Reward by Naaber in Wyrm's Crossing, for initiating a conversation with him multiple times until all dialogue options are exhausted",
+      "area": "Carm's Garms",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Seemingly_Gleaming_Ring"
+  },
+  {
+    "id": "till-death-do-us-part",
+    "name": "Till Death Do Us Part",
+    "slot": "ring",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Beacon of Hope (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lady Jannath's Estate X: -250 Y: -44: Given by Lady Jannath",
+      "area": "Lady Jannath's Estate",
+      "act": 3
+    },
+    "build_tags": [
+      "life-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Till_Death_Do_Us_Part"
+  },
+  {
+    "id": "ambusher",
+    "name": "Ambusher",
+    "slot": "ranged",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Sentinel Weapon: Gain a +1 bonus to Initiative rolls and \u202fAdvantage on Perception Ability Checks.",
+      "Ambusher's Streak: In combat, you deal an additional 1d6\u2060\u2060Necrotic damage against creatures that haven't taken a turn yet.",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington General X: 7 Y: -35: Sold by Exxvikyap in Rivington during Act Three",
+      "area": "Rivington General",
+      "act": 3
+    },
+    "build_tags": [
+      "eldritch-hexknight",
+      "sorcadin",
+      "arcane-trickster"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Ambusher"
+  },
+  {
+    "id": "baldurans-giantslayer",
+    "name": "Balduran's Giantslayer",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Giant Form (): Grow to a fearsome size. Your weapons deal an additional 1d6 damage and you gain  27 temporary hit points and  Advantage on Strength Checks and  Saving throws. (\u202fRecharge: Short rest.)",
+      "Giantslayer: On a hit, double the damage from your Strength modifier. This weapon grants you \u202fAdvantage on \u202fAttack rolls against Large, Huge or Gargantuan creatures.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Topple the Big Folk (): Deal additional damage equal to your proficiency bonus. On a hit, Large, Huge, or Gargantuan creatures take an additional 2d6\u2060\u2060SlashingDRS damage and must succeed a \u202fStrength Saving Throw or fall \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Dragon's Sanctum X: 633 Y: -989: On the corpse of Ansur",
+      "area": "The Dragon's Sanctum",
+      "act": 3
+    },
+    "build_tags": [
+      "lockadin",
+      "bardadin",
+      "sorcadin",
+      "two-hander-eldritch-knight",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "loredin",
+      "oath-of-the-crown-paladin",
+      "wildheart-tiger-barbarian",
+      "champion-fighter",
+      "oath-of-vengeance-paladin",
+      "beast-master"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Balduran%27s_Giantslayer"
+  },
+  {
+    "id": "blackguards-sword",
+    "name": "Blackguard's Sword",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dazing Smite: On a hit infused with one of your Smites, the target must succeed a \u202fConstitution saving throw or become \u202fDazed.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1293 Y: 503: Carried by the death knight That Which Guards",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blackguard%27s_Sword"
+  },
+  {
+    "id": "blightbringer",
+    "name": "Blightbringer",
+    "slot": "ranged",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Blightbringer: Attacking Gnomes or Dwarves with this weapon receives a 1d4 bonus to Attack and Damage rolls.",
+      "Prey Decelerator: When this weapon lands a Critical Hit, it also \u202fSlows the target creature.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Blightbringer"
+  },
+  {
+    "id": "bloodthirst",
+    "name": "Bloodthirst",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "True Strike (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "Bound Weapon",
+      "Armour Class +1 (Off-Hand Only)",
+      "Improved Critical: The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
+      "Exploit Weakness: Creatures hit with this weapon receive Vulnerability to \u2060Piercing damage.",
+      "True Strike Riposte: When a creature misses you with a melee attack, you may retaliate and gain \u202fTrue Strike.",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest \u2060Get Orin's Netherstone",
+      "area": "Bhaal Temple",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Bloodthirst"
+  },
+  {
+    "id": "caitiff-staff",
+    "name": "Caitiff Staff",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Caitiff's Restoration (): Replenish 1 expended Warlock spell slots. (\u202fRecharge: Long rest.)",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -38 Y: 17: Sold by Helsik once her special stock is unlocked",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Caitiff_Staff"
+  },
+  {
+    "id": "clown-hammer",
+    "name": "Clown Hammer",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Grim Irony: Whenever this weapon lands a critical hit, both target and attacker must succeed a Wisdom Saving Throw, or be affected by \u202ffits of laughter.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -43 Y: -35: Carried by Dribbles on the stage in the north-eastern corner",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Clown_Hammer"
+  },
+  {
+    "id": "cold-snap",
+    "name": "Cold Snap",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1 (Off-Hand Only)",
+      "Chilling Counter: When a creature misses you with an attack, it receives \u202fChilled for 2 turns.[See: Bugs]"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 43 Y: -101: Sold by Ferg Drogher near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cold_Snap"
+  },
+  {
+    "id": "crimson-mischief",
+    "name": "Crimson Mischief",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Prey Upon the Weak: This weapon deals an additional 1d4\u2060\u2060Piercing damage against targets with 50% of their hit points or fewer.",
+      "Redvein Savagery: When you make an attack with \u202fAdvantage, the target takes an additional 7\u2060\u2060PiercingDRS damage.",
+      "Crimson Weapon: When you make an attack with your off-hand weapon, you can add your Ability Modifier to the damage of the attack.",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest \u2060Get Orin's Netherstone",
+      "area": "Bhaal Temple",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "bardadin",
+      "bladelock",
+      "bladesinger",
+      "ninja",
+      "jack-sparrow",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Crimson_Mischief"
+  },
+  {
+    "id": "despair-of-athkatla",
+    "name": "Despair of Athkatla",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Ramazith's Tower X: 4960 Y: 705: Carried by Lorroakan's body after fighting him",
+      "area": "Ramazith's Tower",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Despair_of_Athkatla"
+  },
+  {
+    "id": "dolor-amarus",
+    "name": "Dolor Amarus",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Highberry's Home X: 20 Y: -34: Carried by Dolor",
+      "area": "Highberry's Home",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "way-of-open-hand-monk",
+      "sorcadin",
+      "hunter-ranger-archer",
+      "arcane-archer",
+      "bladesinger",
+      "2hcb-gloom-thief",
+      "ninja",
+      "selunes-holy-archer",
+      "arcane-trickster",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Dolor_Amarus"
+  },
+  {
+    "id": "dread-iron-dagger",
+    "name": "Dread Iron Dagger",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dread Iron Ambush: While its wielder is hidden, this weapon deals an extra 1d6\u2060\u2060Necrotic.",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Dread_Iron_Dagger"
+  },
+  {
+    "id": "duellists-prerogative",
+    "name": "Duellist's Prerogative",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Challenge to Duel (): Challenge an enemy to attack only you, inflicting \u202fBleeding on the target.",
+      "Elegant Duellist: While your off-hand is empty, you score a Critical Hit when rolling a 19. Moreover, you gain an additional \u202fReaction per turn.",
+      "Withering Cut: On a hit with a melee weapon, use a \u202fReaction to deal additional \u2060Necrotic damage equal to your Proficiency Bonus.",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
+      "Dueller's Enthusiasm (): While you are not dual-wielding and your off hand is empty, you can make an additional melee attack with The Dueller. (\u202fRecharge: Per turn.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lora's House X: -65 Y: -89: Reward from Lora Bergauz for completing the quest \u2060Save Vanra",
+      "area": "Lora's House",
+      "act": 3
+    },
+    "build_tags": [
+      "bardadin",
+      "battle-master-fighter",
+      "lore-bard",
+      "bladelock",
+      "bardlock",
+      "loredin",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "champion-fighter",
+      "jack-sparrow",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Duellist%27s_Prerogative"
+  },
+  {
+    "id": "duke-ravengards-longsword",
+    "name": "Duke Ravengard's Longsword",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Charisma +2",
+      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a \u00a0weapon attack. (\u202fRecharge: Short rest.)",
+      "Stirring Execution: When you kill an enemy, allies within 9\u202fm / 30\u202fft gain temporary hit points equal to your[See: Bugs] Charisma Modifier (minimum 1).",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress: Carried by Duke Ulder Ravengard at the audience hall",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Duke_Ravengard%27s_Longsword"
+  },
+  {
+    "id": "dwarven-thrower",
+    "name": "Dwarven Thrower",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Homing Weapon: This weapon will return to its owner when thrown.",
+      "Dwarven Thrower: A dwarf throwing this warhammer deals an extra 1d8\u2060\u2060Bludgeoning damage. If the target is a Large, Huge or Gargantuan creature, the strike deals an additional 2d8\u2060\u2060Bludgeoning damage.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 43 Y: -101: Sold by Ferg Drogher near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [
+      "berserker-thrower",
+      "eldritch-knight-thrower",
+      "giant-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Dwarven_Thrower"
+  },
+  {
+    "id": "flail-of-ages",
+    "name": "Flail of Ages",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Elemental Age (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Elements of an Epoch: Depending on what kind of damage this weapon does, it also inflicts: \u202fAcid condition, \u202fChilled condition, or \u202fBurning condition.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Armoury X: -36 Y: -83: Sold by Fytz the Firecracker, near the Lower City Central Wall waypoint",
+      "area": "Stormshore Armoury",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Flail_of_Ages"
+  },
+  {
+    "id": "foebreaker",
+    "name": "Foebreaker",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Lethal Weapon: This weapon ignores resistance to \u2060Bludgeoning damage.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Vault X: 326 Y: 998: In a hidden chest in the Karsus section",
+      "area": "Sorcerous Vault",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Foebreaker"
+  },
+  {
+    "id": "gleamdance-dagger",
+    "name": "Gleamdance Dagger",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Gleamdance Dagger: Glowing: This object shines with a glowing light in a radius of \u20606\u202fm / 20\u202fft.",
+      "Gleamdancer: When this dagger is wielded in the off-hand, the wielder gains a +1 bonus to \u202fArmour Class.",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Western Beach X: -210 Y: 99: Carried by Farlin at the beaches west of Rivington",
+      "area": "Western Beach",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Gleamdance_Dagger"
+  },
+  {
+    "id": "gontr-mael",
+    "name": "Gontr Mael",
+    "slot": "ranged",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Celestial Haste (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Promised Victory: On a hit, possibly inflict \u202fGuiding Bolt upon the target.",
+      "Gontr Mael: Glowing: This object shines with a glowing light in a radius of 6\u202fm / 20\u202fft. Toggle this to douse and rekindle the light.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
+      "Bolt of Celestial Light (): Frighten your target with intimidating arrows. After attacking, ranged weapon attacks made by Gontr Mael deal an additional 1d4\u2060\u2060Radiant damage. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Steel Watch Foundry X: -1952 Y: 206: Carried by the Steel Watcher Titan in the Control Centre",
+      "area": "Steel Watch Foundry",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "hunter-ranger-archer",
+      "arcane-archer",
+      "life-domain-cleric",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "valour-bard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Gontr_Mael"
+  },
+  {
+    "id": "hammer-of-the-just",
+    "name": "Hammer of the Just",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Detect Thoughts (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
+      "Slay the Wicked: This weapon deals an additional 1d6\u2060\u2060Bludgeoning damage against Fiends and Undead.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 796 Y: 1159: In the Offerings to Tyr chest in the basement",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hammer_of_the_Just"
+  },
+  {
+    "id": "harper-sacredstriker",
+    "name": "Harper Sacredstriker",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Spiritual Weapon (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Sundries X: -14 Y: -72: Sold by Lorroakan's Projection or Rolan on the ground floor",
+      "area": "Sorcerous Sundries",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Harper_Sacredstriker"
+  },
+  {
+    "id": "hellfire-engine-crossbow",
+    "name": "Hellfire Engine Crossbow",
+    "slot": "ranged",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Lightning Arrow (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
+      "Piercing Shot (): Deal regular damage and possibly inflict \u202fGaping Wounds which cause extra damage on attacks. (\u202fRecharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
+      "Reposition Malefactor (): Pulls the creature 9\u202fm / 30\u202fft closer to you."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Steel Watch Foundry: Created by combining the following components at the table located at X: -325 Y: -134 on the main floor in the Security Office: Watcher Crossbow Blueprint - found on a desk at X: -333 Y: -157 on the main floor of the Steel Watch Foundry Targeting Module - found on a table at X: -307 Y: -157, next to the plaque labeled \"Watcher Targeting Module\" on the main floor of the Steel Watch Foundry Steel Watcher Arm - found on a table at X: -280 Y: -165, next to the plaque labeled \"Steel Watcher Arm Unit\" on the main floor of the Steel Watch Foundry",
+      "area": "Steel Watch Foundry",
+      "act": 3
+    },
+    "build_tags": [
+      "hunter-ranger-archer"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hellfire_Engine_Crossbow"
+  },
+  {
+    "id": "hellfire-greataxe",
+    "name": "Hellfire Greataxe",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Thermodynamo: Whenever you deal damage with this weapon, you gain 2 turns of \u202fHeat.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Prepare (): Spend 6\u202fm / 20\u202fft of your movement to deal an additional Strength modifier\u2060\u2060PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. (\u202fRecharge: Short rest.)",
+      "Hellflame Cleave (): Cast as a cantrip (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sorcerous Vault X: 366 Y: 941: In a gilded chest in the \"Illusion\" section",
+      "area": "Sorcerous Vault",
+      "act": 3
+    },
+    "build_tags": [
+      "bladelock"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hellfire_Greataxe"
+  },
+  {
+    "id": "hellrider-longbow",
+    "name": "Hellrider Longbow",
+    "slot": "ranged",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Heightened Awareness: Gain a +3 bonus to Initiative rolls and \u202fAdvantage on \u202fPerception checks.",
+      "Fiendish Fire: Once per turn, a creature hit by this weapon will possibly be afflicted with \u202fFaerie Fire.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 43 Y: -101: Sold by Ferg Drogher near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "gloomstalker-assassin",
+      "abjuration-arcane-defender",
+      "eldritch-hexknight",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "stars-cleric",
+      "lorecerer",
+      "shadow-monk",
+      "lore-bard",
+      "sorlock",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "cold-sorcerer",
+      "bladelock",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "loredin",
+      "nature-cleric",
+      "hexblade",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "death-cleric",
+      "reverob-blender",
+      "giant-barbarian",
+      "moon-druid",
+      "oath-of-vengeance-paladin",
+      "magic-missile-build",
+      "life-domain-cleric",
+      "beast-master",
+      "land-druid",
+      "ninja",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "jack-sparrow",
+      "stars-druid",
+      "swarmkeeper-melee",
+      "way-of-the-four-elements-monk",
+      "spore-druid",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Hellrider_Longbow"
+  },
+  {
+    "id": "hollows-staff",
+    "name": "Hollow's Staff",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Arms of Hadar (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Heightened Necromancy: Creatures have \u202fDisadvantage on \u202fSaving Throws against your necromancy spells.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -82 Y: -33: Carried by Lucretious",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Hollow%27s_Staff"
+  },
+  {
+    "id": "infernal-mace",
+    "name": "Infernal Mace",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Infernal Weapon: On a hit, this weapon deals an additional 3\u2060\u2060Poison damage and can possibly \u202fPoison its target.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Steel Watch Foundry: Carried by Black Gauntlets of Bane Borri Paver, Hahns Rives, Ifran, Indora Ralston, Tamia Holzt",
+      "area": "Steel Watch Foundry",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Mace"
+  },
+  {
+    "id": "infernal-rapier",
+    "name": "Infernal Rapier",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Planar Ally: Cambion (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
+      "High Spellcasting: You gain a +1 bonus to Spell Save DC.",
+      "Melee Caster: Instead of its Dexterity Modifier, the affected entity add its Spellcasting Ability Modifier to \u202fAttack rolls.",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Mind Flayer Colony X: 676 Y: 39: Possibly rewarded by Mizora to Wyll if freed during his companion quest, \u2060The Blade of Frontiers",
+      "area": "Mind Flayer Colony",
+      "act": 3
+    },
+    "build_tags": [
+      "bardadin",
+      "bladelock",
+      "jack-sparrow"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Rapier"
+  },
+  {
+    "id": "infernal-spear",
+    "name": "Infernal Spear",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Infernal Weapon: On a hit, this weapon deals an additional 3\u2060\u2060Poison damage and can possibly \u202fPoison its target.",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -13 Y: 202: Carried by Iron Consul Mian",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Infernal_Spear"
+  },
+  {
+    "id": "kurwins-cauteriser",
+    "name": "Kurwin's Cauteriser",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Cauteriser: Deals an additional 1d4\u2060\u2060Fire. On a hit, the target starts \u202fBurning unless it succeeds a Constitution \u202fSaving throw.",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Graveyard (Lower City) X: 7 Y: 24: carried by Bugthimble",
+      "area": "Graveyard (Lower City)",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Kurwin%27s_Cauteriser"
+  },
+  {
+    "id": "markoheshkir",
+    "name": "Markoheshkir",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Kereska's Favour (): Cast as a level 4 spell (\u202fRecharge: Short rest.)",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Arcane Battery: Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Ramazith's Tower X: 4970 Y: 705: In a Globe of Invulnerability",
+      "area": "Ramazith's Tower",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "stars-cleric",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "nature-cleric",
+      "moon-druid",
+      "eldritch-blast-build",
+      "magic-missile-build",
+      "land-druid",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "stars-druid",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Markoheshkir"
+  },
+  {
+    "id": "orphic-hammer",
+    "name": "Orphic Hammer",
+    "slot": "weapon",
+    "rarity": "story_item",
+    "armour_class": null,
+    "effects": [
+      "Spell Resistance: You have \u202fAdvantage on \u202fSaving throws against spells.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
+      "Unshackling Strike (): Smite the magical bonds keeping a creature \u202fRestrained, \u202fParalyzed, and \u202fStunned, freeing it."
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6543 Y: 2921: On the central pedestal in the Archive",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Orphic_Hammer"
+  },
+  {
+    "id": "ravengards-scourger",
+    "name": "Ravengard's Scourger",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a \u00a0weapon attack. (\u202fRecharge: Short rest.)",
+      "Heartstopper (): Smash an enemy's chest in and possibly inflict \u202fChest Trauma. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -711 Y: 882: In the High Security Vault n\u00ba5",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Ravengard%27s_Scourger"
+  },
+  {
+    "id": "salty-scimitar-rrr",
+    "name": "Salty Scimitar(rrr)",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Command ( + ): Cast as a level 1 spell (\u202fRecharge: Long rest.)",
+      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Blushing Mermaid X: -2339 Y: -127: Carried by the real Captain Grisly in the basement",
+      "area": "The Blushing Mermaid",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Salty_Scimitar(rrr)"
+  },
+  {
+    "id": "sethan",
+    "name": "Sethan",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Sethan: Spiritual Greataxe (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
+      "Sethan: Reduce (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Prepare (): Spend 6\u202fm / 20\u202fft of your movement to deal an additional Strength modifier\u2060\u2060PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 43 Y: -101: Sold by Ferg Drogher near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sethan"
+  },
+  {
+    "id": "silver-sword-of-the-astral-plane",
+    "name": "Silver Sword of the Astral Plane",
+    "slot": "weapon",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Githborn Psionic Resistance: A githyanki holding this weapon has \u202fAdvantage on Intelligence, Wisdom, and Charisma \u202fSaving Throws, resistance to Psychic damage, and cannot be \u202fCharmed.",
+      "Githborn Psionic Weapon: When wielded by a githyanki this weapon deals an additional 1d6\u2060\u2060Psychic damage.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Soulbreaker (): Rend the enemy's body and soul, dealing additional \u2060Psychic damage equal to your proficiency bonus, and possibly \u202fStun them. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -70 Y: 828: Rewarded for showing the Orphic Hammer to (or killing) Kith'rak Voss after agreeing to meet him in the sewers within the Undercity in Act Three",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [
+      "lockadin",
+      "sorcadin",
+      "two-hander-eldritch-knight",
+      "battle-master-fighter",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "loredin",
+      "champion-fighter",
+      "oath-of-vengeance-paladin"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Silver_Sword_of_the_Astral_Plane"
+  },
+  {
+    "id": "staff-of-a-mumbling-wizard",
+    "name": "Staff of a Mumbling Wizard",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Firebolt?: Cast as a cantrip at will, but has a 1/20 chance to cause a \u202fFireball explosion.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Circus of the Last Days X: -68 Y: -73: Given as a consolation prize by Akabi after failing to win the jackpot at the Wheel of Fortune",
+      "area": "Circus of the Last Days",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_a_Mumbling_Wizard"
+  },
+  {
+    "id": "staff-of-cherished-necromancy",
+    "name": "Staff of Cherished Necromancy",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Heightened Necromancy: Creatures have \u202fDisadvantage on \u202fSaving Throws against your necromancy spells.",
+      "Life Essence Harvest: When the wielder kills a hostile creature with a spell, they greedily absorb its energy and gain \u202fLife Essence until their next Long Rest.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Philgrave's Mansion X: 14 Y: -160: Carried by Mystic Carrion",
+      "area": "Philgrave's Mansion",
+      "act": 3
+    },
+    "build_tags": [
+      "stars-cleric",
+      "death-cleric",
+      "moon-druid",
+      "land-druid",
+      "spore-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_Cherished_Necromancy"
+  },
+  {
+    "id": "staff-of-interruption",
+    "name": "Staff of Interruption",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Counterspell (): Cast as a level 5 spell (\u202fRecharge: Long rest.)",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Old Garlow's Place at X: -55 Y: -1470: Rewarded by Mayrina after finishing the quest Help the Hag Survivors",
+      "area": "Old Garlow's Place",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_Interruption"
+  },
+  {
+    "id": "staff-of-spellpower",
+    "name": "Staff of Spellpower",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Arcane Battery: Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "House of Hope X: -6486 Y: 2939: In Raphael's Vault across from the entrance to the Boudoir",
+      "area": "House of Hope",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_Spellpower"
+  },
+  {
+    "id": "staff-of-the-emperor",
+    "name": "Staff of the Emperor",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Imperial Retaliation: When the wielder succeeds a \u202fSaving throw, the foe that caused the throw needs to make an \u202fIntelligence saving throw or be \u202fStunned for 1 turn.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Astral Plane X: -160 Y: -1165: Carried by the Emperor",
+      "area": "Astral Plane",
+      "act": 3
+    },
+    "build_tags": [
+      "lorecerer",
+      "lore-bard",
+      "bardlock"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_the_Emperor"
+  },
+  {
+    "id": "staff-of-the-ram",
+    "name": "Staff of the Ram",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Staff of the Ram: Once per turn, the blow possibly knocks a foe back 2\u202fm / 7\u202fft and \u202fStuns them. This has no effect on dragons or Huge creatures.",
+      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Elerrathin's Home X: -1572 Y: 976: In an opulent chest in the basement",
+      "area": "Elerrathin's Home",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Staff_of_the_Ram"
+  },
+  {
+    "id": "stillmaker",
+    "name": "Stillmaker",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Hold Person (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Open Hand Temple X: 67 Y: -1018: In a hole in the area underneath the temple",
+      "area": "Open Hand Temple",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Stillmaker"
+  },
+  {
+    "id": "sword-of-chaos",
+    "name": "Sword of Chaos",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Chaos: On dealing damage with this weapon, regain 1d6\u2060\u2060hit points.[See Notes]",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1248 Y: 503: Carried by Sarevok Anchev",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sword_of_Chaos"
+  },
+  {
+    "id": "sword-of-the-emperor",
+    "name": "Sword of the Emperor",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Shapeshifter Slayer: This weapon deals an additional   1d4 damage against shapeshifters or polymorphed creatures.",
+      "Magical Durability: The wielder has a +2 bonus to \u202fSaving throws against spells.",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Knights of the Shield Hideout X: -728 Y: 588: In the hidden room during the quest Visit the Emperor's Old Hideout",
+      "area": "Knights of the Shield Hideout",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Sword_of_the_Emperor"
+  },
+  {
+    "id": "the-dead-shot",
+    "name": "The Dead Shot",
+    "slot": "ranged",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Improved Critical: The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
+      "Keen Attack: The wielder doubles their Proficiency Bonus when rolling ranged attacks with this weapon, unless they have Disadvantage.",
+      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Armoury X: -36 Y: -83: Sold by Fytz the Firecracker, near the Lower City Central Wall waypoint",
+      "area": "Stormshore Armoury",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "sorlock",
+      "bladelock",
+      "loredin",
+      "arcane-archer",
+      "hexblade",
+      "death-cleric",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "champion-fighter",
+      "eldritch-blast-build",
+      "beast-master",
+      "ninja",
+      "selunes-holy-archer",
+      "swarmkeeper-melee",
+      "way-of-the-four-elements-monk",
+      "thief"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/The_Dead_Shot"
+  },
+  {
+    "id": "the-long-arm-of-the-gur",
+    "name": "The Long Arm of the Gur",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Revenant Scourge: When used against undead creatures this weapon has +1d4 bonus to Attack and Damage rolls.",
+      "Piercing Shot (): Deal regular damage and possibly inflict \u202fGaping Wounds which cause extra damage on attacks. (\u202fRecharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -718 Y: 861: In the High Security Vault n\u00ba3",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/The_Long_Arm_of_the_Gur"
+  },
+  {
+    "id": "the-sacred-star",
+    "name": "The Sacred Star",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Radiant Strike: On a hit, inflict 1 turn of \u202fRadiating Orb upon the target.",
+      "Sanctified Weapon: Undead creatures struck by this weapon are possibly \u202fTurned.",
+      "Heartstopper (): Smash an enemy's chest in and possibly inflict \u202fChest Trauma. (\u202fRecharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
+      "Dawnburst Strike (): Deal additional \u2060Radiant damage equal to your proficiency bonus. On a hit, light erupts around you in a 3\u202fm / 10\u202fft area. Enemies in the light must succeed a \u202fConstitution Saving Throw or be \u202fBlinded. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 107 Y: -22: Sold by Vicar Humbletoes",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [
+      "war-domain-cleric",
+      "radiating-armored-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/The_Sacred_Star"
+  },
+  {
+    "id": "trident-of-the-waves",
+    "name": "Trident of the Waves",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "The Water Caller: On a hit, inflict \u202fWet and create a \u20602\u202fm / 7\u202fft \u202fWater surface centred around the target.",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
+      "Disarming Strike (): Focus your attack on your foe's hands and possibly force them to drop the weapons they are holding. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -711 Y: 882: In the High Security Vault n\u00ba4",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Trident_of_the_Waves"
+  },
+  {
+    "id": "vicious-battleaxe",
+    "name": "Vicious Battleaxe",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
+      "Maiming Strike (): Possibly \u202fMaims your target. They can't move. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Vicious_Battleaxe"
+  },
+  {
+    "id": "vicious-shortbow",
+    "name": "Vicious Shortbow",
+    "slot": "ranged",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1263 Y: 511: Sold by Echo of Abazigal",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "eldritch-hexknight",
+      "bardadin",
+      "sorcadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "arcane-archer",
+      "bladesinger",
+      "wildheart-tiger-barbarian",
+      "jack-sparrow",
+      "swarmkeeper-melee",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Vicious_Shortbow"
+  },
+  {
+    "id": "wavemothers-sickle",
+    "name": "Wavemother's Sickle",
+    "slot": "weapon",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Watery Guidance: This weapon has \u202fAdvantage against \u202fWet creatures.",
+      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Water Queen's House X: -229 Y: -261: Carried by Allandra Grey",
+      "area": "Water Queen's House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Wavemother%27s_Sickle"
+  },
+  {
+    "id": "abdels-trusted-shield",
+    "name": "Abdel's Trusted Shield",
+    "slot": "shield",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Protection from Missiles (): Cast as a level 2 spell (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Golbraith's Cellar X: -148 Y: -60: Given by Golbraith on the first floor of his home",
+      "area": "Golbraith's Cellar",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Abdel%27s_Trusted_Shield"
+  },
+  {
+    "id": "ketherics-shield",
+    "name": "Ketheric's Shield",
+    "slot": "shield",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Advantage on Dexterity Saving Throws",
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Mind Flayer Colony X: 861 Y: -23: Carried by Ketheric Thorm when fought a second time",
+      "area": "Mind Flayer Colony",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "sorcadin",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "stars-cleric",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "nature-cleric",
+      "arcane-archer",
+      "hexblade",
+      "death-cleric",
+      "eldritch-blast-build",
+      "magic-missile-build",
+      "life-domain-cleric",
+      "knowledge-cleric",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "jack-sparrow",
+      "valour-bard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Ketheric%27s_Shield"
+  },
+  {
+    "id": "shield-1",
+    "name": "Shield +1",
+    "slot": "shield",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "No special properties, beyond the \u202fArmour Class enchantment."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Flymm Cargo: Carried by Redhammer",
+      "area": "Flymm Cargo",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_%2B1"
+  },
+  {
+    "id": "shield-of-shielding",
+    "name": "Shield of Shielding",
+    "slot": "shield",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Shield (): Cast as a level 1 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 796 Y: 1159: Can be found inside the Offerings to Helm Chest in the basement, which can in turn be reached by entering the secret hatch in the corner of the tabernacle",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_of_Shielding"
+  },
+  {
+    "id": "shield-of-the-undevout",
+    "name": "Shield of the Undevout",
+    "slot": "shield",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Dreadful Hewer: Your foes have \u202fDisadvantage on Saving Throws to resist your spells or actions that inflict \u202fFear.",
+      "Additional Spell Slot: You gain 1 \u202fLevel 1 Spell Slot."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Murder Tribunal X: -1293 Y: 503: Carried by the death knight That Which Guards",
+      "area": "Murder Tribunal",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shield_of_the_Undevout"
+  },
+  {
+    "id": "swires-sledboard",
+    "name": "Swires' Sledboard",
+    "slot": "shield",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Shield Conduit: The shield shrouds the wearer with \u202fForce Conduit at the start of its turn in combat."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington General X: 7 Y: -35: Sold by Exxvikyap in Rivington during Act Three",
+      "area": "Rivington General",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "berserker-thrower",
+      "eldritch-knight-thrower",
+      "battle-master-fighter",
+      "champion-fighter",
+      "life-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Swires%27_Sledboard"
+  },
+  {
+    "id": "cindermoth-cloak",
+    "name": "Cindermoth Cloak",
+    "slot": "cloak",
+    "rarity": "uncommon",
+    "armour_class": null,
+    "effects": [
+      "Flaming Shroud: A creature that damages the wearer within 2\u202fm / 7\u202fft receives \u202fBurning."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Lower City Sewers X: -123 Y: 834: Worn by Aelis Siryasius in the area filled with greasy surfaces",
+      "area": "Lower City Sewers",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cindermoth_Cloak"
+  },
+  {
+    "id": "cloak-of-displacement",
+    "name": "Cloak of Displacement",
+    "slot": "cloak",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Displacement: At the beginning of the wearer's turn, the cloak activates, granting enemies \u202fDisadvantage on \u202fAttack rolls that target the wearer. This effect lasts until the wearer takes damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "gloomstalker-assassin",
+      "swords-bard-archer",
+      "eldritch-hexknight",
+      "lockadin",
+      "way-of-open-hand-monk",
+      "berserker-thrower",
+      "bardadin",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "shadow-blade-bardadin",
+      "two-hander-eldritch-knight",
+      "hunter-ranger-archer",
+      "stars-cleric",
+      "lorecerer",
+      "shadow-monk",
+      "battle-master-fighter",
+      "lore-bard",
+      "sorlock",
+      "oathbreaker-paladin",
+      "oath-of-devotion-paladin",
+      "oath-of-ancients-paladin",
+      "bladelock",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "loredin",
+      "nature-cleric",
+      "arcane-archer",
+      "hexblade",
+      "bladesinger",
+      "oath-of-the-crown-paladin",
+      "death-cleric",
+      "reverob-blender",
+      "2hcb-gloom-thief",
+      "giant-barbarian",
+      "wildheart-tiger-barbarian",
+      "moon-druid",
+      "champion-fighter",
+      "eldritch-blast-build",
+      "oath-of-vengeance-paladin",
+      "magic-missile-build",
+      "beast-master",
+      "land-druid",
+      "ninja",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "jack-sparrow",
+      "arcane-trickster",
+      "stars-druid",
+      "swarmkeeper-melee",
+      "way-of-the-four-elements-monk",
+      "spore-druid",
+      "valour-bard",
+      "thief",
+      "swashbuckler"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Cloak_of_Displacement"
+  },
+  {
+    "id": "cloak-of-the-weave",
+    "name": "Cloak of the Weave",
+    "slot": "cloak",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Absorb Elements (): Absorb elemental damage once per Short Rest. Take half damage from the next elemental attack targeting you, and deal an additional 1d6 of that element type on your next attack. (\u202fRecharge: Short rest.)",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Devil's Fee X: -38 Y: 17: Sold by Helsik once her special stock is unlocked",
+      "area": "Devil's Fee",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "bardlock",
+      "nature-cleric",
+      "moon-druid",
+      "eldritch-blast-build",
+      "magic-missile-build",
+      "land-druid",
+      "knowledge-cleric",
+      "thundersnow-herald",
+      "war-domain-cleric",
+      "arcane-trickster",
+      "spore-druid",
+      "trickery-domain-cleric",
+      "conjuration-wizard",
+      "divination-wizard",
+      "enchantment-wizard",
+      "transmutation-wizard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Cloak_of_the_Weave"
+  },
+  {
+    "id": "mantle-of-the-holy-warrior",
+    "name": "Mantle of the Holy Warrior",
+    "slot": "cloak",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Crusader's Mantle (): Cast as a level 3 spell (\u202fRecharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Stormshore Tabernacle X: 107 Y: -22: Sold by Vicar Humbletoes",
+      "area": "Stormshore Tabernacle",
+      "act": 3
+    },
+    "build_tags": [
+      "life-domain-cleric"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Mantle_of_the_Holy_Warrior"
+  },
+  {
+    "id": "nymph-cloak",
+    "name": "Nymph Cloak",
+    "slot": "cloak",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Dominate Person (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "The Counting House X: -711 Y: 864: In the High Security Vault n\u00ba1",
+      "area": "The Counting House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Nymph_Cloak"
+  },
+  {
+    "id": "shade-slayer-cloak",
+    "name": "Shade-Slayer Cloak",
+    "slot": "cloak",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Stealthy Critical: While \u202fHiding, the number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Guildhall X: -17 Y: 755: Sold by Sticky Dondo",
+      "area": "Guildhall",
+      "act": 3
+    },
+    "build_tags": [
+      "gloomstalker-assassin",
+      "eldritch-knight-thrower",
+      "eldritch-blast-build",
+      "ninja"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Shade-Slayer_Cloak"
+  },
+  {
+    "id": "wavemothers-cloak",
+    "name": "Wavemother's Cloak",
+    "slot": "cloak",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Damp Aegis: During Combat, once per turn, the cloak grants the wearer \u202fWater Layer Protection[See: Bugs] until the wearer takes damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Water Queen's House X: -248 Y: -249: In an opulent chest behind Allandra Grey's desk on the upper floor",
+      "area": "Water Queen's House",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Wavemother%27s_Cloak"
+  },
+  {
+    "id": "bonespike-garb",
+    "name": "Bonespike Garb",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Slabjaw Determination: You gain \u202f15 temporary hit points whenever you \u202fRage.",
+      "Exoskeletal Endurance: Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes Constitution modifier\u2060\u2060Piercing damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington General X: 7 Y: -35: Sold by Exxvikyap in Rivington during Act Three",
+      "area": "Rivington General",
+      "act": 3
+    },
+    "build_tags": [
+      "abjuration-arcane-defender",
+      "berserker-thrower",
+      "giant-barbarian",
+      "wild-magic-barbarian"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Bonespike_Garb"
+  },
+  {
+    "id": "cloth-of-authority",
+    "name": "Cloth of Authority",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1",
+      "Dauntless: You can't be \u202fFrightened or afflicted with other emotion-altering conditions.",
+      "Authority: You have \u202fAdvantage on Intimidation checks and Insight checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Wyrm's Rock Fortress X: -26 Y: 211: Worn by Enver Gortash",
+      "area": "Wyrm's Rock Fortress",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Cloth_of_Authority"
+  },
+  {
+    "id": "drunken-cloth",
+    "name": "Drunken Cloth",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Snowy Liver: While \u202fDrunk you have \u202fAdvantage on Constitution \u202fSaving Throws, and you gain Temporary Hit Points equal to your Constitution Modifier at the start of your turn."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Guildhall X: -19 Y: 765: Sold by Severn",
+      "area": "Guildhall",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Drunken_Cloth"
+  },
+  {
+    "id": "garb-of-the-land-and-sky",
+    "name": "Garb of the Land and Sky",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1",
+      "Mountainous Poise: While using \u202fPatient Defence, you also benefit from the effect of \u202fBlade Ward.",
+      "Breezeswift Speed: While using \u202fStep of the Wind, your next \u202fAttack roll has \u202fAdvantage and deals an additional 1d8\u2060\u2060Force damage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Danthelon's Dancing Axe X: -10 Y: 143: Sold by Entharl Danthelon in Wyrm's Crossing",
+      "area": "Danthelon's Dancing Axe",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Garb_of_the_Land_and_Sky"
+  },
+  {
+    "id": "mutilated-carapace",
+    "name": "Mutilated Carapace",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1",
+      "Formless Slaughter: You gain a +1 to Attack and Damage rolls while shapeshifting or disguised.",
+      "Faceless Masquerade: You have \u202fAdvantage on \u202fDeception Checks and \u202fPersuasion Checks."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Bhaal Temple X: 61 Y: 1004: Worn by Orin during the quest \u2060Get Orin's Netherstone",
+      "area": "Bhaal Temple",
+      "act": 3
+    },
+    "build_tags": [
+      "moon-druid"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Mutilated_Carapace"
+  },
+  {
+    "id": "robe-of-supreme-defences",
+    "name": "Robe of Supreme Defences",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Exquisite Focus: While concentrating, you add your Spellcasting Modifier to your \u202fSaving throws and gain a +1 bonus to your \u202fArmour Class."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Rivington X: 43 Y: -101: Sold by Ferg Drogher near the Requisitioned Barn",
+      "area": "Rivington",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "shadow-monk",
+      "bladelock",
+      "bladesinger"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Robe_of_Supreme_Defences"
+  },
+  {
+    "id": "robe-of-the-weave",
+    "name": "Robe of the Weave",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +2",
+      "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
+      "Weave Eater: Whenever the wearer succeeds a \u202fSaving throw against a spell, they regain 1d6\u2060\u2060hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Ramazith's Tower X: 4970 Y: 705: In a Globe of Invulnerability",
+      "area": "Ramazith's Tower",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "abjuration-arcane-defender",
+      "the-talos-dragonling",
+      "stormfrost-sage",
+      "lorecerer",
+      "lore-bard",
+      "sorlock",
+      "cold-sorcerer",
+      "bardlock",
+      "moon-druid",
+      "magic-missile-build",
+      "land-druid",
+      "thundersnow-herald",
+      "spore-druid",
+      "conjuration-wizard",
+      "divination-wizard",
+      "enchantment-wizard",
+      "transmutation-wizard"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Robe_of_the_Weave"
+  },
+  {
+    "id": "shelter-of-athkatla",
+    "name": "Shelter of Athkatla",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Mirror Image (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
+      "Spell Resistance: You have \u202fAdvantage on \u202fSaving throws against spells."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Ramazith's Tower X: 4960 Y: 705: Worn by Lorroakan",
+      "area": "Ramazith's Tower",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Shelter_of_Athkatla"
+  },
+  {
+    "id": "veil-of-the-morning",
+    "name": "Veil of the Morning",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Turn Undead (): Pray to \u202fTurn all undead that can see you. (\u202fRecharge: Long rest.)",
+      "Let The Undead Blanch With Fear: Undead have \u202fDisadvantage on attack rolls against you, and you have \u202fAdvantage on \u202fSaving Throws against their actions and spells."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Philgrave's Mansion X: 14 Y: -160: Sold by Mystic Carrion",
+      "area": "Philgrave's Mansion",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Veil_of_the_Morning"
+  },
+  {
+    "id": "vest-of-soul-rejuvenation",
+    "name": "Vest of Soul Rejuvenation",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +2",
+      "Defier's Rejuvenation: Whenever the wearer succeeds on a \u202fSaving throw against a Spell, they regain 1d4\u2060\u2060hit points.",
+      "Greater Kushigo Counter: The wearer can use a \u202fReaction to make an \u202fUnarmed Strike against any attacker that misses."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Sold by Lorroakan's Projection in Sorcerous Sundries if Rolan is dead",
+      "area": "",
+      "act": 3
+    },
+    "build_tags": [
+      "way-of-open-hand-monk",
+      "way-of-the-four-elements-monk"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Vest_of_Soul_Rejuvenation"
+  },
+  {
+    "id": "wavemothers-robe",
+    "name": "Wavemother's Robe",
+    "slot": "armour",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1.",
+      "Create or Destroy Water (): Cast as a level 4 spell (\u202fRecharge: Short rest.)",
+      "Temperature Adjustment: You have Resistance to \u2060Fire and \u2060Cold Damage.",
+      "Watery Rejuvenation: If the wearer is standing in a \u202fWater surface at the start of their turn, they heal 1d4\u2060\u2060hit points."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Flymm Cargo X: -1048 Y: 312: Rewarded by Allandra Grey in the basement for completing the quest \u2060Avenge the Drowned",
+      "area": "Flymm Cargo",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Wavemother%27s_Robe"
+  }
+]
