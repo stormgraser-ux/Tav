@@ -2111,3 +2111,207 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* =================================================================
+   UX REDESIGN — Party Strip, Build Tab Layout, Disclosures
+   ================================================================= */
+
+/* ----- Party Strip ----- */
+
+.party-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.strip-slots {
+  display: flex;
+  gap: 0.3rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.party-slot {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 0.82rem;
+  padding: 0.22rem 0.65rem;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.party-slot:hover {
+  border-color: var(--gold-dim);
+  color: var(--text);
+}
+
+.party-slot--empty {
+  color: var(--text-dim);
+  border-style: dashed;
+}
+
+.party-slot--active {
+  border-color: var(--gold-dim);
+  background: rgba(201, 148, 63, 0.07);
+  color: var(--text);
+}
+
+.strip-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border-light);
+  flex-shrink: 0;
+  margin: 0 0.25rem;
+}
+
+.strip-act-group {
+  display: flex;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.strip-sync-btn {
+  background: var(--gold);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--bg);
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.28rem 0.75rem;
+  text-transform: uppercase;
+  transition: background var(--transition);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.strip-sync-btn:hover { background: var(--gold-bright); }
+
+.strip-sync-hint {
+  text-align: right;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--text-dim);
+  margin: -1rem 0 1rem;
+  min-height: 1.1em;
+}
+
+/* ----- Strip Popover ----- */
+
+.strip-popover {
+  position: relative;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+  z-index: 100;
+}
+
+.strip-popover-inner {
+  display: inline-flex;
+  gap: 0.5rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.65rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.strip-popover-inner .filter-select {
+  width: 160px;
+  font-size: 0.88rem;
+}
+
+/* ----- Advanced Disclosure (<details>) ----- */
+
+.adv-disclosure {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.adv-disclosure summary.adv-disclosure__label {
+  list-style: none;
+  padding: 0.55rem 1rem;
+  background: var(--surface);
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  user-select: none;
+  transition: background var(--transition), color var(--transition);
+}
+
+.adv-disclosure summary.adv-disclosure__label::-webkit-details-marker { display: none; }
+.adv-disclosure summary.adv-disclosure__label::marker { display: none; }
+
+.adv-disclosure summary.adv-disclosure__label:hover {
+  background: var(--surface-card);
+  color: var(--text);
+}
+
+.adv-disclosure[open] summary.adv-disclosure__label {
+  color: var(--gold);
+  border-bottom: 1px solid var(--border);
+}
+
+.adv-disclosure__body {
+  padding: 0.75rem 1rem 0.25rem;
+  background: var(--bg);
+}
+
+/* ----- Build Tab Layout (side-by-side) ----- */
+
+.build-tab-layout {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.build-browse {
+  width: 38%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.build-form {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 860px) {
+  .build-tab-layout {
+    flex-direction: column;
+  }
+  .build-browse {
+    width: 100%;
+  }
+}
+
+/* ----- Tab margin adjustment (strip takes margin space) ----- */
+
+.tab-nav {
+  margin-bottom: 0;
+}
+

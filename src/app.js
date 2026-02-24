@@ -11,9 +11,8 @@
 
 const state = {
   activeTab:     'gear',
-  gearAct:       1,
-  partyAct:      1,
-  buildAct:      1,
+  act:           1,    // single global act (replaces gearAct / partyAct / buildAct)
+  stripActiveSlot: null, // index of strip slot whose popover is open
   creatorClass:  '',   // active class filter on Character Creator tab
   globalSearch:  '',   // search query for Global Search tab
   currentLevel:  1,    // active level in Level Tracker
@@ -401,8 +400,10 @@ function toggleWishlist(buildId, itemName) {
 // ---------------------------------------------------------------------------
 
 function saveParty() {
+  const existing = loadParty();
   const rows = [...document.querySelectorAll('.party-row')];
-  const slots = rows.map(row => {
+  const slots = rows.map((row, i) => {
+    const prev    = existing?.slots?.[i] || {};
     const cls     = row.querySelector('.party-class')?.value || '';
     const sub     = row.querySelector('.party-subclass')?.value || '';
     const buildId = row.querySelector('.party-build')?.value || '';
@@ -412,9 +413,10 @@ function saveParty() {
       gear[s] = row.querySelector(`.gear-input[data-slot="${s}"]`)?.value.trim() || '';
     });
     const split = row.querySelector('.gear-split-input')?.value.trim() || '';
-    return { className: cls, subclass: sub, buildId, buildName: build?.name || '', gear, split };
+    return { ...prev, className: cls, subclass: sub, buildId, buildName: build?.name || '', gear, split };
   });
   localStorage.setItem(PARTY_KEY, JSON.stringify({ slots }));
+  renderPartyStrip();
 }
 
 function loadParty() {
@@ -453,7 +455,7 @@ function snapshotPartyState() {
     const split = row.querySelector('.gear-split-input')?.value.trim() || '';
     return { className: cls, subclass: sub, buildId, buildName: build?.name || '', gear, split };
   });
-  return { slots, act: state.partyAct, notes: document.getElementById('party-notes')?.value.trim() || '' };
+  return { slots, act: state.act, notes: document.getElementById('party-notes')?.value.trim() || '' };
 }
 
 function savePartyAs(name) {
@@ -472,7 +474,7 @@ function deleteSavedPartyById(id) {
 
 function applyPartySnapshot(party) {
   const rows = [...document.querySelectorAll('.party-row')];
-  if (party.act) { state.partyAct = party.act; syncActButtons('party', party.act); }
+  if (party.act) { state.act = party.act; syncActButtons('strip', party.act); }
   const notesEl = document.getElementById('party-notes');
   if (notesEl && party.notes !== undefined) notesEl.value = party.notes;
 
@@ -846,14 +848,14 @@ async function renderGearResults() {
   const container = document.getElementById('gear-results');
   container.innerHTML = '<div class="loading">Consulting the vaults…</div>';
 
-  const [items] = await Promise.all([loadActGear(state.gearAct), loadBuilds()]);
+  const [items] = await Promise.all([loadActGear(state.act), loadBuilds()]);
   const filtered = filterGear(items);
 
   if (!items.length) {
     container.innerHTML = `
       <div class="empty-state">
         <div class="empty-state__rune">⚔</div>
-        <p class="empty-state__text">No gear data yet for Act ${state.gearAct}</p>
+        <p class="empty-state__text">No gear data yet for Act ${state.act}</p>
         <p class="empty-state__hint">The scraper is still running — refresh in a few minutes.</p>
       </div>`;
     return;
@@ -959,9 +961,11 @@ function partyMemberLabel(row) {
     const build = state.builds.find(b => b.id === buildId);
     if (build) return build.name;
   }
-  const cls = row.querySelector('.party-class')?.value.trim() ?? '';
-  const sub = row.querySelector('.party-subclass')?.value.trim() ?? '';
-  return cls ? (sub ? `${sub} ${cls}` : cls) : '';
+  const cls   = row.querySelector('.party-class')?.value.trim() ?? '';
+  const sub   = row.querySelector('.party-subclass')?.value.trim() ?? '';
+  const split = row.querySelector('.gear-split-input')?.value.trim() ?? '';
+  const base  = cls ? (sub ? `${sub} ${cls}` : cls) : '';
+  return base && split ? `${base} (${split})` : base;
 }
 
 function analyzeParty() {
@@ -1068,7 +1072,7 @@ function generatePartyPrompt() {
   const rows          = [...document.querySelectorAll('.party-row')];
   const labels        = rows.map(partyMemberLabel);
   const [you, a1, a2, a3] = labels;
-  const act           = state.partyAct;
+  const act           = state.act;
   const notes         = document.getElementById('party-notes').value.trim();
 
   const allyLines = [a1, a2, a3]
@@ -1095,7 +1099,7 @@ function generatePartyPrompt() {
 function generateGearPrompt() {
   const rows = [...document.querySelectorAll('.party-row')];
   const ROW_LABELS = ['You', 'Ally 1', 'Ally 2', 'Ally 3'];
-  const act = state.partyAct;
+  const act = state.act;
   const actLabel = act === 1 ? 'I' : act === 2 ? 'II' : 'III';
 
   const memberBlocks = rows.map((row, i) => {
@@ -1150,32 +1154,35 @@ const BG3_SLOT_MAP = {
 };
 
 async function syncFromGame() {
-  const hint = document.getElementById('party-save-hint');
+  const partyHint = document.getElementById('party-save-hint');
+  const stripHint = document.getElementById('strip-sync-hint');
+
+  function showSyncMsg(msg, duration = 5000) {
+    if (partyHint) { partyHint.textContent = msg; setTimeout(() => { partyHint.textContent = ''; }, duration); }
+    if (stripHint) { stripHint.textContent = msg; setTimeout(() => { stripHint.textContent = ''; }, duration); }
+  }
 
   let data;
   try {
     const res = await fetch('http://localhost:3457/party-sync');
     data = await res.json();
     if (!res.ok || data.error) {
-      hint.textContent = data.error || 'Sync failed — is the sync server running? (npm run sync)';
-      setTimeout(() => { hint.textContent = ''; }, 5000);
+      showSyncMsg(data.error || 'Sync failed — is the sync server running? (npm run sync)');
       return;
     }
   } catch {
-    hint.textContent = 'Sync server unreachable — run: npm run sync in the project directory.';
-    setTimeout(() => { hint.textContent = ''; }, 5000);
+    showSyncMsg('Sync server unreachable — run: npm run sync in the project directory.');
     return;
   }
 
   if (!data.members || !data.members.length) {
-    hint.textContent = 'No party data in sync file — run the Lua script in BG3SE console first.';
-    setTimeout(() => { hint.textContent = ''; }, 5000);
+    showSyncMsg('No party data in sync file — run the Lua script in BG3SE console first.');
     return;
   }
 
   applyGameSync(data.members);
-  hint.textContent = `Synced ${data.members.length} party member(s) from game!`;
-  setTimeout(() => { hint.textContent = ''; }, 3000);
+  renderPartyStrip();
+  showSyncMsg(`Synced ${data.members.length} party member(s) from game!`, 3000);
 }
 
 function applyGameSync(members) {
@@ -1192,7 +1199,20 @@ function applyGameSync(members) {
       const buildSel = row.querySelector('.party-build');
       if (clsSel) {
         clsSel.value = member.className;
-        if (subSel)   populateSubclassSelect(subSel, member.className);
+        if (subSel) {
+          populateSubclassSelect(subSel, member.className);
+          // Set subclass — try exact match first, then fuzzy (handles "CollegeOfLore" → "College of Lore")
+          if (member.subClass) {
+            const norm = v => v.toLowerCase().replace(/\s+/g, '');
+            const exact = [...subSel.options].find(o => o.value === member.subClass);
+            if (exact) {
+              subSel.value = member.subClass;
+            } else {
+              const fuzzy = [...subSel.options].find(o => norm(o.value) === norm(member.subClass));
+              if (fuzzy) subSel.value = fuzzy.value;
+            }
+          }
+        }
         if (buildSel) populatePartyBuildSelect(buildSel, member.className);
       }
     }
@@ -1215,9 +1235,30 @@ function applyGameSync(members) {
         toggleBtn?.setAttribute('aria-expanded', 'true');
       }
     }
+
+    // Fill split input with level breakdown so it appears in copied prompts
+    const splitInp = row.querySelector('.gear-split-input');
+    if (splitInp && member.classes?.length) {
+      splitInp.value = member.classes.map(c => `${c.name} ${c.level}`).join(' / ');
+    } else if (splitInp) {
+      splitInp.value = '';
+    }
+
   });
 
   saveParty();
+
+  // Patch classes/totalLevel back into saved slots — no DOM inputs for these fields
+  const saved = loadParty();
+  if (saved?.slots) {
+    members.slice(0, 4).forEach((member, i) => {
+      if (saved.slots[i] && member.classes) {
+        saved.slots[i].classes    = member.classes;
+        saved.slots[i].totalLevel = member.totalLevel || 0;
+      }
+    });
+    localStorage.setItem(PARTY_KEY, JSON.stringify(saved));
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -1228,7 +1269,7 @@ function generateBuildPrompt() {
   const cls   = document.getElementById('build-class').value;
   const sub   = document.getElementById('build-subclass').value.trim();
   const multi = document.getElementById('build-multiclass').value.trim();
-  const act   = state.buildAct;
+  const act   = state.act;
   const gear  = document.getElementById('build-gear').value.trim();
   const notes = document.getElementById('build-notes').value.trim();
 
@@ -1355,9 +1396,9 @@ function renderProfileBanner() {
       populateSubclassSelect(subSel, className);
       if (subclass) subSel.value = subclass;
       renderBuildSidebar();
-      renderActRoute(state.buildAct, className);
+      renderActRoute(state.act, className);
       renderFeatAdvisor(className, subclass);
-      renderChecklist(state.buildAct);
+      renderChecklist(state.act);
     }
 
     renderLevelPlan(build || null);
@@ -1440,7 +1481,7 @@ function renderPartyBanner() {
       populateSubclassSelect(subSel, slot.className);
       if (slot.subclass) subSel.value = slot.subclass;
       renderBuildSidebar();
-      renderActRoute(state.buildAct, slot.className);
+      renderActRoute(state.act, slot.className);
       renderFeatAdvisor(slot.className, slot.subclass || '');
     });
     membersEl.appendChild(btn);
@@ -2241,6 +2282,26 @@ function renderCharCreatorBuilds(classFilter) {
       document.querySelectorAll('.creator-build-item').forEach(el => el.classList.remove('active'));
       btn.classList.add('active');
       renderCharCreateCard(build);
+
+      // Populate Build Planner class + subclass from this build
+      const buildClassName = Object.keys(SUBCLASSES).find(cls =>
+        buildsForClass(cls).some(b => b.id === build.id)
+      ) || '';
+      const classEl = document.getElementById('build-class');
+      const subSel  = document.getElementById('build-subclass');
+      if (classEl && buildClassName) {
+        classEl.value = buildClassName;
+        populateSubclassSelect(subSel, buildClassName);
+        const buildKey = (build.id + ' ' + build.name).toLowerCase();
+        const detectedSub = (SUBCLASSES[buildClassName] || []).find(sub => {
+          const kws = SUBCLASS_KEYWORDS[sub] || [sub.toLowerCase()];
+          return kws.some(kw => buildKey.includes(kw));
+        });
+        if (detectedSub && subSel) subSel.value = detectedSub;
+        renderBuildSidebar();
+        renderActRoute(state.act, buildClassName);
+        renderFeatAdvisor(buildClassName, detectedSub || '');
+      }
     });
 
     listEl.appendChild(btn);
@@ -2401,11 +2462,19 @@ function switchTab(tabId) {
     panel.classList.toggle('active', panel.id === `tab-${tabId}`);
   });
 
-  if (tabId === 'gear')    renderGearResults();
-  if (tabId === 'party')   loadBuilds().then(() => { restorePartyForm(); renderSavedPartiesList(); });
-  if (tabId === 'build')   { loadBuilds().then(renderBuildSidebar); renderProfileBanner(); renderPartyBanner(); renderChecklist(state.buildAct); renderWishlistPanel(); }
-  if (tabId === 'creator') loadBuilds().then(() => renderCharCreatorBuilds(state.creatorClass));
-  if (tabId === 'search')  renderGlobalSearch(state.globalSearch);
+  if (tabId === 'gear')   renderGearResults();
+  if (tabId === 'party')  loadBuilds().then(() => { restorePartyForm(); renderSavedPartiesList(); });
+  if (tabId === 'build')  {
+    loadBuilds().then(() => {
+      renderBuildSidebar();
+      renderCharCreatorBuilds(state.creatorClass);
+    });
+    renderProfileBanner();
+    renderPartyBanner();
+    renderChecklist(state.act);
+    renderWishlistPanel();
+  }
+  if (tabId === 'search') renderGlobalSearch(state.globalSearch);
 }
 
 // ---------------------------------------------------------------------------
@@ -2419,6 +2488,143 @@ function syncActButtons(group, act) {
 }
 
 // ---------------------------------------------------------------------------
+// Global act setter — updates state and triggers re-renders on active tab
+// ---------------------------------------------------------------------------
+
+function setAct(n) {
+  state.act = n;
+  syncActButtons('strip', n);
+  if (state.activeTab === 'gear')   renderGearResults();
+  if (state.activeTab === 'build')  {
+    renderActRoute(n, document.getElementById('build-class')?.value || '');
+    renderChecklist(n);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Party Strip — persistent bar showing party comp + act + sync
+// ---------------------------------------------------------------------------
+
+function slotPillLabel(slot) {
+  if (!slot?.className) return '';
+  // Multiclass: "Fighter 5 / Warlock 3"
+  if (slot.classes?.length > 1) {
+    return slot.classes.map(c => `${c.name} ${c.level}`).join(' / ');
+  }
+  // Single class with level: "Fighter 8"
+  if (slot.classes?.length === 1 && slot.classes[0].level > 0) {
+    return `${slot.classes[0].name} ${slot.classes[0].level}`;
+  }
+  // Fallback: build name, or subclass+class, or just class
+  return slot.buildName || (slot.subclass ? `${slot.subclass} ${slot.className}` : slot.className);
+}
+
+function renderPartyStrip() {
+  const slotsEl = document.getElementById('strip-slots');
+  if (!slotsEl) return;
+
+  const party = loadParty();
+  const LABELS = ['You', 'Ally 1', 'Ally 2', 'Ally 3'];
+
+  slotsEl.querySelectorAll('.party-slot').forEach((btn, i) => {
+    const slot = party?.slots?.[i];
+    const hasClass = slot?.className;
+    const display = hasClass ? slotPillLabel(slot) : '';
+
+    btn.textContent = hasClass ? display : LABELS[i];
+    btn.classList.toggle('party-slot--empty', !hasClass);
+    btn.classList.toggle('party-slot--active', false);
+    if (hasClass) btn.title = `Edit ${display}`;
+    else btn.title = `Set ${LABELS[i]}`;
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Strip popover — edit a party slot inline
+// ---------------------------------------------------------------------------
+
+function openStripPopover(slotBtn, idx) {
+  const popover = document.getElementById('strip-popover');
+  if (!popover) return;
+
+  // Toggle closed if already open for this slot
+  if (state.stripActiveSlot === idx && !popover.hidden) {
+    popover.hidden = true;
+    state.stripActiveSlot = null;
+    slotBtn.classList.remove('party-slot--active');
+    return;
+  }
+
+  state.stripActiveSlot = idx;
+  document.querySelectorAll('.party-slot').forEach(b => b.classList.remove('party-slot--active'));
+  slotBtn.classList.add('party-slot--active');
+
+  // Pre-fill from saved party
+  const party = loadParty();
+  const slot  = party?.slots?.[idx] || {};
+
+  const clsSel = document.getElementById('strip-popover-class');
+  const subSel = document.getElementById('strip-popover-subclass');
+
+  clsSel.value = slot.className || '';
+  if (slot.className) {
+    populateSubclassSelect(subSel, slot.className);
+    subSel.value = slot.subclass || '';
+  } else {
+    while (subSel.options.length) subSel.remove(0);
+    subSel.add(new Option('Subclass…', ''));
+    subSel.disabled = true;
+  }
+
+  // Wire class change → update subclass
+  clsSel.onchange = () => {
+    if (clsSel.value) {
+      populateSubclassSelect(subSel, clsSel.value);
+    } else {
+      while (subSel.options.length) subSel.remove(0);
+      subSel.add(new Option('Subclass…', ''));
+      subSel.disabled = true;
+    }
+    applyStripSlotChange(idx, clsSel.value, subSel.value);
+  };
+
+  subSel.onchange = () => {
+    applyStripSlotChange(idx, clsSel.value, subSel.value);
+  };
+
+  popover.hidden = false;
+}
+
+function applyStripSlotChange(idx, className, subclass) {
+  // Update the corresponding party row's class/subclass selects
+  const rows = [...document.querySelectorAll('.party-row')];
+  const row  = rows[idx];
+  if (row) {
+    const clsSel   = row.querySelector('.party-class');
+    const subSel   = row.querySelector('.party-subclass');
+    const buildSel = row.querySelector('.party-build');
+    if (clsSel) clsSel.value = className;
+    if (className && subSel) {
+      populateSubclassSelect(subSel, className);
+      if (subclass) subSel.value = subclass;
+    } else if (subSel) {
+      while (subSel.options.length) subSel.remove(0);
+      subSel.add(new Option('Subclass…', ''));
+      subSel.disabled = true;
+    }
+    if (buildSel && className) {
+      populatePartyBuildSelect(buildSel, className);
+    } else if (buildSel) {
+      while (buildSel.options.length) buildSel.remove(0);
+      buildSel.add(new Option('Build (optional)…', ''));
+      buildSel.disabled = true;
+    }
+  }
+  saveParty();
+  renderPartyStrip();
+}
+
+// ---------------------------------------------------------------------------
 // Event listeners
 // ---------------------------------------------------------------------------
 
@@ -2429,14 +2635,35 @@ function initEventListeners() {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab));
   });
 
-  // ── Gear Finder ───────────────────────────────────────────────────────────
-  document.querySelectorAll('.act-btn[data-group="gear"]').forEach(btn => {
+  // ── Strip: act selector (single global act) ───────────────────────────────
+  document.querySelectorAll('.act-btn[data-group="strip"]').forEach(btn => {
+    btn.addEventListener('click', () => setAct(parseInt(btn.dataset.act)));
+  });
+
+  // ── Strip: sync button ────────────────────────────────────────────────────
+  const stripSyncBtn = document.getElementById('strip-sync-btn');
+  if (stripSyncBtn) stripSyncBtn.addEventListener('click', syncFromGame);
+
+  // ── Strip: slot click → open popover ─────────────────────────────────────
+  document.querySelectorAll('.party-slot').forEach(btn => {
     btn.addEventListener('click', () => {
-      state.gearAct = parseInt(btn.dataset.act);
-      syncActButtons('gear', state.gearAct);
-      renderGearResults();
+      const idx = parseInt(btn.dataset.slot);
+      openStripPopover(btn, idx);
     });
   });
+
+  // Close popover on outside click
+  document.addEventListener('click', e => {
+    const popover = document.getElementById('strip-popover');
+    if (!popover || popover.hidden) return;
+    if (!popover.contains(e.target) && !e.target.classList.contains('party-slot')) {
+      popover.hidden = true;
+      state.stripActiveSlot = null;
+      document.querySelectorAll('.party-slot').forEach(b => b.classList.remove('party-slot--active'));
+    }
+  });
+
+  // ── Gear Finder ───────────────────────────────────────────────────────────
 
   document.getElementById('slot-filter').addEventListener('change', e => {
     state.filters.slot = e.target.value;
@@ -2465,13 +2692,6 @@ function initEventListeners() {
   });
 
   // ── Party Advisor ─────────────────────────────────────────────────────────
-  document.querySelectorAll('.act-btn[data-group="party"]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.partyAct = parseInt(btn.dataset.act);
-      syncActButtons('party', state.partyAct);
-    });
-  });
-
   // Party class dropdowns: populate subclass + build select when class is chosen
   document.querySelectorAll('.party-class').forEach(sel => {
     sel.addEventListener('change', e => {
@@ -2564,15 +2784,6 @@ function initEventListeners() {
   });
 
   // ── Build Planner ─────────────────────────────────────────────────────────
-  document.querySelectorAll('.act-btn[data-group="build"]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.buildAct = parseInt(btn.dataset.act);
-      syncActButtons('build', state.buildAct);
-      renderActRoute(state.buildAct, document.getElementById('build-class').value);
-      renderChecklist(state.buildAct);
-    });
-  });
-
   document.getElementById('build-class').addEventListener('change', e => {
     const subSel = document.getElementById('build-subclass');
     if (e.target.value) {
@@ -2583,13 +2794,13 @@ function initEventListeners() {
       subSel.disabled = true;
     }
     loadBuilds().then(renderBuildSidebar);
-    renderActRoute(state.buildAct, e.target.value);
+    renderActRoute(state.act, e.target.value);
     loadBuilds().then(() => renderFeatAdvisor(e.target.value, document.getElementById('build-subclass').value));
   });
 
   document.getElementById('build-subclass').addEventListener('change', () => {
     renderBuildSidebar();
-    renderActRoute(state.buildAct, document.getElementById('build-class').value);
+    renderActRoute(state.act, document.getElementById('build-class').value);
     renderFeatAdvisor(document.getElementById('build-class').value, document.getElementById('build-subclass').value);
   });
 
@@ -2769,6 +2980,8 @@ function hideGearTooltip() {
 
 function init() {
   initEventListeners();
+  renderPartyStrip();  // populate strip from localStorage on load
+  syncActButtons('strip', state.act); // sync strip act pills
   loadBuilds();        // pre-load builds so class filter is ready
   loadCompanions();    // pre-load companions for party advisor
   renderGearResults(); // kick off Act 1 load immediately

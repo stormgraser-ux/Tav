@@ -19,22 +19,45 @@
     </header>
 
     <nav class="tab-nav" role="tablist" aria-label="Companion tools">
-      <button class="tab-btn active" data-tab="gear" role="tab" aria-selected="true" aria-controls="tab-gear">
-        Gear Finder
-      </button>
-      <button class="tab-btn" data-tab="party" role="tab" aria-selected="false" aria-controls="tab-party">
-        Party Advisor
-      </button>
-      <button class="tab-btn" data-tab="build" role="tab" aria-selected="false" aria-controls="tab-build">
-        Build Planner
-      </button>
-      <button class="tab-btn" data-tab="creator" role="tab" aria-selected="false" aria-controls="tab-creator">
-        Character Creator
-      </button>
-      <button class="tab-btn" data-tab="search" role="tab" aria-selected="false" aria-controls="tab-search">
-        Search
-      </button>
+      <button class="tab-btn active" data-tab="gear" role="tab" aria-selected="true" aria-controls="tab-gear">Gear</button>
+      <button class="tab-btn" data-tab="party" role="tab" aria-selected="false" aria-controls="tab-party">Party</button>
+      <button class="tab-btn" data-tab="build" role="tab" aria-selected="false" aria-controls="tab-build">Build</button>
+      <button class="tab-btn" data-tab="search" role="tab" aria-selected="false" aria-controls="tab-search">Search</button>
     </nav>
+
+    <!-- ─── Party Strip ─── -->
+    <div class="party-strip">
+      <div class="strip-slots" id="strip-slots">
+        <button class="party-slot party-slot--empty" data-slot="0">Empty</button>
+        <button class="party-slot party-slot--empty" data-slot="1">Empty</button>
+        <button class="party-slot party-slot--empty" data-slot="2">Empty</button>
+        <button class="party-slot party-slot--empty" data-slot="3">Empty</button>
+      </div>
+      <span class="strip-divider"></span>
+      <div class="strip-act-group">
+        <button class="act-btn active" data-group="strip" data-act="1">I</button>
+        <button class="act-btn"        data-group="strip" data-act="2">II</button>
+        <button class="act-btn"        data-group="strip" data-act="3">III</button>
+      </div>
+      <button class="strip-sync-btn" id="strip-sync-btn">↻ Sync</button>
+    </div>
+
+    <!-- Strip slot editor popover -->
+    <div class="strip-popover" id="strip-popover" hidden>
+      <div class="strip-popover-inner">
+        <select class="filter-select" id="strip-popover-class">
+          <option value="">Class…</option>
+          <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+          <option>Druid</option><option>Fighter</option><option>Monk</option>
+          <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+          <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+        </select>
+        <select class="filter-select" id="strip-popover-subclass" disabled>
+          <option value="">Subclass…</option>
+        </select>
+      </div>
+    </div>
+    <p class="strip-sync-hint" id="strip-sync-hint"></p>
 
     <main class="tab-panels">
 
@@ -42,15 +65,6 @@
       <section id="tab-gear" class="tab-panel active" role="tabpanel">
 
         <div class="filters-bar">
-          <div class="filter-group">
-            <span class="filter-label">Act</span>
-            <div class="act-buttons">
-              <button class="act-btn active" data-group="gear" data-act="1">I</button>
-              <button class="act-btn"        data-group="gear" data-act="2">II</button>
-              <button class="act-btn"        data-group="gear" data-act="3">III</button>
-            </div>
-          </div>
-
           <div class="filter-group">
             <label class="filter-label" for="slot-filter">Slot</label>
             <select id="slot-filter" class="filter-select">
@@ -62,7 +76,6 @@
               <option value="amulet">Amulet</option>
               <option value="ring">Ring</option>
               <option value="weapon">Weapon</option>
-              <option value="ranged">Ranged</option>
               <option value="shield">Shield</option>
               <option value="cloak">Cloak</option>
             </select>
@@ -72,18 +85,10 @@
             <label class="filter-label" for="class-filter">Class</label>
             <select id="class-filter" class="filter-select">
               <option value="">All Builds</option>
-              <option>Barbarian</option>
-              <option>Bard</option>
-              <option>Cleric</option>
-              <option>Druid</option>
-              <option>Fighter</option>
-              <option>Monk</option>
-              <option>Paladin</option>
-              <option>Ranger</option>
-              <option>Rogue</option>
-              <option>Sorcerer</option>
-              <option>Warlock</option>
-              <option>Wizard</option>
+              <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+              <option>Druid</option><option>Fighter</option><option>Monk</option>
+              <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+              <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
             </select>
           </div>
 
@@ -113,234 +118,188 @@
       <!-- ─── TAB 2: Party Advisor ─── -->
       <section id="tab-party" class="tab-panel" role="tabpanel">
         <div class="advisor-wrap">
-          <div class="advisor-form">
-            <h2 class="form-heading">Your Party</h2>
+          <h2 class="form-heading">Your Party</h2>
 
-            <div class="party-rows">
-              <div class="party-row">
-                <span class="party-label party-label--you">You</span>
-                <div class="party-selects">
-                  <div class="party-selects__row">
-                    <select class="party-class filter-select">
-                      <option value="">Class…</option>
-                      <option>Barbarian</option><option>Bard</option><option>Cleric</option>
-                      <option>Druid</option><option>Fighter</option><option>Monk</option>
-                      <option>Paladin</option><option>Ranger</option><option>Rogue</option>
-                      <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
-                    </select>
-                    <select class="party-subclass filter-select" disabled>
-                      <option value="">Subclass…</option>
-                    </select>
-                  </div>
-                  <select class="party-build filter-select" disabled>
-                    <option value="">Build (optional)…</option>
+          <div class="party-rows">
+
+            <!-- Row: You -->
+            <div class="party-row">
+              <span class="party-label party-label--you">You</span>
+              <div class="party-selects">
+                <div class="party-selects__row">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
                   </select>
-                  <button class="gear-toggle" type="button" aria-expanded="false">⚔ Gear</button>
-                  <div class="party-gear" hidden>
-                    <div class="gear-split-row">
-                      <label class="gear-slot-label">Current split</label>
-                      <input type="text" class="gear-input gear-split-input" placeholder="e.g. Bard 5  or  Bard 4 / Paladin 1">
-                    </div>
-                    <div class="gear-grid">
-                      <label class="gear-slot-label">Head</label>
-                      <input type="text" class="gear-input" data-slot="head" placeholder="(empty)">
-                      <label class="gear-slot-label">Cloak</label>
-                      <input type="text" class="gear-input" data-slot="cloak" placeholder="(empty)">
-                      <label class="gear-slot-label">Chest</label>
-                      <input type="text" class="gear-input" data-slot="chest" placeholder="(empty)">
-                      <label class="gear-slot-label">Hands</label>
-                      <input type="text" class="gear-input" data-slot="hands" placeholder="(empty)">
-                      <label class="gear-slot-label">Feet</label>
-                      <input type="text" class="gear-input" data-slot="feet" placeholder="(empty)">
-                      <label class="gear-slot-label">Neck</label>
-                      <input type="text" class="gear-input" data-slot="neck" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 1</label>
-                      <input type="text" class="gear-input" data-slot="ring1" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 2</label>
-                      <input type="text" class="gear-input" data-slot="ring2" placeholder="(empty)">
-                      <label class="gear-slot-label">Weapon</label>
-                      <input type="text" class="gear-input" data-slot="weapon" placeholder="(empty)">
-                      <label class="gear-slot-label">Offhand</label>
-                      <input type="text" class="gear-input" data-slot="offhand" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged</label>
-                      <input type="text" class="gear-input" data-slot="ranged" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged OH</label>
-                      <input type="text" class="gear-input" data-slot="rangedoh" placeholder="(empty)">
-                    </div>
-                  </div>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
                 </div>
-              </div>
-              <div class="party-row">
-                <span class="party-label">Ally 1</span>
-                <div class="party-selects">
-                  <div class="party-selects__row">
-                    <select class="party-class filter-select">
-                      <option value="">Class…</option>
-                      <option>Barbarian</option><option>Bard</option><option>Cleric</option>
-                      <option>Druid</option><option>Fighter</option><option>Monk</option>
-                      <option>Paladin</option><option>Ranger</option><option>Rogue</option>
-                      <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
-                    </select>
-                    <select class="party-subclass filter-select" disabled>
-                      <option value="">Subclass…</option>
-                    </select>
+                <select class="party-build filter-select" disabled>
+                  <option value="">Build (optional)…</option>
+                </select>
+                <button class="gear-toggle" aria-expanded="false">Gear ▾</button>
+                <div class="party-gear" hidden>
+                  <div class="gear-split-row">
+                    <span class="gear-slot-label">Notes</span>
+                    <input class="gear-input gear-split-input" type="text" placeholder="e.g. Act 2 setup…">
                   </div>
-                  <select class="party-build filter-select" disabled>
-                    <option value="">Build (optional)…</option>
-                  </select>
-                  <button class="gear-toggle" type="button" aria-expanded="false">⚔ Gear</button>
-                  <div class="party-gear" hidden>
-                    <div class="gear-split-row">
-                      <label class="gear-slot-label">Current split</label>
-                      <input type="text" class="gear-input gear-split-input" placeholder="e.g. Bard 5  or  Bard 4 / Paladin 1">
-                    </div>
-                    <div class="gear-grid">
-                      <label class="gear-slot-label">Head</label>
-                      <input type="text" class="gear-input" data-slot="head" placeholder="(empty)">
-                      <label class="gear-slot-label">Cloak</label>
-                      <input type="text" class="gear-input" data-slot="cloak" placeholder="(empty)">
-                      <label class="gear-slot-label">Chest</label>
-                      <input type="text" class="gear-input" data-slot="chest" placeholder="(empty)">
-                      <label class="gear-slot-label">Hands</label>
-                      <input type="text" class="gear-input" data-slot="hands" placeholder="(empty)">
-                      <label class="gear-slot-label">Feet</label>
-                      <input type="text" class="gear-input" data-slot="feet" placeholder="(empty)">
-                      <label class="gear-slot-label">Neck</label>
-                      <input type="text" class="gear-input" data-slot="neck" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 1</label>
-                      <input type="text" class="gear-input" data-slot="ring1" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 2</label>
-                      <input type="text" class="gear-input" data-slot="ring2" placeholder="(empty)">
-                      <label class="gear-slot-label">Weapon</label>
-                      <input type="text" class="gear-input" data-slot="weapon" placeholder="(empty)">
-                      <label class="gear-slot-label">Offhand</label>
-                      <input type="text" class="gear-input" data-slot="offhand" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged</label>
-                      <input type="text" class="gear-input" data-slot="ranged" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged OH</label>
-                      <input type="text" class="gear-input" data-slot="rangedoh" placeholder="(empty)">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="party-row">
-                <span class="party-label">Ally 2</span>
-                <div class="party-selects">
-                  <div class="party-selects__row">
-                    <select class="party-class filter-select">
-                      <option value="">Class…</option>
-                      <option>Barbarian</option><option>Bard</option><option>Cleric</option>
-                      <option>Druid</option><option>Fighter</option><option>Monk</option>
-                      <option>Paladin</option><option>Ranger</option><option>Rogue</option>
-                      <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
-                    </select>
-                    <select class="party-subclass filter-select" disabled>
-                      <option value="">Subclass…</option>
-                    </select>
-                  </div>
-                  <select class="party-build filter-select" disabled>
-                    <option value="">Build (optional)…</option>
-                  </select>
-                  <button class="gear-toggle" type="button" aria-expanded="false">⚔ Gear</button>
-                  <div class="party-gear" hidden>
-                    <div class="gear-split-row">
-                      <label class="gear-slot-label">Current split</label>
-                      <input type="text" class="gear-input gear-split-input" placeholder="e.g. Bard 5  or  Bard 4 / Paladin 1">
-                    </div>
-                    <div class="gear-grid">
-                      <label class="gear-slot-label">Head</label>
-                      <input type="text" class="gear-input" data-slot="head" placeholder="(empty)">
-                      <label class="gear-slot-label">Cloak</label>
-                      <input type="text" class="gear-input" data-slot="cloak" placeholder="(empty)">
-                      <label class="gear-slot-label">Chest</label>
-                      <input type="text" class="gear-input" data-slot="chest" placeholder="(empty)">
-                      <label class="gear-slot-label">Hands</label>
-                      <input type="text" class="gear-input" data-slot="hands" placeholder="(empty)">
-                      <label class="gear-slot-label">Feet</label>
-                      <input type="text" class="gear-input" data-slot="feet" placeholder="(empty)">
-                      <label class="gear-slot-label">Neck</label>
-                      <input type="text" class="gear-input" data-slot="neck" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 1</label>
-                      <input type="text" class="gear-input" data-slot="ring1" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 2</label>
-                      <input type="text" class="gear-input" data-slot="ring2" placeholder="(empty)">
-                      <label class="gear-slot-label">Weapon</label>
-                      <input type="text" class="gear-input" data-slot="weapon" placeholder="(empty)">
-                      <label class="gear-slot-label">Offhand</label>
-                      <input type="text" class="gear-input" data-slot="offhand" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged</label>
-                      <input type="text" class="gear-input" data-slot="ranged" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged OH</label>
-                      <input type="text" class="gear-input" data-slot="rangedoh" placeholder="(empty)">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="party-row">
-                <span class="party-label">Ally 3</span>
-                <div class="party-selects">
-                  <div class="party-selects__row">
-                    <select class="party-class filter-select">
-                      <option value="">Class…</option>
-                      <option>Barbarian</option><option>Bard</option><option>Cleric</option>
-                      <option>Druid</option><option>Fighter</option><option>Monk</option>
-                      <option>Paladin</option><option>Ranger</option><option>Rogue</option>
-                      <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
-                    </select>
-                    <select class="party-subclass filter-select" disabled>
-                      <option value="">Subclass…</option>
-                    </select>
-                  </div>
-                  <select class="party-build filter-select" disabled>
-                    <option value="">Build (optional)…</option>
-                  </select>
-                  <button class="gear-toggle" type="button" aria-expanded="false">⚔ Gear</button>
-                  <div class="party-gear" hidden>
-                    <div class="gear-split-row">
-                      <label class="gear-slot-label">Current split</label>
-                      <input type="text" class="gear-input gear-split-input" placeholder="e.g. Bard 5  or  Bard 4 / Paladin 1">
-                    </div>
-                    <div class="gear-grid">
-                      <label class="gear-slot-label">Head</label>
-                      <input type="text" class="gear-input" data-slot="head" placeholder="(empty)">
-                      <label class="gear-slot-label">Cloak</label>
-                      <input type="text" class="gear-input" data-slot="cloak" placeholder="(empty)">
-                      <label class="gear-slot-label">Chest</label>
-                      <input type="text" class="gear-input" data-slot="chest" placeholder="(empty)">
-                      <label class="gear-slot-label">Hands</label>
-                      <input type="text" class="gear-input" data-slot="hands" placeholder="(empty)">
-                      <label class="gear-slot-label">Feet</label>
-                      <input type="text" class="gear-input" data-slot="feet" placeholder="(empty)">
-                      <label class="gear-slot-label">Neck</label>
-                      <input type="text" class="gear-input" data-slot="neck" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 1</label>
-                      <input type="text" class="gear-input" data-slot="ring1" placeholder="(empty)">
-                      <label class="gear-slot-label">Ring 2</label>
-                      <input type="text" class="gear-input" data-slot="ring2" placeholder="(empty)">
-                      <label class="gear-slot-label">Weapon</label>
-                      <input type="text" class="gear-input" data-slot="weapon" placeholder="(empty)">
-                      <label class="gear-slot-label">Offhand</label>
-                      <input type="text" class="gear-input" data-slot="offhand" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged</label>
-                      <input type="text" class="gear-input" data-slot="ranged" placeholder="(empty)">
-                      <label class="gear-slot-label">Ranged OH</label>
-                      <input type="text" class="gear-input" data-slot="rangedoh" placeholder="(empty)">
-                    </div>
+                  <div class="gear-grid">
+                    <span class="gear-slot-label">Head</span><input class="gear-input" data-slot="head" type="text" placeholder="—">
+                    <span class="gear-slot-label">Cloak</span><input class="gear-input" data-slot="cloak" type="text" placeholder="—">
+                    <span class="gear-slot-label">Chest</span><input class="gear-input" data-slot="chest" type="text" placeholder="—">
+                    <span class="gear-slot-label">Hands</span><input class="gear-input" data-slot="hands" type="text" placeholder="—">
+                    <span class="gear-slot-label">Feet</span><input class="gear-input" data-slot="feet" type="text" placeholder="—">
+                    <span class="gear-slot-label">Neck</span><input class="gear-input" data-slot="neck" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 1</span><input class="gear-input" data-slot="ring1" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 2</span><input class="gear-input" data-slot="ring2" type="text" placeholder="—">
+                    <span class="gear-slot-label">Weapon</span><input class="gear-input" data-slot="weapon" type="text" placeholder="—">
+                    <span class="gear-slot-label">Offhand</span><input class="gear-input" data-slot="offhand" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged</span><input class="gear-input" data-slot="ranged" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged OH</span><input class="gear-input" data-slot="rangedoh" type="text" placeholder="—">
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-row">
-              <span class="filter-label">Current Act</span>
-              <div class="act-buttons">
-                <button class="act-btn active" data-group="party" data-act="1">I</button>
-                <button class="act-btn"        data-group="party" data-act="2">II</button>
-                <button class="act-btn"        data-group="party" data-act="3">III</button>
+            <!-- Row: Ally 1 -->
+            <div class="party-row">
+              <span class="party-label">Ally 1</span>
+              <div class="party-selects">
+                <div class="party-selects__row">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+                <select class="party-build filter-select" disabled>
+                  <option value="">Build (optional)…</option>
+                </select>
+                <button class="gear-toggle" aria-expanded="false">Gear ▾</button>
+                <div class="party-gear" hidden>
+                  <div class="gear-split-row">
+                    <span class="gear-slot-label">Notes</span>
+                    <input class="gear-input gear-split-input" type="text" placeholder="e.g. Act 2 setup…">
+                  </div>
+                  <div class="gear-grid">
+                    <span class="gear-slot-label">Head</span><input class="gear-input" data-slot="head" type="text" placeholder="—">
+                    <span class="gear-slot-label">Cloak</span><input class="gear-input" data-slot="cloak" type="text" placeholder="—">
+                    <span class="gear-slot-label">Chest</span><input class="gear-input" data-slot="chest" type="text" placeholder="—">
+                    <span class="gear-slot-label">Hands</span><input class="gear-input" data-slot="hands" type="text" placeholder="—">
+                    <span class="gear-slot-label">Feet</span><input class="gear-input" data-slot="feet" type="text" placeholder="—">
+                    <span class="gear-slot-label">Neck</span><input class="gear-input" data-slot="neck" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 1</span><input class="gear-input" data-slot="ring1" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 2</span><input class="gear-input" data-slot="ring2" type="text" placeholder="—">
+                    <span class="gear-slot-label">Weapon</span><input class="gear-input" data-slot="weapon" type="text" placeholder="—">
+                    <span class="gear-slot-label">Offhand</span><input class="gear-input" data-slot="offhand" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged</span><input class="gear-input" data-slot="ranged" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged OH</span><input class="gear-input" data-slot="rangedoh" type="text" placeholder="—">
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="form-row">
+            <!-- Row: Ally 2 -->
+            <div class="party-row">
+              <span class="party-label">Ally 2</span>
+              <div class="party-selects">
+                <div class="party-selects__row">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+                <select class="party-build filter-select" disabled>
+                  <option value="">Build (optional)…</option>
+                </select>
+                <button class="gear-toggle" aria-expanded="false">Gear ▾</button>
+                <div class="party-gear" hidden>
+                  <div class="gear-split-row">
+                    <span class="gear-slot-label">Notes</span>
+                    <input class="gear-input gear-split-input" type="text" placeholder="e.g. Act 2 setup…">
+                  </div>
+                  <div class="gear-grid">
+                    <span class="gear-slot-label">Head</span><input class="gear-input" data-slot="head" type="text" placeholder="—">
+                    <span class="gear-slot-label">Cloak</span><input class="gear-input" data-slot="cloak" type="text" placeholder="—">
+                    <span class="gear-slot-label">Chest</span><input class="gear-input" data-slot="chest" type="text" placeholder="—">
+                    <span class="gear-slot-label">Hands</span><input class="gear-input" data-slot="hands" type="text" placeholder="—">
+                    <span class="gear-slot-label">Feet</span><input class="gear-input" data-slot="feet" type="text" placeholder="—">
+                    <span class="gear-slot-label">Neck</span><input class="gear-input" data-slot="neck" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 1</span><input class="gear-input" data-slot="ring1" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 2</span><input class="gear-input" data-slot="ring2" type="text" placeholder="—">
+                    <span class="gear-slot-label">Weapon</span><input class="gear-input" data-slot="weapon" type="text" placeholder="—">
+                    <span class="gear-slot-label">Offhand</span><input class="gear-input" data-slot="offhand" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged</span><input class="gear-input" data-slot="ranged" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged OH</span><input class="gear-input" data-slot="rangedoh" type="text" placeholder="—">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row: Ally 3 -->
+            <div class="party-row">
+              <span class="party-label">Ally 3</span>
+              <div class="party-selects">
+                <div class="party-selects__row">
+                  <select class="party-class filter-select">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="party-subclass filter-select" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+                <select class="party-build filter-select" disabled>
+                  <option value="">Build (optional)…</option>
+                </select>
+                <button class="gear-toggle" aria-expanded="false">Gear ▾</button>
+                <div class="party-gear" hidden>
+                  <div class="gear-split-row">
+                    <span class="gear-slot-label">Notes</span>
+                    <input class="gear-input gear-split-input" type="text" placeholder="e.g. Act 2 setup…">
+                  </div>
+                  <div class="gear-grid">
+                    <span class="gear-slot-label">Head</span><input class="gear-input" data-slot="head" type="text" placeholder="—">
+                    <span class="gear-slot-label">Cloak</span><input class="gear-input" data-slot="cloak" type="text" placeholder="—">
+                    <span class="gear-slot-label">Chest</span><input class="gear-input" data-slot="chest" type="text" placeholder="—">
+                    <span class="gear-slot-label">Hands</span><input class="gear-input" data-slot="hands" type="text" placeholder="—">
+                    <span class="gear-slot-label">Feet</span><input class="gear-input" data-slot="feet" type="text" placeholder="—">
+                    <span class="gear-slot-label">Neck</span><input class="gear-input" data-slot="neck" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 1</span><input class="gear-input" data-slot="ring1" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ring 2</span><input class="gear-input" data-slot="ring2" type="text" placeholder="—">
+                    <span class="gear-slot-label">Weapon</span><input class="gear-input" data-slot="weapon" type="text" placeholder="—">
+                    <span class="gear-slot-label">Offhand</span><input class="gear-input" data-slot="offhand" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged</span><input class="gear-input" data-slot="ranged" type="text" placeholder="—">
+                    <span class="gear-slot-label">Ranged OH</span><input class="gear-input" data-slot="rangedoh" type="text" placeholder="—">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.party-rows -->
+
+          <!-- Notes — collapsed by default -->
+          <details class="adv-disclosure">
+            <summary class="adv-disclosure__label">Add context ▾</summary>
+            <div class="adv-disclosure__body">
               <label class="filter-label" for="party-notes">
                 Context <span class="form-hint">(optional)</span>
               </label>
@@ -348,180 +307,38 @@
                         placeholder="e.g. I want frontline melee, we need more AoE, I hate managing Concentration…"
                         rows="3"></textarea>
             </div>
+          </details>
 
-            <div class="cta-block">
-              <div class="cta-buttons">
-                <button id="party-analyze-btn" class="cta-btn">Analyze Party</button>
-                <button id="party-copy-btn" class="cta-btn cta-btn--secondary">Copy Prompt</button>
-                <button id="party-gear-btn" class="cta-btn cta-btn--secondary">Copy Gear Snapshot</button>
-                <button id="party-sync-btn" class="cta-btn cta-btn--secondary">Sync from Game</button>
-                <button id="party-save-btn" class="cta-btn cta-btn--secondary">Save Party</button>
-              </div>
-              <p class="cta-hint" id="party-save-hint">Analyze finds role gaps. Save Party pins the current party to Build Planner (one slot — overwrites previous). Use Save As for multiple named parties.</p>
+          <div class="cta-block">
+            <div class="cta-buttons">
+              <button id="party-analyze-btn" class="cta-btn">Analyze Party</button>
+              <button id="party-copy-btn" class="cta-btn cta-btn--secondary">Copy Prompt</button>
+              <button id="party-gear-btn" class="cta-btn cta-btn--secondary">Gear Snapshot</button>
+              <button id="party-save-btn" class="cta-btn cta-btn--secondary">Save Party</button>
+              <button id="party-sync-btn" class="cta-btn cta-btn--secondary">↻ From Game</button>
             </div>
-
-            <div class="saved-parties-section">
-              <div class="saved-parties-saveas-row">
-                <input type="text" id="party-save-name" class="filter-input saved-parties-name-input" placeholder="Party name…">
-                <button id="party-saveas-btn" class="cta-btn cta-btn--secondary">Save As</button>
-              </div>
-              <div id="saved-parties-list" class="saved-parties-list"></div>
-            </div>
-
-            <div id="party-analysis" class="party-analysis" hidden></div>
+            <p class="cta-hint" id="party-save-hint"></p>
           </div>
+
+          <div class="saved-parties-section">
+            <div class="saved-parties-saveas-row">
+              <input id="party-save-name" class="saved-parties-name-input" type="text" placeholder="Party name…">
+              <button id="party-saveas-btn" class="cta-btn cta-btn--secondary">Save As</button>
+            </div>
+            <div id="saved-parties-list" class="saved-parties-list"></div>
+          </div>
+
+          <div id="party-analysis" class="party-analysis" hidden></div>
+
         </div>
       </section>
 
-      <!-- ─── TAB 3: Build Planner ─── -->
+      <!-- ─── TAB 3: Build (Browse + Planner merged) ─── -->
       <section id="tab-build" class="tab-panel" role="tabpanel">
+        <div class="build-tab-layout">
 
-        <!-- Active character profile banner (shown when a profile is saved) -->
-        <div id="profile-banner" class="profile-banner" hidden>
-          <span class="profile-banner__label">Active character:</span>
-          <span id="profile-banner-name" class="profile-banner__name"></span>
-          <span id="profile-banner-tier" class="profile-banner__tier"></span>
-          <button id="profile-banner-remove" class="profile-banner__remove" title="Remove profile">✕</button>
-        </div>
-
-        <!-- Party banner (shown when a party has been saved) -->
-        <div id="party-banner" class="party-banner party-banner--planner" hidden>
-          <span class="party-banner__label">Party</span>
-          <div id="party-banner-members" class="party-banner__members"></div>
-          <button id="party-banner-clear" class="profile-banner__remove" title="Clear saved party">✕</button>
-        </div>
-
-        <!-- Level tracker pills (shown when active profile has level_plan) -->
-        <div id="level-picker" class="level-picker" hidden></div>
-
-        <!-- Concentration conflict warning -->
-        <div id="concentration-warning" class="concentration-warning" hidden></div>
-
-        <!-- Level-Up Plan accordion (shown when active profile has level_plan) -->
-        <div id="level-plan" class="level-plan" hidden>
-          <button class="level-plan__toggle" id="level-plan-toggle" aria-expanded="false">
-            <span class="level-plan__toggle-label">Level-Up Plan</span>
-            <span class="level-plan__toggle-hint" id="level-plan-hint"></span>
-            <span class="level-plan__toggle-arrow">▸</span>
-          </button>
-          <div id="level-plan-body" class="level-plan__body" hidden>
-            <div id="level-plan-list" class="level-plan__list"></div>
-          </div>
-        </div>
-
-        <!-- Gear Wishlist Panel -->
-        <div id="wishlist-panel" class="wishlist-panel" hidden>
-          <button class="wishlist-panel__toggle" id="wishlist-toggle" aria-expanded="false">
-            <span class="wishlist-panel__label">Gear Wishlist</span>
-            <span class="wishlist-panel__count" id="wishlist-count"></span>
-            <span class="wishlist-panel__arrow">&#9658;</span>
-          </button>
-          <div id="wishlist-body" class="wishlist-panel__body" hidden>
-            <div id="wishlist-list" class="wishlist-panel__list"></div>
-          </div>
-        </div>
-
-        <div class="advisor-wrap advisor-wrap--split">
-
-          <div class="advisor-form">
-            <h2 class="form-heading">Plan Your Build</h2>
-
-            <div class="form-row">
-              <label class="filter-label" for="build-class">Class</label>
-              <select id="build-class" class="filter-select">
-                <option value="">Choose a class…</option>
-                <option>Barbarian</option>
-                <option>Bard</option>
-                <option>Cleric</option>
-                <option>Druid</option>
-                <option>Fighter</option>
-                <option>Monk</option>
-                <option>Paladin</option>
-                <option>Ranger</option>
-                <option>Rogue</option>
-                <option>Sorcerer</option>
-                <option>Warlock</option>
-                <option>Wizard</option>
-              </select>
-            </div>
-
-            <div class="form-row">
-              <label class="filter-label" for="build-subclass">
-                Subclass <span class="form-hint">(select a class first)</span>
-              </label>
-              <select id="build-subclass" class="filter-select" disabled>
-                <option value="">Select a class first…</option>
-              </select>
-            </div>
-
-            <!-- Feat advisor: appears when class is selected -->
-            <div id="feat-advisor" class="feat-advisor" hidden></div>
-
-            <div class="form-row">
-              <label class="filter-label" for="build-multiclass">
-                Multiclass dip <span class="form-hint">(optional)</span>
-              </label>
-              <input type="text" id="build-multiclass" class="form-input"
-                     placeholder="e.g. 2 levels Warlock, 5 Fighter for Extra Attack…" autocomplete="off">
-            </div>
-
-            <div class="form-row">
-              <span class="filter-label">Current Act</span>
-              <div class="act-buttons">
-                <button class="act-btn active" data-group="build" data-act="1">I</button>
-                <button class="act-btn"        data-group="build" data-act="2">II</button>
-                <button class="act-btn"        data-group="build" data-act="3">III</button>
-              </div>
-            </div>
-
-            <!-- Act transition checklist (Act 1 + 2 only) -->
-            <div id="act-checklist" class="checklist-panel" hidden></div>
-
-            <div class="form-row">
-              <label class="filter-label" for="build-gear">
-                Notable gear you have <span class="form-hint">(optional)</span>
-              </label>
-              <textarea id="build-gear" class="form-textarea"
-                        placeholder="e.g. Spellsparkler, Boots of Speed, Markoheshkir…"
-                        rows="2"></textarea>
-            </div>
-
-            <div class="form-row">
-              <label class="filter-label" for="build-notes">
-                Goals or constraints <span class="form-hint">(optional)</span>
-              </label>
-              <textarea id="build-notes" class="form-textarea"
-                        placeholder="e.g. I want burst damage, I hate Concentration, I like summons…"
-                        rows="2"></textarea>
-            </div>
-
-            <div class="cta-block">
-              <button id="build-copy-btn" class="cta-btn">Copy Prompt for Tav</button>
-              <p class="cta-hint">Paste into Claude Code — I'll give you a full level 1–12 path built around your situation.</p>
-            </div>
-
-            <div id="build-route" class="build-route" hidden>
-              <h3 class="build-route__heading">Act I — Route Priorities</h3>
-              <p class="build-route__hint">Items to grab as you go, in story order.</p>
-              <div id="build-route-list" class="build-route__list"></div>
-            </div>
-          </div>
-
-          <aside id="build-templates" class="build-sidebar">
-            <h3 class="sidebar-title">Matching Builds</h3>
-            <p class="sidebar-hint">Select a class above to see curated templates.</p>
-          </aside>
-
-        </div>
-      </section>
-
-      <!-- ─── TAB 4: Character Creator ─── -->
-      <section id="tab-creator" class="tab-panel" role="tabpanel">
-        <div class="creator-wrap">
-
-          <!-- Left: class filter + build browser -->
-          <div class="creator-sidebar">
-            <h3 class="sidebar-title">Choose a Build</h3>
+          <!-- Left: Character Creator Browse -->
+          <div class="build-browse">
             <div class="creator-class-filter">
               <button class="class-pill active" data-class="">All</button>
               <button class="class-pill" data-class="Barbarian">Barbarian</button>
@@ -537,29 +354,153 @@
               <button class="class-pill" data-class="Warlock">Warlock</button>
               <button class="class-pill" data-class="Wizard">Wizard</button>
             </div>
-            <div id="creator-build-list" class="creator-build-list"></div>
-          </div>
-
-          <!-- Right: char create card -->
-          <div class="creator-card-wrap">
+            <div id="creator-build-list" class="creator-build-list">
+              <div class="empty-state" style="padding:2rem 1rem">
+                <p class="empty-state__text" style="font-size:0.75rem">Loading builds…</p>
+              </div>
+            </div>
             <div id="creator-empty" class="creator-empty">
-              <div class="empty-state__rune">⚔</div>
-              <p class="empty-state__text">Select a build to see its character creation guide.</p>
+              <div class="empty-state__rune" style="font-size:1.5rem;opacity:0.2">⚔</div>
+              <p style="font-size:0.82rem;color:var(--text-muted);font-style:italic">Select a build for creation details</p>
             </div>
             <div id="creator-card" class="creator-card" hidden></div>
           </div>
 
-        </div>
+          <!-- Right: Build Planner form -->
+          <div class="build-form">
+
+            <!-- Profile banner -->
+            <div id="profile-banner" class="profile-banner" hidden>
+              <span class="profile-banner__label">Active:</span>
+              <span id="profile-banner-name" class="profile-banner__name"></span>
+              <span id="profile-banner-tier" class="profile-banner__tier"></span>
+              <button id="profile-banner-remove" class="profile-banner__remove" title="Remove active character">×</button>
+            </div>
+
+            <!-- Party banner -->
+            <div id="party-banner" class="party-banner" hidden>
+              <span class="party-banner__label">Party:</span>
+              <div id="party-banner-members" class="party-banner__members"></div>
+              <button id="party-banner-clear" class="profile-banner__remove" title="Clear">×</button>
+            </div>
+
+            <!-- Wishlist panel -->
+            <div id="wishlist-panel" class="wishlist-panel" hidden>
+              <button id="wishlist-toggle" class="wishlist-panel__toggle" aria-expanded="false">
+                <span class="wishlist-panel__label">Wishlist</span>
+                <span id="wishlist-count" class="wishlist-panel__count"></span>
+                <span class="wishlist-panel__arrow">▸</span>
+              </button>
+              <div id="wishlist-body" class="wishlist-panel__body" hidden>
+                <div id="wishlist-list" class="wishlist-panel__list"></div>
+              </div>
+            </div>
+
+            <h2 class="form-heading">Plan Your Build</h2>
+
+            <!-- Primary fields -->
+            <div class="form-row">
+              <label class="filter-label" for="build-class">Class</label>
+              <select id="build-class" class="filter-select">
+                <option value="">Choose a class…</option>
+                <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                <option>Druid</option><option>Fighter</option><option>Monk</option>
+                <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="filter-label" for="build-subclass">
+                Subclass <span class="form-hint">(select a class first)</span>
+              </label>
+              <select id="build-subclass" class="filter-select" disabled>
+                <option value="">Select a class first…</option>
+              </select>
+            </div>
+
+            <!-- Advanced — collapsed by default -->
+            <details class="adv-disclosure" id="build-advanced">
+              <summary class="adv-disclosure__label">Advanced ▾</summary>
+              <div class="adv-disclosure__body">
+                <div class="form-row">
+                  <label class="filter-label" for="build-multiclass">
+                    Multiclass dip <span class="form-hint">(optional)</span>
+                  </label>
+                  <input type="text" id="build-multiclass" class="form-input"
+                         placeholder="e.g. 2 levels Warlock, 5 Fighter for Extra Attack…" autocomplete="off">
+                </div>
+                <div class="form-row">
+                  <label class="filter-label" for="build-gear">
+                    Notable gear you have <span class="form-hint">(optional)</span>
+                  </label>
+                  <textarea id="build-gear" class="form-textarea"
+                            placeholder="e.g. Spellsparkler, Boots of Speed, Markoheshkir…"
+                            rows="2"></textarea>
+                </div>
+                <div class="form-row">
+                  <label class="filter-label" for="build-notes">
+                    Goals or constraints <span class="form-hint">(optional)</span>
+                  </label>
+                  <textarea id="build-notes" class="form-textarea"
+                            placeholder="e.g. I want burst damage, I hate Concentration, I like summons…"
+                            rows="2"></textarea>
+                </div>
+              </div>
+            </details>
+
+            <div class="cta-block">
+              <button id="build-copy-btn" class="cta-btn">Copy Prompt for Tav</button>
+              <p class="cta-hint">Paste into Claude Code — I'll give you a full level 1–12 path built around your situation.</p>
+            </div>
+
+            <!-- Matching builds (HM filter + sidebar) -->
+            <aside id="build-templates" class="build-sidebar">
+              <h3 class="sidebar-title">Matching Builds</h3>
+              <p class="sidebar-hint">Select a class above to see curated templates.</p>
+            </aside>
+
+            <!-- Level tracker -->
+            <div id="level-picker" class="level-picker" hidden></div>
+
+            <!-- Concentration warning -->
+            <div id="concentration-warning" class="concentration-warning" hidden></div>
+
+            <!-- Level plan accordion -->
+            <div class="level-plan" id="level-plan" hidden>
+              <button id="level-plan-toggle" class="level-plan__toggle" aria-expanded="false">
+                <span class="level-plan__toggle-label">Level Plan</span>
+                <span id="level-plan-hint" class="level-plan__toggle-hint"></span>
+                <span class="level-plan__toggle-arrow">▸</span>
+              </button>
+              <div id="level-plan-body" class="level-plan__body" hidden>
+                <div id="level-plan-list" class="level-plan__list"></div>
+              </div>
+            </div>
+
+            <!-- Feat Advisor -->
+            <div id="feat-advisor" class="feat-advisor" hidden></div>
+
+            <!-- Act Checklist -->
+            <div id="act-checklist" class="checklist-panel" hidden></div>
+
+            <!-- Act Route -->
+            <section id="build-route" class="build-route" hidden>
+              <h3 class="build-route__heading">Act I — Route Priorities</h3>
+              <p class="build-route__hint">Items to grab as you go, in story order.</p>
+              <div id="build-route-list" class="build-route-list"></div>
+            </section>
+
+          </div><!-- /.build-form -->
+        </div><!-- /.build-tab-layout -->
       </section>
 
-      <!-- ─── TAB 5: Global Search ─── -->
+      <!-- ─── TAB 4: Global Search ─── -->
       <section id="tab-search" class="tab-panel" role="tabpanel">
         <div class="global-search-wrap">
           <div class="global-search-bar">
-            <label class="filter-label" for="global-search">Search all items</label>
             <input type="search" id="global-search" class="filter-input global-search-input"
-                   placeholder="item name or effect… (press / from any tab to focus)"
-                   autocomplete="off" spellcheck="false">
+                   placeholder="Search items across all acts…" autocomplete="off" spellcheck="false">
           </div>
           <div id="global-results" class="global-results">
             <div class="empty-state">

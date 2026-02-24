@@ -53,15 +53,67 @@ local function getCharName(entity)
   return "Character"
 end
 
--- Get class name (e.g. "Bard", "Barbarian") via StaticData
-local function getClassName(entity)
-  local ok, cls = pcall(function() return entity.Classes.Classes[1].ClassUUID end)
-  if not ok or not cls then return nil end
-  local ok2, data = pcall(Ext.StaticData.Get, cls, "ClassDescription")
-  if not ok2 or not data then return nil end
-  local ok3, name = pcall(function() return data.Name end)
-  if ok3 and name and name ~= "" then return name end
+-- Look up a class name string from a class UUID via StaticData
+local function classNameFromUUID(uuid)
+  if not uuid then return nil end
+  local ok, data = pcall(Ext.StaticData.Get, uuid, "ClassDescription")
+  if not ok or not data then return nil end
+  -- Try localized DisplayName first ("College of Lore", "Bard", etc.)
+  local ok2, dn = pcall(function() return data.DisplayName end)
+  if ok2 and dn then
+    local ok3, val = pcall(function() return dn:Get() end)
+    if ok3 and val and val ~= "" then return val end
+  end
+  -- Fallback to internal Name ("Bard", "CollegeOfLore", etc.)
+  local ok4, name = pcall(function() return data.Name end)
+  if ok4 and name and name ~= "" then return name end
   return nil
+end
+
+-- Get all class entries for a character with per-class levels.
+-- Returns: classes (array of {name, level}), totalLevel (int), primaryClass (string)
+local function getClassLevels(entity)
+  local classes    = {}
+  local totalLevel = 0
+
+  local ok, clsList = pcall(function() return entity.Classes.Classes end)
+  if not ok or not clsList then
+    -- Fallback: single class, unknown level
+    local cls = classNameFromUUID(
+      (pcall(function() return entity.Classes.Classes[1].ClassUUID end)) and
+      entity.Classes.Classes[1].ClassUUID or nil
+    )
+    return cls and {{ name = cls, level = 0 }} or {}, 0
+  end
+
+  for _, entry in ipairs(clsList) do
+    local okU, uuid = pcall(function() return entry.ClassUUID end)
+    if okU and uuid then
+      local name = classNameFromUUID(uuid)
+      if name then
+        -- Level of this class specifically
+        local level = 0
+        local okL, lvl = pcall(function() return entry.Level end)
+        if okL and type(lvl) == "number" then level = lvl end
+        -- Subclass (e.g. "College of Lore", "Berserker")
+        local subClass = nil
+        local okS, subUUID = pcall(function() return entry.SubClassUUID end)
+        if okS and subUUID and tostring(subUUID) ~= "" then
+          subClass = classNameFromUUID(tostring(subUUID))
+        end
+        table.insert(classes, { name = name, level = level, subClass = subClass })
+        totalLevel = totalLevel + level
+      end
+    end
+  end
+
+  -- If we couldn't get per-class levels, try total level from EocLevel
+  if totalLevel == 0 then
+    local okE, el = pcall(function() return entity.EocLevel.Level end)
+    if okE and type(el) == "number" then totalLevel = el end
+  end
+
+  return classes, totalLevel
 end
 
 -- Get all equipped gear for a character UUID
@@ -89,7 +141,17 @@ for _, row in ipairs(Osi.DB_Players:Get(nil)) do
     seen[uuid] = true
     local ok, entity = pcall(Ext.Entity.Get, uuid)
     if ok and entity then
-      table.insert(members, { name = getCharName(entity), className = getClassName(entity), gear = getEquipment(uuid) })
+      local classes, totalLevel = getClassLevels(entity)
+      local primaryClass    = (#classes > 0) and classes[1].name or nil
+      local primarySubClass = (#classes > 0) and classes[1].subClass or nil
+      table.insert(members, {
+        name        = getCharName(entity),
+        className   = primaryClass,
+        subClass    = primarySubClass,
+        classes     = classes,
+        totalLevel  = totalLevel,
+        gear        = getEquipment(uuid),
+      })
     end
   end
 end
@@ -104,7 +166,15 @@ for _, dbName in ipairs({ "DB_InTheParty", "DB_IsInCurrentParty", "DB_PartyMembe
         seen[uuid] = true
         local ok2, entity = pcall(Ext.Entity.Get, uuid)
         if ok2 and entity then
-          table.insert(members, { name = getCharName(entity), className = getClassName(entity), gear = getEquipment(uuid) })
+          local classes, totalLevel = getClassLevels(entity)
+          local primaryClass = (#classes > 0) and classes[1].name or nil
+          table.insert(members, {
+            name        = getCharName(entity),
+            className   = primaryClass,
+            classes     = classes,
+            totalLevel  = totalLevel,
+            gear        = getEquipment(uuid),
+          })
         end
       end
     end
@@ -118,15 +188,26 @@ while #members > 4 do table.remove(members) end
 
 local result = {
   members = members,
-  version = 1,
+  version = 3,
 }
 
 Ext.IO.SaveFile("party_sync.json", Ext.Json.Stringify(result))
 
 _P("✓ Tav sync: " .. #members .. " party members dumped to party_sync.json")
 for i, m in ipairs(members) do
-  local count = 0
-  for _ in pairs(m.gear) do count = count + 1 end
-  local cls = m.className or "?"
-  _P("  [" .. i .. "] " .. m.name .. " (" .. cls .. ") — " .. count .. " gear slots")
+  local gearCount = 0
+  for _ in pairs(m.gear) do gearCount = gearCount + 1 end
+
+  local clsStr = ""
+  if m.classes and #m.classes > 0 then
+    local parts = {}
+    for _, c in ipairs(m.classes) do
+      table.insert(parts, c.name .. (c.level > 0 and " " .. c.level or ""))
+    end
+    clsStr = table.concat(parts, " / ")
+  else
+    clsStr = m.className or "?"
+  end
+
+  _P("  [" .. i .. "] " .. m.name .. " (Lvl " .. m.totalLevel .. " — " .. clsStr .. ") — " .. gearCount .. " gear slots")
 end
