@@ -121,9 +121,28 @@ local function getClassLevels(entity)
   return classes, totalLevel
 end
 
+-- Get the display name directly from an entity handle (for InventoryContainer items)
+local function getItemNameFromEntity(itemEntity)
+  if not itemEntity then return "" end
+  local ok, dn = pcall(function() return itemEntity.DisplayName.Name end)
+  if ok and dn then
+    local ok2, val = pcall(function() return dn:Get() end)
+    if ok2 and val and val ~= "" then return val end
+  end
+  -- Fallback: Template.Name
+  local ok3, tname = pcall(function() return itemEntity.ServerItem.Template.Name end)
+  if ok3 and tname and tname ~= "" then
+    local name = tname:match("^[A-Z0-9]+_(.+)") or tname
+    return name:gsub("_", " ")
+  end
+  return ""
+end
+
 -- Get all equipped gear for a character UUID
 local function getEquipment(uuid)
   local gear = {}
+
+  -- Armor/accessories: Osi.GetEquippedItem works for these
   for slot, tavSlot in pairs(SLOT_MAP) do
     local ok, itemUUID = pcall(Osi.GetEquippedItem, uuid, slot)
     if ok and itemUUID then
@@ -131,6 +150,29 @@ local function getEquipment(uuid)
       if name ~= "" then gear[tavSlot] = name end
     end
   end
+
+  -- Weapons: GetEquippedItem returns nil — read from InventoryContainer instead
+  local ok, entity = pcall(Ext.Entity.Get, uuid)
+  if ok and entity then
+    pcall(function()
+      for _, inv in ipairs(entity.InventoryOwner.Inventories) do
+        local okItems, items = pcall(function() return inv.InventoryContainer.Items end)
+        if okItems and items then
+          for _, slotData in pairs(items) do
+            pcall(function()
+              local slot = tostring(slotData.Item.Equipable.Slot)
+              local tavSlot = WEAPON_SLOT_MAP[slot]
+              if tavSlot and not gear[tavSlot] then
+                local name = getItemNameFromEntity(slotData.Item)
+                if name ~= "" then gear[tavSlot] = name end
+              end
+            end)
+          end
+        end
+      end
+    end)
+  end
+
   return gear
 end
 
