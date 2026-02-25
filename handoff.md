@@ -66,6 +66,7 @@ Press F6 anytime in-game to dump party → `party_sync.json` → Tav picks it up
     - `applyGameSync()` now sets `.party-class` select + triggers subclass/build population
     - Hotkey changed F8 → **F6** (F8 is BG3 Quickload — caused accidental save rollback)
     - `party_sync.json` path: `%LOCALAPPDATA%\Larian Studios\Baldur's Gate 3\Script Extender\`
+    - **Weapon slots FIXED**: `Osi.GetEquippedItem` returns nil for weapons — BG3 stores them in `InventoryContainer` at fixed keys (3=MeleeMainHand, 4=MeleeOffHand, 5=RangedMainHand, 6=RangedOffHand). Confirmed correct for all 4 party members.
 
 ## Data State
 - `data/gear/act1.json` — 203 items, tagged
