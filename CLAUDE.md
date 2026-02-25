@@ -72,6 +72,25 @@ Build templates (from gamestegy.com or curated) serve as a *library Claude remix
 - **Node.js** for the scraper (cheerio + fetch for wiki parsing)
 - **Served locally** via `npx serve` or just open index.html
 
+## BG3SE Console Bridge
+
+When BG3 is running and the sync server is up (`npm run sync` / auto-started by the `tav` launcher), you can execute Lua directly in the BG3SE runtime:
+
+```bash
+curl -s -X POST http://localhost:3457/exec -H 'Content-Type: application/json' -d '{"lua":"return 1+1"}'
+```
+
+Returns `{id, ok, result, output, error}`. The `output` array captures anything printed via `_P()`. Timeout is 10s.
+
+**Use this instead of asking the user to paste scripts into the BG3SE console.** You can query entities, check equipment, inspect game state — anything BG3SE's Lua API supports.
+
+**Useful endpoints:**
+- `POST /exec` — execute Lua, get result
+- `GET /bridge-status` — check if BG3 relay is alive (`connected: true` if a command succeeded in the last 60s)
+- `GET /party-sync` — latest F6 party dump
+
+**Check bridge-status first** before sending commands — if BG3 isn't running or TavSync isn't loaded, exec will timeout after 10s.
+
 ## Conventions
 
 - Data accuracy is everything. If the wiki says it, trust it. If you're not sure, say so.
