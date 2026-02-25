@@ -153,11 +153,11 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log(`\nTav sync server running on http://localhost:${PORT}`);
-  console.log(`Watching: ${SYNC_FILE}\n`);
-  console.log('Steps:');
-  console.log('  1. Launch BG3 with Script Extender installed');
-  console.log('  2. Load your save and assemble your party');
-  console.log('  3. Open BG3SE console (F11)');
-  console.log('  4. Paste the contents of memory/bg3se/party_dump.lua and press Enter');
-  console.log('  5. Click "Sync from Game" in Tav\n');
+  console.log(`Watching: ${SYNC_FILE}`);
+  console.log(`Console relay ready — POST /exec to send Lua to BG3SE\n`);
+  console.log('Endpoints:');
+  console.log('  GET  /party-sync     — latest party data (F6 sync)');
+  console.log('  POST /exec           — execute Lua in BG3SE console');
+  console.log('  GET  /bridge-status  — check if BG3 relay is alive');
+  console.log('  GET  /health         — server health check\n');
 });
