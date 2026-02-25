@@ -15,10 +15,14 @@ const http = require('http');
 const fs   = require('fs');
 const path = require('path');
 
-// Where BG3SE writes the file on Windows (accessible via WSL /mnt/c/)
+// Where BG3SE writes files on Windows (accessible via WSL /mnt/c/)
 // Adjust if your Windows username differs from "Owner"
-const SYNC_FILE = '/mnt/c/Users/Owner/AppData/Local/Larian Studios/' +
-                  "Baldur's Gate 3/Script Extender/party_sync.json";
+const SE_DIR = '/mnt/c/Users/Owner/AppData/Local/Larian Studios/' +
+               "Baldur's Gate 3/Script Extender";
+
+const SYNC_FILE   = path.join(SE_DIR, 'party_sync.json');
+const CMD_FILE    = path.join(SE_DIR, 'tav_cmd.json');
+const RESULT_FILE = path.join(SE_DIR, 'tav_result.json');
 
 const PORT = 3457;
 
