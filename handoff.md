@@ -66,6 +66,10 @@ Console confirms: `[TavSync] Server loaded — F6 to sync`
     - Hotkey changed F8 → **F6** (F8 is BG3 Quickload — caused accidental save rollback)
     - `party_sync.json` path: `%LOCALAPPDATA%\Larian Studios\Baldur's Gate 3\Script Extender\`
     - **Weapon slots FIXED**: `Osi.GetEquippedItem` returns nil for weapons — BG3 stores them in `InventoryContainer` at fixed keys (3=MeleeMainHand, 4=MeleeOffHand, 5=RangedMainHand, 6=RangedOffHand). Confirmed correct for all 4 party members.
+16. ✅ **Phase 12** — BG3SE Console Bridge:
+    - BootstrapServer.lua: tick-based poller (500ms) reads `tav_cmd.json`, executes Lua via `load()+pcall()`, captures `_P()` output, writes `tav_result.json`
+    - sync-server.js: `POST /exec` writes command, polls for result (10s timeout). `GET /bridge-status` tracks relay liveness.
+    - **Needs .pak rebuild** before testing — BootstrapServer.lua changed but .pak not yet rebuilt
 
 ## Data State
 - `data/gear/act1.json` — 203 items, tagged
