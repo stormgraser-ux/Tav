@@ -79,3 +79,9 @@ Build templates (from gamestegy.com or curated) serve as a *library Claude remix
 - The scraper should be re-runnable and idempotent. Run it again = fresh data, no duplicates.
 - Build recommendations should cite WHY (e.g., "Extra Attack at 5 is too important to delay with a multiclass dip before then").
 
+
+
+## Handoff
+
+**Canonical path:** `handoff.md` at project root — NOT in `memory/` or any subdirectory.
+At session start, read it. When logging work at session end, write to this exact file.

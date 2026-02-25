@@ -1,7 +1,32 @@
 # Tav — Handoff
 
 ## Current Status
-Session 11 complete. BG3SE sync pipeline built + Gear Wishlist feature shipped.
+Session 12 complete. Party sync, UI redesign, multiclass tracking, F6 hotkey — all working.
+
+### F6 Hotkey Sync (current workflow)
+After loading a save, open BG3SE console (F11) and paste:
+```
+client
+load(Ext.IO.LoadFile("tav_hotkey.lua"))()
+server
+load(Ext.IO.LoadFile("tav_server.lua"))()
+```
+Press F6 anytime in-game to dump party → `party_sync.json` → Tav picks it up on Sync.
+
+**Why not a pak mod?** BG3 Patch 7+ silently drops custom paks from modsettings.lsx on launch. Console scripts bypass this.
+**Fallback:** `load(Ext.IO.LoadFile("party_dump.lua"))()` — one-shot dump without hotkey.
+
+| File | Path |
+|------|------|
+| tav_server.lua | `C:\Users\Owner\AppData\Local\Larian Studios\Baldur's Gate 3\Script Extender\tav_server.lua` |
+| tav_hotkey.lua | same dir |
+| party_dump.lua | same dir (source: `memory/bg3se/party_dump.lua`) |
+
+### Recent Additions (Session 12)
+- UX redesign: 4-tab nav, persistent party strip, single `state.act`, side-by-side Build tab, progressive disclosure
+- Multiclass level tracking: `party_dump.lua` v3 exports `subClass`, `classes[]`, `totalLevel`
+- `applyGameSync()` sets class + subclass (fuzzy matching), auto-populates split/notes field
+- `partyMemberLabel()` includes level split in copied prompts
 
 ## What's Done
 1. ✅ Scaffold — `data/`, `scraper/`, `src/`
@@ -63,11 +88,8 @@ If NOT visible → mod isn't loading unpackaged. Fallback: use BG3 Mod Manager (
 4. Hit "Sync from Game" in Tav Party tab → class dropdowns should auto-fill
 5. If class shows `(?)` → StaticData lookup failed for that UUID, investigate
 
-### Step 3: Test F6 hotkey (requires restart with mod changes)
-1. Restart BG3 fully (not just reload save)
-2. Confirm `[TavSync] Client loaded` in console
-3. Press F6 in-game → `[TavSync] F6 pressed...` should appear
-4. Hit "Sync from Game" → full party with classes
+### Step 3: F6 hotkey — ✅ CONFIRMED WORKING
+F6 sync is functional. No further testing needed.
 
 ## Known Issues / Pending
 - **Weapon slots** — `Osi.GetEquippedItem` returns nil for all weapon slot names even when weapons are visually equipped. Root cause unknown (weapon-set system?). Low priority — armor/accessory sync is the core value.
@@ -82,8 +104,8 @@ If NOT visible → mod isn't loading unpackaged. Fallback: use BG3 Mod Manager (
 ### ✅ HM build IDs — already confirmed
 All 33 IDs in `HM_SAFE_BUILDS` match exactly what's in `builds.json`. No action needed.
 
-### 🔲 valour-bard HM classification
-Currently excluded from HM_SAFE_BUILDS. Valour Bard gets medium armor + shield. Consider adding `'valour-bard'` to the set.
+### ✅ valour-bard HM classification
+Already in `HM_SAFE_BUILDS`. Confirmed correct — medium armor + shield qualifies.
 
 ## Web UI
 Serve from Tav root: `npx serve .`
