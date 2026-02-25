@@ -87,17 +87,11 @@ BootstrapServer.lua has been updated with the console relay. Need to rebuild:
 2. Run `build_tavsync.bat` from `00_INBOX/`
 3. Restart BG3 to load new mod
 
-### Step 2: Verify mod loads with relay
-Check BG3SE console for BOTH messages:
-- `[TavSync] Server loaded — F6 to sync`
-- `[TavSync] Console relay active`
-
-### Step 3: Test console bridge
-1. Start sync server: `npm run sync`
-2. Check bridge status: `curl -s http://localhost:3457/bridge-status`
-3. Send test command: `curl -s -X POST http://localhost:3457/exec -H 'Content-Type: application/json' -d '{"lua":"return 1+1"}'`
-4. Expected: `{"id":"cmd_...","ok":true,"result":"2","output":[],"error":null}`
-5. Verify F6 party sync still works (existing functionality)
+### ✅ Console Bridge — CONFIRMED WORKING
+- Both console messages appear on BG3 startup
+- `return 1+1` → `"result":"2"`
+- Live entity query → `"Throkk the Melodious"`
+- Bridge works regardless of BG3/server startup order (file-based, no live connection needed)
 
 ### Console Bridge Architecture
 ```
