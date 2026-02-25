@@ -28,6 +28,7 @@ const PORT = 3457;
 
 let partyData    = null;
 let lastModified = null;
+let lastBridgeResponse = 0; // timestamp of last successful relay response
 
 function pollFile() {
   try {
