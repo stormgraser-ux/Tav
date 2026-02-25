@@ -69,7 +69,7 @@ Console confirms: `[TavSync] Server loaded — F6 to sync`
 16. ✅ **Phase 12** — BG3SE Console Bridge:
     - BootstrapServer.lua: tick-based poller (500ms) reads `tav_cmd.json`, executes Lua via `load()+pcall()`, captures `_P()` output, writes `tav_result.json`
     - sync-server.js: `POST /exec` writes command, polls for result (10s timeout). `GET /bridge-status` tracks relay liveness.
-    - **Needs .pak rebuild** before testing — BootstrapServer.lua changed but .pak not yet rebuilt
+    - .pak rebuilt and verified working — `return 1+1` → `2`, live entity queries confirmed
 
 ## Data State
 - `data/gear/act1.json` — 203 items, tagged
