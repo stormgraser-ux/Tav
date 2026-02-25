@@ -49,12 +49,76 @@ function pollFile() {
 setInterval(pollFile, 2000);
 pollFile();
 
+function readBody(req) {
+  return new Promise((resolve, reject) => {
+    let data = '';
+    req.on('data', chunk => data += chunk);
+    req.on('end', () => resolve(data));
+    req.on('error', reject);
+  });
+}
+
+function handleExec(req, res) {
+  readBody(req).then(body => {
+    let lua;
+    try {
+      lua = JSON.parse(body).lua;
+    } catch {
+      res.statusCode = 400;
+      res.end(JSON.stringify({ error: 'Invalid JSON body' }));
+      return;
+    }
+    if (!lua) {
+      res.statusCode = 400;
+      res.end(JSON.stringify({ error: 'Missing "lua" field' }));
+      return;
+    }
+
+    const id = `cmd_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+    fs.writeFileSync(CMD_FILE, JSON.stringify({ id, lua }));
+    console.log(`[${new Date().toLocaleTimeString()}] Exec ${id}: ${lua.slice(0, 80)}${lua.length > 80 ? '...' : ''}`);
+
+    const deadline = Date.now() + 10000;
+    const poll = () => {
+      try {
+        const raw = fs.readFileSync(RESULT_FILE, 'utf8');
+        if (raw && raw.trim()) {
+          const result = JSON.parse(raw);
+          if (result.id === id) {
+            fs.writeFileSync(RESULT_FILE, '');
+            lastBridgeResponse = Date.now();
+            console.log(`[${new Date().toLocaleTimeString()}] Result ${id}: ${result.ok ? 'OK' : 'FAIL'}`);
+            res.end(JSON.stringify(result));
+            return;
+          }
+        }
+      } catch {}
+
+      if (Date.now() < deadline) {
+        setTimeout(poll, 100);
+      } else {
+        res.statusCode = 504;
+        res.end(JSON.stringify({
+          error: 'Timeout — BG3SE did not respond within 10s. Is the game running with TavSync loaded?'
+        }));
+      }
+    };
+    poll();
+  });
+}
+
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   res.setHeader('Content-Type', 'application/json');
 
   if (req.method === 'OPTIONS') { res.end(); return; }
+
+  if (req.method === 'POST' && req.url === '/exec') {
+    handleExec(req, res);
+    return;
+  }
 
   if (req.url === '/party-sync') {
     if (partyData) {
@@ -65,6 +129,16 @@ const server = http.createServer((req, res) => {
         error: 'No party data yet — paste party_dump.lua into the BG3SE console (F11) and run it.'
       }));
     }
+    return;
+  }
+
+  if (req.url === '/bridge-status') {
+    const connected = lastBridgeResponse > 0 && (Date.now() - lastBridgeResponse) < 60000;
+    res.end(JSON.stringify({
+      connected,
+      lastResponse: lastBridgeResponse || null,
+      age: lastBridgeResponse ? Math.round((Date.now() - lastBridgeResponse) / 1000) + 's ago' : null,
+    }));
     return;
   }
 
