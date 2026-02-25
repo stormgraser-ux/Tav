@@ -110,7 +110,7 @@ Claude Code ←HTTP→ Node.js Bridge ←Files→ BG3SE TavSync Mod
 
 ## Known Issues / Pending
 - **Mod load verification** — Haven't confirmed TavSync loads as an unpackaged mod without BG3 Mod Manager. Need to test on next session startup.
-- **TavSync .pak rebuild** — BootstrapServer.lua inside TavSync.pak still uses old GetEquippedItem for weapons (returns nil). Needs rebuild with the InventoryContainer fix from party_dump.lua.
+- **TavSync .pak rebuild needed** — BootstrapServer.lua updated with console relay code. Must rebuild .pak via `build_tavsync.bat` and restart BG3 before the bridge will work.
 
 ## Memory
 - `memory/MEMORY.md` — user preference: use WebSearch for BG3 content gaps, never punt to wiki
