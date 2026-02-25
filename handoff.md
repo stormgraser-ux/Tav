@@ -75,21 +75,34 @@ Console confirms: `[TavSync] Server loaded — F6 to sync`
 - `data/community_builds.json` — 8 AlcastHQ builds, tier Community
 - 276 total tagged items
 
-## Next Session — Testing BG3SE Sync
+## Next Session — Rebuild .pak and Test Console Bridge
 
-### Step 1: Verify mod is loading (check BG3SE console on startup)
-Look for: `[TavSync] Server loaded — F6 to sync` and `[TavSync] Client loaded — press F6 to sync party gear to Tav`
-If NOT visible → mod isn't loading unpackaged. Fallback: use BG3 Mod Manager (free).
+### Step 1: Rebuild TavSync .pak
+BootstrapServer.lua has been updated with the console relay. Need to rebuild:
+1. Close BG3 (locks .pak)
+2. Run `build_tavsync.bat` from `00_INBOX/`
+3. Restart BG3 to load new mod
 
-### Step 2: Test class sync via console paste (no restart needed)
-1. Open BG3SE console (F11) while in-game
-2. Paste contents of `memory/bg3se/party_dump.lua`
-3. Expected output: `[1] Throkk (Bard) — 4 slots`, `[4] Karlach (Barbarian) — 2 slots`
-4. Hit "Sync from Game" in Tav Party tab → class dropdowns should auto-fill
-5. If class shows `(?)` → StaticData lookup failed for that UUID, investigate
+### Step 2: Verify mod loads with relay
+Check BG3SE console for BOTH messages:
+- `[TavSync] Server loaded — F6 to sync`
+- `[TavSync] Console relay active`
 
-### Step 3: F6 hotkey — ✅ CONFIRMED WORKING
-F6 sync is functional. No further testing needed.
+### Step 3: Test console bridge
+1. Start sync server: `npm run sync`
+2. Check bridge status: `curl -s http://localhost:3457/bridge-status`
+3. Send test command: `curl -s -X POST http://localhost:3457/exec -H 'Content-Type: application/json' -d '{"lua":"return 1+1"}'`
+4. Expected: `{"id":"cmd_...","ok":true,"result":"2","output":[],"error":null}`
+5. Verify F6 party sync still works (existing functionality)
+
+### Console Bridge Architecture
+```
+Claude Code ←HTTP→ Node.js Bridge ←Files→ BG3SE TavSync Mod
+  (curl)        localhost:3457        tav_cmd.json     (polls every 500ms)
+                                      tav_result.json  (writes results back)
+```
+- `POST /exec` — send `{lua: "..."}`, get back `{id, ok, result, output, error}`
+- `GET /bridge-status` — check if BG3 relay is responding (last 60s)
 
 ## Known Issues / Pending
 - **Mod load verification** — Haven't confirmed TavSync loads as an unpackaged mod without BG3 Mod Manager. Need to test on next session startup.
