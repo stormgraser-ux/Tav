@@ -151,44 +151,33 @@ local function getEquipment(uuid)
     end
   end
 
-  -- Weapons: GetEquippedItem returns nil — read from InventoryContainer instead.
-  -- Two-pass approach: prefer items with "Wielded" component (actually equipped),
-  -- fall back to first item in slot (for host player where Wielded isn't set).
+  -- Weapons: Osi.GetEquippedItem returns nil for weapon slots.
+  -- Instead, read from InventoryContainer at fixed equipment slot keys:
+  --   key 3 = MeleeMainHand, key 4 = MeleeOffHand,
+  --   key 5 = RangedMainHand, key 6 = RangedOffHand.
+  -- Higher keys are non-active weapons (other weapon sets, inventory items).
+  local EQUIP_KEY_MAP = { [3] = "weapon", [4] = "offhand", [5] = "ranged", [6] = "rangedoh" }
   local ok, entity = pcall(Ext.Entity.Get, uuid)
   if ok and entity then
-    local fallback = {}  -- tavSlot → name (first item found per slot)
     pcall(function()
       for _, inv in ipairs(entity.InventoryOwner.Inventories) do
         local okItems, items = pcall(function() return inv.InventoryContainer.Items end)
         if okItems and items then
-          for _, slotData in pairs(items) do
-            pcall(function()
-              local slot = tostring(slotData.Item.Equipable.Slot)
-              local tavSlot = WEAPON_SLOT_MAP[slot]
-              if tavSlot then
-                local name = getItemNameFromEntity(slotData.Item)
-                if name ~= "" then
-                  -- Check if this item is currently wielded
-                  local isWielded = false
-                  pcall(function()
-                    if slotData.Item.Wielded then isWielded = true end
-                  end)
-                  if isWielded then
-                    gear[tavSlot] = name  -- Wielded wins immediately
-                  elseif not fallback[tavSlot] then
-                    fallback[tavSlot] = name  -- First-found fallback
-                  end
+          for key, slotData in pairs(items) do
+            local tavSlot = EQUIP_KEY_MAP[key]
+            if tavSlot and not gear[tavSlot] then
+              pcall(function()
+                local slot = tostring(slotData.Item.Equipable.Slot)
+                if WEAPON_SLOT_MAP[slot] then
+                  local name = getItemNameFromEntity(slotData.Item)
+                  if name ~= "" then gear[tavSlot] = name end
                 end
-              end
-            end)
+              end)
+            end
           end
         end
       end
     end)
-    -- Apply fallbacks for slots that had no Wielded item (host player case)
-    for tavSlot, name in pairs(fallback) do
-      if not gear[tavSlot] then gear[tavSlot] = name end
-    end
   end
 
   return gear
