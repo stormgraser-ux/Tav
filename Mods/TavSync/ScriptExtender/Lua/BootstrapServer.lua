@@ -242,3 +242,77 @@ Ext.RegisterNetListener("TavSync_DumpParty", function(channel, payload, user)
 end)
 
 _P("[TavSync] Server loaded — F6 to sync")
+
+-- ── Console Relay ─────────────────────────────────────────────────
+-- Polls tav_cmd.json for Lua commands from the bridge server,
+-- executes them, and writes results to tav_result.json.
+
+local lastRelayCheck = 0
+local RELAY_INTERVAL = 500 -- ms
+
+Ext.Events.Tick:Subscribe(function()
+  local now = Ext.Utils.MonotonicTime()
+  if now - lastRelayCheck < RELAY_INTERVAL then return end
+  lastRelayCheck = now
+
+  local ok, raw = pcall(Ext.IO.LoadFile, "tav_cmd.json")
+  if not ok or not raw or raw == "" then return end
+
+  -- Clear command file immediately to prevent re-execution
+  pcall(Ext.IO.SaveFile, "tav_cmd.json", "")
+
+  local cmdOk, cmd = pcall(Ext.Json.Parse, raw)
+  if not cmdOk or not cmd or not cmd.id or not cmd.lua then
+    pcall(Ext.IO.SaveFile, "tav_result.json", Ext.Json.Stringify({
+      id = (cmd and cmd.id) or "unknown",
+      ok = false,
+      result = Ext.Json.Null,
+      output = {},
+      error = "Invalid command JSON"
+    }))
+    return
+  end
+
+  -- Capture _P output during execution
+  local captured = {}
+  local origP = _P
+  _P = function(...)
+    local parts = {}
+    for i = 1, select("#", ...) do
+      parts[#parts + 1] = tostring(select(i, ...))
+    end
+    captured[#captured + 1] = table.concat(parts, "\t")
+    origP(...)
+  end
+
+  local result = {
+    id = cmd.id,
+    ok = true,
+    result = Ext.Json.Null,
+    output = {},
+    error = Ext.Json.Null,
+  }
+
+  local fn, loadErr = load(cmd.lua)
+  if not fn then
+    result.ok = false
+    result.error = loadErr
+  else
+    local execOk, execResult = pcall(fn)
+    if not execOk then
+      result.ok = false
+      result.error = tostring(execResult)
+    elseif execResult ~= nil then
+      result.result = tostring(execResult)
+    end
+  end
+
+  -- Restore _P and collect output
+  _P = origP
+  result.output = captured
+
+  pcall(Ext.IO.SaveFile, "tav_result.json", Ext.Json.Stringify(result))
+  _P("[TavSync] Executed command " .. cmd.id .. (result.ok and " OK" or " FAIL"))
+end)
+
+_P("[TavSync] Console relay active")
