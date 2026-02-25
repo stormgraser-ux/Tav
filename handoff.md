@@ -92,8 +92,8 @@ If NOT visible → mod isn't loading unpackaged. Fallback: use BG3 Mod Manager (
 F6 sync is functional. No further testing needed.
 
 ## Known Issues / Pending
-- **Weapon slots** — `Osi.GetEquippedItem` returns nil for all weapon slot names even when weapons are visually equipped. Root cause unknown (weapon-set system?). Low priority — armor/accessory sync is the core value.
 - **Mod load verification** — Haven't confirmed TavSync loads as an unpackaged mod without BG3 Mod Manager. Need to test on next session startup.
+- **TavSync .pak rebuild** — BootstrapServer.lua inside TavSync.pak still uses old GetEquippedItem for weapons (returns nil). Needs rebuild with the InventoryContainer fix from party_dump.lua.
 
 ## Memory
 - `memory/MEMORY.md` — user preference: use WebSearch for BG3 content gaps, never punt to wiki
