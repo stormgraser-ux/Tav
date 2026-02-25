@@ -4,7 +4,7 @@
 -- Uses Osi.GetEquippedItem + DisplayName:Get() — works in BG3SE v30+
 -- ============================================================
 
--- Osiris slot name → Tav GEAR_SLOTS key
+-- Osiris slot name → Tav GEAR_SLOTS key (armor/accessories only — weapons use InventoryContainer)
 local SLOT_MAP = {
   Helmet         = "head",
   BreastPlate    = "chest",
@@ -14,6 +14,11 @@ local SLOT_MAP = {
   Ring           = "ring1",
   Ring2          = "ring2",
   Cloak          = "cloak",
+}
+
+-- Weapon slots: Osi.GetEquippedItem returns nil for these.
+-- Instead we read from InventoryContainer → Equipable.Slot on each item.
+local WEAPON_SLOT_MAP = {
   MeleeMainHand  = "weapon",
   MeleeOffHand   = "offhand",
   RangedMainHand = "ranged",
