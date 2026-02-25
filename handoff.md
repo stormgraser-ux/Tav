@@ -58,7 +58,7 @@ Press F6 anytime in-game to dump party → `party_sync.json` → Tav picks it up
     - Acquired-from-wishlist sync (check turns gold, stays on list)
     - Per-profile localStorage (`tav_wishlist_{buildId}`)
     - Remove (×) syncs back to Gear Finder heart
-15. ✅ **Phase 11** — BG3SE Party Sync:
+15. ✅ **Phase 11** — BG3SE Party Sync + Weapon Fix:
     - TavSync mod built: `Mods/TavSync/` with BootstrapServer.lua + BootstrapClient.lua
     - Console paste fallback: `memory/bg3se/party_dump.lua`
     - Gear sync confirmed working — 4 party members, real item names from live game
