@@ -1,32 +1,31 @@
 # Tav — Handoff
 
 ## Current Status
-Session 12 complete. Party sync, UI redesign, multiclass tracking, F6 hotkey — all working.
+Session 13 complete. Weapon slot sync fixed + TavSync .pak mod rebuilt and confirmed working.
 
 ### F6 Hotkey Sync (current workflow)
-After loading a save, open BG3SE console (F11) and paste:
-```
-client
-load(Ext.IO.LoadFile("tav_hotkey.lua"))()
-server
-load(Ext.IO.LoadFile("tav_server.lua"))()
-```
-Press F6 anytime in-game to dump party → `party_sync.json` → Tav picks it up on Sync.
+TavSync .pak mod auto-loads on game start. Press F6 in-game → dumps party to `party_sync.json`.
+Console confirms: `[TavSync] Server loaded — F6 to sync`
 
-**Why not a pak mod?** BG3 Patch 7+ silently drops custom paks from modsettings.lsx on launch. Console scripts bypass this.
-**Fallback:** `load(Ext.IO.LoadFile("party_dump.lua"))()` — one-shot dump without hotkey.
+**Fallback:** Paste `party_dump.lua` into BG3SE console (F11) for one-shot dump without mod.
 
-| File | Path |
-|------|------|
-| tav_server.lua | `C:\Users\Owner\AppData\Local\Larian Studios\Baldur's Gate 3\Script Extender\tav_server.lua` |
-| tav_hotkey.lua | same dir |
-| party_dump.lua | same dir (source: `memory/bg3se/party_dump.lua`) |
+| File | Purpose |
+|------|---------|
+| `Mods/TavSync/` | Source files for the .pak mod (versioned in project) |
+| `memory/bg3se/party_dump.lua` | Console paste fallback (same logic as mod) |
+| `00_INBOX/build_tavsync.bat` | Rebuilds .pak via Divine CLI |
+| `00_INBOX/lslib-tools/` | Divine.exe + LSLib for pak creation |
 
-### Recent Additions (Session 12)
-- UX redesign: 4-tab nav, persistent party strip, single `state.act`, side-by-side Build tab, progressive disclosure
-- Multiclass level tracking: `party_dump.lua` v3 exports `subClass`, `classes[]`, `totalLevel`
-- `applyGameSync()` sets class + subclass (fuzzy matching), auto-populates split/notes field
-- `partyMemberLabel()` includes level split in copied prompts
+### Pak Build Process
+1. Edit source in `Mods/TavSync/ScriptExtender/Lua/`
+2. Run `build_tavsync.bat` (close BG3 first — locks .pak)
+3. Restart BG3 to load changes
+
+### Recent Additions (Session 13)
+- **Weapon slots FIXED**: `Osi.GetEquippedItem` returns nil for weapons — BG3 stores them in `InventoryContainer` at fixed keys (3=MeleeMainHand, 4=MeleeOffHand, 5=RangedMainHand, 6=RangedOffHand)
+- TavSync .pak rebuilt with correct `Mods/TavSync/` path prefix (Divine CLI)
+- Mod registered in modsettings.lsx, loads automatically on game start
+- ScriptExtenderSettings.json: added `DeveloperMode: true`
 
 ## What's Done
 1. ✅ Scaffold — `data/`, `scraper/`, `src/`
