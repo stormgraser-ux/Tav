@@ -381,7 +381,14 @@ Ext.RegisterNetListener("TavSync_DumpParty", function(channel, payload, user)
   dumpParty()
 end)
 
-_P("[TavSync] Server loaded — F6 to sync")
+-- ── Auto-sync on save (quicksave, autosave, manual save) ─────────
+
+Ext.Events.AfterSave:Subscribe(function()
+  dumpParty()
+  _P("[TavSync] Auto-synced after save")
+end)
+
+_P("[TavSync] Server loaded — F6 to sync, auto-sync on save")
 
 -- ── Console Relay ─────────────────────────────────────────────────
 -- Polls tav_cmd.json for Lua commands from the bridge server,
