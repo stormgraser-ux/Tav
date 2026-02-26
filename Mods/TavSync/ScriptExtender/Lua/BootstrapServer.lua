@@ -194,7 +194,7 @@ local MILESTONES = {
   { flag = "GOB_General_State_Hostile_9816a6fb-54d7-4b9c-a5c7-bc6cda6bb276",               label = "Goblin Camp hostile" },
   { flag = "GLO_Halsin_Knows_IsFound_a0d83476-e2d0-4972-a76b-b23c39078cd7",                label = "Halsin found" },
   { flag = "GLO_Halsin_State_PermaDefeated_86bc3df1-08b4-fbc4-b542-6241bcd03df1",          label = "Halsin dead" },
-  { flag = "HAG_Hag_State_IsDead_781391e2-7d33-642d-28c0-e9b06cde32bb",                    label = "Hag killed" },
+  { flag = "HAG_Hag_State_IsDead_781391e2-7d33-642d-28c0-e9b06cde32bb",                    label = "Hag killed",            supersedes = "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720" },
   { flag = "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720",               label = "Hag dealt with (alive)" },
   { flag = "FOR_Owlbear_State_PermaDefeated_a2cd3c0f-95be-7155-d67c-edbdb2ca1104",         label = "Owlbear defeated" },
   { flag = "FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a", label = "Phase Spider Matriarch killed" },
