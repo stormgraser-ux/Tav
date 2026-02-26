@@ -1182,8 +1182,20 @@ async function syncFromGame() {
   }
 
   applyGameSync(data.members);
+
+  // Store game state snapshot (v4+)
+  if (data.gameState) {
+    state.gameState = data.gameState;
+    // Auto-set act from region if available
+    if (data.gameState.act) {
+      state.act = data.gameState.act;
+      syncActButtons('strip', data.gameState.act);
+    }
+  }
+
   renderPartyStrip();
-  showSyncMsg(`Synced ${data.members.length} party member(s) from game!`, 3000);
+  const gsInfo = data.gameState ? ` — ${data.gameState.region || 'unknown region'}, ${data.gameState.gold || 0}g` : '';
+  showSyncMsg(`Synced ${data.members.length} party member(s)${gsInfo}`, 4000);
 }
 
 function applyGameSync(members) {
