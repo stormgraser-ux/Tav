@@ -1226,14 +1226,59 @@ const BG3_SLOT_MAP = {
   weapon: 'weapon', offhand: 'offhand', ranged: 'ranged', rangedoh: 'rangedoh',
 };
 
-async function syncFromGame() {
+function processSyncData(data, showSyncMsg) {
+  if (!data.members || !data.members.length) {
+    showSyncMsg('No party data in sync file — make sure TavSync mod is installed and you\'ve saved at least once.');
+    return;
+  }
+
+  applyGameSync(data.members);
+
+  // Store game state snapshot (v4+)
+  if (data.gameState) {
+    state.gameState = data.gameState;
+    if (data.gameState.act) {
+      state.act = data.gameState.act;
+      syncActButtons('strip', data.gameState.act);
+    }
+  }
+
+  renderPartyStrip();
+  const gsInfo = data.gameState ? ` — ${data.gameState.region || 'unknown region'}, ${data.gameState.gold || 0}g` : '';
+  showSyncMsg(`Synced ${data.members.length} party member(s)${gsInfo}`, 4000);
+}
+
+function loadSyncFile() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      const showSyncMsg = makeSyncMsgFn();
+      processSyncData(data, showSyncMsg);
+    } catch {
+      const showSyncMsg = makeSyncMsgFn();
+      showSyncMsg('Could not read file — make sure you selected party_sync.json');
+    }
+  };
+  input.click();
+}
+
+function makeSyncMsgFn() {
   const partyHint = document.getElementById('party-save-hint');
   const stripHint = document.getElementById('strip-sync-hint');
-
-  function showSyncMsg(msg, duration = 5000) {
+  return function showSyncMsg(msg, duration = 5000) {
     if (partyHint) { partyHint.textContent = msg; setTimeout(() => { partyHint.textContent = ''; }, duration); }
     if (stripHint) { stripHint.textContent = msg; setTimeout(() => { stripHint.textContent = ''; }, duration); }
-  }
+  };
+}
+
+async function syncFromGame() {
+  const showSyncMsg = makeSyncMsgFn();
 
   let data;
   try {
@@ -1244,6 +1289,11 @@ async function syncFromGame() {
       return;
     }
   } catch {
+    const isHosted = location.hostname !== 'localhost' && location.hostname !== '127.0.0.1';
+    if (isHosted) {
+      showSyncMsg('Load your party_sync.json file — click the 📂 button or check the TavSync section below.', 8000);
+      return;
+    }
     showSyncMsg('Sync server unreachable — run: npm run sync in the project directory.');
     return;
   }
