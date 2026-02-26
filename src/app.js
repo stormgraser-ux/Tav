@@ -1261,13 +1261,16 @@ function applyGameSync(members) {
 
   saveParty();
 
-  // Patch classes/totalLevel back into saved slots — no DOM inputs for these fields
+  // Patch classes/totalLevel/abilities/xp back into saved slots — no DOM inputs for these fields
   const saved = loadParty();
   if (saved?.slots) {
     members.slice(0, 4).forEach((member, i) => {
-      if (saved.slots[i] && member.classes) {
-        saved.slots[i].classes    = member.classes;
-        saved.slots[i].totalLevel = member.totalLevel || 0;
+      if (saved.slots[i]) {
+        if (member.classes)    saved.slots[i].classes    = member.classes;
+        if (member.totalLevel) saved.slots[i].totalLevel = member.totalLevel;
+        if (member.abilities)  saved.slots[i].abilities  = member.abilities;
+        if (member.experience) saved.slots[i].experience = member.experience;
+        if (member.name)       saved.slots[i].charName   = member.name;
       }
     });
     localStorage.setItem(PARTY_KEY, JSON.stringify(saved));
