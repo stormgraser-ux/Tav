@@ -257,9 +257,18 @@ local function getGameState()
   end
 
   -- Milestones (only include flags that are SET)
-  state.milestones = {}
+  -- First pass: collect which flags are active
+  local activeFlags = {}
   for _, m in ipairs(MILESTONES) do
     if flagSet[m.flag] then
+      activeFlags[m.flag] = true
+      -- If this flag supersedes another, mark the weaker one for suppression
+      if m.supersedes then activeFlags[m.supersedes] = "suppressed" end
+    end
+  end
+  state.milestones = {}
+  for _, m in ipairs(MILESTONES) do
+    if activeFlags[m.flag] == true then
       state.milestones[#state.milestones + 1] = m.label
     end
   end
