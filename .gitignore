@@ -15,3 +15,6 @@ AGENTS.md
 .github/copilot-instructions.md
 shipping/
 legacy/
+setup.md
+tav_hotkey.lua
+tav_server.lua
