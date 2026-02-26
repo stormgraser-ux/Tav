@@ -2763,9 +2763,11 @@ function initEventListeners() {
     btn.addEventListener('click', () => setAct(parseInt(btn.dataset.act)));
   });
 
-  // ── Strip: sync button ────────────────────────────────────────────────────
+  // ── Strip: sync + load buttons ─────────────────────────────────────────────
   const stripSyncBtn = document.getElementById('strip-sync-btn');
   if (stripSyncBtn) stripSyncBtn.addEventListener('click', syncFromGame);
+  const stripLoadBtn = document.getElementById('strip-load-btn');
+  if (stripLoadBtn) stripLoadBtn.addEventListener('click', loadSyncFile);
 
   // ── Strip: slot click → open popover ─────────────────────────────────────
   document.querySelectorAll('.party-slot').forEach(btn => {
