@@ -1797,11 +1797,6 @@ body {
 
 /* ----- Responsive ----- */
 
-/* --- Tablet (860px) — gear cards 2-column --- */
-@media (max-width: 860px) {
-  .gear-card { width: calc(50% - 0.375rem); }
-}
-
 /* --- Tablet (768px) — TavSync 2-column --- */
 @media (max-width: 768px) {
   .tavsync-features { grid-template-columns: repeat(2, 1fr); }
