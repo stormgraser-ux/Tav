@@ -6,3 +6,11 @@ __pycache__/
 *.log
 .DS_Store
 _site/
+
+# Dev/session files (not for public repo)
+memory/
+handoff.md
+.cursorrules
+AGENTS.md
+.github/copilot-instructions.md
+shipping/
