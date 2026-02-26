@@ -1,0 +1,181 @@
+{
+  "_doc": "Curated game milestones for the Tav game state snapshot. Each entry maps a BG3SE global flag to a human-readable label. Organized by what changes gameplay advice — not exhaustive quest tracking.",
+
+  "regions": {
+    "_doc": "Map BG3SE region IDs to human-readable names + act number",
+    "TUT_Avernus_C":          { "name": "Nautiloid",              "act": 1 },
+    "WLD_Main_A":             { "name": "Wilderness",             "act": 1 },
+    "CRE_Main_A":             { "name": "Rosymorn Monastery",     "act": 1 },
+    "SCL_Main_A":             { "name": "Shadow-Cursed Lands",    "act": 2 },
+    "INT_Main_A":             { "name": "Moonrise Towers",        "act": 2 },
+    "BGO_Main_A":             { "name": "Rivington",              "act": 3 },
+    "CTY_Main_A":             { "name": "Lower City",             "act": 3 },
+    "END_Main_A":             { "name": "High Hall",              "act": 3 }
+  },
+
+  "milestones": {
+    "act1": [
+      {
+        "flag": "TUT_Helm_State_TutorialEnded_55073953-23b9-448c-bee8-4c44d3d67b6b",
+        "label": "Nautiloid cleared",
+        "advice": "Prologue complete"
+      },
+      {
+        "flag": "DEN_General_State_Entered_26b2dc6a-e5eb-4d99-a4bd-3ecaa3b86a9e",
+        "label": "Druid's Grove entered",
+        "advice": "Grove vendors accessible"
+      },
+      {
+        "flag": "Hirelings_State_FeatureAvailable_66a34105-f02f-4c74-a3c8-085f1de12db8",
+        "label": "Withers found",
+        "advice": "Respec available (free, unlimited)"
+      },
+      {
+        "flag": "GLO_GoblinCamp_EverEnteredBefore_7a0172dd-df95-448a-aa2e-a04acdf7eabe",
+        "label": "Goblin Camp reached",
+        "advice": "Goblin Camp vendors/loot accessible"
+      },
+      {
+        "flag": "GOB_General_State_Hostile_9816a6fb-54d7-4b9c-a5c7-bc6cda6bb276",
+        "label": "Goblin Camp hostile",
+        "advice": "Goblin Camp vendors no longer accessible"
+      },
+      {
+        "flag": "GLO_Halsin_Knows_IsFound_a0d83476-e2d0-4972-a76b-b23c39078cd7",
+        "label": "Halsin found",
+        "advice": "Halsin available as companion"
+      },
+      {
+        "flag": "GLO_Halsin_State_PermaDefeated_86bc3df1-08b4-fbc4-b542-6241bcd03df1",
+        "label": "Halsin dead",
+        "advice": "Halsin permanently lost"
+      },
+      {
+        "flag": "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720",
+        "label": "Hag defeated",
+        "advice": "Hag reward obtained, area cleared"
+      },
+      {
+        "flag": "FOR_Owlbear_State_PermaDefeated_a2cd3c0f-95be-7155-d67c-edbdb2ca1104",
+        "label": "Owlbear defeated",
+        "advice": "Owlbear Cub may appear at Goblin Camp"
+      },
+      {
+        "flag": "FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a",
+        "label": "Phase Spider Matriarch killed",
+        "advice": "Whispering Promise ring available"
+      },
+      {
+        "flag": "UND_MyconidCircle_State_Visited_5c470f79-d252-49e0-af96-94cebd100359",
+        "label": "Underdark reached",
+        "advice": "Underdark vendors and loot accessible"
+      },
+      {
+        "flag": "PLA_GithChokepoint_State_SceneDone_2fa4006f-12e5-4666-931b-e31dee737f2f",
+        "label": "Githyanki Patrol dealt with",
+        "advice": "Gith encounter resolved"
+      },
+      {
+        "flag": "DEN_AttackOnDen_State_RaiderVictory_abe1bce8-c234-4afe-a490-76210d98a078",
+        "label": "Raiders won at Grove",
+        "advice": "Grove destroyed — Tiefling vendors gone, some companions may be lost"
+      },
+      {
+        "flag": "GLO_ForgingOfTheHeart_State_KarlachUpgraded_a818e2f5-9e0c-4ab3-8c1e-00765d3b892f",
+        "label": "Karlach engine upgraded",
+        "advice": "Karlach's Infernal Engine upgraded by Dammon"
+      },
+      {
+        "flag": "GLO_Tadpole_State_TreeUnlocked_f7691d3d-345b-4984-8eed-6f238a9f84be",
+        "label": "Illithid skill tree unlocked",
+        "advice": "Tadpole powers available for the party"
+      },
+      {
+        "flag": "FOR_ThayanCellar_State_LabDiscovered_72e17f62-be19-4277-be42-01a6f62afbf3",
+        "label": "Necromancy of Thay found",
+        "advice": "Rare dark tome accessible"
+      },
+      {
+        "flag": "FOR_IncompleteMasterwork_State_PartyHasApprenticePlans_946dde0d-e7aa-4322-b514-129831007a91",
+        "label": "Masterwork weapon plans found",
+        "advice": "Can craft a Sussur weapon at the Blighted Village forge"
+      }
+    ],
+
+    "act2": [
+      {
+        "flag": "SCL_PartyProgress_EnteredShadowCursedLands",
+        "label": "Shadow-Cursed Lands entered",
+        "advice": "Act 2 started — Act 1 areas still accessible until Nightsong resolution"
+      },
+      {
+        "flag": "GLO_Nightsong_State_Found",
+        "label": "Nightsong found",
+        "advice": "Critical story decision ahead"
+      },
+      {
+        "flag": "GLO_Nightsong_State_Freed",
+        "label": "Nightsong freed",
+        "advice": "Shadowheart's path decided, Act 2 areas may be altered"
+      },
+      {
+        "flag": "GLO_Nightsong_State_Killed",
+        "label": "Nightsong killed",
+        "advice": "Shadowheart chose Shar — different gear/spell path"
+      },
+      {
+        "flag": "CRE_GithCreche_State_Visited",
+        "label": "Githyanki Creche reached",
+        "advice": "Creche vendors and loot accessible"
+      },
+      {
+        "flag": "INT_MoonriseTowers_State_Entered",
+        "label": "Moonrise Towers entered",
+        "advice": "Moonrise vendors accessible"
+      },
+      {
+        "flag": "SHA_GauntletOfShar_State_Completed",
+        "label": "Gauntlet of Shar completed",
+        "advice": "Umbral Gems collected, Nightsong quest near resolution"
+      },
+      {
+        "flag": "GLO_AdamantineForge_State_ForgeUsed",
+        "label": "Adamantine Forge used",
+        "advice": "Adamantine gear crafted (2 items max)"
+      }
+    ],
+
+    "act3": [
+      {
+        "flag": "BGO_PartyProgress_EnteredRivington",
+        "label": "Rivington reached",
+        "advice": "Act 3 started — Act 2 areas permanently closed"
+      },
+      {
+        "flag": "CTY_PartyProgress_EnteredLowerCity",
+        "label": "Lower City entered",
+        "advice": "Full Act 3 vendors and content accessible"
+      },
+      {
+        "flag": "GLO_SteelWatchers_State_Destroyed",
+        "label": "Steel Watch destroyed",
+        "advice": "Major Act 3 faction quest resolved"
+      },
+      {
+        "flag": "GLO_Orpheus_State_Freed",
+        "label": "Orpheus freed",
+        "advice": "Endgame faction decision made"
+      }
+    ]
+  },
+
+  "companion_flags": {
+    "_doc": "Companion recruitment/state flags that affect party building advice",
+    "ORI_Karlach_State_Recruited_ed56dd05-9a92-4729-88bc-f4e6c6fb5be8": "Karlach recruited",
+    "ORI_Laezel_State_WasRecruited_34790d30-6331-484f-ae56-87f7dad3b57f": "Lae'zel recruited",
+    "ORI_Wyll_State_IsDevil_f83eee79-271b-4044-947a-d8eb699d734a": "Wyll transformed (devil)",
+    "ORI_Wyll_State_Alive_1b20bb3c-71a5-4766-9b70-097cf5866ed7": "Wyll alive",
+    "GLO_Halsin_Knows_WentWithAdventurers_76537faa-016f-f6a9-8136-b236fbefd2e1": "Halsin joined party",
+    "CAMP_Jergal_State_ResurrectionServicesUnlocked_d115836f-1a9a-4361-841c-abc3f1c41021": "Withers resurrection unlocked"
+  }
+}
