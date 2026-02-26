@@ -3087,8 +3087,9 @@ function showGearTooltip(item, anchorEl) {
   if (left + tipW > window.innerWidth - 12) left = anchor.left - tipW - gap;
   if (left < 8) left = 8;
 
+  const vh = window.visualViewport?.height ?? window.innerHeight;
   let top = anchor.top;
-  if (top + tipH > window.innerHeight - 12) top = window.innerHeight - tipH - 12;
+  if (top + tipH > vh - 12) top = vh - tipH - 12;
   if (top < 8) top = 8;
 
   tip.style.left = `${left}px`;
