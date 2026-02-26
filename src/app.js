@@ -2894,6 +2894,7 @@ function initEventListeners() {
   });
 
   document.getElementById('party-sync-btn').addEventListener('click', syncFromGame);
+  document.getElementById('party-load-btn').addEventListener('click', loadSyncFile);
 
   document.querySelectorAll('.gear-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
