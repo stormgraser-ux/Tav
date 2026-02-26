@@ -1069,6 +1069,70 @@ function renderPartyAnalysis(result) {
   container.innerHTML = html;
 }
 
+// ---------------------------------------------------------------------------
+// Game State block for copy prompts — compact summary of live game data
+// ---------------------------------------------------------------------------
+
+const REGION_LABELS = {
+  TUT_Avernus_C: 'Nautiloid',    WLD_Main_A: 'Wilderness',
+  CRE_Main_A: 'Rosymorn Monastery', SCL_Main_A: 'Shadow-Cursed Lands',
+  INT_Main_A: 'Moonrise Towers', BGO_Main_A: 'Rivington',
+  CTY_Main_A: 'Lower City',     END_Main_A: 'High Hall',
+};
+
+function gameStateBlock() {
+  const gs = state.gameState;
+  if (!gs) return '';
+
+  const lines = [];
+
+  // Region + Act + Gold
+  const region = gs.region || REGION_LABELS[gs.regionId] || gs.regionId || '';
+  const act = gs.act || state.act;
+  const header = [`Act ${act}`];
+  if (region) header.push(region);
+  if (gs.gold != null) header.push(`${gs.gold}g`);
+  lines.push(`Game state: ${header.join(' — ')}`);
+
+  // Per-member stats from saved party data (abilities + XP)
+  const saved = loadParty();
+  if (saved?.slots) {
+    const memberLines = saved.slots
+      .filter(s => s?.className)
+      .map(s => {
+        const name = s.charName || '';
+        const split = s.split || s.className;
+        const parts = [name, split].filter(Boolean).join(', ');
+        const ab = s.abilities;
+        const abStr = ab ? ` [${ab.Strength}/${ab.Dexterity}/${ab.Constitution}/${ab.Intelligence}/${ab.Wisdom}/${ab.Charisma}]` : '';
+        const xp = s.experience?.total;
+        const xpStr = xp != null ? ` XP:${xp}` : '';
+        return `  ${parts}${abStr}${xpStr}`;
+      });
+    if (memberLines.length) {
+      lines.push('Party stats (STR/DEX/CON/INT/WIS/CHA):');
+      lines.push(...memberLines);
+    }
+  }
+
+  // Companions at camp
+  if (gs.companions?.length) {
+    lines.push(`Recruited: ${gs.companions.join(', ')}`);
+  }
+
+  // Milestones
+  if (gs.milestones?.length) {
+    lines.push(`Progress: ${gs.milestones.join(', ')}`);
+  }
+
+  // Illithid powers
+  if (gs.tadpolePowers?.length) {
+    lines.push(`Illithid powers: ${gs.tadpolePowers.join(', ')}`);
+  }
+
+  return lines.join('\n');
+}
+
 function generatePartyPrompt() {
   const rows          = [...document.querySelectorAll('.party-row')];
   const labels        = rows.map(partyMemberLabel);
