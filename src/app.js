@@ -1199,9 +1199,13 @@ function generateGearPrompt() {
 
   const notes = document.getElementById('party-notes').value.trim();
 
+  const gsBlock = gameStateBlock();
+
   return [
     `Party Gear Snapshot — Act ${actLabel}`,
     '',
+    gsBlock || null,
+    gsBlock ? '' : null,
     memberBlocks.join('\n\n'),
     notes ? `\nContext: ${notes}` : '',
     '',
