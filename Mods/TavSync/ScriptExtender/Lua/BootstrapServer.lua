@@ -257,18 +257,17 @@ local function getGameState()
   end
 
   -- Milestones (only include flags that are SET)
-  -- First pass: collect which flags are active
-  local activeFlags = {}
+  -- First pass: mark suppressions from stronger flags
+  local suppressed = {}
   for _, m in ipairs(MILESTONES) do
-    if flagSet[m.flag] then
-      activeFlags[m.flag] = true
-      -- If this flag supersedes another, mark the weaker one for suppression
-      if m.supersedes then activeFlags[m.supersedes] = "suppressed" end
+    if m.supersedes and flagSet[m.flag] then
+      suppressed[m.supersedes] = true
     end
   end
+  -- Second pass: collect active milestones, skipping suppressed ones
   state.milestones = {}
   for _, m in ipairs(MILESTONES) do
-    if activeFlags[m.flag] == true then
+    if flagSet[m.flag] and not suppressed[m.flag] then
       state.milestones[#state.milestones + 1] = m.label
     end
   end
