@@ -2430,6 +2430,7 @@ body {
 }
 
 @media (max-width: 860px) {
+  .gear-card { width: calc(50% - 0.375rem); }
   .build-tab-layout {
     flex-direction: column;
   }
