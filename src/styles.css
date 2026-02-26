@@ -1797,13 +1797,138 @@ body {
 
 /* ----- Responsive ----- */
 
+/* --- Tablet (860px) — gear cards 2-column --- */
+@media (max-width: 860px) {
+  .gear-card { width: calc(50% - 0.375rem); }
+}
+
+/* --- Tablet (768px) — TavSync 2-column --- */
+@media (max-width: 768px) {
+  .tavsync-features { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* --- Mobile (600px) — full overrides --- */
 @media (max-width: 600px) {
-  .tab-btn        { padding: 0.6rem 0.85rem; font-size: 0.67rem; }
-  .gear-card      { width: 100%; }
-  .filters-bar    { gap: 0.75rem 1rem; }
-  .site-title     { letter-spacing: 0.3em; margin-left: 0.3em; }
-  .creator-wrap   { flex-direction: column; }
+
+  /* Touch feedback */
+  .tab-btn,
+  .act-btn,
+  .gear-toggle,
+  .cta-btn,
+  .strip-sync-btn,
+  .strip-load-btn,
+  .class-pill,
+  .party-slot,
+  .gear-acquired-btn,
+  .gear-wishlist-btn,
+  .level-pill,
+  .cc-create-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .tab-btn:active,
+  .act-btn:active,
+  .gear-toggle:active,
+  .cta-btn:active,
+  .strip-sync-btn:active,
+  .strip-load-btn:active,
+  .class-pill:active,
+  .party-slot:active,
+  .level-pill:active,
+  .cc-create-btn:active {
+    filter: brightness(0.85);
+  }
+
+  /* Tab buttons — fill width evenly */
+  .tab-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  /* Act buttons — bigger tap targets */
+  .act-btn {
+    padding: 0.45rem 0.65rem;
+    min-width: 2.5rem;
+  }
+
+  /* Gear toggle — bigger tap target */
+  .gear-toggle {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.65rem;
+  }
+
+  /* Strip sync/load buttons */
+  .strip-sync-btn { padding: 0.4rem 0.8rem; }
+  .strip-load-btn { padding: 0.4rem 0.8rem; }
+
+  /* Wishlist/acquired hearts — min tap area */
+  .gear-acquired-btn,
+  .gear-wishlist-btn {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  /* Form inputs — bigger touch targets */
+  .filter-select,
+  .filter-input,
+  .form-input,
+  .form-textarea {
+    padding: 0.55rem 0.75rem;
+  }
+
+  /* Gear cards — full width */
+  .gear-card { width: 100%; }
+
+  /* Filters bar */
+  .filters-bar { gap: 0.75rem 1rem; }
+  .filter-group { width: 100%; }
+  .filter-group--grow { min-width: 0; }
+
+  /* Site header */
+  .site-title { letter-spacing: 0.3em; margin-left: 0.3em; }
+
+  /* Creator/Build tab */
+  .creator-wrap { flex-direction: column; }
   .creator-sidebar { width: 100%; }
+
+  /* Class filter pills — tighter for wrapping */
+  .class-pill { padding: 0.18rem 0.45rem; font-size: 0.62rem; }
+
+  /* Party strip mobile — wrap slots on first line, controls on second */
+  .party-strip { gap: 0.4rem; }
+  .strip-divider { display: none; }
+  .strip-slots { flex: 1 1 100%; }
+  .party-slot { font-size: 0.75rem; padding: 0.25rem 0.55rem; }
+
+  /* Party rows — column layout */
+  .party-row {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .party-label {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+  .party-selects { width: 100%; }
+
+  /* Gear grid — 2 columns instead of 4 */
+  .gear-grid {
+    grid-template-columns: auto 1fr;
+  }
+  .gear-slot-label { font-size: 0.65rem; }
+
+  /* Tooltip sizing */
+  .gear-tooltip { width: min(290px, calc(100vw - 24px)); }
+
+  /* TavSync — stacked on mobile */
+  .tavsync-features {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .tavsync-section { padding: 1.5rem 1rem; }
 }
 
 /* =================================================================
