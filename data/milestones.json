@@ -53,6 +53,7 @@
       {
         "flag": "HAG_Hag_State_IsDead_781391e2-7d33-642d-28c0-e9b06cde32bb",
         "label": "Hag killed",
+        "supersedes": "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720",
         "advice": "Hag's lair cleared — +1 ability hair may or may not have been claimed"
       },
       {
