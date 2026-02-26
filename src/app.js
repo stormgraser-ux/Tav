@@ -19,6 +19,7 @@ const state = {
   gear:          {},   // act (1|2|3) → GearItem[]
   builds:        [],   // Build[]
   companions:    [],   // Companion[]
+  gameState:     null, // latest BG3SE game state snapshot (region, gold, milestones, etc.)
   filters: {
     slot:        '',
     search:      '',
