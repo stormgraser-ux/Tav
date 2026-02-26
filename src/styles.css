@@ -2203,6 +2203,15 @@ body {
 
 .strip-sync-btn:hover { background: var(--gold-bright); }
 
+.strip-load-btn {
+  background: var(--bg-input);
+  color: var(--text-muted);
+  padding: 0.35rem 0.5rem;
+  min-width: auto;
+  font-size: 0.8rem;
+}
+.strip-load-btn:hover { background: var(--bg-panel); color: var(--text); }
+
 .strip-sync-hint {
   text-align: right;
   font-size: 0.78rem;
