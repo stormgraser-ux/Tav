@@ -309,6 +309,8 @@ local function dumpParty()
           classes     = classes,
           totalLevel  = totalLevel,
           gear        = getEquipment(uuid),
+          abilities   = getAbilities(uuid),
+          experience  = getExperience(entity),
         })
       end
     end
@@ -331,6 +333,8 @@ local function dumpParty()
               classes     = classes,
               totalLevel  = totalLevel,
               gear        = getEquipment(uuid),
+              abilities   = getAbilities(uuid),
+              experience  = getExperience(entity),
             })
           end
         end
@@ -341,7 +345,8 @@ local function dumpParty()
 
   while #members > 4 do table.remove(members) end
 
-  local result = { members = members, version = 3 }
+  local gameState = getGameState()
+  local result = { members = members, gameState = gameState, version = 4 }
   Ext.IO.SaveFile("party_sync.json", Ext.Json.Stringify(result))
 
   _P("[TavSync] " .. #members .. " party members synced")
