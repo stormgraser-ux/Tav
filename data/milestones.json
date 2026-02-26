@@ -51,9 +51,14 @@
         "advice": "Halsin permanently lost"
       },
       {
+        "flag": "HAG_Hag_State_IsDead_781391e2-7d33-642d-28c0-e9b06cde32bb",
+        "label": "Hag killed",
+        "advice": "Hag's lair cleared — +1 ability hair may or may not have been claimed"
+      },
+      {
         "flag": "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720",
-        "label": "Hag defeated",
-        "advice": "Hag reward obtained, area cleared"
+        "label": "Hag dealt with (alive)",
+        "advice": "Hag survived the encounter — +1 ability hair may or may not have been claimed"
       },
       {
         "flag": "FOR_Owlbear_State_PermaDefeated_a2cd3c0f-95be-7155-d67c-edbdb2ca1104",
