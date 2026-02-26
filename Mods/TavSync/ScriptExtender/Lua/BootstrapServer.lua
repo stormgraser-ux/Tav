@@ -160,6 +160,133 @@ local function getEquipment(uuid)
   return gear
 end
 
+-- ── Ability scores for a character ────────────────────────────────
+
+local function getAbilities(uuid)
+  local abilities = {}
+  for _, stat in ipairs({"Strength","Dexterity","Constitution","Intelligence","Wisdom","Charisma"}) do
+    local ok, val = pcall(Osi.GetAbility, uuid, stat)
+    if ok and type(val) == "number" then abilities[stat] = val end
+  end
+  return abilities
+end
+
+-- ── Experience info ──────────────────────────────────────────────
+
+local function getExperience(entity)
+  local result = {}
+  pcall(function()
+    result.current = entity.Experience.CurrentLevelExperience
+    result.nextLevel = entity.Experience.NextLevelExperience
+    result.total = entity.Experience.TotalExperience
+  end)
+  return result
+end
+
+-- ── Game state snapshot ──────────────────────────────────────────
+
+local MILESTONES = {
+  -- Act 1
+  { flag = "TUT_Helm_State_TutorialEnded_55073953-23b9-448c-bee8-4c44d3d67b6b",           label = "Nautiloid cleared" },
+  { flag = "DEN_General_State_Entered_26b2dc6a-e5eb-4d99-a4bd-3ecaa3b86a9e",               label = "Druid's Grove entered" },
+  { flag = "Hirelings_State_FeatureAvailable_66a34105-f02f-4c74-a3c8-085f1de12db8",        label = "Withers found (respec available)" },
+  { flag = "GLO_GoblinCamp_EverEnteredBefore_7a0172dd-df95-448a-aa2e-a04acdf7eabe",        label = "Goblin Camp reached" },
+  { flag = "GOB_General_State_Hostile_9816a6fb-54d7-4b9c-a5c7-bc6cda6bb276",               label = "Goblin Camp hostile" },
+  { flag = "GLO_Halsin_Knows_IsFound_a0d83476-e2d0-4972-a76b-b23c39078cd7",                label = "Halsin found" },
+  { flag = "GLO_Halsin_State_PermaDefeated_86bc3df1-08b4-fbc4-b542-6241bcd03df1",          label = "Halsin dead" },
+  { flag = "HAG_Hag_State_IsDead_781391e2-7d33-642d-28c0-e9b06cde32bb",                    label = "Hag killed" },
+  { flag = "HAG_Hag_State_HagDefeated_7a1acad0-589f-ae02-f712-f0d24080d720",               label = "Hag dealt with (alive)" },
+  { flag = "FOR_Owlbear_State_PermaDefeated_a2cd3c0f-95be-7155-d67c-edbdb2ca1104",         label = "Owlbear defeated" },
+  { flag = "FOR_Bottomless_SpiderQueen_State_PermaDefeated_b749271f-fbee-43ec-bbc7-b1199d0f794a", label = "Phase Spider Matriarch killed" },
+  { flag = "UND_MyconidCircle_State_Visited_5c470f79-d252-49e0-af96-94cebd100359",         label = "Underdark reached" },
+  { flag = "PLA_GithChokepoint_State_SceneDone_2fa4006f-12e5-4666-931b-e31dee737f2f",      label = "Githyanki Patrol dealt with" },
+  { flag = "DEN_AttackOnDen_State_RaiderVictory_abe1bce8-c234-4afe-a490-76210d98a078",     label = "Raiders won at Grove" },
+  { flag = "GLO_ForgingOfTheHeart_State_KarlachUpgraded_a818e2f5-9e0c-4ab3-8c1e-00765d3b892f", label = "Karlach engine upgraded" },
+  { flag = "GLO_Tadpole_State_TreeUnlocked_f7691d3d-345b-4984-8eed-6f238a9f84be",          label = "Illithid skill tree unlocked" },
+  { flag = "FOR_ThayanCellar_State_LabDiscovered_72e17f62-be19-4277-be42-01a6f62afbf3",    label = "Necromancy of Thay found" },
+  { flag = "FOR_IncompleteMasterwork_State_PartyHasApprenticePlans_946dde0d-e7aa-4322-b514-129831007a91", label = "Masterwork weapon plans found" },
+  -- Act 2 (flags verified when player reaches Act 2)
+  { flag = "GLO_Nightsong_State_Freed",  label = "Nightsong freed" },
+  { flag = "GLO_Nightsong_State_Killed", label = "Nightsong killed" },
+  -- Act 3
+  { flag = "GLO_SteelWatchers_State_Destroyed", label = "Steel Watch destroyed" },
+}
+
+local REGION_MAP = {
+  TUT_Avernus_C = { name = "Nautiloid",            act = 1 },
+  WLD_Main_A    = { name = "Wilderness",            act = 1 },
+  CRE_Main_A    = { name = "Rosymorn Monastery",    act = 1 },
+  SCL_Main_A    = { name = "Shadow-Cursed Lands",   act = 2 },
+  INT_Main_A    = { name = "Moonrise Towers",       act = 2 },
+  BGO_Main_A    = { name = "Rivington",             act = 3 },
+  CTY_Main_A    = { name = "Lower City",            act = 3 },
+  END_Main_A    = { name = "High Hall",             act = 3 },
+}
+
+local function getGameState()
+  local state = {}
+
+  -- Region and act
+  local playerUUID = Osi.DB_Players:Get(nil)[1][1]
+  local ok, region = pcall(Osi.GetRegion, playerUUID)
+  if ok and region then
+    state.regionId = region
+    local mapped = REGION_MAP[region]
+    if mapped then
+      state.region = mapped.name
+      state.act = mapped.act
+    else
+      state.region = region
+    end
+  end
+
+  -- Gold
+  pcall(function() state.gold = Osi.GetGold(playerUUID) end)
+
+  -- Difficulty
+  local flags = Osi.DB_GlobalFlag:Get(nil)
+  local flagSet = {}
+  for _, r in ipairs(flags) do flagSet[tostring(r[1])] = true end
+
+  if flagSet["GLO_DifficultyMode_HonourMode_" .. ""] then
+    state.difficulty = "Honour"
+  elseif flagSet["GLO_DifficultyMode_Hard_" .. ""] then
+    state.difficulty = "Tactician"
+  else
+    state.difficulty = "Balanced"
+  end
+
+  -- Milestones (only include flags that are SET)
+  state.milestones = {}
+  for _, m in ipairs(MILESTONES) do
+    if flagSet[m.flag] then
+      state.milestones[#state.milestones + 1] = m.label
+    end
+  end
+
+  -- All recruited companions (not just active party)
+  state.companions = {}
+  local teamOk, teamRows = pcall(function() return Osi.DB_PartOfTheTeam:Get(nil) end)
+  if teamOk and teamRows then
+    for _, r in ipairs(teamRows) do
+      local name = "?"
+      pcall(function() name = Ext.Entity.Get(r[1]).DisplayName.Name:Get() end)
+      state.companions[#state.companions + 1] = name
+    end
+  end
+
+  -- Illithid powers
+  state.tadpolePowers = {}
+  pcall(function()
+    local e = Ext.Entity.Get(playerUUID)
+    for _, p in ipairs(e.TadpolePowers.Powers or {}) do
+      state.tadpolePowers[#state.tadpolePowers + 1] = tostring(p)
+    end
+  end)
+
+  return state
+end
+
 -- ── Main dump function ────────────────────────────────────────────
 
 local function dumpParty()
