@@ -1361,9 +1361,13 @@ function generateBuildPrompt() {
   const gear  = document.getElementById('build-gear').value.trim();
   const notes = document.getElementById('build-notes').value.trim();
 
+  const gsBlock = gameStateBlock();
+
   const lines = [
     'Plan a BG3 build for me.',
     '',
+    gsBlock || null,
+    gsBlock ? '' : null,
     `Class: ${cls || '[pick the strongest option for my situation]'}`,
     sub   ? `Subclass: ${sub}`              : null,
     multi ? `Multiclass: ${multi}`          : null,
