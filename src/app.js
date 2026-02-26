@@ -1145,9 +1145,13 @@ function generatePartyPrompt() {
     .map((a, i) => `- Ally ${i + 1}: ${a}`)
     .join('\n');
 
+  const gsBlock = gameStateBlock();
+
   return [
     `I'm in Act ${act} of BG3 and need party composition advice.`,
     '',
+    gsBlock || null,
+    gsBlock ? '' : null,
     `My character: ${you || '[not specified — suggest something]'}`,
     allyLines ? `My party:\n${allyLines}` : 'Rest of party: not specified.',
     notes ? `\nContext: ${notes}` : '',
