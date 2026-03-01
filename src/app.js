@@ -2565,6 +2565,7 @@ function renderCharCreateCard(build) {
     createBtn.classList.add('cc-create-btn--active');
     createHint.textContent = 'Saved — visible in Build Planner.';
     setTimeout(() => { createHint.textContent = ''; }, 3000);
+    renderProfileBanner();
   });
 }
 
