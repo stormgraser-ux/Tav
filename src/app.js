@@ -286,6 +286,23 @@ const ACT_CHECKLISTS = {
     { id: 'lathander-mace', text: 'Rosymorn Monastery: Dawnmaster Gish — Mace of Disruption',             category: 'gear' },
     { id: 'art-cullagh',    text: 'Save Art Cullagh at Last Light (opens Halsin content)',                  category: 'story' },
   ],
+  3: [
+    { id: 'iron-throne',     text: 'Iron Throne rescue (via Flymm Cargo basement) — save Duke Ravengard, Counsellor Florrick, Omeluum, and the Gondians. Timed: 6 turns in combat; do BEFORE Steel Watch so the Gondians can sabotage the factory',    category: 'story' },
+    { id: 'florrick',        text: 'Wyrm\'s Rock prison: free Counsellor Florrick (5 long rests from reading her execution notice, then she\'s killed)',                                                                                                category: 'quest' },
+    { id: 'stop-presses',    text: "Baldur's Mouth Gazette: Stop the Presses — 1 long rest to intercept the slander article",                                                                                                                           category: 'quest' },
+    { id: 'steel-watch',     text: 'Steel Watch Foundry: destroy the Titan BEFORE fighting Gortash — otherwise Steel Watchers swarm the coronation. Kill order: Steel Watch → Gortash → Orin (Orin kidnaps a companion after Gortash dies)',            category: 'story' },
+    { id: 'house-of-hope',   text: "House of Hope: steal from Devil's Fee, open the Avernus portal → Orphic Hammer (required to free Orpheus) + Helldusk armor set + Amulet of Greater Health",                                                         category: 'gear' },
+    { id: 'sundries-rolan',  text: 'Sorcerous Sundries + Ramazith\'s Tower: resolve Lorroakan vs Rolan and the Nightsong portal — Markoheshkir, Robe of the Weave, Quickspell Gloves, Birthright, Ring of Regeneration hinge on this',                   category: 'gear' },
+    { id: 'wyrmway',         text: "Wyrm's Rock prison → Wyrmway: pass the four dragon trials and fight Ansur → Balduran's Giantslayer + Helm of Balduran. Start via 'The Legend of Ansur' from Duke Ravengard or Florrick",                             category: 'gear' },
+    { id: 'circus',          text: "Circus of the Last Days (Rivington): win the jackpot at Akabi's game → Nyrulna (legendary trident) + Band of the Mystic Scoundrel",                                                                                 category: 'gear' },
+    { id: 'mystra',          text: "Gale: once Elminster visits camp, escort Gale to Stormshore Tabernacle for Mystra's audience — gates his Crown of Karsus / god ending",                                                                             category: 'companion' },
+    { id: 'shadowheart',     text: "Shadowheart: House of Grief in the Lower City — descend to the Cloister of Sombre Embrace, face Viconia, decide her parents' fate (Selûne vs Shar ending)",                                                         category: 'companion' },
+    { id: 'astarion',        text: "Astarion: Szarr Palace — interrupt Cazador's ritual or let him ascend. Ascendant Astarion is permanent and locks romance paths",                                                                                    category: 'companion' },
+    { id: 'wyll-mizora',     text: "Wyll: after Duke Ravengard's fate is decided at Iron Throne, Mizora visits camp with her final bargain — this is your last chance to break or re-seal the pact",                                                    category: 'companion' },
+    { id: 'karlach-dammon',  text: 'Karlach: Dammon relocates to Rivington — finish her engine upgrades, then decide her Avernus / ceremorphosis / burnout ending before the Netherbrain',                                                              category: 'companion' },
+    { id: 'minsc',           text: "Recruit Minsc via Jaheira's 'The High Harper' — in the Lower City Sewers fight, the final blow MUST be non-lethal (knock-out), or he dies and Jaheira permanently leaves",                                         category: 'companion' },
+    { id: 'morphic-pool',    text: 'Morphic Pool = point of no return: no camp, no long rest, no respec, no party swap. Wrap every quest, buy every scroll, and swap gear BEFORE boarding the skiff',                                                  category: 'story' },
+  ],
 };
 
 const CURRENT_LEVEL_KEY = 'tav_current_level';
@@ -636,8 +653,11 @@ const HM_SAFE_BUILDS = new Set([
   'radiating-armored-monk',
 ]);
 
-// Story progression order for Act 1 areas (lower = earlier in playthrough)
+// Story progression order for BG3 areas (lower = earlier in playthrough).
+// Ranges: Act 1 = 1–12, Act 2 = 13–19, Act 3 = 20–30. Used by groupRouteItems
+// to bucket scraped gear into Early/Mid/Late phase bands per act.
 const AREA_ORDER = {
+  // ── Act 1 ─────────────────────────────────────────────────────────────────
   'Ravaged Beach': 1, 'Dank Crypt': 1, 'Chapel': 1, 'Roadside Cliffs': 1, 'Wilderness': 1,
   'The Risen Road': 1, "Waukeen's Rest": 1, 'Underground Passage': 1,
   'Emerald Grove': 2, 'Sacred Pool': 2, 'Forest': 2, 'The Hollow': 2, 'Tiefling Hideout': 2,
@@ -651,6 +671,46 @@ const AREA_ORDER = {
   'Arcane Tower': 10, 'Decrepit Sanctuary': 10,
   'Grymforge': 11, 'Adamantine Forge': 11, 'Adamantine Forge (location)': 11, 'Inner Sanctum': 11,
   'Mountain Pass': 12, 'Abandoned Refuge': 12,
+
+  // ── Act 2 ─────────────────────────────────────────────────────────────────
+  // Early — arrival in the Shadow-Cursed Lands
+  'Ruined Battlefield': 13,
+  'Last Light Inn': 14, 'Last Light Inn - Cellar': 14,
+  // Mid — Reithwin investigation, the Thorms
+  'Reithwin Town': 15, 'Reithwin Graveyard': 15, 'Reithwin Tollhouse': 15,
+  "Mason's Guild": 15, 'Riverside Teahouse': 15, 'The Waning Moon': 15, 'Dread Hollow': 15,
+  'House in Deep Shadows': 15, 'Campsite (Act Two)': 15,
+  'House of Healing': 16, 'House of Healing Morgue': 16, 'Grand Mausoleum': 16,
+  // Late — Gauntlet of Shar, Moonrise assault, Shadowfell
+  'Gauntlet of Shar': 17,
+  'Moonrise Towers': 18, 'Moonrise Towers Prison': 18, 'Moonrise Towers Rooftop': 18,
+  'Shadowfell': 19,
+
+  // ── Act 3 ─────────────────────────────────────────────────────────────────
+  // Early — Rivington & Wyrm's Crossing
+  'Rivington': 20, 'Rivington General': 20,
+  "Carm's Garms": 20, "Old Garlow's Place": 20,
+  'Open Hand Temple': 20, 'Open Hand Temple Cellar': 20,
+  'Stormshore Tabernacle': 20, 'Circus of the Last Days': 20, 'The Festering Cove': 20,
+  "Wyrm's Rock Fortress": 21, 'Western Beach': 21, 'The Lodge - Basement Docks': 21,
+  // Mid — Lower City investigation
+  'Elfsong Tavern': 22, 'The Blushing Mermaid': 22, "Sharess' Caress": 22, 'Stormshore Armoury': 22,
+  'Sorcerous Sundries': 23, 'Sorcerous Vault': 23, "Ramazith's Tower": 23,
+  "Devil's Fee": 23, "Danthelon's Dancing Axe": 23,
+  "Philgrave's Mansion": 24, 'Lady Jannath\'s Estate': 24,
+  "Elerrathin's Home": 24, "Lora's House": 24, "Highberry's Home": 24,
+  'Knights of the Shield Hideout': 24,
+  'House of Grief': 24, 'Cloister of Sombre Embrace': 24,
+  'Guildhall': 25, 'Lower City Sewers': 25, 'Water Queen\'s House': 25,
+  "Angleiron's Cellar": 25, "Golbraith's Cellar": 25,
+  'Flymm Cargo': 26, 'The Counting House': 26, 'Graveyard (Lower City)': 26,
+  'Murder Tribunal': 26, 'House of Hope': 26,
+  // Late — Confrontations & the Netherbrain
+  'Steel Watch Foundry': 28, 'Szarr Palace': 28,
+  "The Dragon's Sanctum": 28, 'Forge of the Nine': 28,
+  'Bhaal Temple': 29,
+  'Mind Flayer Colony': 30, 'Secluded Chamber': 30, 'Astral Plane': 30,
+  'Act Three': 30, // generic bucket from wiki tags without a specific area
 };
 
 const ALL_ROLES = ['healer', 'tank', 'striker', 'blaster', 'controller', 'support'];
@@ -1413,10 +1473,9 @@ function generateBuildPrompt() {
 }
 
 function renderBuildSidebar() {
-  const sidebar   = document.getElementById('build-templates');
+  const sidebar = document.getElementById('build-templates');
+  if (!sidebar) return;                      // box removed — Matching Templates covers this now
   const className = document.getElementById('build-class').value;
-
-  const hmToggleHTML = '';
 
   if (!className) {
     sidebar.innerHTML = `<h3 class="sidebar-title">Matching Builds</h3><p class="sidebar-hint">Select a class above to see curated templates.</p>`;
@@ -2169,191 +2228,382 @@ function rewireHmFilter() {
   }
 }
 
-async function renderActRoute(act, className) {
-  const section = document.getElementById('build-route');
-  if (!className) {
-    section.hidden = true;
+// ---------------------------------------------------------------------------
+// Route tab — build-agnostic loot walkthrough
+// ---------------------------------------------------------------------------
+
+const ACT_LABELS = { 1: 'Act I', 2: 'Act II', 3: 'Act III' };
+
+// Phase bands per act — keyed off AREA_ORDER numeric ranges. groupRouteItems
+// buckets each scraped item into Early/Mid/Late based on its area's order.
+const ACT_PHASES = {
+  1: [
+    { key: 'early', eyebrow: 'Early Act I', title: 'The Nautiloid Crash to Druid Grove',      range: [0, 3] },
+    { key: 'mid',   eyebrow: 'Mid Act I',   title: 'Blighted Village, Goblin Camp, Wetlands', range: [4, 7] },
+    { key: 'late',  eyebrow: 'Late Act I',  title: 'Underdark, Grymforge, Mountain Pass',     range: [8, 12] },
+  ],
+  2: [
+    { key: 'early', eyebrow: 'Early Act II', title: 'Into the Shadow-Cursed Lands',       range: [13, 14] },
+    { key: 'mid',   eyebrow: 'Mid Act II',   title: 'Reithwin & the Thorms',              range: [15, 16] },
+    { key: 'late',  eyebrow: 'Late Act II',  title: 'Moonrise Assault & the Shadowfell',  range: [17, 19] },
+  ],
+  3: [
+    { key: 'early', eyebrow: 'Early Act III', title: "Rivington & Wyrm's Crossing",          range: [20, 21] },
+    { key: 'mid',   eyebrow: 'Mid Act III',   title: 'Lower City Investigation',             range: [22, 26] },
+    { key: 'late',  eyebrow: 'Late Act III',  title: 'Confrontations & the Netherbrain',     range: [27, 99] },
+  ],
+};
+
+const ROUTE_FILTER_KEY = 'tav.route.filter';
+const ROUTE_ACQUIRED_PREFIX = 'tav.route.acquired.act';
+
+function loadRouteAcquired(act) {
+  try {
+    const raw = localStorage.getItem(ROUTE_ACQUIRED_PREFIX + act);
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveRouteAcquired(act, set) {
+  localStorage.setItem(ROUTE_ACQUIRED_PREFIX + act, JSON.stringify([...set]));
+}
+
+function toggleRouteAcquired(act, itemName) {
+  const set = loadRouteAcquired(act);
+  if (set.has(itemName)) set.delete(itemName); else set.add(itemName);
+  saveRouteAcquired(act, set);
+  // Mirror the toggle into the per-build acquired set if a build is active,
+  // so the Gear tab stays consistent.
+  const profile = loadProfile();
+  if (profile?.buildId) {
+    const buildSet = loadAcquired(profile.buildId);
+    if (set.has(itemName)) buildSet.add(itemName); else buildSet.delete(itemName);
+    saveAcquired(profile.buildId, buildSet);
+  }
+  return set;
+}
+
+function normName(s) { return String(s || '').toLowerCase().replace(/[‘’ʼ]/g, "'"); }
+
+function rarityClass(r) {
+  const map = {
+    common: 'rar-common',
+    uncommon: 'rar-uncommon',
+    rare: 'rar-rare',
+    very_rare: 'rar-veryrare',
+    legendary: 'rar-legendary',
+  };
+  return map[r] || 'rar-common';
+}
+
+function slotKicker(slot) {
+  if (!slot) return '—';
+  const overrides = { armour: 'CHEST', ranged: 'RNGD', amulet: 'NECK', gloves: 'HANDS', boots: 'FEET' };
+  return overrides[slot] || slot.toUpperCase().slice(0, 5);
+}
+
+function activeBuildContext() {
+  const profile = loadProfile();
+  if (!profile?.buildId) return null;
+  const build = state.builds.find(b => b.id === profile.buildId);
+  return {
+    buildId: profile.buildId,
+    buildName: build?.name || profile.buildName || profile.className || 'Build',
+    className: profile.className || '',
+    subclass: profile.subclass || '',
+    build,
+  };
+}
+
+function buildPrioSet(act, ctx) {
+  if (!ctx) return { byName: new Set(), byId: new Set() };
+  const byName = new Set();
+  const byId = new Set();
+  const actKey = `act${act}`;
+  const recs = ctx.build?.gear_recs?.[actKey] || [];
+  recs.forEach(n => byName.add(normName(n)));
+
+  const classBuilds = ctx.className ? buildsForClass(ctx.className) : [];
+  const filteredBuilds = ctx.subclass
+    ? classBuilds.filter(b => {
+        const subKws = SUBCLASS_KEYWORDS[ctx.subclass] || [ctx.subclass.toLowerCase()];
+        return subKws.some(kw => b.name.toLowerCase().includes(kw));
+      })
+    : classBuilds;
+  filteredBuilds.forEach(b => byId.add(b.id));
+  return { byName, byId };
+}
+
+function groupRouteItems(act, items) {
+  const template = ACT_PHASES[act];
+  if (template) {
+    const phases = template.map(p => ({ ...p, items: [] }));
+    for (const it of items) {
+      const order = AREA_ORDER[it.location.area] ?? 99;
+      const phase = phases.find(p => order >= p.range[0] && order <= p.range[1]) || phases[phases.length - 1];
+      phase.items.push(it);
+    }
+    phases.forEach(p => p.items.sort((a, b) =>
+      (AREA_ORDER[a.location.area] ?? 99) - (AREA_ORDER[b.location.area] ?? 99)
+    ));
+    return phases.filter(p => p.items.length);
+  }
+  // Fallback: unknown act → slot-grouping
+  const slotMap = {};
+  for (const it of items) {
+    const s = it.slot || 'misc';
+    if (!slotMap[s]) slotMap[s] = [];
+    slotMap[s].push(it);
+  }
+  const groups = SLOT_ORDER
+    .filter(s => slotMap[s]?.length)
+    .map(s => ({
+      key: s,
+      eyebrow: GEAR_SLOT_LABELS[s] || capitalize(s),
+      title: GEAR_SLOT_LABELS[s] || capitalize(s),
+      items: slotMap[s],
+    }));
+  if (slotMap['misc']?.length) groups.push({ key: 'misc', eyebrow: 'Misc', title: 'Other drops', items: slotMap['misc'] });
+  return groups;
+}
+
+function routeFilterMode() {
+  return localStorage.getItem(ROUTE_FILTER_KEY) || 'all';
+}
+
+function setRouteFilterMode(mode) {
+  localStorage.setItem(ROUTE_FILTER_KEY, mode);
+}
+
+function updateRoutePrioPill(ctx, flaggedCount) {
+  const pill = document.getElementById('route-prio-pill');
+  const hint = document.getElementById('route-prio-hint');
+  const nameEl = document.getElementById('route-prio-name');
+  const swatch = document.getElementById('route-prio-swatch');
+  const clearBtn = document.getElementById('route-prio-clear');
+  if (!pill || !hint || !nameEl || !swatch) return;
+
+  if (!ctx) {
+    pill.hidden = true;
+    hint.hidden = true;
     return;
   }
+  pill.hidden = false;
+  hint.hidden = false;
+  nameEl.textContent = ctx.buildName;
+  swatch.textContent = (ctx.buildName[0] || 'B').toUpperCase();
+  hint.textContent = flaggedCount
+    ? `→ ${flaggedCount} item${flaggedCount === 1 ? '' : 's'} flagged for this build`
+    : '→ no items flagged for this build this act';
 
-  section.hidden = false;
-  const list = document.getElementById('build-route-list');
-  list.innerHTML = '<div class="loading">Scouting the route…</div>';
+  if (clearBtn) {
+    clearBtn.onclick = () => {
+      setRouteFilterMode('all');
+      syncRouteFilterSeg();
+      renderRoute();
+    };
+  }
+}
 
-  // Update heading dynamically
-  const heading = section.querySelector('.build-route__heading');
-  const actLabels = { 1: 'Act I', 2: 'Act II', 3: 'Act III' };
-  if (heading) heading.textContent = `${actLabels[act] || `Act ${act}`} — Route Priorities`;
+function updateRouteProgress(act, total, collected) {
+  const label = document.getElementById('route-progress-label');
+  const fill = document.getElementById('route-progress-fill');
+  if (label) label.textContent = `${ACT_LABELS[act] || `Act ${act}`} · ${collected} / ${total} collected`;
+  if (fill) fill.style.width = total ? `${Math.round((collected / total) * 100)}%` : '0%';
+}
+
+function syncRouteFilterSeg() {
+  const mode = routeFilterMode();
+  document.querySelectorAll('#route-filter-seg button[data-route-filter]').forEach(btn => {
+    btn.setAttribute('aria-pressed', btn.dataset.routeFilter === mode ? 'true' : 'false');
+  });
+}
+
+function updateRouteChecklist(act) {
+  const wrap = document.getElementById('act-checklist-wrap');
+  const label = document.getElementById('act-checklist-label');
+  const progressEl = document.getElementById('act-checklist-progress');
+  if (!wrap || !label) return;
+
+  const items = ACT_CHECKLISTS[act];
+  if (!items) { wrap.hidden = true; return; }
+  wrap.hidden = false;
+
+  const actLabel = act === 1 ? 'I' : act === 2 ? 'II' : 'III';
+  label.textContent = `Before leaving Act ${actLabel}`;
+
+  renderChecklist(act);
+
+  const refreshProgress = () => {
+    if (!progressEl) return;
+    try {
+      const checked = new Set(JSON.parse(localStorage.getItem('tav_check_act' + act) || '[]'));
+      const done = items.filter(i => checked.has(i.id)).length;
+      progressEl.textContent = `${done} / ${items.length}`;
+    } catch {
+      progressEl.textContent = `0 / ${items.length}`;
+    }
+  };
+  refreshProgress();
+
+  const panel = document.getElementById('act-checklist');
+  if (panel && !panel.dataset.routeWired) {
+    panel.addEventListener('change', refreshProgress);
+    panel.dataset.routeWired = '1';
+  }
+}
+
+async function renderRoute() {
+  const list = document.getElementById('route-list');
+  if (!list) return;
+
+  const act = state.act;
+  updateRouteChecklist(act);
+  list.textContent = '';
+  const loading = document.createElement('div');
+  loading.className = 'route-empty';
+  loading.textContent = 'Scouting the route…';
+  list.appendChild(loading);
 
   const [actItems] = await Promise.all([loadActGear(act), loadBuilds()]);
+  const ctx = activeBuildContext();
+  const prio = buildPrioSet(act, ctx);
+  const acquired = loadRouteAcquired(act);
+  const filter = routeFilterMode();
 
-  const subclass = document.getElementById('build-subclass').value;
-  const subKws   = subclass ? (SUBCLASS_KEYWORDS[subclass] || [subclass.toLowerCase()]) : null;
+  const pool = actItems.filter(it => it.location?.area);
 
-  let classBuilds = buildsForClass(className);
-  if (subKws) classBuilds = classBuilds.filter(b => subKws.some(kw => b.name.toLowerCase().includes(kw)));
+  const isPrio = it => prio.byName.has(normName(it.name))
+    || (it.build_tags && it.build_tags.some(t => prio.byId.has(t)));
 
-  const ids = new Set(classBuilds.map(b => b.id));
-  let relevant = actItems.filter(item =>
-    item.build_tags?.some(t => ids.has(t)) && item.location?.area
-  );
+  const flaggedCount = ctx ? pool.filter(isPrio).length : 0;
+  updateRoutePrioPill(ctx, flaggedCount);
+  syncRouteFilterSeg();
 
-  const subLabel = subclass ? ` (${esc(subclass)})` : '';
-  if (!relevant.length) {
-    list.innerHTML = `<p class="sidebar-hint">No tagged gear found for ${esc(className)}${subLabel} in ${actLabels[act] || `Act ${act}`}.</p>`;
+  let visible = pool.slice();
+  if (filter === 'unclaimed') visible = visible.filter(it => !acquired.has(it.name));
+  if (filter === 'prioritized' && ctx) visible = visible.filter(isPrio);
+
+  const groups = groupRouteItems(act, visible);
+  const collected = [...acquired].filter(n => pool.some(it => it.name === n)).length;
+  updateRouteProgress(act, pool.length, collected);
+
+  list.textContent = '';
+  if (!groups.length) {
+    const empty = document.createElement('div');
+    empty.className = 'route-empty';
+    empty.textContent = `No items match the current filter for ${ACT_LABELS[act] || `Act ${act}`}.`;
+    list.appendChild(empty);
     return;
   }
 
-  const rarityShort = r => RARITY_LABELS[r]?.charAt(0) ?? 'C';
-  const normName = s => s.toLowerCase().replace(/[‘’ʼ]/g, "'");
+  const actTag = (ACT_LABELS[act] || `Act ${act}`).toUpperCase();
 
-  const profile  = loadProfile();
-  const buildId  = profile?.buildId || null;
-  const acquired = buildId ? loadAcquired(buildId) : new Set();
+  for (const group of groups) {
+    const head = document.createElement('div');
+    head.className = 'route-group-head';
 
-  const actKey = `act${act}`;
-  let recNames = new Set();
-  if (buildId) {
-    const activeBuild = state.builds.find(b => b.id === buildId);
-    const recs = activeBuild?.gear_recs?.[actKey] || [];
-    recNames = new Set(recs.map(normName));
-  }
+    const headLeft = document.createElement('div');
+    const eyebrow = document.createElement('div');
+    eyebrow.className = 'eyebrow';
+    eyebrow.textContent = group.eyebrow;
+    const title = document.createElement('div');
+    title.className = 'route-group-title';
+    title.textContent = group.title;
+    headLeft.appendChild(eyebrow);
+    headLeft.appendChild(title);
+    head.appendChild(headLeft);
 
-  let bands;
-  if (act === 1) {
-    relevant.sort((a, b) =>
-      (AREA_ORDER[a.location.area] ?? 99) - (AREA_ORDER[b.location.area] ?? 99)
-    );
-    bands = [
-      { label: 'Early Game',       items: relevant.filter(i => (AREA_ORDER[i.location.area] ?? 99) <= 3) },
-      { label: 'Mid Act I',        items: relevant.filter(i => { const o = AREA_ORDER[i.location.area] ?? 99; return o >= 4 && o <= 7; }) },
-      { label: 'Late / Underdark', items: relevant.filter(i => { const o = AREA_ORDER[i.location.area] ?? 99; return o >= 8 && o <= 12; }) },
-    ].filter(b => b.items.length);
-  } else {
-    // Group by slot for Acts II & III
-    const slotMap = {};
-    for (const item of relevant) {
-      const s = item.slot || 'misc';
-      if (!slotMap[s]) slotMap[s] = [];
-      slotMap[s].push(item);
-    }
-    bands = SLOT_ORDER
-      .filter(s => slotMap[s]?.length)
-      .map(s => ({ label: GEAR_SLOT_LABELS[s] || capitalize(s), items: slotMap[s] }));
-    if (slotMap['misc']?.length) bands.push({ label: 'Misc', items: slotMap['misc'] });
-  }
+    const count = document.createElement('span');
+    count.className = 'route-group-count';
+    count.textContent = `${group.items.length} item${group.items.length === 1 ? '' : 's'}`;
+    head.appendChild(count);
+    list.appendChild(head);
 
-  if (!bands.length) {
-    list.innerHTML = '<p class="sidebar-hint">No route data available.</p>';
-    return;
-  }
+    const rowsEl = document.createElement('div');
+    rowsEl.className = 'route-list';
 
-  list.innerHTML = '';
-  for (const band of bands) {
-    const bandEl = document.createElement('div');
-    bandEl.className = 'route-band';
-
-    const labelEl = document.createElement('div');
-    labelEl.className = 'route-band__label';
-    labelEl.textContent = band.label;
-    bandEl.appendChild(labelEl);
-
-    for (const item of band.items) {
-      const isAcquired    = acquired.has(item.name);
-      const isRecommended = recNames.has(normName(item.name));
-      const wrapper = document.createElement('div');
-      wrapper.className = 'route-item-wrap'
-        + (isAcquired    ? ' route-item--acquired'    : '')
-        + (isRecommended ? ' route-item--recommended' : '');
+    for (const item of group.items) {
+      const isChecked = acquired.has(item.name);
+      const itemIsPrio = !!(ctx && isPrio(item));
 
       const row = document.createElement('div');
-      row.className = 'route-item';
+      row.className = 'route-row ' + rarityClass(item.rarity)
+        + (isChecked ? ' is-checked' : '')
+        + (itemIsPrio ? ' is-prio' : '');
+      row.setAttribute('role', 'button');
+      row.tabIndex = 0;
 
-      const checkBtn = document.createElement('button');
-      checkBtn.className = 'route-item__check';
-      checkBtn.title = isAcquired ? 'Mark as needed' : 'Mark as acquired';
-      checkBtn.textContent = isAcquired ? '✓' : '○';
-      checkBtn.addEventListener('click', e => {
-        e.stopPropagation();
-        if (!buildId) return;
-        const newSet = toggleAcquired(buildId, item.name);
-        const isNow = newSet.has(item.name);
-        wrapper.classList.toggle('route-item--acquired', isNow);
-        checkBtn.textContent = isNow ? '✓' : '○';
-        checkBtn.title = isNow ? 'Mark as needed' : 'Mark as acquired';
-      });
+      const check = document.createElement('span');
+      check.className = 'route-row__check';
+      row.appendChild(check);
 
-      const slotEl = document.createElement('span');
-      slotEl.className = 'route-item__slot';
-      slotEl.textContent = SLOT_ICONS[item.slot] || '·';
+      const itemCol = document.createElement('div');
+      itemCol.className = 'route-row__item';
+      const kicker = document.createElement('span');
+      kicker.className = 'route-row__slot-kicker';
+      kicker.textContent = slotKicker(item.slot);
+      const name = document.createElement('span');
+      name.className = 'route-row__name';
+      name.textContent = item.name;
+      const loc = document.createElement('span');
+      loc.className = 'route-row__loc';
+      loc.textContent = item.location?.description
+        ? `${item.location.area} · ${item.location.description}`
+        : item.location?.area || '';
+      itemCol.appendChild(kicker);
+      itemCol.appendChild(name);
+      itemCol.appendChild(loc);
+      row.appendChild(itemCol);
 
-      const nameEl = document.createElement('span');
-      nameEl.className = 'route-item__name';
-      nameEl.textContent = item.name;
+      const badge = document.createElement('span');
+      badge.className = 'route-row__prio-badge' + (itemIsPrio ? '' : ' is-hidden');
+      badge.textContent = '★ PRIO';
+      if (itemIsPrio) badge.title = 'Priority for your selected build';
+      row.appendChild(badge);
 
-      const areaEl = document.createElement('span');
-      areaEl.className = 'route-item__area';
-      areaEl.textContent = item.location.area;
-
-      const rEl = document.createElement('span');
-      rEl.className = `route-item__rarity rarity-${item.rarity || 'common'}`;
-      rEl.textContent = rarityShort(item.rarity);
-
-      const arrowEl = document.createElement('span');
-      arrowEl.className = 'route-item__expand-arrow';
-      arrowEl.textContent = '▸';
-
-      row.appendChild(checkBtn);
-      row.appendChild(slotEl);
-      row.appendChild(nameEl);
-      if (isRecommended) {
-        const badge = document.createElement('span');
-        badge.className = 'route-item__rec-badge';
-        badge.textContent = '★';
-        badge.title = 'Recommended by your build guide';
-        row.appendChild(badge);
-      }
-      row.appendChild(areaEl);
-      row.appendChild(rEl);
-      row.appendChild(arrowEl);
-
-      const body = document.createElement('div');
-      body.className = 'route-item__body';
-      body.hidden = true;
-
-      if (item.location?.description) {
-        const desc = document.createElement('p');
-        desc.className = 'route-item__desc';
-        desc.textContent = item.location.description;
-        body.appendChild(desc);
-      }
+      const tag = document.createElement('span');
+      tag.className = 'route-row__act-tag';
+      tag.textContent = actTag;
+      row.appendChild(tag);
 
       const wikiSlug = item.name.replace(/ /g, '_');
-      const wikiLink = document.createElement('a');
-      wikiLink.className = 'route-item__wiki';
-      wikiLink.href = `https://bg3.wiki/wiki/${encodeURIComponent(wikiSlug)}`;
-      wikiLink.target = '_blank';
-      wikiLink.rel = 'noopener noreferrer';
-      wikiLink.textContent = 'View on bg3.wiki →';
-      body.appendChild(wikiLink);
+      const wiki = document.createElement('a');
+      wiki.className = 'route-row__wiki';
+      wiki.href = `https://bg3.wiki/wiki/${encodeURIComponent(wikiSlug)}`;
+      wiki.target = '_blank';
+      wiki.rel = 'noopener noreferrer';
+      wiki.textContent = 'wiki ↗';
+      wiki.addEventListener('click', e => e.stopPropagation());
+      row.appendChild(wiki);
 
+      const toggle = () => {
+        const set = toggleRouteAcquired(act, item.name);
+        const nowChecked = set.has(item.name);
+        row.classList.toggle('is-checked', nowChecked);
+        const coll = [...set].filter(n => pool.some(it => it.name === n)).length;
+        updateRouteProgress(act, pool.length, coll);
+      };
+      row.addEventListener('click', toggle);
+      row.addEventListener('keydown', e => {
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+      });
       row.addEventListener('mouseenter', () => showGearTooltip(item, row));
       row.addEventListener('mouseleave', hideGearTooltip);
 
-      row.style.cursor = 'pointer';
-      row.addEventListener('click', () => {
-        const open = !body.hidden;
-        body.hidden = open;
-        arrowEl.textContent = open ? '▸' : '▾';
-      });
-
-      wrapper.appendChild(row);
-      wrapper.appendChild(body);
-      bandEl.appendChild(wrapper);
+      rowsEl.appendChild(row);
     }
-
-    list.appendChild(bandEl);
+    list.appendChild(rowsEl);
   }
+}
+
+// Legacy shim — Build-tab and Party-tab code paths used to call this to keep
+// the "Route Priorities" section in sync. The Route tab is a top-level page
+// now; if it's the active tab we refresh it, otherwise no-op.
+function renderActRoute(_act, _className) {
+  if (state.activeTab === 'route') renderRoute();
 }
 
 // ---------------------------------------------------------------------------
@@ -2537,11 +2787,23 @@ function renderCharCreateCard(build) {
     </div>
     ${cc.skills.length ? `<div class="cc-section"><h4 class="cc-section-title">Priority Skills</h4><div class="cc-tags">${skillsHTML}</div></div>` : ''}
     ${spellToggleHTML}
+    <div id="feat-advisor" class="feat-advisor" hidden></div>
     <div class="cc-create-footer">
       <button class="cc-create-btn" id="cc-create-btn">Create Character</button>
       <span class="cc-create-hint" id="cc-create-hint"></span>
     </div>
   `;
+
+  // Render Feat Choices inside the creator card
+  const buildClassName = Object.keys(SUBCLASSES).find(cls =>
+    buildsForClass(cls).some(b => b.id === build.id)
+  ) || '';
+  const buildKeyLower = (build.id + ' ' + build.name).toLowerCase();
+  const detectedSub = (SUBCLASSES[buildClassName] || []).find(sub => {
+    const kws = SUBCLASS_KEYWORDS[sub] || [sub.toLowerCase()];
+    return kws.some(kw => buildKeyLower.includes(kw));
+  }) || '';
+  renderFeatAdvisor(buildClassName, detectedSub);
 
   // Wire up the Cantrips/Spells toggle
   cardEl.querySelectorAll('.cc-spell-tab').forEach(tab => {
@@ -2597,10 +2859,10 @@ function switchTab(tabId) {
     });
     renderProfileBanner();
     renderPartyBanner();
-    renderChecklist(state.act);
     renderWishlistPanel();
   }
   if (tabId === 'search') renderGlobalSearch(state.globalSearch);
+  if (tabId === 'route')  renderRoute();
 }
 
 // ---------------------------------------------------------------------------
@@ -2621,10 +2883,7 @@ function setAct(n) {
   state.act = n;
   syncActButtons('strip', n);
   if (state.activeTab === 'gear')   renderGearResults();
-  if (state.activeTab === 'build')  {
-    renderActRoute(n, document.getElementById('build-class')?.value || '');
-    renderChecklist(n);
-  }
+  if (state.activeTab === 'route')  renderRoute();
 }
 
 // ---------------------------------------------------------------------------
@@ -2764,6 +3023,15 @@ function initEventListeners() {
   // ── Strip: act selector (single global act) ───────────────────────────────
   document.querySelectorAll('.act-btn[data-group="strip"]').forEach(btn => {
     btn.addEventListener('click', () => setAct(parseInt(btn.dataset.act)));
+  });
+
+  // ── Route: filter segment ─────────────────────────────────────────────────
+  document.querySelectorAll('#route-filter-seg button[data-route-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setRouteFilterMode(btn.dataset.routeFilter);
+      syncRouteFilterSeg();
+      if (state.activeTab === 'route') renderRoute();
+    });
   });
 
   // ── Topbar: sync + load buttons ───────────────────────────────────────────

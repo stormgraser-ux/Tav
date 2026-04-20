@@ -67,6 +67,11 @@
         </div>
         <div>
           <div class="nav-section">Reference</div>
+          <button class="tab-btn nav-item" data-tab="route" role="tab" aria-selected="false" aria-controls="tab-route">
+            <svg width="18" height="18" viewBox="0 0 24 24"><use href="#icon-compass"/></svg>
+            <span>Route</span>
+            <span class="nav-badge">/ R</span>
+          </button>
           <button class="tab-btn nav-item" data-tab="search" role="tab" aria-selected="false" aria-controls="tab-search">
             <svg width="18" height="18" viewBox="0 0 24 24"><use href="#icon-search"/></svg>
             <span>Search</span>
@@ -333,12 +338,6 @@
                   <p class="cta-hint">Paste into Claude Code — I'll give you a full level 1–12 path built around your situation.</p>
                 </div>
 
-                <!-- Matching builds sidebar (external guides) -->
-                <aside id="build-templates" class="build-sidebar">
-                  <h3 class="sidebar-title">Matching Builds</h3>
-                  <p class="sidebar-hint">Select a class above to see curated templates.</p>
-                </aside>
-
                 <!-- Level picker -->
                 <div id="level-picker" class="level-picker" hidden></div>
 
@@ -356,19 +355,6 @@
                     <div id="level-plan-list" class="level-plan__list"></div>
                   </div>
                 </div>
-
-                <!-- Feat Advisor -->
-                <div id="feat-advisor" class="feat-advisor" hidden></div>
-
-                <!-- Act Checklist -->
-                <div id="act-checklist" class="checklist-panel" hidden></div>
-
-                <!-- Act Route -->
-                <section id="build-route" class="build-route" hidden>
-                  <h3 class="build-route__heading">Act I — Route Priorities</h3>
-                  <p class="build-route__hint">Items to grab as you go, in story order.</p>
-                  <div id="build-route-list" class="build-route-list"></div>
-                </section>
 
               </div><!-- /left column -->
 
@@ -685,7 +671,65 @@
           </section>
 
           <!-- ============================================================
-               TAB 4: SEARCH
+               TAB 4: ROUTE
+               ============================================================ -->
+          <section id="tab-route" class="tab-panel" role="tabpanel">
+
+            <div class="page-hero">
+              <div>
+                <div class="eyebrow">Loot walkthrough</div>
+                <h1 class="display page-title">Route</h1>
+                <p class="page-deck">Every notable drop across the act, ordered by when you'll actually encounter it. Check items off as you grab them; pick a build in Party to flag your priority items.</p>
+              </div>
+              <div class="route-hero-side">
+                <div class="progress" id="route-progress">
+                  <span id="route-progress-label">Act I · 0 / 0 collected</span>
+                  <div class="progress-bar"><div id="route-progress-fill"></div></div>
+                </div>
+                <div class="strip-act-group" aria-label="Select act">
+                  <button class="act-btn active" data-group="strip" data-act="1">I</button>
+                  <button class="act-btn"        data-group="strip" data-act="2">II</button>
+                  <button class="act-btn"        data-group="strip" data-act="3">III</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="route-toolbar">
+              <div class="prio-pill" id="route-prio-pill" hidden>
+                <span class="prio-pill__swatch" id="route-prio-swatch">B</span>
+                <span>Prioritize for: <strong id="route-prio-name">none</strong></span>
+                <button class="prio-pill__close" id="route-prio-clear" title="Stop prioritizing">✕</button>
+              </div>
+              <span class="eyebrow route-prio-hint" id="route-prio-hint" hidden></span>
+              <span class="route-toolbar-spacer"></span>
+              <div class="seg route-filter-seg" id="route-filter-seg" role="group" aria-label="Filter">
+                <button aria-pressed="true"  data-route-filter="all">ALL</button>
+                <button aria-pressed="false" data-route-filter="unclaimed">UNCLAIMED</button>
+                <button aria-pressed="false" data-route-filter="prioritized">PRIORITIZED</button>
+              </div>
+            </div>
+
+            <!-- Act transition checklist — collapsed by default -->
+            <details id="act-checklist-wrap" class="act-checklist-wrap" hidden>
+              <summary class="act-checklist-summary">
+                <span class="act-checklist-eyebrow">Act gate</span>
+                <span class="act-checklist-label" id="act-checklist-label">Before leaving Act I</span>
+                <span class="act-checklist-progress" id="act-checklist-progress"></span>
+                <span class="act-checklist-arrow">▸</span>
+              </summary>
+              <div id="act-checklist" class="checklist-panel"></div>
+            </details>
+
+            <div id="route-list" class="route-list-wrap">
+              <div class="empty-state">
+                <div class="empty-state__rune">⚔</div>
+                <p class="empty-state__text">Scouting the route…</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============================================================
+               TAB 5: SEARCH
                ============================================================ -->
           <section id="tab-search" class="tab-panel" role="tabpanel">
             <div class="global-search-wrap">

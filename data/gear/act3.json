@@ -6,8 +6,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "See Invisibility (): Cast as a level 2 spell (\u202fRecharge: Short rest.)",
-      "Murderous Sight: You can see in the dark up to 3\u202fm / 10\u202fft. In addition, you gain a +2 bonus to \u202fInitiative."
+      "See Invisibility (): Cast as a level 2 spell ( Recharge: Short rest.)",
+      "Murderous Sight: You can see in the dark up to 3 m / 10 ft. In addition, you gain a +2 bonus to  Initiative."
     ],
     "stats": {},
     "location": {
@@ -56,8 +56,8 @@
     "armour_class": null,
     "effects": [
       "Intimidation +2",
-      "Menacing Attack (Melee) (): Possibly \u00a0Frighten your target. They'll have  Disadvantage on ability checks and Attack rolls and be unable to move. (\u202fRecharge: Per turn.)",
-      "Fury In The Marrow: When you \u202fRage, hostile creatures in a 3\u202fm / 10\u202fft radius must succeed a Weapon action DC\u00a0\u202fWisdom saving throw or take 2d4\u2060\u2060Psychic damage. The targets receive half damage on a save."
+      "Menacing Attack (Melee) (): Possibly  Frighten your target. They'll have  Disadvantage on ability checks and Attack rolls and be unable to move. ( Recharge: Per turn.)",
+      "Fury In The Marrow: When you  Rage, hostile creatures in a 3 m / 10 ft radius must succeed a Weapon action DC  Wisdom saving throw or take 2d4⁠⁠Psychic damage. The targets receive half damage on a save."
     ],
     "stats": {},
     "location": {
@@ -77,7 +77,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Psychic Leech: When an enemy fails a \u202fCharisma, \u202fIntelligence, or \u202fWisdom \u202fSaving throw against one of your spells or cantrips, you regain 1d4\u2060\u2060hit points."
+      "Psychic Leech: When an enemy fails a  Charisma,  Intelligence, or  Wisdom  Saving throw against one of your spells or cantrips, you regain 1d4⁠⁠hit points."
     ],
     "stats": {},
     "location": {
@@ -95,12 +95,12 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Lickspittle's Alertness: At the start of combat, the wearer gains \u202fMomentum equal to their \u202fCharisma Modifier.",
-      "Multitasking: You gain \u202fAdvantage on \u202fConcentration \u202fSaving throws."
+      "Lickspittle's Alertness: At the start of combat, the wearer gains  Momentum equal to their  Charisma Modifier.",
+      "Multitasking: You gain  Advantage on  Concentration  Saving throws."
     ],
     "stats": {},
     "location": {
-      "description": "Bhaal Temple X: 56 Y: 1006: On Sceleritas Fel if the Dark Urge refuses \u2060Bhaal's gift after defeating Orin",
+      "description": "Bhaal Temple X: 56 Y: 1006: On Sceleritas Fel if the Dark Urge refuses ⁠Bhaal's gift after defeating Orin",
       "area": "Bhaal Temple",
       "act": 3
     },
@@ -136,9 +136,9 @@
     "armour_class": null,
     "effects": [
       "Attackers can't land Critical Hits on the wearer.",
-      "Immolating Gaze (): Sear and \u202fFrighten a target with nothing but your glower. (\u202fRecharge: Short rest.)",
-      "Infernal Sight: You can see in magical[See: Bugs] and ordinary darkness up to a range of 12\u202fm / 40\u202fft. You cannot be \u202fBlinded.",
-      "Magical Durability: The wielder has a +2 bonus to \u202fSaving throws against spells."
+      "Immolating Gaze (): Sear and  Frighten a target with nothing but your glower. ( Recharge: Short rest.)",
+      "Infernal Sight: You can see in magical[See: Bugs] and ordinary darkness up to a range of 12 m / 40 ft. You cannot be  Blinded.",
+      "Magical Durability: The wielder has a +2 bonus to  Saving throws against spells."
     ],
     "stats": {},
     "location": {
@@ -169,9 +169,9 @@
     "armour_class": null,
     "effects": [
       "Attackers can't land Critical Hits on the wearer.",
-      "Balduran's Vitality: The helmet heals you 2\u2060\u2060hit points at the beginning of every turn.",
-      "Balduran's Favour: You have a +1 bonus to \u202fArmour Class and \u202fSaving throws.",
-      "Stun Immunity: You can't be \u202fStunned."
+      "Balduran's Vitality: The helmet heals you 2⁠⁠hit points at the beginning of every turn.",
+      "Balduran's Favour: You have a +1 bonus to  Armour Class and  Saving throws.",
+      "Stun Immunity: You can't be  Stunned."
     ],
     "stats": {},
     "location": {
@@ -206,8 +206,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Dexterity \u202fSaving Throws +1",
-      "Grit: When the wearer has 50% Hit Points or less, they have an additional \u202fBonus Action."
+      "Dexterity  Saving Throws +1",
+      "Grit: When the wearer has 50% Hit Points or less, they have an additional  Bonus Action."
     ],
     "stats": {},
     "location": {
@@ -292,8 +292,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Seeking Blood: You gain a +2 bonus to \u202fAttack rolls when attacking creatures that have already taken damage.",
-      "Blood Thirst: Unarmed and melee attacks will deal an extra 2\u2060\u2060Necrotic damage as long as you don't have your full health. If you don't deal any damage this turn, you will take 1d4\u2060\u2060Necrotic damage at the end of your turn."
+      "Seeking Blood: You gain a +2 bonus to  Attack rolls when attacking creatures that have already taken damage.",
+      "Blood Thirst: Unarmed and melee attacks will deal an extra 2⁠⁠Necrotic damage as long as you don't have your full health. If you don't deal any damage this turn, you will take 1d4⁠⁠Necrotic damage at the end of your turn."
     ],
     "stats": {},
     "location": {
@@ -328,12 +328,12 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Advantage on \u202fPersuasion Checks.",
-      "Advantage on \u202fDeception Checks."
+      "Advantage on  Persuasion Checks.",
+      "Advantage on  Deception Checks."
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -714 Y: 863: In the High Security Vault n\u00ba2",
+      "description": "The Counting House X: -714 Y: 863: In the High Security Vault nº2",
       "area": "The Counting House",
       "act": 3
     },
@@ -347,8 +347,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Detect Thoughts (): Cast as a level 2 spell (\u202fRecharge: Short rest.)",
-      "Soul Perception: Gain a +2 bonus to \u202fAttack rolls, \u202fInitiative Rolls, and Perception Checks."
+      "Detect Thoughts (): Cast as a level 2 spell ( Recharge: Short rest.)",
+      "Soul Perception: Gain a +2 bonus to  Attack rolls,  Initiative Rolls, and Perception Checks."
     ],
     "stats": {},
     "location": {
@@ -372,7 +372,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Fiery Return: When you deal \u2060Fire damage with a levelled spell, you \u202fBurn yourself and gain an additional \u202fBonus Action this round."
+      "Fiery Return: When you deal ⁠Fire damage with a levelled spell, you  Burn yourself and gain an additional  Bonus Action this round."
     ],
     "stats": {},
     "location": {
@@ -390,8 +390,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Deathbringer's Sight: You gain \u202fDarkvision up to a range of 3\u202fm / 10\u202fft, or 15\u202fm / 50\u202fft if you already have it. The number you need to roll a Critical Hit while attacking is reduced by one. This effect can stack.",
-      "Dauntless: You can't be \u202fFrightened or afflicted with other emotion-altering conditions."
+      "Deathbringer's Sight: You gain  Darkvision up to a range of 3 m / 10 ft, or 15 m / 50 ft if you already have it. The number you need to roll a Critical Hit while attacking is reduced by one. This effect can stack.",
+      "Dauntless: You can't be  Frightened or afflicted with other emotion-altering conditions."
     ],
     "stats": {},
     "location": {
@@ -439,7 +439,7 @@
     "armour_class": null,
     "effects": [
       "Nature +1",
-      "Nature's Embrace: Increase your \u202fWild Shape Charge by 1. This additional charge is restored upon taking a Long Rest."
+      "Nature's Embrace: Increase your  Wild Shape Charge by 1. This additional charge is restored upon taking a Long Rest."
     ],
     "stats": {},
     "location": {
@@ -461,7 +461,7 @@
     "armour_class": null,
     "effects": [
       "Advantage on Constitution saving throws",
-      "Artificial Sight: The wearer can see in the dark up to 12\u202fm (40\u202fft) and cannot be \u202fBlinded."
+      "Artificial Sight: The wearer can see in the dark up to 12 m (40 ft) and cannot be  Blinded."
     ],
     "stats": {},
     "location": {
@@ -481,7 +481,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Glorious Pointy Hat: You gain a bonus to your \u202fPersuasion checks equal to your \u202fIntelligence Modifier."
+      "Glorious Pointy Hat: You gain a bonus to your  Persuasion checks equal to your  Intelligence Modifier."
     ],
     "stats": {},
     "location": {
@@ -499,11 +499,11 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Crowning Glory: When healing another, the wearer regains 1d6\u2060\u2060hit points."
+      "Crowning Glory: When healing another, the wearer regains 1d6⁠⁠hit points."
     ],
     "stats": {},
     "location": {
-      "description": "Secluded Chamber X: -53 Y: 67: Rewarded by Zevlor for helping the tiefling refugees during \u2060Save the Refugees, provided the monetary reward is accepted",
+      "description": "Secluded Chamber X: -53 Y: 67: Rewarded by Zevlor for helping the tiefling refugees during ⁠Save the Refugees, provided the monetary reward is accepted",
       "area": "Secluded Chamber",
       "act": 3
     },
@@ -520,10 +520,10 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Advantage on Constitution \u202fSaving Throws.",
-      "Plant Growth (): Cast as a level 3 spell (\u202fRecharge: Short rest.)",
+      "Advantage on Constitution  Saving Throws.",
+      "Plant Growth (): Cast as a level 3 spell ( Recharge: Short rest.)",
       "High Spellcasting: You gain a +1 bonus to Spell Save DC.",
-      "Green Bed Regeneration: When starting your turn on \u202fPlant Growth or \u202fVines regain 1d4\u2060\u2060hit points hit points."
+      "Green Bed Regeneration: When starting your turn on  Plant Growth or  Vines regain 1d4⁠⁠hit points hit points."
     ],
     "stats": {},
     "location": {
@@ -556,8 +556,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Lunar Bestial Vitality: You gain \u202f22 temporary hit points after casting \u202fWild Shape. While those temporary hit points are active reduce all incoming damage by 1.",
-      "Lunar Bestial Fortitude: You have a +2 bonus to \u202fArmour Class. You also have \u202fAdvantage on \u202fSaving throws against spells. This effect persists while using your druidic \u202fWild Shape ability."
+      "Lunar Bestial Vitality: You gain  22 temporary hit points after casting  Wild Shape. While those temporary hit points are active reduce all incoming damage by 1.",
+      "Lunar Bestial Fortitude: You have a +2 bonus to  Armour Class. You also have  Advantage on  Saving throws against spells. This effect persists while using your druidic  Wild Shape ability."
     ],
     "stats": {},
     "location": {
@@ -577,8 +577,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Malefic Funghi: The wearer gains a +1 bonus to Spell Save DC and when dealing \u2060Necrotic damage, they deal an additional 1\u2060\u2060Necrotic Damage.",
-      "Spore Sacks: While imbued with \u202fSymbiotic Entity, you can spread \u202fBibberbang Spores, \u202fTimmask Spores, and \u202fHaste Spores."
+      "Malefic Funghi: The wearer gains a +1 bonus to Spell Save DC and when dealing ⁠Necrotic damage, they deal an additional 1⁠⁠Necrotic Damage.",
+      "Spore Sacks: While imbued with  Symbiotic Entity, you can spread  Bibberbang Spores,  Timmask Spores, and  Haste Spores."
     ],
     "stats": {},
     "location": {
@@ -599,8 +599,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Aura of Murder: Enemies within 3\u202fm (10\u202fft) become Vulnerable to \u2060Piercing damage, unless they are Immune to it.",
-      "Ambusher: Gain a +2 bonus to \u202fInitiative Rolls."
+      "Aura of Murder: Enemies within 3 m (10 ft) become Vulnerable to ⁠Piercing damage, unless they are Immune to it.",
+      "Ambusher: Gain a +2 bonus to  Initiative Rolls."
     ],
     "stats": {},
     "location": {
@@ -655,12 +655,12 @@
     "armour_class": null,
     "effects": [
       "Advantage on Stealth checks.",
-      "Shield (): Cast as a level 1 spell (\u202fRecharge: Short rest.)",
-      "Ambusher: Gain a +2 bonus to \u202fInitiative Rolls."
+      "Shield (): Cast as a level 1 spell ( Recharge: Short rest.)",
+      "Ambusher: Gain a +2 bonus to  Initiative Rolls."
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -686 Y: 874: in the High Security Vault n\u00ba9",
+      "description": "The Counting House X: -686 Y: 874: in the High Security Vault nº9",
       "area": "The Counting House",
       "act": 3
     },
@@ -697,7 +697,7 @@
     "armour_class": null,
     "effects": [
       "Saving Throws +2.",
-      "Exotic Material: Add your full Dexterity Modifier to your \u202fArmour Class. Additionally, this armour does not impose \u202fDisadvantage on Stealth Ability Checks."
+      "Exotic Material: Add your full Dexterity Modifier to your  Armour Class. Additionally, this armour does not impose  Disadvantage on Stealth Ability Checks."
     ],
     "stats": {},
     "location": {
@@ -741,7 +741,7 @@
     "armour_class": null,
     "effects": [
       "Elven Chain: You are considered Proficient with this armour while wearing it.",
-      "Elven Agility: The wearer has a +2 bonus to Initiative Rolls and \u202fAdvantage on Dexterity \u202fSaving throws."
+      "Elven Agility: The wearer has a +2 bonus to Initiative Rolls and  Advantage on Dexterity  Saving throws."
     ],
     "stats": {},
     "location": {
@@ -759,9 +759,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Fire Shield: Warm (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
-      "Seldom Caught Unawares: You gain a +2 bonus to \u202fInitiative rolls.",
-      "Endurance by Fire: You have Resistance to \u2060Fire damage and a +2 bonus to \u202fSaving throws.",
+      "Fire Shield: Warm (): Cast as a level 4 spell ( Recharge: Long rest.)",
+      "Seldom Caught Unawares: You gain a +2 bonus to  Initiative rolls.",
+      "Endurance by Fire: You have Resistance to ⁠Fire damage and a +2 bonus to  Saving throws.",
       "Disadvantage on Stealth checks."
     ],
     "stats": {},
@@ -780,7 +780,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Cautious Healer: When the wearer heals a creature, it automatically \u202fDisengages and won't trigger \u202fOpportunity Attacks."
+      "Cautious Healer: When the wearer heals a creature, it automatically  Disengages and won't trigger  Opportunity Attacks."
     ],
     "stats": {},
     "location": {
@@ -798,8 +798,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Resistance to \u2060Fire damage",
-      "Exotic Material: Add your full Dexterity Modifier to your \u202fArmour Class. Additionally, this armour does not impose \u202fDisadvantage on Stealth Ability Checks."
+      "Resistance to ⁠Fire damage",
+      "Exotic Material: Add your full Dexterity Modifier to your  Armour Class. Additionally, this armour does not impose  Disadvantage on Stealth Ability Checks."
     ],
     "stats": {},
     "location": {
@@ -820,7 +820,7 @@
     "armour_class": null,
     "effects": [
       "Magical Plate: All incoming damage is reduced by 2.",
-      "Legendary Persistence: You gain \u202fResistance and \u202fBlade Ward.",
+      "Legendary Persistence: You gain  Resistance and  Blade Ward.",
       "Disadvantage on Stealth checks."
     ],
     "stats": {},
@@ -856,7 +856,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Advantage on Wisdom \u202fSaving Throws.",
+      "Advantage on Wisdom  Saving Throws.",
       "Magical Plate: All incoming damage is reduced by 1",
       "Disadvantage on Stealth checks."
     ],
@@ -876,8 +876,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Frightened Immunity: You can't be \u202fFrightened",
-      "Illithid Protection: If the wearer is infested by a mind flayer tadpole, they gain +1 to Intelligence, Wisdom, and Charisma \u202fSaving throws.",
+      "Frightened Immunity: You can't be  Frightened",
+      "Illithid Protection: If the wearer is infested by a mind flayer tadpole, they gain +1 to Intelligence, Wisdom, and Charisma  Saving throws.",
       "Disadvantage on Stealth checks."
     ],
     "stats": {},
@@ -896,9 +896,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Fire Shield (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
+      "Fire Shield (): Cast as a level 4 spell ( Recharge: Long rest.)",
       "Magical Plate: All incoming damage is reduced by 2.",
-      "Endurance by Fire: You have Resistance to \u2060Fire damage and a +2 bonus to \u202fSaving throws.",
+      "Endurance by Fire: You have Resistance to ⁠Fire damage and a +2 bonus to  Saving throws.",
       "Disadvantage on Stealth checks."
     ],
     "stats": {},
@@ -917,10 +917,10 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Fly (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
+      "Fly (): Cast as a level 3 spell ( Recharge: Long rest.)",
       "Helldusk Armour: You are considered Proficient with this armour while wearing it.",
-      "Infernal Retribution: When you succeed a \u202fSaving Throw, the caster receives \u202fBurning for 3 turns.",
-      "Prime Aegis of Fire: You have Resistance to \u2060Fire damage and cannot be \u202fBurned. You take 3 less damage from all sources."
+      "Infernal Retribution: When you succeed a  Saving Throw, the caster receives  Burning for 3 turns.",
+      "Prime Aegis of Fire: You have Resistance to ⁠Fire damage and cannot be  Burned. You take 3 less damage from all sources."
     ],
     "stats": {},
     "location": {
@@ -953,9 +953,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Howl of the Dead (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "Howl of the Dead (): Cast as a cantrip ( Recharge: Short rest.)",
       "Magical Plate: All incoming damage is reduced by 2.",
-      "Reaper's Rigidity: When activated, you can't be moved against your will by any spell or action, but have \u202fDisadvantage on Dexterity \u202fSaving throws.",
+      "Reaper's Rigidity: When activated, you can't be moved against your will by any spell or action, but have  Disadvantage on Dexterity  Saving throws.",
       "Disadvantage on Stealth checks."
     ],
     "stats": {},
@@ -978,7 +978,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Garrotte (): Wraps a shadow rope around a Humanoid creature's throat to start \u00a0Garrotting it. (\u202fRecharge: Short rest.)"
+      "Garrotte (): Wraps a shadow rope around a Humanoid creature's throat to start  Garrotting it. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -996,9 +996,9 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
+      "Strength  Saving Throws +1",
       "Attack rolls +1",
-      "Inflict Wounds (): Cast as a level 4 spell (\u202fRecharge: Long rest.)"
+      "Inflict Wounds (): Cast as a level 4 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -1016,11 +1016,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Exoskeletal Reinforcement: Your attacks ignore Resistance to \u2060Slashing, \u2060Piercing, and \u2060Bludgeoning damage."
+      "Exoskeletal Reinforcement: Your attacks ignore Resistance to ⁠Slashing, ⁠Piercing, and ⁠Bludgeoning damage."
     ],
     "stats": {},
     "location": {
-      "description": "Lower City Sewers X: -136 Y: 980: Worn by Strangler Luke during the quest \u2060Get Orin's Netherstone",
+      "description": "Lower City Sewers X: -136 Y: 980: Worn by Strangler Luke during the quest ⁠Get Orin's Netherstone",
       "area": "Lower City Sewers",
       "act": 3
     },
@@ -1036,7 +1036,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Mental Interference: When you deal \u2060Psychic damage, you also inflict \u202fMental Fatigue for 2 turns."
+      "Mental Interference: When you deal ⁠Psychic damage, you also inflict  Mental Fatigue for 2 turns."
     ],
     "stats": {},
     "location": {
@@ -1057,8 +1057,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Illithid Euphoria: Charm or \u202fFrighten a creature to gain a   1d4 bonus to \u202fAttack rolls and \u202fSaving throws."
+      "Strength  Saving Throws +1",
+      "Illithid Euphoria: Charm or  Frighten a creature to gain a   1d4 bonus to  Attack rolls and  Saving throws."
     ],
     "stats": {},
     "location": {
@@ -1076,8 +1076,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Craterous Wounds: Whenever you score a Critical Hit, deal an additional 1d6\u2060\u2060ForceDRS damage."
+      "Strength  Saving Throws +1",
+      "Craterous Wounds: Whenever you score a Critical Hit, deal an additional 1d6⁠⁠ForceDRS damage."
     ],
     "stats": {},
     "location": {
@@ -1112,7 +1112,7 @@
     "armour_class": null,
     "effects": [
       "Sleight of Hand +1",
-      "Subtle Swap: You gain a +1 bonus to \u202fAttack rolls when throwing, and may swap positions with the target if they fail a \u202fDexterity saving throw."
+      "Subtle Swap: You gain a +1 bonus to  Attack rolls when throwing, and may swap positions with the target if they fail a  Dexterity saving throw."
     ],
     "stats": {},
     "location": {
@@ -1130,8 +1130,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Command (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4\u2060\u2060Force damage.",
+      "Command (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4⁠⁠Force damage.",
       "High Spellcasting: You gain a +1 bonus to Spell Save DC."
     ],
     "stats": {},
@@ -1162,8 +1162,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Set the wearer's \u202fStrength to 23. The enchantment has no effect if their Strength score is higher without it."
+      "Strength  Saving Throws +1",
+      "Set the wearer's  Strength to 23. The enchantment has no effect if their Strength score is higher without it."
     ],
     "stats": {},
     "location": {
@@ -1184,7 +1184,7 @@
     "armour_class": null,
     "effects": [
       "Attack rolls +1",
-      "Heightened Manoeuvre: Targets have \u202fDisadvantage on \u202fSaving throws against your Manoeuvre and Weapon Actions."
+      "Heightened Manoeuvre: Targets have  Disadvantage on  Saving throws against your Manoeuvre and Weapon Actions."
     ],
     "stats": {},
     "location": {
@@ -1226,12 +1226,12 @@
     "armour_class": null,
     "effects": [
       "Constitution +2, up to 20.",
-      "Soul Fist: Your unarmed attacks deal an additional 1d10\u2060\u2060Force damage.",
-      "Soul Catching: Once per turn, on an unarmed hit, you regain 10\u2060\u2060hit points. Alternatively, you may forego healing to gain a +5 bonus on an \u202fAttack roll or \u202fSaving throw until the end of your next turn.[See: Bugs]"
+      "Soul Fist: Your unarmed attacks deal an additional 1d10⁠⁠Force damage.",
+      "Soul Catching: Once per turn, on an unarmed hit, you regain 10⁠⁠hit points. Alternatively, you may forego healing to gain a +5 bonus on an  Attack roll or  Saving throw until the end of your next turn.[See: Bugs]"
     ],
     "stats": {},
     "location": {
-      "description": "House of Hope X: -6477 Y: 2884: Given by Hope for completing her quest \u2060Save Hope",
+      "description": "House of Hope X: -6477 Y: 2884: Given by Hope for completing her quest ⁠Save Hope",
       "area": "House of Hope",
       "act": 3
     },
@@ -1251,9 +1251,9 @@
     "armour_class": null,
     "effects": [
       "Strength Saving Throws +1",
-      "Rays of Fire (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "Rays of Fire (): Cast as a cantrip ( Recharge: Short rest.)",
       "Infernal Acuity: You gain +1 bonus to Spell Attack Rolls and Spell Save DC.",
-      "Infernal Touch: Your weapon attacks deal an additional 1d6\u2060\u2060Fire damage. Your unarmed attacks deal an additional 1d6\u2060\u2060Necrotic damage, and can possibly inflict \u202fBleeding."
+      "Infernal Touch: Your weapon attacks deal an additional 1d6⁠⁠Fire damage. Your unarmed attacks deal an additional 1d6⁠⁠Necrotic damage, and can possibly inflict  Bleeding."
     ],
     "stats": {},
     "location": {
@@ -1323,12 +1323,12 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Helm's Protection: When you heal another creature, it gains Resistance to \u2060Bludgeoning, \u2060Piercing, and \u2060Slashing damage dealt by weapon attacks [See: Bugs] for 2 turns."
+      "Strength  Saving Throws +1",
+      "Helm's Protection: When you heal another creature, it gains Resistance to ⁠Bludgeoning, ⁠Piercing, and ⁠Slashing damage dealt by weapon attacks [See: Bugs] for 2 turns."
     ],
     "stats": {},
     "location": {
-      "description": "Secluded Chamber X: -53 Y: 67: Carried by Zevlor and can be either looted from him, bought, stolen, or earned as a reward for \u2060Kill Kagha or \u2060Investigate Kagha",
+      "description": "Secluded Chamber X: -53 Y: 67: Carried by Zevlor and can be either looted from him, bought, stolen, or earned as a reward for ⁠Kill Kagha or ⁠Investigate Kagha",
       "area": "Secluded Chamber",
       "act": 3
     },
@@ -1359,11 +1359,11 @@
     "armour_class": null,
     "effects": [
       "Sleight of Hand +1",
-      "Knock ( + ): Cast as a level 2 spell (\u202fRecharge: Long rest.)"
+      "Knock ( + ): Cast as a level 2 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -719 Y: 871: In the High Security Vault n\u00ba7",
+      "description": "The Counting House X: -719 Y: 871: In the High Security Vault nº7",
       "area": "The Counting House",
       "act": 3
     },
@@ -1377,8 +1377,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Arming Enhancement: Gain a +2 Bonus to \u202fAttack roll and damage rolls with weapons."
+      "Strength  Saving Throws +1",
+      "Arming Enhancement: Gain a +2 Bonus to  Attack roll and damage rolls with weapons."
     ],
     "stats": {},
     "location": {
@@ -1426,7 +1426,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Martial Exertion: Push past your physical limits, taking 6d6Piercing damage to gain an additional attack per turn and to double your movement speed. (\u202fRecharge: Short rest.)"
+      "Martial Exertion: Push past your physical limits, taking 6d6Piercing damage to gain an additional attack per turn and to double your movement speed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -1470,7 +1470,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Quickspell Flinger: Cantrips that cost an \u202fAction cost a \u202fBonus Action instead. This effect can be used once per Short Rest."
+      "Quickspell Flinger: Cantrips that cost an  Action cost a  Bonus Action instead. This effect can be used once per Short Rest."
     ],
     "stats": {},
     "location": {
@@ -1497,8 +1497,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Guiding Bolt (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
-      "Angelclocker Knuckles: Your unarmed attacks deal an additional 1d4\u2060\u2060Radiant damage."
+      "Guiding Bolt (): Cast as a level 4 spell ( Recharge: Long rest.)",
+      "Angelclocker Knuckles: Your unarmed attacks deal an additional 1d4⁠⁠Radiant damage."
     ],
     "stats": {},
     "location": {
@@ -1519,8 +1519,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Fear (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4\u2060\u2060Force damage."
+      "Fear (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Enervating Suffusion: Your unarmed attacks deal an additional 1d4⁠⁠Force damage."
     ],
     "stats": {},
     "location": {
@@ -1541,8 +1541,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Ice Knife (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Chilling Strike: Your unarmed attacks deal an additional 1d4\u2060\u2060Cold damage."
+      "Ice Knife (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Chilling Strike: Your unarmed attacks deal an additional 1d4⁠⁠Cold damage."
     ],
     "stats": {},
     "location": {
@@ -1563,7 +1563,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Spellmight: When casting a spell that requires an \u202fAttack roll, you can take a -5 penalty to the roll to deal an additional   1d8 damage."
+      "Spellmight: When casting a spell that requires an  Attack roll, you can take a -5 penalty to the roll to deal an additional   1d8 damage."
     ],
     "stats": {},
     "location": {
@@ -1588,7 +1588,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Seeking Spell: When you make a Spell Attack Roll, you can spend a \u202fSorcery Point to gain \u202fAdvantage. This costs 1 Sorcery Point per spell slot Level. Cantrips cost 1 Sorcery Point."
+      "Seeking Spell: When you make a Spell Attack Roll, you can spend a  Sorcery Point to gain  Advantage. This costs 1 Sorcery Point per spell slot Level. Cantrips cost 1 Sorcery Point."
     ],
     "stats": {},
     "location": {
@@ -1606,8 +1606,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Seldom Caught Unawares: You gain a +1 bonus to \u202fInitiative rolls.",
-      "Skullduggery Attack: Your \u202fSneak Attack deals an additional 1d4\u2060\u2060ForceDRS damage."
+      "Seldom Caught Unawares: You gain a +1 bonus to  Initiative rolls.",
+      "Skullduggery Attack: Your  Sneak Attack deals an additional 1d4⁠⁠ForceDRS damage."
     ],
     "stats": {},
     "location": {
@@ -1627,9 +1627,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Strength \u202fSaving Throws +1",
-      "Revivify (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Aegis Palms: When you heal a creature, it gains the effect of \u202fBlade Ward. When you \u202fRevive a creature, it gains the effect of \u202fDeath Ward."
+      "Strength  Saving Throws +1",
+      "Revivify (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Aegis Palms: When you heal a creature, it gains the effect of  Blade Ward. When you  Revive a creature, it gains the effect of  Death Ward."
     ],
     "stats": {},
     "location": {
@@ -1656,8 +1656,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Thunderwave (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Booming Blows: Your unarmed attacks deal an additional 1d4\u2060\u2060Thunder damage."
+      "Thunderwave (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Booming Blows: Your unarmed attacks deal an additional 1d4⁠⁠Thunder damage."
     ],
     "stats": {},
     "location": {
@@ -1679,8 +1679,8 @@
     "armour_class": null,
     "effects": [
       "Sleight of Hand +2",
-      "Adds a piece of \u202fCharcoal to the wearer's inventory for each item they steal.\nAfter stealing 20 times, the next steal will add a \u202fCoal Bucket instead, which inflicts the \u202fBurning condition to the player for  Duration: 1 turn.",
-      "After stealing 20 times, the next steal will add a \u202fCoal Bucket instead, which inflicts the \u202fBurning condition to the player for  Duration: 1 turn."
+      "Adds a piece of  Charcoal to the wearer's inventory for each item they steal.\nAfter stealing 20 times, the next steal will add a  Coal Bucket instead, which inflicts the  Burning condition to the player for  Duration: 1 turn.",
+      "After stealing 20 times, the next steal will add a  Coal Bucket instead, which inflicts the  Burning condition to the player for  Duration: 1 turn."
     ],
     "stats": {},
     "location": {
@@ -1699,7 +1699,7 @@
     "armour_class": null,
     "effects": [
       "Attack rolls +1",
-      "Strength \u202fSaving Throws +1"
+      "Strength  Saving Throws +1"
     ],
     "stats": {},
     "location": {
@@ -1737,7 +1737,7 @@
     "armour_class": null,
     "effects": [
       "Athletics +1",
-      "Strider Movement: You gain \u202fLongstrider."
+      "Strider Movement: You gain  Longstrider."
     ],
     "stats": {},
     "location": {
@@ -1755,9 +1755,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Brutal Leap ( + ): Leap at a target and possibly knock it \u202fProne. (\u202fRecharge: Per turn.)",
-      "Evasive Instinct: You have a +1 bonus to \u202fArmour Class and \u202fSaving throws as long as you are not wearing armour or holding a shield.",
-      "Refined Vaulting: Jump distance is increased by 1.5\u202fm (5\u202fft)."
+      "Brutal Leap ( + ): Leap at a target and possibly knock it  Prone. ( Recharge: Per turn.)",
+      "Evasive Instinct: You have a +1 bonus to  Armour Class and  Saving throws as long as you are not wearing armour or holding a shield.",
+      "Refined Vaulting: Jump distance is increased by 1.5 m (5 ft)."
     ],
     "stats": {},
     "location": {
@@ -1785,8 +1785,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Dexterity \u202fSaving Throws +1",
-      "Legendary Mobility: You gain \u202fFreedom of Movement and \u202fLongstrider."
+      "Dexterity  Saving Throws +1",
+      "Legendary Mobility: You gain  Freedom of Movement and  Longstrider."
     ],
     "stats": {},
     "location": {
@@ -1821,9 +1821,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Dexterity \u202fSaving Throws +1",
-      "Githborn: Flying Boots (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Flying Strike: When a githyanki casts \u202fFly, their next melee weapon attack deals an additional 1d4\u2060\u2060Psychic damage."
+      "Dexterity  Saving Throws +1",
+      "Githborn: Flying Boots (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Flying Strike: When a githyanki casts  Fly, their next melee weapon attack deals an additional 1d4⁠⁠Psychic damage."
     ],
     "stats": {},
     "location": {
@@ -1841,7 +1841,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Experienced And Deadly: The wearer deals additional damage equal to their \u202fWisdom Modifier with unarmed strikes."
+      "Experienced And Deadly: The wearer deals additional damage equal to their  Wisdom Modifier with unarmed strikes."
     ],
     "stats": {},
     "location": {
@@ -1863,7 +1863,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Disrobing Blinkstep (): Cast as a level 2 spell (\u202fRecharge: Per turn.)"
+      "Disrobing Blinkstep (): Cast as a level 2 spell ( Recharge: Per turn.)"
     ],
     "stats": {},
     "location": {
@@ -1881,9 +1881,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Hellcrawler (): Teleport to an area and deal 2d8Fire damage where you land. The impact blast spreads in a 3\u202fm / 10\u202fft zone. (\u202fRecharge: Short rest.)",
-      "Steadfast: You cannot be forcibly moved by a foe's spells or actions, and you ignore the effects of \u202fDifficult Terrain.",
-      "Infernal Evasion: When you fail a \u202fSaving throw, you may use your \u202fReaction to succeed instead."
+      "Hellcrawler (): Teleport to an area and deal 2d8Fire damage where you land. The impact blast spreads in a 3 m / 10 ft zone. ( Recharge: Short rest.)",
+      "Steadfast: You cannot be forcibly moved by a foe's spells or actions, and you ignore the effects of  Difficult Terrain.",
+      "Infernal Evasion: When you fail a  Saving throw, you may use your  Reaction to succeed instead."
     ],
     "stats": {},
     "location": {
@@ -1945,8 +1945,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Dexterity \u202fSaving Throws +1",
-      "Shoe Slinger: Returns to its owner when thrown. On a hit deal an additional 2d4\u2060\u2060Psychic damage."
+      "Dexterity  Saving Throws +1",
+      "Shoe Slinger: Returns to its owner when thrown. On a hit deal an additional 2d4⁠⁠Psychic damage."
     ],
     "stats": {},
     "location": {
@@ -1964,7 +1964,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Dimension Door ( + ): Cast as a level 4 spell (\u202fRecharge: Long rest.)"
+      "Dimension Door ( + ): Cast as a level 4 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -1982,7 +1982,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Scintillating: You gain a +1 bonus to Charisma \u202fAbility checks and \u202fSaving throws."
+      "Scintillating: You gain a +1 bonus to Charisma  Ability checks and  Saving throws."
     ],
     "stats": {},
     "location": {
@@ -2037,11 +2037,11 @@
     "rarity": "story_item",
     "armour_class": null,
     "effects": [
-      "First Blood: On a hit, inflict \u202fBleeding upon targets that have maximum Hit Points."
+      "First Blood: On a hit, inflict  Bleeding upon targets that have maximum Hit Points."
     ],
     "stats": {},
     "location": {
-      "description": "Murder Tribunal X: -1248 Y: 503: Worn by Sarevok Anchev or rewarded by him for completing \u2060Impress the Murder Tribunal",
+      "description": "Murder Tribunal X: -1248 Y: 503: Worn by Sarevok Anchev or rewarded by him for completing ⁠Impress the Murder Tribunal",
       "area": "Murder Tribunal",
       "act": 3
     },
@@ -2076,8 +2076,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Sets the wearer's \u202fConstitution score to 23. The enchantment has no effect if their Constitution score is higher without it.",
-      "Advantage on Constitution \u202fSaving Throws."
+      "Sets the wearer's  Constitution score to 23. The enchantment has no effect if their Constitution score is higher without it.",
+      "Advantage on Constitution  Saving Throws."
     ],
     "stats": {},
     "location": {
@@ -2138,7 +2138,7 @@
     "armour_class": null,
     "effects": [
       "High Spellcasting: You gain a +2 bonus to Spell Save DC.",
-      "Godswill: You gain an additional use of \u202fChannel Divinity Charge. Once used, it is restored upon taking a Long Rest[See: Bugs]."
+      "Godswill: You gain an additional use of  Channel Divinity Charge. Once used, it is restored upon taking a Long Rest[See: Bugs]."
     ],
     "stats": {},
     "location": {
@@ -2190,7 +2190,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Booze Remedy: While wearing this amulet, regain 2d4\u2060\u2060hit points per turn while \u202fDrunk. Additionally, increase the duration of your inebriation by 5 rounds."
+      "Booze Remedy: While wearing this amulet, regain 2d4⁠⁠hit points per turn while  Drunk. Additionally, increase the duration of your inebriation by 5 rounds."
     ],
     "stats": {},
     "location": {
@@ -2208,12 +2208,12 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Ride the Winds (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Gust of Wind (): Cast as a level 2 spell (\u202fRecharge: Short rest.)"
+      "Ride the Winds (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Gust of Wind (): Cast as a level 2 spell ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "Lora's House X: -65 Y: -89: Reward by Lora Bergauz for saving her daughter during the quest \u2060Save Vanra",
+      "description": "Lora's House X: -65 Y: -89: Reward by Lora Bergauz for saving her daughter during the quest ⁠Save Vanra",
       "area": "Lora's House",
       "act": 3
     },
@@ -2227,7 +2227,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Innate Fortitude: Once per Long Rest, you can use a \u202fReaction to make an \u202fAttack roll or \u202fSaving throw with \u202fAdvantage."
+      "Innate Fortitude: Once per Long Rest, you can use a  Reaction to make an  Attack roll or  Saving throw with  Advantage."
     ],
     "stats": {},
     "location": {
@@ -2245,8 +2245,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Polymorph: Dire Raven (): Take the shape of a dire raven that can avoid attention and \u00a0Blind enemies. It has  13 hit points. (\u202fRecharge: Long rest.)",
-      "Boon of the Raven Queen: While wearing the amulet, the wearer's jump and flying speed increase by 1.5\u202fm / 5\u202fft, and they gain the \u202fFeather Fall condition. Feather Fall's effect will persist while the wearer is \u202fPolymorphed or Wild-Shaped."
+      "Polymorph: Dire Raven (): Take the shape of a dire raven that can avoid attention and  Blind enemies. It has  13 hit points. ( Recharge: Long rest.)",
+      "Boon of the Raven Queen: While wearing the amulet, the wearer's jump and flying speed increase by 1.5 m / 5 ft, and they gain the  Feather Fall condition. Feather Fall's effect will persist while the wearer is  Polymorphed or Wild-Shaped."
     ],
     "stats": {},
     "location": {
@@ -2266,7 +2266,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Semblance of Fey: You have \u202fAdvantage on Intelligence, Wisdom, and Charisma \u202fSaving throws."
+      "Semblance of Fey: You have  Advantage on Intelligence, Wisdom, and Charisma  Saving throws."
     ],
     "stats": {},
     "location": {
@@ -2303,8 +2303,8 @@
     "armour_class": null,
     "effects": [
       "Wisdom +1 (up to 21)",
-      "Khalid's Gift: Aid (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Odd Gift: While wearing Khalid's Gift, Jaheira cannot be \u202fCursed."
+      "Khalid's Gift: Aid (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Odd Gift: While wearing Khalid's Gift, Jaheira cannot be  Cursed."
     ],
     "stats": {},
     "location": {
@@ -2329,8 +2329,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Shatter (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Ki Restoration (): Using the spiritual energy in the amulet, you restore a number of \u202fKi Points equal to your martial arts die. [See Notes] (\u202fRecharge: Long rest.)"
+      "Shatter (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Ki Restoration (): Using the spiritual energy in the amulet, you restore a number of  Ki Points equal to your martial arts die. [See Notes] ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2348,11 +2348,11 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Spell Amplification: You gain an additional \u202fLevel 2 Spell Slot."
+      "Spell Amplification: You gain an additional  Level 2 Spell Slot."
     ],
     "stats": {},
     "location": {
-      "description": "In High Security Vault n\u00ba1 in The Counting House",
+      "description": "In High Security Vault nº1 in The Counting House",
       "area": "The Counting House",
       "act": 3
     },
@@ -2366,7 +2366,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Telekinesis (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+      "Telekinesis (): Cast as a level 5 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2384,7 +2384,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Unflinching Protection: When a nearby ally is targeted by an attack of any kind, you can use your \u202fReaction to make that attack automatically miss. This effect can only be used once per Short Rest."
+      "Unflinching Protection: When a nearby ally is targeted by an attack of any kind, you can use your  Reaction to make that attack automatically miss. This effect can only be used once per Short Rest."
     ],
     "stats": {},
     "location": {
@@ -2402,7 +2402,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "After Death Do Us Part: When the wearer is \u202fDowned, they rise once more with half their Hit Points restored, but are gripped by \u202fShadow Possession."
+      "After Death Do Us Part: When the wearer is  Downed, they rise once more with half their Hit Points restored, but are gripped by  Shadow Possession."
     ],
     "stats": {},
     "location": {
@@ -2420,7 +2420,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Paralyzing Ray (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+      "Paralyzing Ray (): Cast as a level 3 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2438,11 +2438,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Create Undead (): Cast as a level 6 spell (\u202fRecharge: Long rest.)"
+      "Create Undead (): Cast as a level 6 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "Philgrave's Mansion X: 14 Y: -160: Rewarded for completion of the quest \u2060Find Mystic Carrion's Servant, if Thrumbo survives",
+      "description": "Philgrave's Mansion X: 14 Y: -160: Rewarded for completion of the quest ⁠Find Mystic Carrion's Servant, if Thrumbo survives",
       "area": "Philgrave's Mansion",
       "act": 3
     },
@@ -2458,7 +2458,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Mage Hand (): Cast as a cantrip (\u202fRecharge: Short rest.)"
+      "Mage Hand (): Cast as a cantrip ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2476,7 +2476,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Dominate Beast (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+      "Dominate Beast (): Cast as a level 5 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2494,7 +2494,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Confusion (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+      "Confusion (): Cast as a level 5 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2512,7 +2512,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Blink (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+      "Blink (): Cast as a level 3 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2531,7 +2531,7 @@
     "armour_class": null,
     "effects": [
       "You gain a +1 bonus to Spell Save DC.[See: Bugs]",
-      "Feywild Sparks: While your sorcerous \u202fTides of Chaos feature is active, you will always trigger \u202fWild Magic when casting spells."
+      "Feywild Sparks: While your sorcerous  Tides of Chaos feature is active, you will always trigger  Wild Magic when casting spells."
     ],
     "stats": {},
     "location": {
@@ -2563,7 +2563,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Combat Regeneration: At the beginning of your turn, the ring activates and heals you 1d4\u2060\u2060hit points."
+      "Combat Regeneration: At the beginning of your turn, the ring activates and heals you 1d4⁠⁠hit points."
     ],
     "stats": {},
     "location": {
@@ -2589,8 +2589,8 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Charisma \u202fSaving Throws +1",
-      "Wisdom \u202fSaving Throws -1"
+      "Charisma  Saving Throws +1",
+      "Wisdom  Saving Throws -1"
     ],
     "stats": {},
     "location": {
@@ -2608,7 +2608,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Beacon of Hope (): Cast as a level 3 spell (\u202fRecharge: Long rest.)"
+      "Beacon of Hope (): Cast as a level 3 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -2628,10 +2628,10 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Sentinel Weapon: Gain a +1 bonus to Initiative rolls and \u202fAdvantage on Perception Ability Checks.",
-      "Ambusher's Streak: In combat, you deal an additional 1d6\u2060\u2060Necrotic damage against creatures that haven't taken a turn yet.",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+      "Sentinel Weapon: Gain a +1 bonus to Initiative rolls and  Advantage on Perception Ability Checks.",
+      "Ambusher's Streak: In combat, you deal an additional 1d6⁠⁠Necrotic damage against creatures that haven't taken a turn yet.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2653,12 +2653,12 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Giant Form (): Grow to a fearsome size. Your weapons deal an additional 1d6 damage and you gain  27 temporary hit points and  Advantage on Strength Checks and  Saving throws. (\u202fRecharge: Short rest.)",
-      "Giantslayer: On a hit, double the damage from your Strength modifier. This weapon grants you \u202fAdvantage on \u202fAttack rolls against Large, Huge or Gargantuan creatures.",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Topple the Big Folk (): Deal additional damage equal to your proficiency bonus. On a hit, Large, Huge, or Gargantuan creatures take an additional 2d6\u2060\u2060SlashingDRS damage and must succeed a \u202fStrength Saving Throw or fall \u202fProne. (\u202fRecharge: Short rest.)"
+      "Giant Form (): Grow to a fearsome size. Your weapons deal an additional 1d6 damage and you gain  27 temporary hit points and  Advantage on Strength Checks and  Saving throws. ( Recharge: Short rest.)",
+      "Giantslayer: On a hit, double the damage from your Strength modifier. This weapon grants you  Advantage on  Attack rolls against Large, Huge or Gargantuan creatures.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Topple the Big Folk (): Deal additional damage equal to your proficiency bonus. On a hit, Large, Huge, or Gargantuan creatures take an additional 2d6⁠⁠SlashingDRS damage and must succeed a  Strength Saving Throw or fall  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2691,10 +2691,10 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Dazing Smite: On a hit infused with one of your Smites, the target must succeed a \u202fConstitution saving throw or become \u202fDazed.",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Dazing Smite: On a hit infused with one of your Smites, the target must succeed a  Constitution saving throw or become  Dazed.",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2713,8 +2713,8 @@
     "armour_class": null,
     "effects": [
       "Blightbringer: Attacking Gnomes or Dwarves with this weapon receives a 1d4 bonus to Attack and Damage rolls.",
-      "Prey Decelerator: When this weapon lands a Critical Hit, it also \u202fSlows the target creature.",
-      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+      "Prey Decelerator: When this weapon lands a Critical Hit, it also  Slows the target creature.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2732,17 +2732,17 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "True Strike (): Cast as a cantrip (\u202fRecharge: Short rest.)",
+      "True Strike (): Cast as a cantrip ( Recharge: Short rest.)",
       "Bound Weapon",
       "Armour Class +1 (Off-Hand Only)",
       "Improved Critical: The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
-      "Exploit Weakness: Creatures hit with this weapon receive Vulnerability to \u2060Piercing damage.",
-      "True Strike Riposte: When a creature misses you with a melee attack, you may retaliate and gain \u202fTrue Strike.",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+      "Exploit Weakness: Creatures hit with this weapon receive Vulnerability to ⁠Piercing damage.",
+      "True Strike Riposte: When a creature misses you with a melee attack, you may retaliate and gain  True Strike.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest \u2060Get Orin's Netherstone",
+      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest ⁠Get Orin's Netherstone",
       "area": "Bhaal Temple",
       "act": 3
     },
@@ -2756,9 +2756,9 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Caitiff's Restoration (): Replenish 1 expended Warlock spell slots. (\u202fRecharge: Long rest.)",
+      "Caitiff's Restoration (): Replenish 1 expended Warlock spell slots. ( Recharge: Long rest.)",
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2776,10 +2776,10 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Grim Irony: Whenever this weapon lands a critical hit, both target and attacker must succeed a Wisdom Saving Throw, or be affected by \u202ffits of laughter.",
-      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+      "Grim Irony: Whenever this weapon lands a critical hit, both target and attacker must succeed a Wisdom Saving Throw, or be affected by  fits of laughter.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2798,7 +2798,7 @@
     "armour_class": null,
     "effects": [
       "Armour Class +1 (Off-Hand Only)",
-      "Chilling Counter: When a creature misses you with an attack, it receives \u202fChilled for 2 turns.[See: Bugs]"
+      "Chilling Counter: When a creature misses you with an attack, it receives  Chilled for 2 turns.[See: Bugs]"
     ],
     "stats": {},
     "location": {
@@ -2816,15 +2816,15 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Prey Upon the Weak: This weapon deals an additional 1d4\u2060\u2060Piercing damage against targets with 50% of their hit points or fewer.",
-      "Redvein Savagery: When you make an attack with \u202fAdvantage, the target takes an additional 7\u2060\u2060PiercingDRS damage.",
+      "Prey Upon the Weak: This weapon deals an additional 1d4⁠⁠Piercing damage against targets with 50% of their hit points or fewer.",
+      "Redvein Savagery: When you make an attack with  Advantage, the target takes an additional 7⁠⁠PiercingDRS damage.",
       "Crimson Weapon: When you make an attack with your off-hand weapon, you can add your Ability Modifier to the damage of the attack.",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest \u2060Get Orin's Netherstone",
+      "description": "Bhaal Temple X: 61 Y: 1004: Carried by Orin during the quest ⁠Get Orin's Netherstone",
       "area": "Bhaal Temple",
       "act": 3
     },
@@ -2848,7 +2848,7 @@
     "armour_class": null,
     "effects": [
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2867,9 +2867,9 @@
     "armour_class": null,
     "effects": [
       "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2902,8 +2902,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Dread Iron Ambush: While its wielder is hidden, this weapon deals an extra 1d6\u2060\u2060Necrotic.",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+      "Dread Iron Ambush: While its wielder is hidden, this weapon deals an extra 1d6⁠⁠Necrotic.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2921,17 +2921,17 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Challenge to Duel (): Challenge an enemy to attack only you, inflicting \u202fBleeding on the target.",
-      "Elegant Duellist: While your off-hand is empty, you score a Critical Hit when rolling a 19. Moreover, you gain an additional \u202fReaction per turn.",
-      "Withering Cut: On a hit with a melee weapon, use a \u202fReaction to deal additional \u2060Necrotic damage equal to your Proficiency Bonus.",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
-      "Dueller's Enthusiasm (): While you are not dual-wielding and your off hand is empty, you can make an additional melee attack with The Dueller. (\u202fRecharge: Per turn.)"
+      "Challenge to Duel (): Challenge an enemy to attack only you, inflicting  Bleeding on the target.",
+      "Elegant Duellist: While your off-hand is empty, you score a Critical Hit when rolling a 19. Moreover, you gain an additional  Reaction per turn.",
+      "Withering Cut: On a hit with a melee weapon, use a  Reaction to deal additional ⁠Necrotic damage equal to your Proficiency Bonus.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)",
+      "Dueller's Enthusiasm (): While you are not dual-wielding and your off hand is empty, you can make an additional melee attack with The Dueller. ( Recharge: Per turn.)"
     ],
     "stats": {},
     "location": {
-      "description": "Lora's House X: -65 Y: -89: Reward from Lora Bergauz for completing the quest \u2060Save Vanra",
+      "description": "Lora's House X: -65 Y: -89: Reward from Lora Bergauz for completing the quest ⁠Save Vanra",
       "area": "Lora's House",
       "act": 3
     },
@@ -2958,11 +2958,11 @@
     "armour_class": null,
     "effects": [
       "Charisma +2",
-      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a \u00a0weapon attack. (\u202fRecharge: Short rest.)",
-      "Stirring Execution: When you kill an enemy, allies within 9\u202fm / 30\u202fft gain temporary hit points equal to your[See: Bugs] Charisma Modifier (minimum 1).",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a  weapon attack. ( Recharge: Short rest.)",
+      "Stirring Execution: When you kill an enemy, allies within 9 m / 30 ft gain temporary hit points equal to your[See: Bugs] Charisma Modifier (minimum 1).",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -2981,10 +2981,10 @@
     "armour_class": null,
     "effects": [
       "Homing Weapon: This weapon will return to its owner when thrown.",
-      "Dwarven Thrower: A dwarf throwing this warhammer deals an extra 1d8\u2060\u2060Bludgeoning damage. If the target is a Large, Huge or Gargantuan creature, the strike deals an additional 2d8\u2060\u2060Bludgeoning damage.",
-      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+      "Dwarven Thrower: A dwarf throwing this warhammer deals an extra 1d8⁠⁠Bludgeoning damage. If the target is a Large, Huge or Gargantuan creature, the strike deals an additional 2d8⁠⁠Bludgeoning damage.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3006,11 +3006,11 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Elemental Age (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Elements of an Epoch: Depending on what kind of damage this weapon does, it also inflicts: \u202fAcid condition, \u202fChilled condition, or \u202fBurning condition.",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+      "Elemental Age (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Elements of an Epoch: Depending on what kind of damage this weapon does, it also inflicts:  Acid condition,  Chilled condition, or  Burning condition.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal ⁠Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3028,10 +3028,10 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Lethal Weapon: This weapon ignores resistance to \u2060Bludgeoning damage.",
-      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
+      "Lethal Weapon: This weapon ignores resistance to ⁠Bludgeoning damage.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal ⁠Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
     ],
     "stats": {},
     "location": {
@@ -3049,9 +3049,9 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Gleamdance Dagger: Glowing: This object shines with a glowing light in a radius of \u20606\u202fm / 20\u202fft.",
-      "Gleamdancer: When this dagger is wielded in the off-hand, the wielder gains a +1 bonus to \u202fArmour Class.",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)"
+      "Gleamdance Dagger: Glowing: This object shines with a glowing light in a radius of ⁠6 m / 20 ft.",
+      "Gleamdancer: When this dagger is wielded in the off-hand, the wielder gains a +1 bonus to  Armour Class.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3069,12 +3069,12 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Celestial Haste (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Promised Victory: On a hit, possibly inflict \u202fGuiding Bolt upon the target.",
-      "Gontr Mael: Glowing: This object shines with a glowing light in a radius of 6\u202fm / 20\u202fft. Toggle this to douse and rekindle the light.",
-      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)",
-      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
-      "Bolt of Celestial Light (): Frighten your target with intimidating arrows. After attacking, ranged weapon attacks made by Gontr Mael deal an additional 1d4\u2060\u2060Radiant damage. (\u202fRecharge: Short rest.)"
+      "Celestial Haste (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Promised Victory: On a hit, possibly inflict  Guiding Bolt upon the target.",
+      "Gontr Mael: Glowing: This object shines with a glowing light in a radius of 6 m / 20 ft. Toggle this to douse and rekindle the light.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. ( Recharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)",
+      "Bolt of Celestial Light (): Frighten your target with intimidating arrows. After attacking, ranged weapon attacks made by Gontr Mael deal an additional 1d4⁠⁠Radiant damage. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3102,11 +3102,11 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Detect Thoughts (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
-      "Slay the Wicked: This weapon deals an additional 1d6\u2060\u2060Bludgeoning damage against Fiends and Undead.",
-      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)"
+      "Detect Thoughts (): Cast as a level 2 spell ( Recharge: Long rest.)",
+      "Slay the Wicked: This weapon deals an additional 1d6⁠⁠Bludgeoning damage against Fiends and Undead.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3124,8 +3124,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Spiritual Weapon (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Spiritual Weapon (): Cast as a level 6 spell ( Recharge: Long rest.)",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3143,10 +3143,10 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Lightning Arrow (): Cast as a level 4 spell (\u202fRecharge: Long rest.)",
-      "Piercing Shot (): Deal regular damage and possibly inflict \u202fGaping Wounds which cause extra damage on attacks. (\u202fRecharge: Short rest.)",
-      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
-      "Reposition Malefactor (): Pulls the creature 9\u202fm / 30\u202fft closer to you."
+      "Lightning Arrow (): Cast as a level 4 spell ( Recharge: Long rest.)",
+      "Piercing Shot (): Deal regular damage and possibly inflict  Gaping Wounds which cause extra damage on attacks. ( Recharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)",
+      "Reposition Malefactor (): Pulls the creature 9 m / 30 ft closer to you."
     ],
     "stats": {},
     "location": {
@@ -3166,11 +3166,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Thermodynamo: Whenever you deal damage with this weapon, you gain 2 turns of \u202fHeat.",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Prepare (): Spend 6\u202fm / 20\u202fft of your movement to deal an additional Strength modifier\u2060\u2060PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. (\u202fRecharge: Short rest.)",
-      "Hellflame Cleave (): Cast as a cantrip (\u202fRecharge: Short rest.)"
+      "Thermodynamo: Whenever you deal damage with this weapon, you gain 2 turns of  Heat.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Prepare (): Spend 6 m / 20 ft of your movement to deal an additional Strength modifier⁠⁠PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. ( Recharge: Short rest.)",
+      "Hellflame Cleave (): Cast as a cantrip ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3190,10 +3190,10 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Heightened Awareness: Gain a +3 bonus to Initiative rolls and \u202fAdvantage on \u202fPerception checks.",
-      "Fiendish Fire: Once per turn, a creature hit by this weapon will possibly be afflicted with \u202fFaerie Fire.",
-      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)",
-      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)"
+      "Heightened Awareness: Gain a +3 bonus to Initiative rolls and  Advantage on  Perception checks.",
+      "Fiendish Fire: Once per turn, a creature hit by this weapon will possibly be afflicted with  Faerie Fire.",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. ( Recharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3266,9 +3266,9 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Arms of Hadar (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Heightened Necromancy: Creatures have \u202fDisadvantage on \u202fSaving Throws against your necromancy spells.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Arms of Hadar (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Heightened Necromancy: Creatures have  Disadvantage on  Saving Throws against your necromancy spells.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3286,8 +3286,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Infernal Weapon: On a hit, this weapon deals an additional 3\u2060\u2060Poison damage and can possibly \u202fPoison its target.",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)"
+      "Infernal Weapon: On a hit, this weapon deals an additional 3⁠⁠Poison damage and can possibly  Poison its target.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3305,16 +3305,16 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Planar Ally: Cambion (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
+      "Planar Ally: Cambion (): Cast as a level 6 spell ( Recharge: Long rest.)",
       "High Spellcasting: You gain a +1 bonus to Spell Save DC.",
-      "Melee Caster: Instead of its Dexterity Modifier, the affected entity add its Spellcasting Ability Modifier to \u202fAttack rolls.",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Melee Caster: Instead of its Dexterity Modifier, the affected entity add its Spellcasting Ability Modifier to  Attack rolls.",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "Mind Flayer Colony X: 676 Y: 39: Possibly rewarded by Mizora to Wyll if freed during his companion quest, \u2060The Blade of Frontiers",
+      "description": "Mind Flayer Colony X: 676 Y: 39: Possibly rewarded by Mizora to Wyll if freed during his companion quest, ⁠The Blade of Frontiers",
       "area": "Mind Flayer Colony",
       "act": 3
     },
@@ -3332,8 +3332,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Infernal Weapon: On a hit, this weapon deals an additional 3\u2060\u2060Poison damage and can possibly \u202fPoison its target.",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Infernal Weapon: On a hit, this weapon deals an additional 3⁠⁠Poison damage and can possibly  Poison its target.",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3351,9 +3351,9 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Cauteriser: Deals an additional 1d4\u2060\u2060Fire. On a hit, the target starts \u202fBurning unless it succeeds a Constitution \u202fSaving throw.",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+      "Cauteriser: Deals an additional 1d4⁠⁠Fire. On a hit, the target starts  Burning unless it succeeds a Constitution  Saving throw.",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3371,10 +3371,10 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Kereska's Favour (): Cast as a level 4 spell (\u202fRecharge: Short rest.)",
+      "Kereska's Favour (): Cast as a level 4 spell ( Recharge: Short rest.)",
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
       "Arcane Battery: Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3414,11 +3414,11 @@
     "rarity": "story_item",
     "armour_class": null,
     "effects": [
-      "Spell Resistance: You have \u202fAdvantage on \u202fSaving throws against spells.",
-      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy \u202fProne. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict \u202fWeak Grip. (\u202fRecharge: Short rest.)",
-      "Unshackling Strike (): Smite the magical bonds keeping a creature \u202fRestrained, \u202fParalyzed, and \u202fStunned, freeing it."
+      "Spell Resistance: You have  Advantage on  Saving throws against spells.",
+      "Backbreaker (): Put extra force behind your strike to possibly knock your enemy  Prone. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Weakening Strike (): Target an enemy's hands with a non-lethal attack and possibly inflict  Weak Grip. ( Recharge: Short rest.)",
+      "Unshackling Strike (): Smite the magical bonds keeping a creature  Restrained,  Paralyzed, and  Stunned, freeing it."
     ],
     "stats": {},
     "location": {
@@ -3436,14 +3436,14 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a \u00a0weapon attack. (\u202fRecharge: Short rest.)",
-      "Heartstopper (): Smash an enemy's chest in and possibly inflict \u202fChest Trauma. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
+      "Commander's Strike ( + ): Direct an ally to strike a foe. The ally uses a reaction on their next turn to make a  weapon attack. ( Recharge: Short rest.)",
+      "Heartstopper (): Smash an enemy's chest in and possibly inflict  Chest Trauma. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal ⁠Bludgeoning damage equal to your Strength modifier anyway (minimum of 1)."
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -711 Y: 882: In the High Security Vault n\u00ba5",
+      "description": "The Counting House X: -711 Y: 882: In the High Security Vault nº5",
       "area": "The Counting House",
       "act": 3
     },
@@ -3457,9 +3457,9 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Command ( + ): Cast as a level 1 spell (\u202fRecharge: Long rest.)",
-      "Flourish (): Feint an attack to possibly throw your opponent \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+      "Command ( + ): Cast as a level 1 spell ( Recharge: Long rest.)",
+      "Flourish (): Feint an attack to possibly throw your opponent  Off Balance. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3477,11 +3477,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Sethan: Spiritual Greataxe (): Cast as a level 6 spell (\u202fRecharge: Long rest.)",
-      "Sethan: Reduce (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Prepare (): Spend 6\u202fm / 20\u202fft of your movement to deal an additional Strength modifier\u2060\u2060PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. (\u202fRecharge: Short rest.)"
+      "Sethan: Spiritual Greataxe (): Cast as a level 6 spell ( Recharge: Long rest.)",
+      "Sethan: Reduce (): Cast as a level 2 spell ( Recharge: Long rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Prepare (): Spend 6 m / 20 ft of your movement to deal an additional Strength modifier⁠⁠PhysicalDRS damage (minimum 1) on each successful melee weapon attack for the rest of the turn. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3499,12 +3499,12 @@
     "rarity": "legendary",
     "armour_class": null,
     "effects": [
-      "Githborn Psionic Resistance: A githyanki holding this weapon has \u202fAdvantage on Intelligence, Wisdom, and Charisma \u202fSaving Throws, resistance to Psychic damage, and cannot be \u202fCharmed.",
-      "Githborn Psionic Weapon: When wielded by a githyanki this weapon deals an additional 1d6\u2060\u2060Psychic damage.",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Soulbreaker (): Rend the enemy's body and soul, dealing additional \u2060Psychic damage equal to your proficiency bonus, and possibly \u202fStun them. (\u202fRecharge: Short rest.)"
+      "Githborn Psionic Resistance: A githyanki holding this weapon has  Advantage on Intelligence, Wisdom, and Charisma  Saving Throws, resistance to Psychic damage, and cannot be  Charmed.",
+      "Githborn Psionic Weapon: When wielded by a githyanki this weapon deals an additional 1d6⁠⁠Psychic damage.",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Soulbreaker (): Rend the enemy's body and soul, dealing additional ⁠Psychic damage equal to your proficiency bonus, and possibly  Stun them. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3534,8 +3534,8 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Firebolt?: Cast as a cantrip at will, but has a 1/20 chance to cause a \u202fFireball explosion.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Firebolt?: Cast as a cantrip at will, but has a 1/20 chance to cause a  Fireball explosion.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3553,9 +3553,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Heightened Necromancy: Creatures have \u202fDisadvantage on \u202fSaving Throws against your necromancy spells.",
-      "Life Essence Harvest: When the wielder kills a hostile creature with a spell, they greedily absorb its energy and gain \u202fLife Essence until their next Long Rest.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Heightened Necromancy: Creatures have  Disadvantage on  Saving Throws against your necromancy spells.",
+      "Life Essence Harvest: When the wielder kills a hostile creature with a spell, they greedily absorb its energy and gain  Life Essence until their next Long Rest.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3579,8 +3579,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Counterspell (): Cast as a level 5 spell (\u202fRecharge: Long rest.)",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Counterspell (): Cast as a level 5 spell ( Recharge: Long rest.)",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3600,7 +3600,7 @@
     "effects": [
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
       "Arcane Battery: Alleviate the arcane burden of spellcasting with the power of this staff. The next spell you cast doesn't cost a spell slot.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3619,8 +3619,8 @@
     "armour_class": null,
     "effects": [
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
-      "Imperial Retaliation: When the wielder succeeds a \u202fSaving throw, the foe that caused the throw needs to make an \u202fIntelligence saving throw or be \u202fStunned for 1 turn.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Imperial Retaliation: When the wielder succeeds a  Saving throw, the foe that caused the throw needs to make an  Intelligence saving throw or be  Stunned for 1 turn.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3642,8 +3642,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Staff of the Ram: Once per turn, the blow possibly knocks a foe back 2\u202fm / 7\u202fft and \u202fStuns them. This has no effect on dragons or Huge creatures.",
-      "Topple (): Swipe at a creature to knock it \u202fProne. (\u202fRecharge: Short rest.)"
+      "Staff of the Ram: Once per turn, the blow possibly knocks a foe back 2 m / 7 ft and  Stuns them. This has no effect on dragons or Huge creatures.",
+      "Topple (): Swipe at a creature to knock it  Prone. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3661,10 +3661,10 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Hold Person (): Cast as a level 3 spell (\u202fRecharge: Long rest.)",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+      "Hold Person (): Cast as a level 3 spell ( Recharge: Long rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3682,11 +3682,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Chaos: On dealing damage with this weapon, regain 1d6\u2060\u2060hit points.[See Notes]",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Chaos: On dealing damage with this weapon, regain 1d6⁠⁠hit points.[See Notes]",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3705,10 +3705,10 @@
     "armour_class": null,
     "effects": [
       "Shapeshifter Slayer: This weapon deals an additional   1d4 damage against shapeshifters or polymorphed creatures.",
-      "Magical Durability: The wielder has a +2 bonus to \u202fSaving throws against spells.",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)"
+      "Magical Durability: The wielder has a +2 bonus to  Saving throws against spells.",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Pommel Strike (): Make a non-lethal attack against an enemy and possibly  Daze them. ( Recharge: Short rest.)",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3728,8 +3728,8 @@
     "effects": [
       "Improved Critical: The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
       "Keen Attack: The wielder doubles their Proficiency Bonus when rolling ranged attacks with this weapon, unless they have Disadvantage.",
-      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)",
-      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)",
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3778,12 +3778,12 @@
     "armour_class": null,
     "effects": [
       "Revenant Scourge: When used against undead creatures this weapon has +1d4 bonus to Attack and Damage rolls.",
-      "Piercing Shot (): Deal regular damage and possibly inflict \u202fGaping Wounds which cause extra damage on attacks. (\u202fRecharge: Short rest.)",
-      "Brace (Ranged) (): Spend 6\u202fm (20\u202fft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. (\u202fRecharge: Short rest.)"
+      "Piercing Shot (): Deal regular damage and possibly inflict  Gaping Wounds which cause extra damage on attacks. ( Recharge: Short rest.)",
+      "Brace (Ranged) (): Spend 6 m (20 ft) of your movement. For the rest of your turn, roll ranged damage twice and use the highest result. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -718 Y: 861: In the High Security Vault n\u00ba3",
+      "description": "The Counting House X: -718 Y: 861: In the High Security Vault nº3",
       "area": "The Counting House",
       "act": 3
     },
@@ -3797,12 +3797,12 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Radiant Strike: On a hit, inflict 1 turn of \u202fRadiating Orb upon the target.",
-      "Sanctified Weapon: Undead creatures struck by this weapon are possibly \u202fTurned.",
-      "Heartstopper (): Smash an enemy's chest in and possibly inflict \u202fChest Trauma. (\u202fRecharge: Short rest.)",
-      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly \u202fDaze them. (\u202fRecharge: Short rest.)",
-      "Tenacity (): When you miss an attack, deal \u2060Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
-      "Dawnburst Strike (): Deal additional \u2060Radiant damage equal to your proficiency bonus. On a hit, light erupts around you in a 3\u202fm / 10\u202fft area. Enemies in the light must succeed a \u202fConstitution Saving Throw or be \u202fBlinded. (\u202fRecharge: Short rest.)"
+      "Radiant Strike: On a hit, inflict 1 turn of  Radiating Orb upon the target.",
+      "Sanctified Weapon: Undead creatures struck by this weapon are possibly  Turned.",
+      "Heartstopper (): Smash an enemy's chest in and possibly inflict  Chest Trauma. ( Recharge: Short rest.)",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)",
+      "Tenacity (): When you miss an attack, deal ⁠Bludgeoning damage equal to your Strength modifier anyway (minimum of 1).",
+      "Dawnburst Strike (): Deal additional ⁠Radiant damage equal to your proficiency bonus. On a hit, light erupts around you in a 3 m / 10 ft area. Enemies in the light must succeed a  Constitution Saving Throw or be  Blinded. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3823,14 +3823,14 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "The Water Caller: On a hit, inflict \u202fWet and create a \u20602\u202fm / 7\u202fft \u202fWater surface centred around the target.",
-      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them \u202fOff Balance. (\u202fRecharge: Short rest.)",
-      "Piercing Strike (): Stab an enemy and possibly inflict \u202fGaping Wounds. (\u202fRecharge: Short rest.)",
-      "Disarming Strike (): Focus your attack on your foe's hands and possibly force them to drop the weapons they are holding. (\u202fRecharge: Short rest.)"
+      "The Water Caller: On a hit, inflict  Wet and create a ⁠2 m / 7 ft  Water surface centred around the target.",
+      "Rush Attack (): Charge forward and attack the first enemy in your way, possibly pushing them  Off Balance. ( Recharge: Short rest.)",
+      "Piercing Strike (): Stab an enemy and possibly inflict  Gaping Wounds. ( Recharge: Short rest.)",
+      "Disarming Strike (): Focus your attack on your foe's hands and possibly force them to drop the weapons they are holding. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -711 Y: 882: In the High Security Vault n\u00ba4",
+      "description": "The Counting House X: -711 Y: 882: In the High Security Vault nº4",
       "area": "The Counting House",
       "act": 3
     },
@@ -3845,9 +3845,9 @@
     "armour_class": null,
     "effects": [
       "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
-      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. (\u202fRecharge: Short rest.)",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)",
-      "Maiming Strike (): Possibly \u202fMaims your target. They can't move. (\u202fRecharge: Short rest.)"
+      "Cleave (): Swing your weapon in a large arc to attack up to 3 enemies at once. They each take half the damage your weapon usually deals. ( Recharge: Short rest.)",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)",
+      "Maiming Strike (): Possibly  Maims your target. They can't move. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3866,7 +3866,7 @@
     "armour_class": null,
     "effects": [
       "Dolor Amarus: When you land a Critical Hit with a weapon or unarmed attack,[See: Bugs] it deals an additional 7 damage.",
-      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. (\u202fRecharge: Short rest.)"
+      "Hamstring Shot (): Shoot an enemy in the thigh and possibly reduce their movement speed by 50%. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3898,8 +3898,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Watery Guidance: This weapon has \u202fAdvantage against \u202fWet creatures.",
-      "Lacerate (): Slash at your target's vital points to make it \u202fBleed. (\u202fRecharge: Short rest.)"
+      "Watery Guidance: This weapon has  Advantage against  Wet creatures.",
+      "Lacerate (): Slash at your target's vital points to make it  Bleed. ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3917,8 +3917,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
-      "Protection from Missiles (): Cast as a level 2 spell (\u202fRecharge: Short rest.)"
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it  Prone, unless they succeed a  Strength saving throw.",
+      "Protection from Missiles (): Cast as a level 2 spell ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -3937,7 +3937,7 @@
     "armour_class": null,
     "effects": [
       "Advantage on Dexterity Saving Throws",
-      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it  Prone, unless they succeed a  Strength saving throw.",
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls."
     ],
     "stats": {},
@@ -3986,7 +3986,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "No special properties, beyond the \u202fArmour Class enchantment."
+      "No special properties, beyond the  Armour Class enchantment."
     ],
     "stats": {},
     "location": {
@@ -4004,8 +4004,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
-      "Shield (): Cast as a level 1 spell (\u202fRecharge: Long rest.)"
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it  Prone, unless they succeed a  Strength saving throw.",
+      "Shield (): Cast as a level 1 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
@@ -4023,9 +4023,9 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
-      "Dreadful Hewer: Your foes have \u202fDisadvantage on Saving Throws to resist your spells or actions that inflict \u202fFear.",
-      "Additional Spell Slot: You gain 1 \u202fLevel 1 Spell Slot."
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it  Prone, unless they succeed a  Strength saving throw.",
+      "Dreadful Hewer: Your foes have  Disadvantage on Saving Throws to resist your spells or actions that inflict  Fear.",
+      "Additional Spell Slot: You gain 1  Level 1 Spell Slot."
     ],
     "stats": {},
     "location": {
@@ -4043,8 +4043,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it \u00a0Prone, unless they succeed a  Strength saving throw.",
-      "Shield Conduit: The shield shrouds the wearer with \u202fForce Conduit at the start of its turn in combat."
+      "Shield Blow (): When a foe hits you with a melee attack, you can use your reaction to knock it  Prone, unless they succeed a  Strength saving throw.",
+      "Shield Conduit: The shield shrouds the wearer with  Force Conduit at the start of its turn in combat."
     ],
     "stats": {},
     "location": {
@@ -4069,7 +4069,7 @@
     "rarity": "uncommon",
     "armour_class": null,
     "effects": [
-      "Flaming Shroud: A creature that damages the wearer within 2\u202fm / 7\u202fft receives \u202fBurning."
+      "Flaming Shroud: A creature that damages the wearer within 2 m / 7 ft receives  Burning."
     ],
     "stats": {},
     "location": {
@@ -4087,7 +4087,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Displacement: At the beginning of the wearer's turn, the cloak activates, granting enemies \u202fDisadvantage on \u202fAttack rolls that target the wearer. This effect lasts until the wearer takes damage."
+      "Displacement: At the beginning of the wearer's turn, the cloak activates, granting enemies  Disadvantage on  Attack rolls that target the wearer. This effect lasts until the wearer takes damage."
     ],
     "stats": {},
     "location": {
@@ -4168,7 +4168,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Absorb Elements (): Absorb elemental damage once per Short Rest. Take half damage from the next elemental attack targeting you, and deal an additional 1d6 of that element type on your next attack. (\u202fRecharge: Short rest.)",
+      "Absorb Elements (): Absorb elemental damage once per Short Rest. Take half damage from the next elemental attack targeting you, and deal an additional 1d6 of that element type on your next attack. ( Recharge: Short rest.)",
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls."
     ],
     "stats": {},
@@ -4214,7 +4214,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Crusader's Mantle (): Cast as a level 3 spell (\u202fRecharge: Short rest.)"
+      "Crusader's Mantle (): Cast as a level 3 spell ( Recharge: Short rest.)"
     ],
     "stats": {},
     "location": {
@@ -4234,11 +4234,11 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Dominate Person (): Cast as a level 5 spell (\u202fRecharge: Long rest.)"
+      "Dominate Person (): Cast as a level 5 spell ( Recharge: Long rest.)"
     ],
     "stats": {},
     "location": {
-      "description": "The Counting House X: -711 Y: 864: In the High Security Vault n\u00ba1",
+      "description": "The Counting House X: -711 Y: 864: In the High Security Vault nº1",
       "area": "The Counting House",
       "act": 3
     },
@@ -4252,7 +4252,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Stealthy Critical: While \u202fHiding, the number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack."
+      "Stealthy Critical: While  Hiding, the number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack."
     ],
     "stats": {},
     "location": {
@@ -4275,7 +4275,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Damp Aegis: During Combat, once per turn, the cloak grants the wearer \u202fWater Layer Protection[See: Bugs] until the wearer takes damage."
+      "Damp Aegis: During Combat, once per turn, the cloak grants the wearer  Water Layer Protection[See: Bugs] until the wearer takes damage."
     ],
     "stats": {},
     "location": {
@@ -4293,8 +4293,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Slabjaw Determination: You gain \u202f15 temporary hit points whenever you \u202fRage.",
-      "Exoskeletal Endurance: Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes Constitution modifier\u2060\u2060Piercing damage."
+      "Slabjaw Determination: You gain  15 temporary hit points whenever you  Rage.",
+      "Exoskeletal Endurance: Reduce all incoming damage by 2. When the wearer is struck by a melee attack, the attacker takes Constitution modifier⁠⁠Piercing damage."
     ],
     "stats": {},
     "location": {
@@ -4318,8 +4318,8 @@
     "armour_class": null,
     "effects": [
       "Armour Class +1",
-      "Dauntless: You can't be \u202fFrightened or afflicted with other emotion-altering conditions.",
-      "Authority: You have \u202fAdvantage on Intimidation checks and Insight checks."
+      "Dauntless: You can't be  Frightened or afflicted with other emotion-altering conditions.",
+      "Authority: You have  Advantage on Intimidation checks and Insight checks."
     ],
     "stats": {},
     "location": {
@@ -4337,7 +4337,7 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Snowy Liver: While \u202fDrunk you have \u202fAdvantage on Constitution \u202fSaving Throws, and you gain Temporary Hit Points equal to your Constitution Modifier at the start of your turn."
+      "Snowy Liver: While  Drunk you have  Advantage on Constitution  Saving Throws, and you gain Temporary Hit Points equal to your Constitution Modifier at the start of your turn."
     ],
     "stats": {},
     "location": {
@@ -4356,8 +4356,8 @@
     "armour_class": null,
     "effects": [
       "Armour Class +1",
-      "Mountainous Poise: While using \u202fPatient Defence, you also benefit from the effect of \u202fBlade Ward.",
-      "Breezeswift Speed: While using \u202fStep of the Wind, your next \u202fAttack roll has \u202fAdvantage and deals an additional 1d8\u2060\u2060Force damage."
+      "Mountainous Poise: While using  Patient Defence, you also benefit from the effect of  Blade Ward.",
+      "Breezeswift Speed: While using  Step of the Wind, your next  Attack roll has  Advantage and deals an additional 1d8⁠⁠Force damage."
     ],
     "stats": {},
     "location": {
@@ -4380,11 +4380,11 @@
     "effects": [
       "Armour Class +1",
       "Formless Slaughter: You gain a +1 to Attack and Damage rolls while shapeshifting or disguised.",
-      "Faceless Masquerade: You have \u202fAdvantage on \u202fDeception Checks and \u202fPersuasion Checks."
+      "Faceless Masquerade: You have  Advantage on  Deception Checks and  Persuasion Checks."
     ],
     "stats": {},
     "location": {
-      "description": "Bhaal Temple X: 61 Y: 1004: Worn by Orin during the quest \u2060Get Orin's Netherstone",
+      "description": "Bhaal Temple X: 61 Y: 1004: Worn by Orin during the quest ⁠Get Orin's Netherstone",
       "area": "Bhaal Temple",
       "act": 3
     },
@@ -4400,7 +4400,7 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Exquisite Focus: While concentrating, you add your Spellcasting Modifier to your \u202fSaving throws and gain a +1 bonus to your \u202fArmour Class."
+      "Exquisite Focus: While concentrating, you add your Spellcasting Modifier to your  Saving throws and gain a +1 bonus to your  Armour Class."
     ],
     "stats": {},
     "location": {
@@ -4427,7 +4427,7 @@
     "effects": [
       "Armour Class +2",
       "Arcane Enchantment: You gain a +1 bonus to Spell Save DC and Spell Attack rolls.",
-      "Weave Eater: Whenever the wearer succeeds a \u202fSaving throw against a spell, they regain 1d6\u2060\u2060hit points."
+      "Weave Eater: Whenever the wearer succeeds a  Saving throw against a spell, they regain 1d6⁠⁠hit points."
     ],
     "stats": {},
     "location": {
@@ -4464,8 +4464,8 @@
     "rarity": "rare",
     "armour_class": null,
     "effects": [
-      "Mirror Image (): Cast as a level 2 spell (\u202fRecharge: Long rest.)",
-      "Spell Resistance: You have \u202fAdvantage on \u202fSaving throws against spells."
+      "Mirror Image (): Cast as a level 2 spell ( Recharge: Long rest.)",
+      "Spell Resistance: You have  Advantage on  Saving throws against spells."
     ],
     "stats": {},
     "location": {
@@ -4483,8 +4483,8 @@
     "rarity": "very_rare",
     "armour_class": null,
     "effects": [
-      "Turn Undead (): Pray to \u202fTurn all undead that can see you. (\u202fRecharge: Long rest.)",
-      "Let The Undead Blanch With Fear: Undead have \u202fDisadvantage on attack rolls against you, and you have \u202fAdvantage on \u202fSaving Throws against their actions and spells."
+      "Turn Undead (): Pray to  Turn all undead that can see you. ( Recharge: Long rest.)",
+      "Let The Undead Blanch With Fear: Undead have  Disadvantage on attack rolls against you, and you have  Advantage on  Saving Throws against their actions and spells."
     ],
     "stats": {},
     "location": {
@@ -4503,13 +4503,13 @@
     "armour_class": null,
     "effects": [
       "Armour Class +2",
-      "Defier's Rejuvenation: Whenever the wearer succeeds on a \u202fSaving throw against a Spell, they regain 1d4\u2060\u2060hit points.",
-      "Greater Kushigo Counter: The wearer can use a \u202fReaction to make an \u202fUnarmed Strike against any attacker that misses."
+      "Defier's Rejuvenation: Whenever the wearer succeeds on a  Saving throw against a Spell, they regain 1d4⁠⁠hit points.",
+      "Greater Kushigo Counter: The wearer can use a  Reaction to make an  Unarmed Strike against any attacker that misses."
     ],
     "stats": {},
     "location": {
       "description": "Sold by Lorroakan's Projection in Sorcerous Sundries if Rolan is dead",
-      "area": "",
+      "area": "Sorcerous Sundries",
       "act": 3
     },
     "build_tags": [
@@ -4526,17 +4526,124 @@
     "armour_class": null,
     "effects": [
       "Armour Class +1.",
-      "Create or Destroy Water (): Cast as a level 4 spell (\u202fRecharge: Short rest.)",
-      "Temperature Adjustment: You have Resistance to \u2060Fire and \u2060Cold Damage.",
-      "Watery Rejuvenation: If the wearer is standing in a \u202fWater surface at the start of their turn, they heal 1d4\u2060\u2060hit points."
+      "Create or Destroy Water (): Cast as a level 4 spell ( Recharge: Short rest.)",
+      "Temperature Adjustment: You have Resistance to ⁠Fire and ⁠Cold Damage.",
+      "Watery Rejuvenation: If the wearer is standing in a  Water surface at the start of their turn, they heal 1d4⁠⁠hit points."
     ],
     "stats": {},
     "location": {
-      "description": "Flymm Cargo X: -1048 Y: 312: Rewarded by Allandra Grey in the basement for completing the quest \u2060Avenge the Drowned",
+      "description": "Flymm Cargo X: -1048 Y: 312: Rewarded by Allandra Grey in the basement for completing the quest ⁠Avenge the Drowned",
       "area": "Flymm Cargo",
       "act": 3
     },
     "build_tags": [],
     "wiki_url": "https://bg3.wiki/wiki/Wavemother%27s_Robe"
+  },
+  {
+    "id": "handmaidens-mace",
+    "name": "Handmaiden's Mace",
+    "slot": "weapon",
+    "rarity": "very_rare",
+    "armour_class": null,
+    "effects": [
+      "Set the wearer's Strength score to 18. The enchantment has no effect if their Strength score is higher without it.",
+      "Concussive Smash (): Hit an enemy with all your might to deal damage and possibly  Daze them. ( Recharge: Short rest.)"
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cloister of Sombre Embrace X: -400 Y: -1651: Carried by Viconia DeVir",
+      "area": "Cloister of Sombre Embrace",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Handmaiden%27s_Mace"
+  },
+  {
+    "id": "studded-shield-1",
+    "name": "Studded Shield +1",
+    "slot": "shield",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "No special properties, beyond the  Armour Class enhancement."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cloister of Sombre Embrace X: -369 Y: -1672: Inside the Armoury, leaning against a rack",
+      "area": "Cloister of Sombre Embrace",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Studded_Shield_%2B1"
+  },
+  {
+    "id": "viconias-walking-fortress",
+    "name": "Viconia's Walking Fortress",
+    "slot": "shield",
+    "rarity": "legendary",
+    "armour_class": null,
+    "effects": [
+      "Bulwark Rebuke (): When a foe hits you with a melee attack, deal it 2d4Force and possibly knock it  Prone.",
+      "Reflective Shell (): A protective shell envelops you. It reflects any projectiles targeted at you back to their point of origin. ( Recharge: Short rest.)",
+      "Warding Bond (): Cast as a level 2 spell ( Recharge: Long rest.)",
+      "Spellguard: You gain  Advantage on  Saving throws against spells. Spell Attack Rolls against you have  Disadvantage."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cloister of Sombre Embrace X: -400 Y: -1651: Carried by Viconia DeVir during the quest Daughter of Darkness",
+      "area": "Cloister of Sombre Embrace",
+      "act": 3
+    },
+    "build_tags": [
+      "draconic-fire-sorcerer",
+      "eldritch-hexknight",
+      "berserker-thrower",
+      "sorcadin",
+      "eldritch-knight-thrower",
+      "stormfrost-sage",
+      "shadow-blade-bardadin",
+      "hunter-ranger-archer",
+      "stars-cleric",
+      "battle-master-fighter",
+      "lore-bard",
+      "light-domain-cleric",
+      "tempest-domain-cleric",
+      "blaster-cleric",
+      "nature-cleric",
+      "arcane-archer",
+      "hexblade",
+      "death-cleric",
+      "reverob-blender",
+      "giant-barbarian",
+      "champion-fighter",
+      "life-domain-cleric",
+      "knowledge-cleric",
+      "war-domain-cleric",
+      "radiating-armored-monk",
+      "selunes-holy-archer",
+      "valour-bard",
+      "thief"
+    ],
+    "wiki_url": "https://bg3.wiki/wiki/Viconia%27s_Walking_Fortress"
+  },
+  {
+    "id": "viconias-priestess-robe",
+    "name": "Viconia's Priestess Robe",
+    "slot": "armour",
+    "rarity": "rare",
+    "armour_class": null,
+    "effects": [
+      "Armour Class +1",
+      "Shar's Umbrae: While obscured, the wearer has  Advantage on Stealth Checks.",
+      "Sharran Veil: Shield of Faith also grants you a +2 to all  Saving throws."
+    ],
+    "stats": {},
+    "location": {
+      "description": "Cloister of Sombre Embrace X: -400 Y: -1651: Worn by Viconia DeVir during the quest Daughter of Darkness",
+      "area": "Cloister of Sombre Embrace",
+      "act": 3
+    },
+    "build_tags": [],
+    "wiki_url": "https://bg3.wiki/wiki/Viconia%27s_Priestess_Robe"
   }
 ]

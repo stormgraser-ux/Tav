@@ -341,10 +341,26 @@ function parseLocation($, locations) {
   const firstLi = tooltipBox.find('ul li').first();
   if (!firstLi.length) return { description: '', area: '', act: 0 };
 
-  const area = firstLi.find('a').first().text().trim();
+  let area = firstLi.find('a').first().text().trim();
   const description = firstLi.text().replace(/\s+/g, ' ').trim();
-  const act = inferAct(description, locations);
 
+  // Fallback: some item pages open their location list with conditional prose
+  // ("Sold by ... in Sorcerous Sundries if Rolan is dead") where the first <a>
+  // points at an NPC rather than a location. Scan the description for a known
+  // area from locations.json, longest match first, to recover the area.
+  if (!area) {
+    const allAreas = Object.values(locations).flat()
+      .sort((a, b) => b.length - a.length);
+    const lowerDesc = description.toLowerCase();
+    for (const known of allAreas) {
+      if (lowerDesc.includes(known.toLowerCase())) {
+        area = known;
+        break;
+      }
+    }
+  }
+
+  const act = inferAct(description, locations);
   return { description, area, act };
 }
 

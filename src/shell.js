@@ -96,6 +96,7 @@
     build:   { section: 'Plan',      title: 'Build'   },
     gear:    { section: 'Plan',      title: 'Gear'    },
     party:   { section: 'Plan',      title: 'Party'   },
+    route:   { section: 'Reference', title: 'Route'   },
     search:  { section: 'Reference', title: 'Search'  },
     tavsync: { section: 'Mod',       title: 'TavSync' },
   };
@@ -133,7 +134,7 @@
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const k = e.key.toLowerCase();
-      const map = { b: 'build', g: 'gear', p: 'party' };
+      const map = { b: 'build', g: 'gear', p: 'party', r: 'route' };
       if (map[k]) {
         const btn = document.querySelector(`.tab-btn[data-tab="${map[k]}"]`);
         if (btn) { e.preventDefault(); btn.click(); }
