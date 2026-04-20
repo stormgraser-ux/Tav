@@ -101,44 +101,11 @@
           <strong id="crumb-title">Build</strong>
         </div>
         <div class="topbar-actions">
-          <!-- Reserved for future global actions -->
+          <span class="topbar-sync-hint" id="topbar-sync-hint"></span>
+          <button class="topbar-sync-btn" id="topbar-sync-btn" title="Sync party from BG3">↻ Sync</button>
+          <button class="topbar-sync-btn topbar-load-btn" id="topbar-load-btn" title="Load party_sync.json from disk" hidden>📂</button>
         </div>
       </div>
-
-      <!-- Party strip (persistent across tabs) -->
-      <div class="party-strip" style="position:relative">
-        <div class="strip-slots" id="strip-slots">
-          <button class="party-slot party-slot--empty" data-slot="0">You</button>
-          <button class="party-slot party-slot--empty" data-slot="1">Ally 1</button>
-          <button class="party-slot party-slot--empty" data-slot="2">Ally 2</button>
-          <button class="party-slot party-slot--empty" data-slot="3">Ally 3</button>
-        </div>
-        <span class="strip-divider"></span>
-        <div class="strip-act-group">
-          <button class="act-btn active" data-group="strip" data-act="1">I</button>
-          <button class="act-btn"        data-group="strip" data-act="2">II</button>
-          <button class="act-btn"        data-group="strip" data-act="3">III</button>
-        </div>
-        <button class="strip-sync-btn" id="strip-sync-btn" title="Sync party from BG3">↻ Sync</button>
-        <button class="strip-sync-btn strip-load-btn" id="strip-load-btn" title="Load party_sync.json from disk">📂</button>
-
-        <!-- Strip slot editor popover -->
-        <div class="strip-popover" id="strip-popover" hidden>
-          <div class="strip-popover-inner">
-            <select class="filter-select" id="strip-popover-class">
-              <option value="">Class…</option>
-              <option>Barbarian</option><option>Bard</option><option>Cleric</option>
-              <option>Druid</option><option>Fighter</option><option>Monk</option>
-              <option>Paladin</option><option>Ranger</option><option>Rogue</option>
-              <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
-            </select>
-            <select class="filter-select" id="strip-popover-subclass" disabled>
-              <option value="">Subclass…</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <p class="strip-sync-hint" id="strip-sync-hint"></p>
 
       <div class="page">
         <main class="tab-panels">
@@ -147,6 +114,33 @@
                TAB 1: BUILD (landing)
                ============================================================ -->
           <section id="tab-build" class="tab-panel active" role="tabpanel">
+
+            <!-- "Planning for" — compact party slot chooser -->
+            <div class="build-slots-bar" style="position:relative">
+              <span class="build-slots-label">Planning for</span>
+              <div class="build-slots" id="build-slots">
+                <button class="party-slot party-slot--empty" data-slot="0">You</button>
+                <button class="party-slot party-slot--empty" data-slot="1">Ally 1</button>
+                <button class="party-slot party-slot--empty" data-slot="2">Ally 2</button>
+                <button class="party-slot party-slot--empty" data-slot="3">Ally 3</button>
+              </div>
+
+              <!-- Slot editor popover -->
+              <div class="strip-popover" id="strip-popover" hidden>
+                <div class="strip-popover-inner">
+                  <select class="filter-select" id="strip-popover-class">
+                    <option value="">Class…</option>
+                    <option>Barbarian</option><option>Bard</option><option>Cleric</option>
+                    <option>Druid</option><option>Fighter</option><option>Monk</option>
+                    <option>Paladin</option><option>Ranger</option><option>Rogue</option>
+                    <option>Sorcerer</option><option>Warlock</option><option>Wizard</option>
+                  </select>
+                  <select class="filter-select" id="strip-popover-subclass" disabled>
+                    <option value="">Subclass…</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
             <!-- Banners -->
             <div id="profile-banner" class="profile-banner" hidden>
@@ -403,6 +397,15 @@
             </div>
 
             <div class="filters-bar">
+              <div class="filter-group">
+                <label class="filter-label">Act</label>
+                <div class="strip-act-group">
+                  <button class="act-btn active" data-group="strip" data-act="1">I</button>
+                  <button class="act-btn"        data-group="strip" data-act="2">II</button>
+                  <button class="act-btn"        data-group="strip" data-act="3">III</button>
+                </div>
+              </div>
+
               <div class="filter-group">
                 <label class="filter-label" for="slot-filter">Slot</label>
                 <select id="slot-filter" class="filter-select">
@@ -736,7 +739,7 @@
                     <li>Install <a href="https://github.com/Norbyte/bg3se" target="_blank" rel="noopener">BG3 Script Extender</a></li>
                     <li>Download TavSync from <a href="#" id="tavsync-nexus-link">Nexus Mods</a> and drop the .pak into your Mods folder</li>
                     <li>Play normally — every save auto-syncs your party data</li>
-                    <li>Click <strong>Sync</strong> in the strip above or <strong>Load File</strong> to pull in the latest data</li>
+                    <li>Click <strong>↻ Sync</strong> in the top-right corner (or <strong>📂</strong> to load <code>party_sync.json</code> manually) to pull in the latest data</li>
                   </ol>
                   <p class="tavsync-filepath">Sync file location: <code>%LOCALAPPDATA%\Larian Studios\Baldur's Gate 3\Script Extender\party_sync.json</code></p>
                 </div>

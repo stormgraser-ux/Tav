@@ -580,26 +580,58 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .seg button:hover:not([aria-pressed="true"]):not(.active) { color: var(--fg-0); }
 
 /* ============================================================
-   Party strip — persistent horizontal bar below topbar
+   Topbar sync controls (corner, persistent across tabs)
    ============================================================ */
-.party-strip {
+.topbar-sync-btn {
+  padding: 5px 10px;
+  border: 1px solid var(--line-0);
+  background: var(--bg-1);
+  border-radius: var(--radius-m);
+  color: var(--fg-1);
+  font-size: 12px;
+  font-family: var(--font-ui);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.topbar-sync-btn:hover { background: var(--bg-2); border-color: var(--line-1); color: var(--fg-0); }
+.topbar-load-btn { padding: 5px 9px; font-size: 13px; }
+
+.topbar-sync-hint {
+  font-size: 11px;
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.topbar-sync-hint:empty { display: none; }
+
+/* ============================================================
+   Build tab "Planning for" — compact party slot chooser
+   ============================================================ */
+.build-slots-bar {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 32px;
-  border-bottom: 1px solid var(--line-0);
-  background: oklch(from var(--bg-0) l c h / 0.9);
   flex-wrap: wrap;
-  position: sticky;
-  top: var(--topbar-h);
-  z-index: 15;
-  backdrop-filter: blur(8px);
+  margin-bottom: 18px;
 }
-.strip-slots {
+.build-slots-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+}
+.build-slots {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
+
+/* ============================================================
+   Party slot pills (used on Build tab)
+   ============================================================ */
 .party-slot {
   padding: 5px 12px;
   border: 1px solid var(--line-0);
@@ -623,12 +655,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   color: var(--fg-0);
 }
 
-.strip-divider {
-  width: 1px;
-  height: 20px;
-  background: var(--line-0);
-}
-
+/* ============================================================
+   Act toggle (used inside Gear filter row)
+   ============================================================ */
 .strip-act-group {
   display: inline-flex;
   background: var(--bg-inset);
@@ -653,22 +682,13 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .act-btn:hover:not(.active) { color: var(--fg-0); }
 
-.strip-sync-btn {
-  padding: 5px 10px;
-  border: 1px solid var(--line-0);
-  background: var(--bg-1);
-  border-radius: var(--radius-m);
-  color: var(--fg-1);
-  font-size: 12px;
-  font-family: var(--font-ui);
-}
-.strip-sync-btn:hover { background: var(--bg-2); border-color: var(--line-1); color: var(--fg-0); }
-.strip-load-btn { padding: 5px 9px; font-size: 13px; }
-
+/* ============================================================
+   Slot editor popover (anchored inside .build-slots-bar)
+   ============================================================ */
 .strip-popover {
   position: absolute;
   top: 100%;
-  left: 32px;
+  left: 0;
   margin-top: 4px;
   background: var(--bg-1);
   border: 1px solid var(--line-1);
@@ -683,16 +703,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   min-width: 320px;
 }
 .strip-popover .filter-select { font-size: 12px; padding: 6px 10px; padding-right: 28px; }
-
-.strip-sync-hint {
-  padding: 6px 32px;
-  font-size: 11px;
-  color: var(--fg-2);
-  font-family: var(--font-mono);
-  border-bottom: 1px solid var(--line-0);
-  min-height: 18px;
-}
-.strip-sync-hint:empty { display: none; }
 
 /* Hide tab-nav (legacy, replaced by rail) */
 .tab-nav { display: none; }
@@ -2822,7 +2832,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .nav-item .nav-badge { display: none; }
   .nav-item.active::before,
   .nav-item[aria-current="true"]::before { display: none; }
-  .topbar, .party-strip, .strip-sync-hint { padding-left: 16px; padding-right: 16px; }
+  .topbar { padding-left: 16px; padding-right: 16px; }
+  .topbar-sync-hint { display: none; }
   .page { padding: 20px 16px 32px; }
   .tavsync-section { margin: 24px 16px; padding: 20px; }
 }

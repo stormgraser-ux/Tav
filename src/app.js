@@ -1268,7 +1268,7 @@ function loadSyncFile() {
 
 function makeSyncMsgFn() {
   const partyHint = document.getElementById('party-save-hint');
-  const stripHint = document.getElementById('strip-sync-hint');
+  const stripHint = document.getElementById('topbar-sync-hint');
   return function showSyncMsg(msg, duration = 5000) {
     if (partyHint) { partyHint.textContent = msg; setTimeout(() => { partyHint.textContent = ''; }, duration); }
     if (stripHint) { stripHint.textContent = msg; setTimeout(() => { stripHint.textContent = ''; }, duration); }
@@ -1289,7 +1289,7 @@ async function syncFromGame() {
   } catch {
     const isHosted = location.hostname !== 'localhost' && location.hostname !== '127.0.0.1';
     if (isHosted) {
-      showSyncMsg('Load your party_sync.json file — click the 📂 button or check the TavSync section below.', 8000);
+      showSyncMsg('Load your party_sync.json file — click the 📂 button in the top-right, or see the TavSync tab.', 8000);
       return;
     }
     showSyncMsg('Sync server unreachable — run: npm run sync in the project directory.');
@@ -2642,7 +2642,7 @@ function slotPillLabel(slot) {
 }
 
 function renderPartyStrip() {
-  const slotsEl = document.getElementById('strip-slots');
+  const slotsEl = document.getElementById('build-slots');
   if (!slotsEl) return;
 
   const party = loadParty();
@@ -2762,11 +2762,17 @@ function initEventListeners() {
     btn.addEventListener('click', () => setAct(parseInt(btn.dataset.act)));
   });
 
-  // ── Strip: sync + load buttons ─────────────────────────────────────────────
-  const stripSyncBtn = document.getElementById('strip-sync-btn');
-  if (stripSyncBtn) stripSyncBtn.addEventListener('click', syncFromGame);
-  const stripLoadBtn = document.getElementById('strip-load-btn');
-  if (stripLoadBtn) stripLoadBtn.addEventListener('click', loadSyncFile);
+  // ── Topbar: sync + load buttons ───────────────────────────────────────────
+  const syncBtn = document.getElementById('topbar-sync-btn');
+  if (syncBtn) syncBtn.addEventListener('click', syncFromGame);
+  const loadBtn = document.getElementById('topbar-load-btn');
+  if (loadBtn) {
+    loadBtn.addEventListener('click', loadSyncFile);
+    // Only show the file-picker fallback on hosted builds (GitHub Pages) —
+    // on localhost the sync server can do the job.
+    const isHosted = location.hostname !== 'localhost' && location.hostname !== '127.0.0.1';
+    loadBtn.hidden = !isHosted;
+  }
 
   // ── Strip: slot click → open popover ─────────────────────────────────────
   document.querySelectorAll('.party-slot').forEach(btn => {
