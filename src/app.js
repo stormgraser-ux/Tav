@@ -50,7 +50,7 @@ const RARITY_LABELS = {
   common:    'Common',
   uncommon:  'Uncommon',
   rare:      'Rare',
-  very_rare: 'Very Rare',
+  very_rare: 'Epic',
   legendary: 'Legendary',
 };
 
@@ -808,18 +808,16 @@ function gearCardHTML(item, isAcquired = false, isWishlisted = false, hasProfile
     ? `<p class="gear-location">⟡ ${esc(item.location.description)}</p>`
     : '';
 
-  const tagsHTML = item.build_tags?.length
-    ? `<div class="gear-tags">${item.build_tags.slice(0, 5).map(t =>
-        `<span class="gear-tag">${esc(t)}</span>`).join('')}</div>`
-    : '<div></div>';
-
   const wikiHTML = item.wiki_url
     ? `<a class="gear-wiki-link" href="${esc(item.wiki_url)}" target="_blank" rel="noopener noreferrer">wiki ↗</a>`
     : '';
 
   const acquiredClass    = isAcquired ? ' gear-card--acquired' : '';
   const acquiredBtnTxt   = isAcquired ? '✓' : '○';
-  const acquiredBtnTitle = isAcquired ? 'Mark as needed' : 'Mark as acquired';
+  const acquiredDisabled = hasProfile ? '' : ' disabled';
+  const acquiredBtnTitle = hasProfile
+    ? (isAcquired ? 'Mark as needed' : 'Mark as acquired')
+    : 'Set an active character first';
 
   const wishlistDisabled = hasProfile ? '' : ' disabled';
   const wishlistTitle    = hasProfile
@@ -833,12 +831,12 @@ function gearCardHTML(item, isAcquired = false, isWishlisted = false, hasProfile
       <header class="gear-card__header">
         <span class="gear-card__name">${esc(item.name)}</span>
         <span class="gear-card__rarity rarity-${esc(rarity)}">${esc(rarityLabel)}</span>
-        <button class="gear-acquired-btn" data-name="${esc(item.name)}" title="${acquiredBtnTitle}">${acquiredBtnTxt}</button>
+        <button class="gear-acquired-btn" data-name="${esc(item.name)}" title="${esc(acquiredBtnTitle)}"${acquiredDisabled}>${acquiredBtnTxt}</button>
       </header>
       <ul class="gear-effects">${effectsHTML}${moreHTML}</ul>
       ${locationHTML}
       <footer class="gear-card__footer">
-        ${tagsHTML}
+        <div></div>
         ${wikiHTML}
         ${heartHTML}
       </footer>
