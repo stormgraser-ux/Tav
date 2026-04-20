@@ -1416,12 +1416,10 @@ function renderBuildSidebar() {
   const sidebar   = document.getElementById('build-templates');
   const className = document.getElementById('build-class').value;
 
-  const hmChecked = state.filters.hmOnly ? ' checked' : '';
-  const hmToggleHTML = `<label class="hm-toggle"><input type="checkbox" id="hm-filter"${hmChecked}><span>Honor Mode safe only</span></label>`;
+  const hmToggleHTML = '';
 
   if (!className) {
-    sidebar.innerHTML = `${hmToggleHTML}<h3 class="sidebar-title">Matching Builds</h3><p class="sidebar-hint">Select a class above to see curated templates.</p>`;
-    rewireHmFilter();
+    sidebar.innerHTML = `<h3 class="sidebar-title">Matching Builds</h3><p class="sidebar-hint">Select a class above to see curated templates.</p>`;
     return;
   }
 
@@ -1454,8 +1452,7 @@ function renderBuildSidebar() {
     }).join('');
   }
 
-  sidebar.innerHTML = `${hmToggleHTML}<h3 class="sidebar-title">Matching Builds</h3>${listHTML}`;
-  rewireHmFilter();
+  sidebar.innerHTML = `<h3 class="sidebar-title">Matching Builds</h3>${listHTML}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -2363,7 +2360,7 @@ async function renderActRoute(act, className) {
 // Character Creator — build browser + char create card
 // ---------------------------------------------------------------------------
 
-function renderCharCreatorBuilds(classFilter) {
+function renderCharCreatorBuilds(classFilter, subclassFilter) {
   const listEl = document.getElementById('creator-build-list');
   if (!listEl) return;
 
@@ -2371,6 +2368,13 @@ function renderCharCreatorBuilds(classFilter) {
   if (classFilter) {
     const kws = CLASS_KEYWORDS[classFilter] || [classFilter.toLowerCase()];
     builds = builds.filter(b => kws.some(kw => b.name.toLowerCase().includes(kw)));
+  }
+  if (subclassFilter) {
+    const subKws = SUBCLASS_KEYWORDS[subclassFilter] || [subclassFilter.toLowerCase()];
+    builds = builds.filter(b => subKws.some(kw => b.name.toLowerCase().includes(kw)));
+  }
+  if (state.filters.hmOnly) {
+    builds = builds.filter(b => HM_SAFE_BUILDS.has(b.id));
   }
   builds.sort((a, b) => (TIER_ORDER[a.tier] ?? 99) - (TIER_ORDER[b.tier] ?? 99));
 
@@ -2930,9 +2934,12 @@ function initEventListeners() {
   });
 
   document.getElementById('build-subclass').addEventListener('change', () => {
+    const cls = document.getElementById('build-class').value;
+    const sub = document.getElementById('build-subclass').value;
     renderBuildSidebar();
-    renderActRoute(state.act, document.getElementById('build-class').value);
-    renderFeatAdvisor(document.getElementById('build-class').value, document.getElementById('build-subclass').value);
+    renderActRoute(state.act, cls);
+    renderFeatAdvisor(cls, sub);
+    renderCharCreatorBuilds(state.creatorClass || cls, sub);
   });
 
   document.getElementById('build-copy-btn').addEventListener('click', function () {
@@ -2978,6 +2985,18 @@ function initEventListeners() {
   }
 
   // ── Character Creator ──────────────────────────────────────────────────────
+  const creatorHmCb = document.getElementById('creator-hm-filter');
+  if (creatorHmCb) {
+    creatorHmCb.checked = state.filters.hmOnly;
+    creatorHmCb.addEventListener('change', e => {
+      state.filters.hmOnly = e.target.checked;
+      const cls = document.getElementById('build-class').value;
+      const sub = document.getElementById('build-subclass').value;
+      renderCharCreatorBuilds(state.creatorClass || cls, sub);
+      renderBuildSidebar();
+    });
+  }
+
   document.querySelectorAll('.class-pill').forEach(pill => {
     pill.addEventListener('click', () => {
       document.querySelectorAll('.class-pill').forEach(p => p.classList.remove('active'));
