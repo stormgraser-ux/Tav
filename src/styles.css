@@ -2553,7 +2553,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.14em;
-  padding-right: 0.14em;
   color: var(--fg-3);
   text-transform: uppercase;
 }

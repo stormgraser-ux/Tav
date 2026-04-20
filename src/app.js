@@ -2301,7 +2301,7 @@ function rarityClass(r) {
 function slotKicker(slot) {
   if (!slot) return '—';
   const overrides = { armour: 'CHEST', ranged: 'RNGD', amulet: 'NECK', gloves: 'HANDS', boots: 'FEET' };
-  return overrides[slot] || slot.toUpperCase().slice(0, 5);
+  return overrides[slot] || slot.toUpperCase();
 }
 
 function activeBuildContext() {
